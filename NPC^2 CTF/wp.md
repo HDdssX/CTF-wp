@@ -142,7 +142,6 @@ sudo zip --symlink fff.zip fff
 ```http request
 POST /admin.php?token=0192023a7bbd73250516f069df18b500&path=.%252Fnotes/test HTTP/1.1
 Host: 127.0.0.1:44967
-Content-Length: 113
 Content-Type: application/x-www-form-urlencoded
 Cookie: PHPSESSID=e2c182040ad6aa7048ab7a29973871fa
 
