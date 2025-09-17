@@ -1,0 +1,309 @@
+10.1.10.21:443 open
+10.1.10.41:443 open
+10.1.10.8:443 open
+10.1.10.13:443 open
+10.1.10.12:443 open
+10.1.10.79:445 open
+10.1.10.73:445 open
+10.1.10.79:139 open
+10.1.10.49:445 open
+10.1.10.43:445 open
+10.1.10.20:445 open
+10.1.10.71:445 open
+10.1.10.73:139 open
+10.1.10.41:445 open
+10.1.10.14:445 open
+10.1.10.12:445 open
+10.1.10.49:139 open
+10.1.10.43:139 open
+10.1.10.20:139 open
+10.1.10.71:139 open
+10.1.10.41:139 open
+10.1.10.80:443 open
+10.1.10.14:139 open
+10.1.10.12:139 open
+10.1.10.79:135 open
+10.1.10.72:443 open
+10.1.10.73:135 open
+10.1.10.67:443 open
+10.1.10.49:135 open
+10.1.10.43:135 open
+10.1.10.50:443 open
+10.1.10.42:443 open
+10.1.10.33:22 open
+10.1.10.45:22 open
+10.1.10.48:22 open
+10.1.10.38:22 open
+10.1.10.46:22 open
+10.1.10.40:22 open
+10.1.10.47:22 open
+10.1.10.39:22 open
+10.1.10.36:22 open
+10.1.10.37:22 open
+10.1.10.18:22 open
+10.1.10.31:22 open
+10.1.10.35:22 open
+10.1.10.34:22 open
+10.1.10.17:22 open
+10.1.10.16:22 open
+10.1.10.19:22 open
+10.1.10.21:22 open
+10.1.10.5:22 open
+10.1.10.6:22 open
+10.1.10.9:22 open
+10.1.10.8:22 open
+10.1.10.10:22 open
+10.1.10.11:22 open
+10.1.10.13:22 open
+10.1.10.7:22 open
+10.1.10.4:22 open
+10.1.10.3:22 open
+10.1.10.2:22 open
+10.1.10.41:80 open
+10.1.10.37:443 open
+10.1.10.71:443 open
+10.1.10.36:80 open
+10.1.10.37:80 open
+10.1.10.31:80 open
+10.1.10.71:80 open
+10.1.10.16:80 open
+10.1.10.8:80 open
+10.1.10.13:80 open
+10.1.10.7:80 open
+10.1.10.3:80 open
+10.1.10.2:80 open
+10.1.10.200:22 open
+10.1.10.201:22 open
+10.1.10.63:22 open
+10.1.10.78:22 open
+10.1.10.80:22 open
+10.1.10.77:22 open
+10.1.10.76:22 open
+10.1.10.72:22 open
+10.1.10.75:22 open
+10.1.10.70:22 open
+10.1.10.68:22 open
+10.1.10.69:22 open
+10.1.10.67:22 open
+10.1.10.66:22 open
+10.1.10.65:22 open
+10.1.10.32:22 open
+10.1.10.64:22 open
+10.1.10.50:22 open
+10.1.10.62:22 open
+10.1.10.61:22 open
+10.1.10.42:22 open
+10.1.10.12:80 open
+10.1.10.14:135 open
+10.1.10.200:80 open
+10.1.10.201:80 open
+10.1.10.12:135 open
+10.1.10.72:80 open
+10.1.10.75:80 open
+10.1.10.66:80 open
+10.1.10.67:80 open
+10.1.10.32:80 open
+10.1.10.62:80 open
+10.1.10.61:80 open
+10.1.10.42:80 open
+10.1.10.45:80 open
+10.1.10.4:3306 open
+10.1.10.20:135 open
+10.1.10.71:135 open
+10.1.10.41:135 open
+10.1.10.33:3306 open
+10.1.10.63:3306 open
+10.1.10.201:3306 open
+10.1.10.200:3306 open
+10.1.10.9:8000 open
+10.1.10.11:8000 open
+10.1.10.6:8000 open
+10.1.10.10:8000 open
+10.1.10.7:8000 open
+10.1.10.14:8000 open
+10.1.10.13:8080 open
+10.1.10.4:8080 open
+10.1.10.200:8000 open
+10.1.10.201:8000 open
+10.1.10.73:8000 open
+10.1.10.70:8000 open
+10.1.10.68:8000 open
+10.1.10.69:8000 open
+10.1.10.66:8000 open
+10.1.10.65:8000 open
+10.1.10.43:8000 open
+10.1.10.38:8000 open
+10.1.10.40:8000 open
+10.1.10.39:8000 open
+10.1.10.36:8000 open
+10.1.10.35:8000 open
+10.1.10.63:8080 open
+10.1.10.72:8080 open
+10.1.10.42:8080 open
+10.1.10.33:8080 open
+10.1.10.200:2375 open
+10.1.10.201:2375 open
+10.1.10.20:8060 open
+10.1.10.79:8060 open
+10.1.10.49:8060 open
+10.1.10.13:8081 open
+10.1.10.42:8081 open
+10.1.10.72:8081 open
+10.1.10.18:8082 open
+10.1.10.47:8082 open
+10.1.10.77:8082 open
+10.1.10.19:8088 open
+10.1.10.20:8088 open
+10.1.10.48:8088 open
+10.1.10.49:8088 open
+10.1.10.78:8088 open
+10.1.10.79:8088 open
+10.1.10.17:8181 open
+10.1.10.46:8181 open
+10.1.10.76:8181 open
+10.1.10.5:9095 open
+10.1.10.34:9095 open
+10.1.10.64:9095 open
+[*] OsInfo 10.1.10.12	(Windows 10 Enterprise 15063)
+[*] NetInfo 
+[*]10.1.10.12
+   [->]DESKTOP-AC40D3F
+   [->]10.1.10.12
+[*] WebTitle http://10.1.10.12         code:302 len:134    title:对象已移动 跳转url: http://10.1.10.12/broadWeb/bwRoot.asp?username=admin
+[*] WebTitle https://10.1.10.12        code:302 len:134    title:对象已移动 跳转url: https://10.1.10.12/broadWeb/bwRoot.asp?username=admin
+[*] WebTitle http://10.1.10.16         code:200 len:30672  title:""
+[*] WebTitle http://10.1.10.13         code:302 len:203    title:302 Found 跳转url: https://10.1.10.13/
+[*] WebTitle http://10.1.10.71         code:302 len:134    title:对象已移动 跳转url: http://10.1.10.71/broadWeb/bwRoot.asp?username=admin
+[*] WebTitle http://10.1.10.7          code:200 len:6225   title:欢迎使用禅道集成运行环境！
+[*] WebTitle http://10.1.10.2          code:200 len:1917   title:教务系统登录
+[*] WebTitle http://10.1.10.8          code:200 len:2786   title:FortiGate
+[*] WebTitle http://10.1.10.36         code:200 len:6225   title:欢迎使用禅道集成运行环境！
+[*] WebTitle http://10.1.10.66         code:200 len:6225   title:欢迎使用禅道集成运行环境！
+[*] WebTitle http://10.1.10.37         code:200 len:2786   title:FortiGate
+[*] WebTitle http://10.1.10.72         code:302 len:203    title:302 Found 跳转url: https://10.1.10.72/
+[*] WebTitle http://10.1.10.41         code:302 len:134    title:对象已移动 跳转url: http://10.1.10.41/broadWeb/bwRoot.asp?username=admin
+[*] WebTitle http://10.1.10.31         code:200 len:1917   title:教务系统登录
+[*] WebTitle http://10.1.10.67         code:200 len:2786   title:FortiGate
+[*] WebTitle http://10.1.10.201        code:200 len:440    title:靶场云平台
+[*] WebTitle http://10.1.10.61         code:200 len:1917   title:教务系统登录
+[*] WebTitle http://10.1.10.200        code:200 len:440    title:靶场云平台
+[*] WebTitle http://10.1.10.75         code:200 len:30672  title:""
+[*] WebTitle http://10.1.10.42         code:302 len:203    title:302 Found 跳转url: https://10.1.10.42/
+[*] NetInfo 
+[*]10.1.10.73
+   [->]USER-20200408TC
+   [->]10.1.10.73
+[*] NetInfo 
+[*]10.1.10.79
+   [->]USER-20200408TC
+   [->]10.1.10.79
+[*] NetBios 10.1.10.41      WORKGROUP\DESKTOP-AC40D3F     
+[*] WebTitle http://10.1.10.45         code:200 len:30672  title:""
+[*] NetInfo 
+[*]10.1.10.49
+   [->]USER-20200408TC
+   [->]10.1.10.49
+[*] NetBios 10.1.10.43      WORKGROUP\USER-20200408TC     
+[*] WebTitle https://10.1.10.67        code:200 len:2786   title:FortiGate
+[*] NetInfo 
+[*]10.1.10.43
+   [->]USER-20200408TC
+   [->]10.1.10.43
+[*] NetInfo 
+[*]10.1.10.20
+   [->]USER-20200408TC
+   [->]10.1.10.20
+[*] WebTitle http://10.1.10.62         code:200 len:72668  title:天气预报
+[*] NetInfo 
+[*]10.1.10.71
+   [->]DESKTOP-AC40D3F
+   [->]10.1.10.71
+   [->]2001:0:348b:fb58:3023:1d8c:f5fe:f5b8
+[*] NetInfo 
+[*]10.1.10.41
+   [->]DESKTOP-AC40D3F
+   [->]10.1.10.41
+   [->]2001:0:348b:fb58:e8:9e1:f5fe:f5d6
+[*] WebTitle http://10.1.10.32         code:200 len:72668  title:天气预报
+[*] WebTitle http://10.1.10.3          code:200 len:72668  title:天气预报
+[*] WebTitle https://10.1.10.37        code:200 len:2786   title:FortiGate
+[*] WebTitle https://10.1.10.8         code:200 len:2786   title:FortiGate
+[*] WebTitle https://10.1.10.41        code:302 len:134    title:对象已移动 跳转url: https://10.1.10.41/broadWeb/bwRoot.asp?username=admin
+[*] WebTitle https://10.1.10.50        code:302 len:59     title:None 跳转url: https://10.1.10.50/__session_start__/
+[*] WebTitle https://10.1.10.80        code:302 len:59     title:None 跳转url: https://10.1.10.80/__session_start__/
+[*] WebTitle https://10.1.10.13        code:302 len:208    title:302 Found 跳转url: https://10.1.10.13/admin
+[*] WebTitle https://10.1.10.72        code:302 len:208    title:302 Found 跳转url: https://10.1.10.72/admin
+[*] NetInfo 
+[*]10.1.10.14
+   [->]USER-20200408TC
+   [->]10.1.10.14
+[*] WebTitle http://10.1.10.65:8000    code:200 len:150    title:None
+[*] WebTitle http://10.1.10.66:8000    code:200 len:150    title:None
+[*] WebTitle http://10.1.10.10:8000    code:302 len:201    title:None 跳转url: http://10.1.10.10:8000/main.html
+[*] WebTitle http://10.1.10.39:8000    code:302 len:201    title:None 跳转url: http://10.1.10.39:8000/main.html
+[*] WebTitle http://10.1.10.201:8000   code:404 len:22     title:None
+[*] WebTitle http://10.1.10.73:8000    code:200 len:180    title:None
+[*] WebTitle http://10.1.10.43:8000    code:200 len:180    title:None
+[*] WebTitle http://10.1.10.200:8000   code:404 len:22     title:None
+[*] WebTitle http://10.1.10.7:8000     code:200 len:150    title:None
+[*] WebTitle http://10.1.10.36:8000    code:200 len:150    title:None
+[*] WebTitle http://10.1.10.35:8000    code:200 len:150    title:None
+[*] WebTitle http://10.1.10.201:2375   code:404 len:29     title:None
+[*] WebTitle http://10.1.10.64:9095    code:302 len:0      title:None 跳转url: http://10.1.10.64:9095/index.html
+[*] OsInfo 10.1.10.41	(Windows 10 Enterprise 15063)
+[*] WebTitle http://10.1.10.77:8082    code:302 len:0      title:None 跳转url: http://10.1.10.77:8082/login_p
+[*] WebTitle http://10.1.10.6:8000     code:200 len:150    title:None
+[*] WebTitle http://10.1.10.5:9095     code:302 len:0      title:None 跳转url: http://10.1.10.5:9095/index.html
+[*] WebTitle http://10.1.10.200:2375   code:404 len:29     title:None
+[*] WebTitle http://10.1.10.34:9095    code:302 len:0      title:None 跳转url: http://10.1.10.34:9095/index.html
+[*] WebTitle http://10.1.10.19:8088    code:200 len:494    title:""
+[*] WebTitle http://10.1.10.46:8181    code:200 len:37307  title:5.4.3  铭飞MCms
+[*] WebTitle http://10.1.10.47:8082    code:302 len:0      title:None 跳转url: http://10.1.10.47:8082/login_p
+[*] WebTitle http://10.1.10.20:8088    code:302 len:0      title:None 跳转url: http://10.1.10.20:8088/Start
+[*] WebTitle http://10.1.10.49:8088    code:302 len:0      title:None 跳转url: http://10.1.10.49:8088/Start
+[*] WebTitle http://10.1.10.79:8088    code:302 len:0      title:None 跳转url: http://10.1.10.79:8088/Start
+[*] WebTitle http://10.1.10.48:8088    code:200 len:494    title:""
+[*] WebTitle http://10.1.10.78:8088    code:200 len:494    title:""
+[*] WebTitle https://10.1.10.21        code:302 len:59     title:None 跳转url: https://10.1.10.21/__session_start__/
+[*] WebTitle https://10.1.10.42        code:302 len:208    title:302 Found 跳转url: https://10.1.10.42/admin
+[*] WebTitle https://10.1.10.71        code:302 len:134    title:对象已移动 跳转url: https://10.1.10.71/broadWeb/bwRoot.asp?username=admin
+[*] WebTitle http://10.1.10.4:8080     code:200 len:8058   title:Home
+[*] WebTitle http://10.1.10.63:8080    code:200 len:8061   title:Home
+[*] WebTitle http://10.1.10.69:8000    code:302 len:201    title:None 跳转url: http://10.1.10.69:8000/main.html
+[*] WebTitle https://10.1.10.72:8081   code:426 len:0      title:None
+[*] WebTitle https://10.1.10.13:8081   code:426 len:0      title:None
+[*] WebTitle https://10.1.10.42:8081   code:426 len:0      title:None
+[*] WebTitle http://10.1.10.71/broadWeb/bwRoot.asp?username=admin code:200 len:3257   title:Advantech WebAccess Welcome Page
+[*] WebTitle http://10.1.10.33:8080    code:200 len:7662   title:Home
+[*] WebTitle http://10.1.10.41/broadWeb/bwRoot.asp?username=admin code:200 len:3257   title:Advantech WebAccess Welcome Page
+[*] WebTitle https://10.1.10.72/admin/ code:200 len:1436   title:Viewplanner
+[*] WebTitle https://10.1.10.13/admin/ code:200 len:1436   title:Viewplanner
+[*] WebTitle https://10.1.10.42/admin/ code:200 len:1436   title:Viewplanner
+[*] WebTitle http://10.1.10.42:8080    code:426 len:0      title:None
+[*] WebTitle http://10.1.10.72:8080    code:426 len:0      title:None
+[*] WebTitle http://10.1.10.13:8080    code:426 len:0      title:None
+[*] WebTitle https://10.1.10.80/__session_start__/ code:403 len:103    title:Forbidden
+[*] WebTitle https://10.1.10.50/__session_start__/ code:403 len:103    title:Forbidden
+[*] WebTitle https://10.1.10.41/broadWeb/bwRoot.asp?username=admin code:200 len:3257   title:Advantech WebAccess Welcome Page
+[*] WebTitle http://10.1.10.68:8000    code:200 len:1522   title:""
+[*] WebTitle http://10.1.10.40:8000    code:200 len:3392   title:Vigor Login Page
+[*] WebTitle http://10.1.10.9:8000     code:200 len:1522   title:""
+[*] WebTitle http://10.1.10.38:8000    code:200 len:1522   title:""
+[*] WebTitle http://10.1.10.11:8000    code:200 len:3392   title:Vigor Login Page
+[*] WebTitle https://10.1.10.13/admin/ code:200 len:1436   title:Viewplanner
+[*] WebTitle https://10.1.10.72/admin/ code:200 len:1436   title:Viewplanner
+[*] WebTitle http://10.1.10.64:9095/index.html code:200 len:7880   title:AJ-Report
+[*] WebTitle http://10.1.10.77:8082/login_p code:401 len:52     title:None
+[*] WebTitle http://10.1.10.5:9095/index.html code:200 len:7880   title:AJ-Report
+[*] WebTitle http://10.1.10.34:9095/index.html code:200 len:7880   title:AJ-Report
+[*] WebTitle http://10.1.10.47:8082/login_p code:401 len:52     title:None
+[*] WebTitle https://10.1.10.21/__session_start__/ code:403 len:103    title:Forbidden
+[+] PocScan http://10.1.10.201:2375 poc-yaml-docker-api-unauthorized-rce 
+[*] WebTitle https://10.1.10.71/broadWeb/bwRoot.asp?username=admin code:200 len:3257   title:Advantech WebAccess Welcome Page
+[+] PocScan http://10.1.10.200:2375 poc-yaml-docker-api-unauthorized-rce 
+[*] WebTitle https://10.1.10.42/admin/ code:200 len:1436   title:Viewplanner
+[+] PocScan http://10.1.10.201:2375 poc-yaml-go-pprof-leak 
+[+] PocScan http://10.1.10.200:2375 poc-yaml-go-pprof-leak 
+[+] PocScan http://10.1.10.64:9095/swagger-ui.html poc-yaml-swagger-ui-unauth [{path swagger-ui.html}]
+[+] PocScan http://10.1.10.5:9095/swagger-ui.html poc-yaml-swagger-ui-unauth [{path swagger-ui.html}]
+[+] PocScan http://10.1.10.34:9095/swagger-ui.html poc-yaml-swagger-ui-unauth [{path swagger-ui.html}]

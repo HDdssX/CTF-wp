@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>在线PHP执行环境</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <i class="fas fa-code"></i>
+        <span>在线PHP执行环境</span>
+      </div>
+      <div class="nav-links">
+        <a href="#"><i class="fas fa-home"></i> 首页</a>
+        <a href="#"><i class="fas fa-book"></i> 文档</a>
+        <a href="#"><i class="fas fa-question-circle"></i> 帮助</a>
+        <a href="#"><i class="fas fa-envelope"></i> 联系</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="main-content">
+      <div class="editor-container">
+        <div class="panel-header">
+          <div class="panel-title">
+            <i class="fas fa-edit"></i>
+            <span>PHP代码编辑器</span>
+          </div>
+          <div class="panel-actions">
+            <button id="format-btn"><i class="fas fa-align-left"></i> 格式化</button>
+            <button id="clear-btn"><i class="fas fa-trash"></i> 清空</button>
+          </div>
+        </div>
+        <textarea id="php-code"
+          placeholder="在此输入您的PHP代码...例如：&#10;&#10;&lt;?php&#10;echo 'Hello, World!';&#10;&#10;// 您的代码从这里开始"><?php
+// 默认代码示例
+echo "欢迎使用在线PHP执行环境！\n\n";
+echo "当前服务器信息：\n";
+echo "PHP版本: " . phpversion() . "\n";
+echo "服务器时间: " . date('Y-m-d H:i:s') . "\n";
+?></textarea>
+      </div>
+
+      <div class="output-container">
+        <div class="panel-header">
+          <div class="panel-title">
+            <i class="fas fa-terminal"></i>
+            <span>执行结果</span>
+          </div>
+          <div class="panel-actions">
+            <button id="copy-output"><i class="fas fa-copy"></i> 复制</button>
+            <button id="clear-output"><i class="fas fa-broom"></i> 清空</button>
+          </div>
+        </div>
+        <div id="output">
+          <?php
+// 初始输出
+echo "准备好执行您的PHP代码...\n";
+echo "点击下方的"执行代码"按钮查看结果。\n";
+?>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div>
+        <button class="btn btn-primary" id="execute-btn">
+          <i class="fas fa-play"></i> 执行代码
+          <div class="loader" id="execute-loader"></div>
+        </button>
+      </div>
+      <div>
+        <button class="btn btn-secondary" id="dark-mode-btn">
+          <i class="fas fa-moon"></i> 暗黑模式
+        </button>
+      </div>
+    </div>
+
+    <div class="status-bar">
+      <div id="status-message">就绪</div>
+      <div>
+        <span id="line-count">1 行</span> |
+        <span id="char-count">0 字符</span> |
+        <span>PHP
+          <?php echo phpversion(); ?>
+        </span>
+      </div>
+    </div>
+
+    <div class="examples">
+      <h3><i class="fas fa-lightbulb"></i> 代码示例</h3>
+      <div class="example-buttons">
+        <button class="example-btn" data-example="hello">Hello World</button>
+        <button class="example-btn" data-example="loop">循环示例</button>
+        <button class="example-btn" data-example="function">函数示例</button>
+        <button class="example-btn" data-example="array">数组操作</button>
+        <button class="example-btn" data-example="form">表单处理</button>
+        <button class="example-btn" data-example="file">文件操作</button>
+        <button class="example-btn" data-example="db">数据库连接</button>
+        <button class="example-btn" data-example="class">类与对象</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 在线PHP执行环境 | 由PHP
+      <?php echo phpversion(); ?> 驱动 | 安全执行环境
+    </p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <script>
+    // 代码执行功能
+    document.getElementById('execute-btn').addEventListener('click', function () {
+      const loader = document.getElementById('execute-loader');
+      const output = document.getElementById('output');
+      const code = document.getElementById('php-code').value;
+      const statusMessage = document.getElementById('status-message');
+
+      // 显示加载动画
+      this.disabled = true;
+      loader.style.display = 'inline-block';
+      statusMessage.textContent = "正在执行代码...";
+      statusMessage.style.color = "var(--primary-color)";
+
+      // 清空输出
+      output.innerHTML = '<span style="color:#666">执行中...</span>';
+
+      // 发送AJAX请求
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', 'execute.php', true);
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+      xhr.onload = function () {
+        this.disabled = false;
+        loader.style.display = 'none';
+
+        if (xhr.status === 200) {
+          output.innerHTML = xhr.responseText;
+          statusMessage.textContent = "代码执行成功";
+          statusMessage.style.color = "var(--success-color)";
+
+          // 添加动画效果
+          output.style.animation = 'none';
+          void output.offsetWidth; // 触发重绘
+          output.style.animation = 'fadeIn 0.5s ease';
+        } else {
+          output.innerHTML = `<span style="color:var(--danger-color)">执行错误: ${xhr.statusText}</span>`;
+          statusMessage.textContent = "执行出错";
+          statusMessage.style.color = "var(--danger-color)";
+        }
+      };
+
+      xhr.onerror = function () {
+        this.disabled = false;
+        loader.style.display = 'none';
+        output.innerHTML = `<span style="color:var(--danger-color)">请求失败，请检查网络连接</span>`;
+        statusMessage.textContent = "网络错误";
+        statusMessage.style.color = "var(--danger-color)";
+      };
+
+      xhr.send('code=' + encodeURIComponent(code));
+    });
+
+    // 代码示例加载
+    const exampleButtons = document.querySelectorAll('.example-btn');
+    exampleButtons.forEach(button => {
+      button.addEventListener('click', function () {
+        const exampleType = this.getAttribute('data-example');
+        let exampleCode = '';
+
+        switch (exampleType) {
+          case 'hello':
+            exampleCode = `<?php\n// Hello World示例\necho "Hello, World!\\n";\n\n$name = "PHP开发者";\necho "欢迎, " . $name . "!\\n";\n?>`;
+            break;
+          case 'loop':
+            exampleCode = `<?php\n// 循环结构示例\necho "For循环示例:\\n";\nfor ($i = 1; $i <= 5; $i++) {\n    echo "第 \${i} 次循环\\n";\n}\n\necho "\\nWhile循环示例:\\n";\n$j = 3;\nwhile ($j > 0) {\n    echo "倒计时: \$j\\n";\n    $j--;\n}\n?>`;
+            break;
+          case 'function':
+            exampleCode = `<?php\n// 函数示例\nfunction calculateSum($a, $b) {\n    return $a + $b;\n}\n\nfunction factorial($n) {\n    if ($n <= 1) return 1;\n    return $n * factorial($n - 1);\n}\n\necho "5 + 7 = " . calculateSum(5, 7) . "\\n";\necho "5的阶乘是: " . factorial(5) . "\\n";\n?>`;
+            break;
+          case 'array':
+            exampleCode = `<?php\n// 数组操作示例\n$fruits = array("苹果", "香蕉", "橙子");\n\n// 添加元素\n$fruits[] = "葡萄";\n\n// 关联数组\n$person = array(\n    "name" => "张三",\n    "age" => 30,\n    "city" => "北京"\n);\n\necho "水果列表:\\n";\nprint_r($fruits);\n\necho "\\n个人信息:\\n";\nprint_r($person);\n?>`;
+            break;
+          case 'form':
+            exampleCode = `<?php\n// 表单处理示例\necho '<form method="post" action="">';\necho '  姓名: <input type="text" name="name"><br>';\necho '  邮箱: <input type="email" name="email"><br>';\necho '  <input type="submit" value="提交">';\necho '</form>';\n\nif ($_SERVER["REQUEST_METHOD"] == "POST") {\n    $name = isset($_POST['name']) ? htmlspecialchars($_POST['name']) : '';\n    $email = isset($_POST['email']) ? htmlspecialchars($_POST['email']) : '';\n    \n    if (!empty($name) && !empty($email)) {\n        echo "\\n表单提交成功!\\n";\n        echo "姓名: \$name\\n";\n        echo "邮箱: \$email\\n";\n    }\n}\n?>`;
+            break;
+          case 'file':
+            exampleCode = `<?php\n// 文件操作示例\n$filename = "example.txt";\n\n// 写入文件\nfile_put_contents($filename, "这是写入文件的内容\\n第二行内容\\n");\n\necho "文件写入成功\\n\\n";\n\necho "文件内容:\\n";\necho file_get_contents($filename);\n\n// 删除文件\n// unlink($filename);\n?>`;
+            break;
+          case 'db':
+            exampleCode = `<?php\n// 数据库连接示例\ntry {\n    // 模拟数据库连接\n    $host = 'localhost';\n    $dbname = 'test_db';\n    $username = 'root';\n    $password = '';\n    \n    echo "尝试连接到数据库...\\n";\n    \n    // 实际环境中使用PDO连接\n    // $conn = new PDO("mysql:host=\$host;dbname=\$dbname", \$username, \$password);\n    // echo "数据库连接成功!\\n";\n    \n    // 模拟查询\n    echo "数据库连接成功! (模拟)\\n";\n    echo "执行查询: SELECT * FROM users\\n";\n    \n    // 模拟结果\n    $results = array(\n        array('id' => 1, 'name' => '张三', 'email' => 'zhangsan@example.com'),\n        array('id' => 2, 'name' => '李四', 'email' => 'lisi@example.com')\n    );\n    \n    echo "\\n查询结果:\\n";\n    print_r($results);\n    \n} catch(PDOException $e) {\n    echo "数据库连接失败: " . $e->getMessage();\n}\n?>`;
+            break;
+          case 'class':
+            exampleCode = `<?php\n// 类与对象示例\nclass Person {\n    public $name;\n    private $age;\n    \n    public function __construct($name, $age) {\n        $this->name = $name;\n        $this->age = $age;\n    }\n    \n    public function greet() {\n        return "你好，我是{\$this->name}，今年{\$this->age}岁。";\n    }\n    \n    public function setAge($newAge) {\n        if ($newAge > 0) {\n            $this->age = $newAge;\n        }\n    }\n}\n\n// 创建对象\n$person1 = new Person("王五", 25);\necho $person1->greet() . "\\n";\n\n// 修改年龄\n$person1->setAge(26);\necho "一年后...\\n";\necho $person1->greet() . "\\n";\n?>`;
+            break;
+        }
+
+        document.getElementById('php-code').value = exampleCode;
+        document.getElementById('status-message').textContent = "已加载示例代码";
+        document.getElementById('status-message').style.color = "var(--success-color)";
+
+        // 更新行数和字符数
+        updateLineAndCharCount();
+      });
+    });
+
+    // 清空代码编辑器
+    document.getElementById('clear-btn').addEventListener('click', function () {
+      document.getElementById('php-code').value = '';
+      document.getElementById('status-message').textContent = "编辑器已清空";
+      document.getElementById('status-message').style.color = "var(--warning-color)";
+      updateLineAndCharCount();
+    });
+
+    // 清空输出
+    document.getElementById('clear-output').addEventListener('click', function () {
+      document.getElementById('output').innerHTML = '<span style="color:#666">输出已清空</span>';
+      document.getElementById('status-message').textContent = "输出已清空";
+      document.getElementById('status-message').style.color = "var(--warning-color)";
+    });
+
+    // 复制输出
+    document.getElementById('copy-output').addEventListener('click', function () {
+      const output = document.getElementById('output');
+      const range = document.createRange();
+      range.selectNode(output);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      document.execCommand('copy');
+      window.getSelection().removeAllRanges();
+
+      const statusMessage = document.getElementById('status-message');
+      statusMessage.textContent = "输出已复制到剪贴板";
+      statusMessage.style.color = "var(--success-color)";
+
+      setTimeout(() => {
+        statusMessage.textContent = "就绪";
+        statusMessage.style.color = "inherit";
+      }, 2000);
+    });
+
+    // 格式化代码 (简化版)
+    document.getElementById('format-btn').addEventListener('click', function () {
+      const codeTextarea = document.getElementById('php-code');
+      let code = codeTextarea.value;
+
+      // 简单的缩进格式化
+      code = code.replace(/\{\s*/g, "{\n    ");
+      code = code.replace(/\}\s*/g, "\n}\n");
+      code = code.replace(/;\s*/g, ";\n");
+
+      codeTextarea.value = code;
+      document.getElementById('status-message').textContent = "代码已格式化";
+      document.getElementById('status-message').style.color = "var(--success-color)";
+
+      updateLineAndCharCount();
+    });
+
+    // 保存代码 (本地存储)
+    document.getElementById('save-btn').addEventListener('click', function () {
+      const code = document.getElementById('php-code').value;
+      localStorage.setItem('saved_php_code', code);
+
+      const statusMessage = document.getElementById('status-message');
+      statusMessage.textContent = "代码已保存到本地存储";
+      statusMessage.style.color = "var(--success-color)";
+
+      setTimeout(() => {
+        statusMessage.textContent = "就绪";
+        statusMessage.style.color = "inherit";
+      }, 2000);
+    });
+
+    // 加载保存的代码
+    window.addEventListener('load', function () {
+      const savedCode = localStorage.getItem('saved_php_code');
+      if (savedCode) {
+        document.getElementById('php-code').value = savedCode;
+      }
+
+      updateLineAndCharCount();
+    });
+
+    // 暗黑模式切换
+    document.getElementById('dark-mode-btn').addEventListener('click', function () {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+
+      if (isDark) {
+        document.documentElement.style.setProperty('--dark-color', '#f5f6fa');
+        document.documentElement.style.setProperty('--light-color', '#2d3436');
+        document.documentElement.style.setProperty('--primary-color', '#a29bfe');
+        document.documentElement.style.setProperty('--secondary-color', '#6c5ce7');
+        this.innerHTML = '<i class="fas fa-sun"></i> 明亮模式';
+      } else {
+        document.documentElement.style.setProperty('--dark-color', '#2d3436');
+        document.documentElement.style.setProperty('--light-color', '#f5f6fa');
+        document.documentElement.style.setProperty('--primary-color', '#6c5ce7');
+        document.documentElement.style.setProperty('--secondary-color', '#a29bfe');
+        this.innerHTML = '<i class="fas fa-moon"></i> 暗黑模式';
+      }
+    });
+
+    // 更新行数和字符数统计
+    function updateLineAndCharCount() {
+      const code = document.getElementById('php-code').value;
+      const lineCount = code.split('\n').length;
+      const charCount = code.length;
+
+      document.getElementById('line-count').textContent = `${lineCount} 行`;
+      document.getElementById('char-count').textContent = `${charCount} 字符`;
+    }
+
+    // 监听代码编辑
+    document.getElementById('php-code').addEventListener('input', updateLineAndCharCount);
+
+    // 初始化
+    updateLineAndCharCount();
+  </script>
+</body>
+
+</html>a

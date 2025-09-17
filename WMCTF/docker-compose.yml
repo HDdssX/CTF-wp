@@ -1,0 +1,9 @@
+version: '2.0'
+services:
+  guess:
+    build: ./
+    container_name: guess
+    ports:
+      - "11451:5000"
+    environment:
+      - ICQ_FLAG=flag{test}

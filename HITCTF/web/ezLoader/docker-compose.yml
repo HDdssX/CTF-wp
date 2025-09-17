@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  ezloader:
+    build: .
+    container_name: ezloader
+    ports:
+      - "8080:8080"

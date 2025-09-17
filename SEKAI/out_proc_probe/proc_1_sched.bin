@@ -1,0 +1,22 @@
+python (1, #threads: 1)
+-------------------------------------------------------------------
+se.exec_start                                :      17484150.903192
+se.vruntime                                  :           156.881124
+se.sum_exec_runtime                          :           165.297000
+se.nr_migrations                             :                    3
+nr_switches                                  :                  469
+nr_voluntary_switches                        :                  464
+nr_involuntary_switches                      :                    5
+se.load.weight                               :              1048576
+se.avg.load_sum                              :                32874
+se.avg.runnable_sum                          :             33678203
+se.avg.util_sum                              :             33673277
+se.avg.load_avg                              :                  708
+se.avg.runnable_avg                          :                  708
+se.avg.util_avg                              :                  708
+se.avg.last_update_time                      :       17484150902784
+se.avg.util_est.ewma                         :                  715
+se.avg.util_est.enqueued                     :                  708
+policy                                       :                    0
+prio                                         :                  120
+clock-delta                                  :                    0
