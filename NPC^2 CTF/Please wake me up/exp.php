@@ -1,11 +1,7 @@
 <?php
 class phone{
     public $a;
-    public function test(){
-        if(!preg_match("/[a-z0-9]+/i", $this->a)){
-            eval($this->a);
-        }
-    }
+    public function test() {}
 }
 
 class please{
