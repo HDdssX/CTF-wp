@@ -1,0 +1,99 @@
+[
+  {
+    "id": "security-breach",
+    "name": "security-breach",
+    "description": "Our agents have infiltrated the world's smallest--I mean largest--insider trading network!\n\nThey left a note for you on the server. Best of luck!\n\n`nc challs.umdctf.io 31337`",
+    "category": "web",
+    "author": "tahmid-23",
+    "files": [
+      {
+        "name": "admin.py",
+        "url": "https://umdctf2026-uploads.storage.googleapis.com/uploads/d00866087de3229e5223fe250dbb73eb861cfd2df57c24680b97f81a62bc781b/admin.py"
+      },
+      {
+        "name": "server.py",
+        "url": "https://umdctf2026-uploads.storage.googleapis.com/uploads/703d918b098d2af4d96830e0166e5288c334156a35654d7ac650a2fd9884cae7/server.py"
+      }
+    ],
+    "points": 102,
+    "solves": 100,
+    "sortWeight": 0
+  },
+  {
+    "id": "umdmarket",
+    "name": "umdmarket",
+    "description": "Predicting the future is now legal in all 50 states.\n\n[umdmarket.challs.umdctf.io](https://umdmarket.challs.umdctf.io)",
+    "category": "web",
+    "author": "tahmid-23",
+    "files": [],
+    "points": 124,
+    "solves": 74,
+    "sortWeight": 0
+  },
+  {
+    "id": "live-signal",
+    "name": "live-signal",
+    "description": "Predict the market *now* with signals from expert traders at low fees.\n\n[live-signal.challs.umdctf.io](https://live-signal.challs.umdctf.io)",
+    "category": "web",
+    "author": "tahmid-23",
+    "files": [],
+    "points": 116,
+    "solves": 83,
+    "sortWeight": 0
+  },
+  {
+    "id": "open-insight",
+    "name": "open-insight",
+    "description": "Share your market insights with the world.\n\n[open-insight.challs.umdctf.io](https://open-insight.challs.umdctf.io)\n[open-insight-bot.challs.umdctf.io](https://open-insight-bot.challs.umdctf.io)",
+    "category": "web",
+    "author": "tahmid-23",
+    "files": [],
+    "points": 82,
+    "solves": 131,
+    "sortWeight": 0
+  },
+  {
+    "id": "choppediver-oa",
+    "name": "choppediver oa",
+    "description": "Choppediver (pronounced: chopt-iver) is the leading quant firm in prediction markets. You're invited to take the online assessment.\n\nLooking for candidates that can react quickly in fast-paced environments.\n\n[choppediver.challs.umdctf.io](https://choppediver.challs.umdctf.io)",
+    "category": "web",
+    "author": "tahmid-23",
+    "files": [
+      {
+        "name": "rounds.py",
+        "url": "https://umdctf2026-uploads.storage.googleapis.com/uploads/f411e6fafd47d55d5a629fc394948ba6acf358987d00b90418c313bb308df4df/rounds.py"
+      },
+      {
+        "name": "server.py",
+        "url": "https://umdctf2026-uploads.storage.googleapis.com/uploads/3ca94da047df1f10199e1fe6698929e6ced4bf55ca7f1b1261ba060d2d8be273/server.py"
+      },
+      {
+        "name": "keepalive.py",
+        "url": "https://umdctf2026-uploads.storage.googleapis.com/uploads/88fdf1db86b20d4acd6d77b85ec436b2492fc4d5b96cda4a5517e89b2f181625/keepalive.py"
+      }
+    ],
+    "points": 142,
+    "solves": 58,
+    "sortWeight": 0
+  },
+  {
+    "id": "security-breach-ruin",
+    "name": "security-breach-ruin",
+    "description": "Just like in FNAF, Security Breach was buggy on release.\n\n`nc challs.umdctf.io 31338`",
+    "category": "web",
+    "author": "tahmid-23",
+    "files": [
+      {
+        "name": "admin.py",
+        "url": "https://umdctf2026-uploads.storage.googleapis.com/uploads/e41fc5215d731167be4d1d2f984a72bdd334df695032e55ccaf9f7ce3a645c8c/admin.py"
+      },
+      {
+        "name": "server.py",
+        "url": "https://umdctf2026-uploads.storage.googleapis.com/uploads/703d918b098d2af4d96830e0166e5288c334156a35654d7ac650a2fd9884cae7/server.py"
+      }
+    ],
+    "points": 137,
+    "solves": 62,
+    "sortWeight": 0
+  }
+]

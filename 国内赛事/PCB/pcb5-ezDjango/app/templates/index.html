@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+
+{% block title %}Django · 首页{% endblock %}
+{% block hero_title %}🏪 Django 应用{% endblock %}
+{% block hero_subtitle %}标准应用 · 数据操作演示{% endblock %}
+
+{% block content %}
+<div class="row g-4">
+  <div class="col-12">
+    <div class="alert alert-info card-soft" role="alert">
+      <strong>💡 使用说明：</strong> 该页面演示数据的设置、获取与删除操作。
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <div class="card card-soft h-100">
+      <div class="card-body">
+        <h5 class="card-title">📝 设置数据</h5>
+        <form id="setCacheForm" class="mt-3">
+          <div class="mb-3">
+            <label for="setKey" class="form-label">缓存键名</label>
+            <input type="text" class="form-control" id="setKey" name="key" placeholder="输入缓存键名..." required>
+          </div>
+          <div class="mb-3">
+            <label for="setValue" class="form-label">缓存值</label>
+            <textarea class="form-control" id="setValue" name="value" placeholder="输入缓存值..." rows="4" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="serializeType" class="form-label">序列化类型</label>
+            <select class="form-select" id="serializeType" name="serialize_type">
+              <option value="raw">原始数据 (raw)</option>
+              <option value="pickle">二进制序列化 (pickle)</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">设置缓存</button>
+        </form>
+        <div id="setResult" class="mt-3" style="display: none;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-6">
+    <div class="card card-soft h-100">
+      <div class="card-body">
+        <h5 class="card-title">🔍 获取数据</h5>
+        <form id="getCacheForm" class="mt-3">
+          <div class="mb-3">
+            <label for="getKey" class="form-label">缓存键名</label>
+            <input type="text" class="form-control" id="getKey" name="key" placeholder="输入要获取的缓存键名..." required>
+          </div>
+          <button type="submit" class="btn btn-outline-primary">获取缓存</button>
+        </form>
+        <div id="getResult" class="mt-3" style="display: none;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <div class="card card-soft">
+      <div class="card-body">
+        <h5 class="card-title">🗑️ 删除数据</h5>
+        <form id="deleteCacheForm" class="mt-3">
+          <div class="mb-3">
+            <label for="deleteKey" class="form-label">缓存键名</label>
+            <input type="text" class="form-control" id="deleteKey" name="key" placeholder="输入要删除的缓存键名..." required>
+          </div>
+          <button type="submit" class="btn btn-danger">删除缓存</button>
+        </form>
+        <div id="deleteResult" class="mt-3" style="display: none;"></div>
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+  function setResultStyle(div, ok) {
+    div.className = ok ? 'result success alert alert-success' : 'result error alert alert-danger';
+  }
+
+  document.getElementById('setCacheForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const resultDiv = document.getElementById('setResult');
+    try {
+      const response = await fetch('/cache/set/', { method: 'POST', body: formData });
+      const data = await response.json();
+      resultDiv.style.display = 'block';
+      if (data.status === 'success') {
+        setResultStyle(resultDiv, true);
+        resultDiv.textContent = `✅ ${data.message}\n键名: ${data.key}\n值预览: ${data.value_preview}`;
+      } else {
+        setResultStyle(resultDiv, false);
+        resultDiv.textContent = `❌ 错误: ${data.message}`;
+      }
+    } catch (error) {
+      resultDiv.style.display = 'block';
+      setResultStyle(resultDiv, false);
+      resultDiv.textContent = `❌ 网络错误: ${error.message}`;
+    }
+  });
+
+  document.getElementById('getCacheForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const resultDiv = document.getElementById('getResult');
+    try {
+      const response = await fetch('/cache/get/', { method: 'POST', body: formData });
+      const data = await response.json();
+      resultDiv.style.display = 'block';
+      if (data.status === 'success') {
+        setResultStyle(resultDiv, true);
+        resultDiv.textContent = `✅ ${data.message}\n键名: ${data.key}\n值: ${data.value}`;
+      } else {
+        setResultStyle(resultDiv, false);
+        resultDiv.textContent = `❌ 错误: ${data.message}`;
+      }
+    } catch (error) {
+      resultDiv.style.display = 'block';
+      setResultStyle(resultDiv, false);
+      resultDiv.textContent = `❌ 网络错误: ${error.message}`;
+    }
+  });
+
+  document.getElementById('deleteCacheForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const resultDiv = document.getElementById('deleteResult');
+    try {
+      const response = await fetch('/cache/delete/', { method: 'POST', body: formData });
+      const data = await response.json();
+      resultDiv.style.display = 'block';
+      if (data.status === 'success') {
+        setResultStyle(resultDiv, true);
+        resultDiv.textContent = `✅ ${data.message}`;
+      } else {
+        setResultStyle(resultDiv, false);
+        resultDiv.textContent = `❌ 错误: ${data.message}`;
+      }
+    } catch (error) {
+      resultDiv.style.display = 'block';
+      setResultStyle(resultDiv, false);
+      resultDiv.textContent = `❌ 网络错误: ${error.message}`;
+    }
+  });
+</script>
+{% endblock %}

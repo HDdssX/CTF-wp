@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block title %}文件上传{% endblock %}
+{% block hero_title %}📤 文件上传{% endblock %}
+{% block hero_subtitle %}上传 .cache 文件到临时目录{% endblock %}
+
+{% block content %}
+<div class="row g-4">
+  <div class="col-12">
+    <div class="alert alert-info card-soft" role="alert">
+      <strong>💡 上传说明：</strong> 用于上传 .cache 文件到临时目录以进行缓存测试，仅允许扩展名为 .cache。
+    </div>
+    <div class="alert alert-warning" role="alert">
+      <strong>⚠️ 安全提醒：</strong> 请勿上传恶意文件，系统会进行基本检查。
+    </div>
+  </div>
+
+  <div class="col-12">
+    <div class="card card-soft">
+      <div class="card-body">
+        <h5 class="card-title">📁 选择文件</h5>
+        <form id="uploadForm" class="mt-3">
+          <div class="mb-3">
+            <label for="file" class="form-label">选择 .cache 文件</label>
+            <input type="file" id="file" name="file" class="form-control" accept=".cache" required>
+          </div>
+          <div class="mb-3">
+            <label for="filename" class="form-label">自定义文件名（可选）</label>
+            <input type="text" id="filename" name="filename" class="form-control" placeholder="留空使用原文件名">
+          </div>
+          <button type="submit" class="btn btn-primary">上传文件</button>
+        </form>
+        <div id="uploadResult" class="mt-3" style="display: none;"></div>
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+  function setResultStyle(div, ok) {
+    div.className = ok ? 'result success alert alert-success' : 'result error alert alert-danger';
+  }
+
+  document.getElementById('uploadForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const resultDiv = document.getElementById('uploadResult');
+    try {
+      const response = await fetch('/upload/', { method: 'POST', body: formData });
+      const data = await response.json();
+      resultDiv.style.display = 'block';
+      if (data.status === 'success') {
+        setResultStyle(resultDiv, true);
+        resultDiv.textContent = `✅ ${data.message}\n📁 文件路径: ${data.filepath}`;
+      } else {
+        setResultStyle(resultDiv, false);
+        resultDiv.textContent = `❌ 错误: ${data.message}`;
+      }
+    } catch (error) {
+      resultDiv.style.display = 'block';
+      setResultStyle(resultDiv, false);
+      resultDiv.textContent = `❌ 网络错误: ${error.message}`;
+    }
+  });
+</script>
+{% endblock %}

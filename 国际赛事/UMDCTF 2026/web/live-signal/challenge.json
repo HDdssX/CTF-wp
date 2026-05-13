@@ -1,0 +1,10 @@
+{
+  "id": "live-signal",
+  "name": "live-signal",
+  "description": "Predict the market *now* with signals from expert traders at low fees.\n\n[live-signal.challs.umdctf.io](https://live-signal.challs.umdctf.io)",
+  "category": "web",
+  "author": "tahmid-23",
+  "points": 116,
+  "solves": 83,
+  "sortWeight": 0
+}

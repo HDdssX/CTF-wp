@@ -1,0 +1,33 @@
+<% var title = "Review Paper - AAA'26 Big-1"; %>
+<%- include('../partials/header') %>
+
+<h2>Review: <%= paper.title %></h2>
+<p class="text-muted">Paper <%= paperPublicId(paper) %>. Confidence measures certainty, not kindness.</p>
+
+<form method="POST" action="/reviewer/papers/<%= paper._id %>/review">
+  <div class="row g-3">
+    <div class="col-md-3">
+      <label class="form-label">Score</label>
+      <input name="score" type="number" min="1" max="10" class="form-control" value="<%= review ? review.score : 3 %>" required>
+    </div>
+    <div class="col-md-3">
+      <label class="form-label">Confidence</label>
+      <input name="confidence" type="number" min="1" max="5" class="form-control" value="<%= review ? review.confidence : 3 %>" required>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Recommendation</label>
+      <select name="recommendation" class="form-select">
+        <% ['Strong Reject', 'Reject', 'Weak Reject', 'Weak Accept', 'Accept'].forEach((option) => { %>
+          <option <%= review && review.recommendation === option ? 'selected' : '' %>><%= option %></option>
+        <% }) %>
+      </select>
+    </div>
+  </div>
+  <div class="mb-3 mt-3">
+    <label class="form-label">Comments</label>
+    <textarea name="comments" rows="8" class="form-control"><%= review ? review.comments : '' %></textarea>
+  </div>
+  <button class="btn btn-success">Submit Review</button>
+</form>
+
+<%- include('../partials/footer') %>

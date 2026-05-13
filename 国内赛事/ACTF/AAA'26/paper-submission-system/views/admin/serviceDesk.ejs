@@ -1,0 +1,58 @@
+<% var title = "Service Desk - AAA'26 Big-1"; %>
+<%- include('../partials/header') %>
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <div>
+    <h2 class="mb-0">Reviewer Service Desk</h2>
+    <p class="text-muted small mb-0">Recent committee service checks for reviewer onboarding.</p>
+  </div>
+  <a class="btn btn-outline-secondary" href="/admin/papers">Papers</a>
+</div>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>When</th>
+      <th>User</th>
+      <th>Track</th>
+      <th>Record</th>
+      <th>Rubric</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% syncs.forEach((sync) => { %>
+      <tr>
+        <td><%= sync.createdAt ? sync.createdAt.toISOString() : '' %></td>
+        <td>
+          <%= sync.username || 'unknown' %>
+          <% if (sync.email) { %><div class="text-muted small"><%= sync.email %></div><% } %>
+        </td>
+        <td><%= sync.track || 'TBD' %></td>
+        <td>
+          <% if (sync.serviceRecordSummary) { %>
+            <%= sync.serviceRecordSummary.source %>
+            <div class="text-muted small"><%= sync.serviceRecordSummary.label %></div>
+          <% } else { %>
+            <span class="text-muted">No service record</span>
+          <% } %>
+        </td>
+        <td>
+          <%= sync.rubricId || 'TBD' %>
+          <% if (sync.rubricLabels && sync.rubricLabels.length) { %>
+            <div class="text-muted small"><%= sync.rubricLabels.join(', ') %></div>
+          <% } %>
+        </td>
+        <td>
+          <span class="badge text-bg-<%= sync.status === 'matched' ? 'success' : 'secondary' %>"><%= sync.status %></span>
+          <div class="text-muted small"><%= sync.message %></div>
+        </td>
+      </tr>
+    <% }) %>
+    <% if (!syncs.length) { %>
+      <tr><td colspan="6" class="text-muted">No committee service checks have been recorded yet.</td></tr>
+    <% } %>
+  </tbody>
+</table>
+
+<%- include('../partials/footer') %>

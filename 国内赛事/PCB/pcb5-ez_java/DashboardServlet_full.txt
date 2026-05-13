@@ -1,0 +1,1746 @@
+Classfile /F:/CTF/CTF-wp/PCB/pcb5-ez_java/DashboardServlet.class
+  Last modified 2025年12月13日; size 10532 bytes
+  SHA-256 checksum fc2ec4c069a45e5b86be9b8caeccc1887711b619447ebad8bda01f250ebca9ca
+  Compiled from "DashboardServlet.java"
+public class com.ctf.DashboardServlet extends javax.servlet.http.HttpServlet
+  minor version: 0
+  major version: 53
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #8                          // com/ctf/DashboardServlet
+  super_class: #2                         // javax/servlet/http/HttpServlet
+  interfaces: 0, fields: 0, methods: 14, attributes: 3
+Constant pool:
+    #1 = Methodref          #2.#3         // javax/servlet/http/HttpServlet."<init>":()V
+    #2 = Class              #4            // javax/servlet/http/HttpServlet
+    #3 = NameAndType        #5:#6         // "<init>":()V
+    #4 = Utf8               javax/servlet/http/HttpServlet
+    #5 = Utf8               <init>
+    #6 = Utf8               ()V
+    #7 = Methodref          #8.#9         // com/ctf/DashboardServlet.validateLogin:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Z
+    #8 = Class              #10           // com/ctf/DashboardServlet
+    #9 = NameAndType        #11:#12       // validateLogin:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Z
+   #10 = Utf8               com/ctf/DashboardServlet
+   #11 = Utf8               validateLogin
+   #12 = Utf8               (Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Z
+   #13 = InterfaceMethodref #14.#15       // javax/servlet/http/HttpServletRequest.getPathInfo:()Ljava/lang/String;
+   #14 = Class              #16           // javax/servlet/http/HttpServletRequest
+   #15 = NameAndType        #17:#18       // getPathInfo:()Ljava/lang/String;
+   #16 = Utf8               javax/servlet/http/HttpServletRequest
+   #17 = Utf8               getPathInfo
+   #18 = Utf8               ()Ljava/lang/String;
+   #19 = Methodref          #20.#21       // java/lang/String.hashCode:()I
+   #20 = Class              #22           // java/lang/String
+   #21 = NameAndType        #23:#24       // hashCode:()I
+   #22 = Utf8               java/lang/String
+   #23 = Utf8               hashCode
+   #24 = Utf8               ()I
+   #25 = String             #26           // /list
+   #26 = Utf8               /list
+   #27 = Methodref          #20.#28       // java/lang/String.equals:(Ljava/lang/Object;)Z
+   #28 = NameAndType        #29:#30       // equals:(Ljava/lang/Object;)Z
+   #29 = Utf8               equals
+   #30 = Utf8               (Ljava/lang/Object;)Z
+   #31 = String             #32           // /download
+   #32 = Utf8               /download
+   #33 = String             #34           // /stats
+   #34 = Utf8               /stats
+   #35 = String             #36           // /recent
+   #36 = Utf8               /recent
+   #37 = Methodref          #8.#38        // com/ctf/DashboardServlet.listFiles:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+   #38 = NameAndType        #39:#40       // listFiles:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+   #39 = Utf8               listFiles
+   #40 = Utf8               (Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+   #41 = Methodref          #8.#42        // com/ctf/DashboardServlet.downloadFile:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+   #42 = NameAndType        #43:#40       // downloadFile:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+   #43 = Utf8               downloadFile
+   #44 = Methodref          #8.#45        // com/ctf/DashboardServlet.getStats:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+   #45 = NameAndType        #46:#40       // getStats:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+   #46 = Utf8               getStats
+   #47 = Methodref          #8.#48        // com/ctf/DashboardServlet.getRecent:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+   #48 = NameAndType        #49:#40       // getRecent:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+   #49 = Utf8               getRecent
+   #50 = InterfaceMethodref #51.#52       // javax/servlet/http/HttpServletResponse.setStatus:(I)V
+   #51 = Class              #53           // javax/servlet/http/HttpServletResponse
+   #52 = NameAndType        #54:#55       // setStatus:(I)V
+   #53 = Utf8               javax/servlet/http/HttpServletResponse
+   #54 = Utf8               setStatus
+   #55 = Utf8               (I)V
+   #56 = InterfaceMethodref #51.#57       // javax/servlet/http/HttpServletResponse.getWriter:()Ljava/io/PrintWriter;
+   #57 = NameAndType        #58:#59       // getWriter:()Ljava/io/PrintWriter;
+   #58 = Utf8               getWriter
+   #59 = Utf8               ()Ljava/io/PrintWriter;
+   #60 = String             #61           // {\"error\":\"unknown GET path\"}
+   #61 = Utf8               {\"error\":\"unknown GET path\"}
+   #62 = Methodref          #63.#64       // java/io/PrintWriter.write:(Ljava/lang/String;)V
+   #63 = Class              #65           // java/io/PrintWriter
+   #64 = NameAndType        #66:#67       // write:(Ljava/lang/String;)V
+   #65 = Utf8               java/io/PrintWriter
+   #66 = Utf8               write
+   #67 = Utf8               (Ljava/lang/String;)V
+   #68 = String             #69           // /upload
+   #69 = Utf8               /upload
+   #70 = Methodref          #8.#71        // com/ctf/DashboardServlet.uploadFile:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+   #71 = NameAndType        #72:#40       // uploadFile:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+   #72 = Utf8               uploadFile
+   #73 = String             #74           // {\"error\":\"unknown POST path\"}
+   #74 = Utf8               {\"error\":\"unknown POST path\"}
+   #75 = InterfaceMethodref #14.#76       // javax/servlet/http/HttpServletRequest.getCookies:()[Ljavax/servlet/http/Cookie;
+   #76 = NameAndType        #77:#78       // getCookies:()[Ljavax/servlet/http/Cookie;
+   #77 = Utf8               getCookies
+   #78 = Utf8               ()[Ljavax/servlet/http/Cookie;
+   #79 = String             #80           // jwt
+   #80 = Utf8               jwt
+   #81 = Methodref          #82.#83       // javax/servlet/http/Cookie.getName:()Ljava/lang/String;
+   #82 = Class              #84           // javax/servlet/http/Cookie
+   #83 = NameAndType        #85:#18       // getName:()Ljava/lang/String;
+   #84 = Utf8               javax/servlet/http/Cookie
+   #85 = Utf8               getName
+   #86 = Methodref          #82.#87       // javax/servlet/http/Cookie.getValue:()Ljava/lang/String;
+   #87 = NameAndType        #88:#18       // getValue:()Ljava/lang/String;
+   #88 = Utf8               getValue
+   #89 = Methodref          #90.#91       // com/ctf/JwtUtil.validateToken:(Ljava/lang/String;)Ljava/lang/String;
+   #90 = Class              #92           // com/ctf/JwtUtil
+   #91 = NameAndType        #93:#94       // validateToken:(Ljava/lang/String;)Ljava/lang/String;
+   #92 = Utf8               com/ctf/JwtUtil
+   #93 = Utf8               validateToken
+   #94 = Utf8               (Ljava/lang/String;)Ljava/lang/String;
+   #95 = InterfaceMethodref #51.#96       // javax/servlet/http/HttpServletResponse.sendError:(I)V
+   #96 = NameAndType        #97:#55       // sendError:(I)V
+   #97 = Utf8               sendError
+   #98 = String             #99           // application/json;charset=UTF-8
+   #99 = Utf8               application/json;charset=UTF-8
+  #100 = InterfaceMethodref #51.#101      // javax/servlet/http/HttpServletResponse.setContentType:(Ljava/lang/String;)V
+  #101 = NameAndType        #102:#67      // setContentType:(Ljava/lang/String;)V
+  #102 = Utf8               setContentType
+  #103 = String             #104          // path
+  #104 = Utf8               path
+  #105 = InterfaceMethodref #14.#106      // javax/servlet/http/HttpServletRequest.getParameter:(Ljava/lang/String;)Ljava/lang/String;
+  #106 = NameAndType        #107:#94      // getParameter:(Ljava/lang/String;)Ljava/lang/String;
+  #107 = Utf8               getParameter
+  #108 = String             #109          // {\"error\":\"no path\"}
+  #109 = Utf8               {\"error\":\"no path\"}
+  #110 = Class              #111          // java/io/File
+  #111 = Utf8               java/io/File
+  #112 = Methodref          #8.#113       // com/ctf/DashboardServlet.getServletContext:()Ljavax/servlet/ServletContext;
+  #113 = NameAndType        #114:#115     // getServletContext:()Ljavax/servlet/ServletContext;
+  #114 = Utf8               getServletContext
+  #115 = Utf8               ()Ljavax/servlet/ServletContext;
+  #116 = Fieldref           #117.#118     // com/ctf/AdminDashboardServlet.resourceDir:Ljava/lang/String;
+  #117 = Class              #119          // com/ctf/AdminDashboardServlet
+  #118 = NameAndType        #120:#121     // resourceDir:Ljava/lang/String;
+  #119 = Utf8               com/ctf/AdminDashboardServlet
+  #120 = Utf8               resourceDir
+  #121 = Utf8               Ljava/lang/String;
+  #122 = InterfaceMethodref #123.#124     // javax/servlet/ServletContext.getRealPath:(Ljava/lang/String;)Ljava/lang/String;
+  #123 = Class              #125          // javax/servlet/ServletContext
+  #124 = NameAndType        #126:#94      // getRealPath:(Ljava/lang/String;)Ljava/lang/String;
+  #125 = Utf8               javax/servlet/ServletContext
+  #126 = Utf8               getRealPath
+  #127 = Methodref          #110.#128     // java/io/File."<init>":(Ljava/lang/String;)V
+  #128 = NameAndType        #5:#67        // "<init>":(Ljava/lang/String;)V
+  #129 = Methodref          #110.#130     // java/io/File.getCanonicalFile:()Ljava/io/File;
+  #130 = NameAndType        #131:#132     // getCanonicalFile:()Ljava/io/File;
+  #131 = Utf8               getCanonicalFile
+  #132 = Utf8               ()Ljava/io/File;
+  #133 = Methodref          #110.#134     // java/io/File."<init>":(Ljava/io/File;Ljava/lang/String;)V
+  #134 = NameAndType        #5:#135       // "<init>":(Ljava/io/File;Ljava/lang/String;)V
+  #135 = Utf8               (Ljava/io/File;Ljava/lang/String;)V
+  #136 = Methodref          #110.#137     // java/io/File.getPath:()Ljava/lang/String;
+  #137 = NameAndType        #138:#18      // getPath:()Ljava/lang/String;
+  #138 = Utf8               getPath
+  #139 = Methodref          #20.#140      // java/lang/String.startsWith:(Ljava/lang/String;)Z
+  #140 = NameAndType        #141:#142     // startsWith:(Ljava/lang/String;)Z
+  #141 = Utf8               startsWith
+  #142 = Utf8               (Ljava/lang/String;)Z
+  #143 = String             #144          // application/json; charset=UTF-8
+  #144 = Utf8               application/json; charset=UTF-8
+  #145 = String             #146          // {\"error\":\"invalid path\"}
+  #146 = Utf8               {\"error\":\"invalid path\"}
+  #147 = Fieldref           #148.#149     // java/lang/System.out:Ljava/io/PrintStream;
+  #148 = Class              #150          // java/lang/System
+  #149 = NameAndType        #151:#152     // out:Ljava/io/PrintStream;
+  #150 = Utf8               java/lang/System
+  #151 = Utf8               out
+  #152 = Utf8               Ljava/io/PrintStream;
+  #153 = Methodref          #154.#155     // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #154 = Class              #156          // java/io/PrintStream
+  #155 = NameAndType        #157:#67      // println:(Ljava/lang/String;)V
+  #156 = Utf8               java/io/PrintStream
+  #157 = Utf8               println
+  #158 = Methodref          #8.#159       // com/ctf/DashboardServlet.scanDir:(Ljava/io/File;Ljava/io/File;)Lorg/json/JSONArray;
+  #159 = NameAndType        #160:#161     // scanDir:(Ljava/io/File;Ljava/io/File;)Lorg/json/JSONArray;
+  #160 = Utf8               scanDir
+  #161 = Utf8               (Ljava/io/File;Ljava/io/File;)Lorg/json/JSONArray;
+  #162 = Methodref          #163.#164     // org/json/JSONArray.toString:()Ljava/lang/String;
+  #163 = Class              #165          // org/json/JSONArray
+  #164 = NameAndType        #166:#18      // toString:()Ljava/lang/String;
+  #165 = Utf8               org/json/JSONArray
+  #166 = Utf8               toString
+  #167 = Methodref          #163.#3       // org/json/JSONArray."<init>":()V
+  #168 = Methodref          #110.#169     // java/io/File.listFiles:()[Ljava/io/File;
+  #169 = NameAndType        #39:#170      // listFiles:()[Ljava/io/File;
+  #170 = Utf8               ()[Ljava/io/File;
+  #171 = Class              #172          // org/json/JSONObject
+  #172 = Utf8               org/json/JSONObject
+  #173 = Methodref          #171.#3       // org/json/JSONObject."<init>":()V
+  #174 = String             #175          // name
+  #175 = Utf8               name
+  #176 = Methodref          #110.#83      // java/io/File.getName:()Ljava/lang/String;
+  #177 = Methodref          #171.#178     // org/json/JSONObject.put:(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+  #178 = NameAndType        #179:#180     // put:(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+  #179 = Utf8               put
+  #180 = Utf8               (Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+  #181 = String             #182          // isDir
+  #182 = Utf8               isDir
+  #183 = Methodref          #110.#184     // java/io/File.isDirectory:()Z
+  #184 = NameAndType        #185:#186     // isDirectory:()Z
+  #185 = Utf8               isDirectory
+  #186 = Utf8               ()Z
+  #187 = Methodref          #171.#188     // org/json/JSONObject.put:(Ljava/lang/String;Z)Lorg/json/JSONObject;
+  #188 = NameAndType        #179:#189     // put:(Ljava/lang/String;Z)Lorg/json/JSONObject;
+  #189 = Utf8               (Ljava/lang/String;Z)Lorg/json/JSONObject;
+  #190 = Methodref          #110.#191     // java/io/File.toPath:()Ljava/nio/file/Path;
+  #191 = NameAndType        #192:#193     // toPath:()Ljava/nio/file/Path;
+  #192 = Utf8               toPath
+  #193 = Utf8               ()Ljava/nio/file/Path;
+  #194 = InterfaceMethodref #195.#196     // java/nio/file/Path.relativize:(Ljava/nio/file/Path;)Ljava/nio/file/Path;
+  #195 = Class              #197          // java/nio/file/Path
+  #196 = NameAndType        #198:#199     // relativize:(Ljava/nio/file/Path;)Ljava/nio/file/Path;
+  #197 = Utf8               java/nio/file/Path
+  #198 = Utf8               relativize
+  #199 = Utf8               (Ljava/nio/file/Path;)Ljava/nio/file/Path;
+  #200 = InterfaceMethodref #195.#164     // java/nio/file/Path.toString:()Ljava/lang/String;
+  #201 = String             #202          // size
+  #202 = Utf8               size
+  #203 = Methodref          #110.#204     // java/io/File.isFile:()Z
+  #204 = NameAndType        #205:#186     // isFile:()Z
+  #205 = Utf8               isFile
+  #206 = Methodref          #110.#207     // java/io/File.length:()J
+  #207 = NameAndType        #208:#209     // length:()J
+  #208 = Utf8               length
+  #209 = Utf8               ()J
+  #210 = Methodref          #171.#211     // org/json/JSONObject.put:(Ljava/lang/String;J)Lorg/json/JSONObject;
+  #211 = NameAndType        #179:#212     // put:(Ljava/lang/String;J)Lorg/json/JSONObject;
+  #212 = Utf8               (Ljava/lang/String;J)Lorg/json/JSONObject;
+  #213 = String             #214          // lastModified
+  #214 = Utf8               lastModified
+  #215 = Methodref          #110.#216     // java/io/File.lastModified:()J
+  #216 = NameAndType        #214:#209     // lastModified:()J
+  #217 = String             #218          // children
+  #218 = Utf8               children
+  #219 = Methodref          #163.#220     // org/json/JSONArray.put:(Ljava/lang/Object;)Lorg/json/JSONArray;
+  #220 = NameAndType        #179:#221     // put:(Ljava/lang/Object;)Lorg/json/JSONArray;
+  #221 = Utf8               (Ljava/lang/Object;)Lorg/json/JSONArray;
+  #222 = String             #223          // file
+  #223 = Utf8               file
+  #224 = InterfaceMethodref #14.#225      // javax/servlet/http/HttpServletRequest.getPart:(Ljava/lang/String;)Ljavax/servlet/http/Part;
+  #225 = NameAndType        #226:#227     // getPart:(Ljava/lang/String;)Ljavax/servlet/http/Part;
+  #226 = Utf8               getPart
+  #227 = Utf8               (Ljava/lang/String;)Ljavax/servlet/http/Part;
+  #228 = String             #229          // {\"error\":\"no file\"}
+  #229 = Utf8               {\"error\":\"no file\"}
+  #230 = InterfaceMethodref #231.#232     // javax/servlet/http/Part.getSubmittedFileName:()Ljava/lang/String;
+  #231 = Class              #233          // javax/servlet/http/Part
+  #232 = NameAndType        #234:#18      // getSubmittedFileName:()Ljava/lang/String;
+  #233 = Utf8               javax/servlet/http/Part
+  #234 = Utf8               getSubmittedFileName
+  #235 = Methodref          #154.#236     // java/io/PrintStream.println:(Ljava/lang/Object;)V
+  #236 = NameAndType        #157:#237     // println:(Ljava/lang/Object;)V
+  #237 = Utf8               (Ljava/lang/Object;)V
+  #238 = Methodref          #110.#239     // java/io/File.getParentFile:()Ljava/io/File;
+  #239 = NameAndType        #240:#132     // getParentFile:()Ljava/io/File;
+  #240 = Utf8               getParentFile
+  #241 = InterfaceMethodref #195.#242     // java/nio/file/Path.startsWith:(Ljava/nio/file/Path;)Z
+  #242 = NameAndType        #141:#243     // startsWith:(Ljava/nio/file/Path;)Z
+  #243 = Utf8               (Ljava/nio/file/Path;)Z
+  #244 = InterfaceMethodref #231.#245     // javax/servlet/http/Part.getInputStream:()Ljava/io/InputStream;
+  #245 = NameAndType        #246:#247     // getInputStream:()Ljava/io/InputStream;
+  #246 = Utf8               getInputStream
+  #247 = Utf8               ()Ljava/io/InputStream;
+  #248 = Class              #249          // java/nio/file/OpenOption
+  #249 = Utf8               java/nio/file/OpenOption
+  #250 = Methodref          #251.#252     // java/nio/file/Files.newOutputStream:(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/OutputStream;
+  #251 = Class              #253          // java/nio/file/Files
+  #252 = NameAndType        #254:#255     // newOutputStream:(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/OutputStream;
+  #253 = Utf8               java/nio/file/Files
+  #254 = Utf8               newOutputStream
+  #255 = Utf8               (Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/OutputStream;
+  #256 = Methodref          #257.#258     // java/io/InputStream.transferTo:(Ljava/io/OutputStream;)J
+  #257 = Class              #259          // java/io/InputStream
+  #258 = NameAndType        #260:#261     // transferTo:(Ljava/io/OutputStream;)J
+  #259 = Utf8               java/io/InputStream
+  #260 = Utf8               transferTo
+  #261 = Utf8               (Ljava/io/OutputStream;)J
+  #262 = Methodref          #263.#264     // java/io/OutputStream.close:()V
+  #263 = Class              #265          // java/io/OutputStream
+  #264 = NameAndType        #266:#6       // close:()V
+  #265 = Utf8               java/io/OutputStream
+  #266 = Utf8               close
+  #267 = Class              #268          // java/lang/Throwable
+  #268 = Utf8               java/lang/Throwable
+  #269 = Methodref          #267.#270     // java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+  #270 = NameAndType        #271:#272     // addSuppressed:(Ljava/lang/Throwable;)V
+  #271 = Utf8               addSuppressed
+  #272 = Utf8               (Ljava/lang/Throwable;)V
+  #273 = Methodref          #257.#264     // java/io/InputStream.close:()V
+  #274 = InvokeDynamic      #0:#275       // #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #275 = NameAndType        #276:#94      // makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #276 = Utf8               makeConcatWithConstants
+  #277 = String             #278          // uploads
+  #278 = Utf8               uploads
+  #279 = String             #280          // application/octet-stream
+  #280 = Utf8               application/octet-stream
+  #281 = String             #282          // Content-Disposition
+  #282 = Utf8               Content-Disposition
+  #283 = String             #284          // UTF-8
+  #284 = Utf8               UTF-8
+  #285 = Methodref          #286.#287     // java/net/URLEncoder.encode:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #286 = Class              #288          // java/net/URLEncoder
+  #287 = NameAndType        #289:#290     // encode:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #288 = Utf8               java/net/URLEncoder
+  #289 = Utf8               encode
+  #290 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #291 = InvokeDynamic      #1:#275       // #1:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #292 = InterfaceMethodref #51.#293      // javax/servlet/http/HttpServletResponse.setHeader:(Ljava/lang/String;Ljava/lang/String;)V
+  #293 = NameAndType        #294:#295     // setHeader:(Ljava/lang/String;Ljava/lang/String;)V
+  #294 = Utf8               setHeader
+  #295 = Utf8               (Ljava/lang/String;Ljava/lang/String;)V
+  #296 = Methodref          #251.#297     // java/nio/file/Files.newInputStream:(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/InputStream;
+  #297 = NameAndType        #298:#299     // newInputStream:(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/InputStream;
+  #298 = Utf8               newInputStream
+  #299 = Utf8               (Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/InputStream;
+  #300 = InterfaceMethodref #51.#301      // javax/servlet/http/HttpServletResponse.getOutputStream:()Ljavax/servlet/ServletOutputStream;
+  #301 = NameAndType        #302:#303     // getOutputStream:()Ljavax/servlet/ServletOutputStream;
+  #302 = Utf8               getOutputStream
+  #303 = Utf8               ()Ljavax/servlet/ServletOutputStream;
+  #304 = Class              #305          // com/ctf/DashboardServlet$Stats
+  #305 = Utf8               com/ctf/DashboardServlet$Stats
+  #306 = Methodref          #304.#307     // com/ctf/DashboardServlet$Stats."<init>":(Lcom/ctf/DashboardServlet$1;)V
+  #307 = NameAndType        #5:#308       // "<init>":(Lcom/ctf/DashboardServlet$1;)V
+  #308 = Utf8               (Lcom/ctf/DashboardServlet$1;)V
+  #309 = Methodref          #8.#310       // com/ctf/DashboardServlet.computeStats:(Ljava/io/File;Lcom/ctf/DashboardServlet$Stats;)V
+  #310 = NameAndType        #311:#312     // computeStats:(Ljava/io/File;Lcom/ctf/DashboardServlet$Stats;)V
+  #311 = Utf8               computeStats
+  #312 = Utf8               (Ljava/io/File;Lcom/ctf/DashboardServlet$Stats;)V
+  #313 = String             #314          // files
+  #314 = Utf8               files
+  #315 = Fieldref           #304.#316     // com/ctf/DashboardServlet$Stats.files:J
+  #316 = NameAndType        #314:#317     // files:J
+  #317 = Utf8               J
+  #318 = String             #319          // folders
+  #319 = Utf8               folders
+  #320 = Fieldref           #304.#321     // com/ctf/DashboardServlet$Stats.folders:J
+  #321 = NameAndType        #319:#317     // folders:J
+  #322 = Fieldref           #304.#323     // com/ctf/DashboardServlet$Stats.size:J
+  #323 = NameAndType        #202:#317     // size:J
+  #324 = Methodref          #171.#164     // org/json/JSONObject.toString:()Ljava/lang/String;
+  #325 = Methodref          #110.#326     // java/io/File.exists:()Z
+  #326 = NameAndType        #327:#186     // exists:()Z
+  #327 = Utf8               exists
+  #328 = Methodref          #329.#330     // java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+  #329 = Class              #331          // java/util/Objects
+  #330 = NameAndType        #332:#333     // requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+  #331 = Utf8               java/util/Objects
+  #332 = Utf8               requireNonNull
+  #333 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #334 = Class              #335          // "[Ljava/io/File;"
+  #335 = Utf8               [Ljava/io/File;
+  #336 = Class              #337          // java/util/ArrayList
+  #337 = Utf8               java/util/ArrayList
+  #338 = Methodref          #336.#3       // java/util/ArrayList."<init>":()V
+  #339 = Methodref          #8.#340       // com/ctf/DashboardServlet.collect:(Ljava/io/File;Ljava/util/List;)V
+  #340 = NameAndType        #341:#342     // collect:(Ljava/io/File;Ljava/util/List;)V
+  #341 = Utf8               collect
+  #342 = Utf8               (Ljava/io/File;Ljava/util/List;)V
+  #343 = InvokeDynamic      #2:#344       // #2:compare:()Ljava/util/Comparator;
+  #344 = NameAndType        #345:#346     // compare:()Ljava/util/Comparator;
+  #345 = Utf8               compare
+  #346 = Utf8               ()Ljava/util/Comparator;
+  #347 = InterfaceMethodref #348.#349     // java/util/List.sort:(Ljava/util/Comparator;)V
+  #348 = Class              #350          // java/util/List
+  #349 = NameAndType        #351:#352     // sort:(Ljava/util/Comparator;)V
+  #350 = Utf8               java/util/List
+  #351 = Utf8               sort
+  #352 = Utf8               (Ljava/util/Comparator;)V
+  #353 = InterfaceMethodref #348.#354     // java/util/List.size:()I
+  #354 = NameAndType        #202:#24      // size:()I
+  #355 = Methodref          #356.#357     // java/lang/Math.min:(II)I
+  #356 = Class              #358          // java/lang/Math
+  #357 = NameAndType        #359:#360     // min:(II)I
+  #358 = Utf8               java/lang/Math
+  #359 = Utf8               min
+  #360 = Utf8               (II)I
+  #361 = InterfaceMethodref #348.#362     // java/util/List.get:(I)Ljava/lang/Object;
+  #362 = NameAndType        #363:#364     // get:(I)Ljava/lang/Object;
+  #363 = Utf8               get
+  #364 = Utf8               (I)Ljava/lang/Object;
+  #365 = InterfaceMethodref #348.#366     // java/util/List.add:(Ljava/lang/Object;)Z
+  #366 = NameAndType        #367:#30      // add:(Ljava/lang/Object;)Z
+  #367 = Utf8               add
+  #368 = Methodref          #369.#370     // java/lang/Long.compare:(JJ)I
+  #369 = Class              #371          // java/lang/Long
+  #370 = NameAndType        #345:#372     // compare:(JJ)I
+  #371 = Utf8               java/lang/Long
+  #372 = Utf8               (JJ)I
+  #373 = Utf8               Code
+  #374 = Utf8               LineNumberTable
+  #375 = Utf8               LocalVariableTable
+  #376 = Utf8               this
+  #377 = Utf8               Lcom/ctf/DashboardServlet;
+  #378 = Utf8               doGet
+  #379 = Utf8               req
+  #380 = Utf8               Ljavax/servlet/http/HttpServletRequest;
+  #381 = Utf8               resp
+  #382 = Utf8               Ljavax/servlet/http/HttpServletResponse;
+  #383 = Utf8               StackMapTable
+  #384 = Utf8               Exceptions
+  #385 = Class              #386          // javax/servlet/ServletException
+  #386 = Utf8               javax/servlet/ServletException
+  #387 = Class              #388          // java/io/IOException
+  #388 = Utf8               java/io/IOException
+  #389 = Utf8               doPost
+  #390 = Utf8               value
+  #391 = Utf8               cookie
+  #392 = Utf8               Ljavax/servlet/http/Cookie;
+  #393 = Utf8               cookies
+  #394 = Utf8               [Ljavax/servlet/http/Cookie;
+  #395 = Class              #394          // "[Ljavax/servlet/http/Cookie;"
+  #396 = Utf8               validatePath
+  #397 = Utf8               base
+  #398 = Utf8               Ljava/io/File;
+  #399 = Utf8               arr
+  #400 = Utf8               Lorg/json/JSONArray;
+  #401 = Utf8               obj
+  #402 = Utf8               Lorg/json/JSONObject;
+  #403 = Utf8               f
+  #404 = Utf8               root
+  #405 = Utf8               current
+  #406 = Utf8               Ljava/io/OutputStream;
+  #407 = Utf8               in
+  #408 = Utf8               Ljava/io/InputStream;
+  #409 = Utf8               part
+  #410 = Utf8               Ljavax/servlet/http/Part;
+  #411 = Utf8               target
+  #412 = Utf8               s
+  #413 = Utf8               Lcom/ctf/DashboardServlet$Stats;
+  #414 = Utf8               c
+  #415 = Utf8               i
+  #416 = Utf8               I
+  #417 = Utf8               list
+  #418 = Utf8               Ljava/util/List;
+  #419 = Utf8               LocalVariableTypeTable
+  #420 = Utf8               Ljava/util/List<Ljava/io/File;>;
+  #421 = Utf8               Signature
+  #422 = Utf8               (Ljava/io/File;Ljava/util/List<Ljava/io/File;>;)V
+  #423 = Utf8               lambda$getRecent$0
+  #424 = Utf8               (Ljava/io/File;Ljava/io/File;)I
+  #425 = Utf8               a
+  #426 = Utf8               b
+  #427 = Utf8               SourceFile
+  #428 = Utf8               DashboardServlet.java
+  #429 = Utf8               BootstrapMethods
+  #430 = MethodHandle       6:#431        // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #431 = Methodref          #432.#433     // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #432 = Class              #434          // java/lang/invoke/StringConcatFactory
+  #433 = NameAndType        #276:#435     // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #434 = Utf8               java/lang/invoke/StringConcatFactory
+  #435 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #436 = String             #437          // {\"upload\":\"ok\",\"filename\":\"\u0001\"}
+  #437 = Utf8               {\"upload\":\"ok\",\"filename\":\"\u0001\"}
+  #438 = String             #439          // attachment;filename=\u0001
+  #439 = Utf8               attachment;filename=\u0001
+  #440 = MethodHandle       6:#441        // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #441 = Methodref          #442.#443     // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #442 = Class              #444          // java/lang/invoke/LambdaMetafactory
+  #443 = NameAndType        #445:#446     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #444 = Utf8               java/lang/invoke/LambdaMetafactory
+  #445 = Utf8               metafactory
+  #446 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #447 = MethodType         #448          //  (Ljava/lang/Object;Ljava/lang/Object;)I
+  #448 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)I
+  #449 = MethodHandle       6:#450        // REF_invokeStatic com/ctf/DashboardServlet.lambda$getRecent$0:(Ljava/io/File;Ljava/io/File;)I
+  #450 = Methodref          #8.#451       // com/ctf/DashboardServlet.lambda$getRecent$0:(Ljava/io/File;Ljava/io/File;)I
+  #451 = NameAndType        #423:#424     // lambda$getRecent$0:(Ljava/io/File;Ljava/io/File;)I
+  #452 = MethodType         #424          //  (Ljava/io/File;Ljava/io/File;)I
+  #453 = Utf8               InnerClasses
+  #454 = Utf8               Stats
+  #455 = Class              #456          // com/ctf/DashboardServlet$1
+  #456 = Utf8               com/ctf/DashboardServlet$1
+  #457 = Class              #458          // java/lang/invoke/MethodHandles$Lookup
+  #458 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #459 = Class              #460          // java/lang/invoke/MethodHandles
+  #460 = Utf8               java/lang/invoke/MethodHandles
+  #461 = Utf8               Lookup
+{
+  public com.ctf.DashboardServlet();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method javax/servlet/http/HttpServlet."<init>":()V
+         4: return
+      LineNumberTable:
+        line 13: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/ctf/DashboardServlet;
+
+  protected void doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException, java.io.IOException;
+    descriptor: (Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=3, locals=6, args_size=3
+         0: aload_1
+         1: aload_2
+         2: invokestatic  #7                  // Method validateLogin:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Z
+         5: ifeq          216
+         8: aload_1
+         9: invokeinterface #13,  1           // InterfaceMethod javax/servlet/http/HttpServletRequest.getPathInfo:()Ljava/lang/String;
+        14: astore_3
+        15: aload_3
+        16: astore        4
+        18: iconst_m1
+        19: istore        5
+        21: aload         4
+        23: invokevirtual #19                 // Method java/lang/String.hashCode:()I
+        26: lookupswitch  { // 4
+
+             -1918162505: 84
+
+                46727501: 68
+
+              1455327696: 100
+
+              2123048778: 116
+                 default: 129
+            }
+        68: aload         4
+        70: ldc           #25                 // String /list
+        72: invokevirtual #27                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        75: ifeq          129
+        78: iconst_0
+        79: istore        5
+        81: goto          129
+        84: aload         4
+        86: ldc           #31                 // String /download
+        88: invokevirtual #27                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        91: ifeq          129
+        94: iconst_1
+        95: istore        5
+        97: goto          129
+       100: aload         4
+       102: ldc           #33                 // String /stats
+       104: invokevirtual #27                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+       107: ifeq          129
+       110: iconst_2
+       111: istore        5
+       113: goto          129
+       116: aload         4
+       118: ldc           #35                 // String /recent
+       120: invokevirtual #27                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+       123: ifeq          129
+       126: iconst_3
+       127: istore        5
+       129: iload         5
+       131: tableswitch   { // 0 to 3
+
+                       0: 160
+
+                       1: 169
+
+                       2: 178
+
+                       3: 187
+                 default: 196
+            }
+       160: aload_0
+       161: aload_1
+       162: aload_2
+       163: invokespecial #37                 // Method listFiles:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+       166: goto          216
+       169: aload_0
+       170: aload_1
+       171: aload_2
+       172: invokespecial #41                 // Method downloadFile:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+       175: goto          216
+       178: aload_0
+       179: aload_1
+       180: aload_2
+       181: invokespecial #44                 // Method getStats:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+       184: goto          216
+       187: aload_0
+       188: aload_1
+       189: aload_2
+       190: invokespecial #47                 // Method getRecent:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+       193: goto          216
+       196: aload_2
+       197: sipush        404
+       200: invokeinterface #50,  2           // InterfaceMethod javax/servlet/http/HttpServletResponse.setStatus:(I)V
+       205: aload_2
+       206: invokeinterface #56,  1           // InterfaceMethod javax/servlet/http/HttpServletResponse.getWriter:()Ljava/io/PrintWriter;
+       211: ldc           #60                 // String {\"error\":\"unknown GET path\"}
+       213: invokevirtual #62                 // Method java/io/PrintWriter.write:(Ljava/lang/String;)V
+       216: return
+      LineNumberTable:
+        line 19: 0
+        line 20: 8
+        line 22: 15
+        line 24: 160
+        line 25: 166
+        line 27: 169
+        line 28: 175
+        line 30: 178
+        line 31: 184
+        line 33: 187
+        line 34: 193
+        line 36: 196
+        line 37: 205
+        line 40: 216
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           15     201     3  path   Ljava/lang/String;
+            0     217     0  this   Lcom/ctf/DashboardServlet;
+            0     217     1   req   Ljavax/servlet/http/HttpServletRequest;
+            0     217     2  resp   Ljavax/servlet/http/HttpServletResponse;
+      StackMapTable: number_of_entries = 11
+        frame_type = 254 /* append */
+          offset_delta = 68
+          locals = [ class java/lang/String, class java/lang/String, int ]
+        frame_type = 15 /* same */
+        frame_type = 15 /* same */
+        frame_type = 15 /* same */
+        frame_type = 12 /* same */
+        frame_type = 30 /* same */
+        frame_type = 8 /* same */
+        frame_type = 8 /* same */
+        frame_type = 8 /* same */
+        frame_type = 8 /* same */
+        frame_type = 248 /* chop */
+          offset_delta = 19
+    Exceptions:
+      throws javax.servlet.ServletException, java.io.IOException
+
+  protected void doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException, java.io.IOException;
+    descriptor: (Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=3, locals=4, args_size=3
+         0: aload_1
+         1: aload_2
+         2: invokestatic  #7                  // Method validateLogin:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Z
+         5: ifeq          53
+         8: aload_1
+         9: invokeinterface #13,  1           // InterfaceMethod javax/servlet/http/HttpServletRequest.getPathInfo:()Ljava/lang/String;
+        14: astore_3
+        15: aload_3
+        16: ldc           #68                 // String /upload
+        18: invokevirtual #27                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        21: ifeq          33
+        24: aload_0
+        25: aload_1
+        26: aload_2
+        27: invokespecial #70                 // Method uploadFile:(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+        30: goto          53
+        33: aload_2
+        34: sipush        404
+        37: invokeinterface #50,  2           // InterfaceMethod javax/servlet/http/HttpServletResponse.setStatus:(I)V
+        42: aload_2
+        43: invokeinterface #56,  1           // InterfaceMethod javax/servlet/http/HttpServletResponse.getWriter:()Ljava/io/PrintWriter;
+        48: ldc           #73                 // String {\"error\":\"unknown POST path\"}
+        50: invokevirtual #62                 // Method java/io/PrintWriter.write:(Ljava/lang/String;)V
+        53: return
+      LineNumberTable:
+        line 46: 0
+        line 47: 8
+        line 49: 15
+        line 50: 24
+        line 52: 33
+        line 53: 42
+        line 56: 53
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           15      38     3  path   Ljava/lang/String;
+            0      54     0  this   Lcom/ctf/DashboardServlet;
+            0      54     1   req   Ljavax/servlet/http/HttpServletRequest;
+            0      54     2  resp   Ljavax/servlet/http/HttpServletResponse;
+      StackMapTable: number_of_entries = 2
+        frame_type = 252 /* append */
+          offset_delta = 33
+          locals = [ class java/lang/String ]
+        frame_type = 250 /* chop */
+          offset_delta = 19
+    Exceptions:
+      throws javax.servlet.ServletException, java.io.IOException
+
+  static boolean validateLogin(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.io.IOException;
+    descriptor: (Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Z
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=2, locals=8, args_size=2
+         0: aload_0
+         1: invokeinterface #75,  1           // InterfaceMethod javax/servlet/http/HttpServletRequest.getCookies:()[Ljavax/servlet/http/Cookie;
+         6: astore_2
+         7: aload_2
+         8: ifnull        78
+        11: aload_2
+        12: astore_3
+        13: aload_3
+        14: arraylength
+        15: istore        4
+        17: iconst_0
+        18: istore        5
+        20: iload         5
+        22: iload         4
+        24: if_icmpge     78
+        27: aload_3
+        28: iload         5
+        30: aaload
+        31: astore        6
+        33: ldc           #79                 // String jwt
+        35: aload         6
+        37: invokevirtual #81                 // Method javax/servlet/http/Cookie.getName:()Ljava/lang/String;
+        40: invokevirtual #27                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        43: ifeq          72
+        46: aload         6
+        48: invokevirtual #86                 // Method javax/servlet/http/Cookie.getValue:()Ljava/lang/String;
+        51: astore        7
+        53: aload         7
+        55: invokestatic  #89                 // Method com/ctf/JwtUtil.validateToken:(Ljava/lang/String;)Ljava/lang/String;
+        58: ifnonnull     72
+        61: aload_1
+        62: sipush        401
+        65: invokeinterface #95,  2           // InterfaceMethod javax/servlet/http/HttpServletResponse.sendError:(I)V
+        70: iconst_0
+        71: ireturn
+        72: iinc          5, 1
+        75: goto          20
+        78: aload_1
+        79: ldc           #98                 // String application/json;charset=UTF-8
+        81: invokeinterface #100,  2          // InterfaceMethod javax/servlet/http/HttpServletResponse.setContentType:(Ljava/lang/String;)V
+        86: iconst_1
+        87: ireturn
+      LineNumberTable:
+        line 59: 0
+        line 61: 7
+        line 62: 11
+        line 63: 33
+        line 64: 46
+        line 65: 53
+        line 66: 61
+        line 67: 70
+        line 62: 72
+        line 73: 78
+        line 74: 86
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           53      19     7 value   Ljava/lang/String;
+           33      39     6 cookie   Ljavax/servlet/http/Cookie;
+            0      88     0   req   Ljavax/servlet/http/HttpServletRequest;
+            0      88     1  resp   Ljavax/servlet/http/HttpServletResponse;
+            7      81     2 cookies   [Ljavax/servlet/http/Cookie;
+      StackMapTable: number_of_entries = 3
+        frame_type = 255 /* full_frame */
+          offset_delta = 20
+          locals = [ class javax/servlet/http/HttpServletRequest, class javax/servlet/http/HttpServletResponse, class "[Ljavax/servlet/http/Cookie;", class "[Ljavax/servlet/http/Cookie;", int, int ]
+          stack = []
+        frame_type = 51 /* same */
+        frame_type = 248 /* chop */
+          offset_delta = 5
+    Exceptions:
+      throws java.io.IOException
+
+  private boolean validatePath(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.io.IOException;
+    descriptor: (Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Z
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=4, locals=6, args_size=3
+         0: aload_1
+         1: ldc           #103                // String path
+         3: invokeinterface #105,  2          // InterfaceMethod javax/servlet/http/HttpServletRequest.getParameter:(Ljava/lang/String;)Ljava/lang/String;
+         8: astore_3
+         9: aload_3
+        10: ifnonnull     26
+        13: aload_2
+        14: invokeinterface #56,  1           // InterfaceMethod javax/servlet/http/HttpServletResponse.getWriter:()Ljava/io/PrintWriter;
+        19: ldc           #108                // String {\"error\":\"no path\"}
+        21: invokevirtual #62                 // Method java/io/PrintWriter.write:(Ljava/lang/String;)V
+        24: iconst_0
+        25: ireturn
+        26: new           #110                // class java/io/File
+        29: dup
+        30: aload_0
+        31: invokevirtual #112                // Method getServletContext:()Ljavax/servlet/ServletContext;
+        34: getstatic     #116                // Field com/ctf/AdminDashboardServlet.resourceDir:Ljava/lang/String;
+        37: invokeinterface #122,  2          // InterfaceMethod javax/servlet/ServletContext.getRealPath:(Ljava/lang/String;)Ljava/lang/String;
+        42: invokespecial #127                // Method java/io/File."<init>":(Ljava/lang/String;)V
+        45: invokevirtual #129                // Method java/io/File.getCanonicalFile:()Ljava/io/File;
+        48: astore        4
+        50: new           #110                // class java/io/File
+        53: dup
+        54: aload         4
+        56: aload_3
+        57: invokespecial #133                // Method java/io/File."<init>":(Ljava/io/File;Ljava/lang/String;)V
+        60: invokevirtual #129                // Method java/io/File.getCanonicalFile:()Ljava/io/File;
+        63: astore        5
+        65: aload         5
+        67: invokevirtual #136                // Method java/io/File.getPath:()Ljava/lang/String;
+        70: aload         4
+        72: invokevirtual #136                // Method java/io/File.getPath:()Ljava/lang/String;
+        75: invokevirtual #139                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+        78: ifne          102
+        81: aload_2
+        82: ldc           #143                // String application/json; charset=UTF-8
+        84: invokeinterface #100,  2          // InterfaceMethod javax/servlet/http/HttpServletResponse.setContentType:(Ljava/lang/String;)V
+        89: aload_2
+        90: invokeinterface #56,  1           // InterfaceMethod javax/servlet/http/HttpServletResponse.getWriter:()Ljava/io/PrintWriter;
+        95: ldc           #145                // String {\"error\":\"invalid path\"}
+        97: invokevirtual #62                 // Method java/io/PrintWriter.write:(Ljava/lang/String;)V
+       100: iconst_0
+       101: ireturn
+       102: iconst_1
+       103: ireturn
+      LineNumberTable:
+        line 78: 0
+        line 79: 9
+        line 80: 13
+        line 81: 24
+        line 84: 26
+        line 85: 50
+        line 87: 65
+        line 88: 81
+        line 89: 89
+        line 90: 100
+        line 93: 102
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     104     0  this   Lcom/ctf/DashboardServlet;
+            0     104     1   req   Ljavax/servlet/http/HttpServletRequest;
+            0     104     2  resp   Ljavax/servlet/http/HttpServletResponse;
+            9      95     3  path   Ljava/lang/String;
+           50      54     4  base   Ljava/io/File;
+           65      39     5  file   Ljava/io/File;
+      StackMapTable: number_of_entries = 2
+        frame_type = 252 /* append */
+          offset_delta = 26
+          locals = [ class java/lang/String ]
+        frame_type = 253 /* append */
+          offset_delta = 75
+          locals = [ class java/io/File, class java/io/File ]
+    Exceptions:
+      throws java.io.IOException
+
+  private void listFiles(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.io.IOException;
+    descriptor: (Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=4, locals=5, args_size=3
+         0: new           #110                // class java/io/File
+         3: dup
+         4: aload_0
+         5: invokevirtual #112                // Method getServletContext:()Ljavax/servlet/ServletContext;
+         8: getstatic     #116                // Field com/ctf/AdminDashboardServlet.resourceDir:Ljava/lang/String;
+        11: invokeinterface #122,  2          // InterfaceMethod javax/servlet/ServletContext.getRealPath:(Ljava/lang/String;)Ljava/lang/String;
+        16: invokespecial #127                // Method java/io/File."<init>":(Ljava/lang/String;)V
+        19: astore_3
+        20: getstatic     #147                // Field java/lang/System.out:Ljava/io/PrintStream;
+        23: aload_3
+        24: invokevirtual #136                // Method java/io/File.getPath:()Ljava/lang/String;
+        27: invokevirtual #153                // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        30: aload_0
+        31: aload_3
+        32: aload_3
+        33: invokespecial #158                // Method scanDir:(Ljava/io/File;Ljava/io/File;)Lorg/json/JSONArray;
+        36: astore        4
+        38: aload_2
+        39: invokeinterface #56,  1           // InterfaceMethod javax/servlet/http/HttpServletResponse.getWriter:()Ljava/io/PrintWriter;
+        44: aload         4
+        46: invokevirtual #162                // Method org/json/JSONArray.toString:()Ljava/lang/String;
+        49: invokevirtual #62                 // Method java/io/PrintWriter.write:(Ljava/lang/String;)V
+        52: return
+      LineNumberTable:
+        line 98: 0
+        line 99: 20
+        line 100: 30
+        line 102: 38
+        line 103: 52
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      53     0  this   Lcom/ctf/DashboardServlet;
+            0      53     1   req   Ljavax/servlet/http/HttpServletRequest;
+            0      53     2  resp   Ljavax/servlet/http/HttpServletResponse;
+           20      33     3  base   Ljava/io/File;
+           38      15     4   arr   Lorg/json/JSONArray;
+    Exceptions:
+      throws java.io.IOException
+
+  private org.json.JSONArray scanDir(java.io.File, java.io.File);
+    descriptor: (Ljava/io/File;Ljava/io/File;)Lorg/json/JSONArray;
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=5, locals=10, args_size=3
+         0: new           #163                // class org/json/JSONArray
+         3: dup
+         4: invokespecial #167                // Method org/json/JSONArray."<init>":()V
+         7: astore_3
+         8: aload_2
+         9: invokevirtual #168                // Method java/io/File.listFiles:()[Ljava/io/File;
+        12: astore        4
+        14: aload         4
+        16: ifnonnull     21
+        19: aload_3
+        20: areturn
+        21: aload         4
+        23: astore        5
+        25: aload         5
+        27: arraylength
+        28: istore        6
+        30: iconst_0
+        31: istore        7
+        33: iload         7
+        35: iload         6
+        37: if_icmpge     183
+        40: aload         5
+        42: iload         7
+        44: aaload
+        45: astore        8
+        47: new           #171                // class org/json/JSONObject
+        50: dup
+        51: invokespecial #173                // Method org/json/JSONObject."<init>":()V
+        54: astore        9
+        56: aload         9
+        58: ldc           #174                // String name
+        60: aload         8
+        62: invokevirtual #176                // Method java/io/File.getName:()Ljava/lang/String;
+        65: invokevirtual #177                // Method org/json/JSONObject.put:(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+        68: pop
+        69: aload         9
+        71: ldc           #181                // String isDir
+        73: aload         8
+        75: invokevirtual #183                // Method java/io/File.isDirectory:()Z
+        78: invokevirtual #187                // Method org/json/JSONObject.put:(Ljava/lang/String;Z)Lorg/json/JSONObject;
+        81: pop
+        82: aload         9
+        84: ldc           #103                // String path
+        86: aload_1
+        87: invokevirtual #190                // Method java/io/File.toPath:()Ljava/nio/file/Path;
+        90: aload         8
+        92: invokevirtual #190                // Method java/io/File.toPath:()Ljava/nio/file/Path;
+        95: invokeinterface #194,  2          // InterfaceMethod java/nio/file/Path.relativize:(Ljava/nio/file/Path;)Ljava/nio/file/Path;
+       100: invokeinterface #200,  1          // InterfaceMethod java/nio/file/Path.toString:()Ljava/lang/String;
+       105: invokevirtual #177                // Method org/json/JSONObject.put:(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+       108: pop
+       109: aload         9
+       111: ldc           #201                // String size
+       113: aload         8
+       115: invokevirtual #203                // Method java/io/File.isFile:()Z
+       118: ifeq          129
+       121: aload         8
+       123: invokevirtual #206                // Method java/io/File.length:()J
+       126: goto          130
+       129: lconst_0
+       130: invokevirtual #210                // Method org/json/JSONObject.put:(Ljava/lang/String;J)Lorg/json/JSONObject;
+       133: pop
+       134: aload         9
+       136: ldc           #213                // String lastModified
+       138: aload         8
+       140: invokevirtual #215                // Method java/io/File.lastModified:()J
+       143: invokevirtual #210                // Method org/json/JSONObject.put:(Ljava/lang/String;J)Lorg/json/JSONObject;
+       146: pop
+       147: aload         8
+       149: invokevirtual #183                // Method java/io/File.isDirectory:()Z
+       152: ifeq          170
+       155: aload         9
+       157: ldc           #217                // String children
+       159: aload_0
+       160: aload_1
+       161: aload         8
+       163: invokespecial #158                // Method scanDir:(Ljava/io/File;Ljava/io/File;)Lorg/json/JSONArray;
+       166: invokevirtual #177                // Method org/json/JSONObject.put:(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+       169: pop
+       170: aload_3
+       171: aload         9
+       173: invokevirtual #219                // Method org/json/JSONArray.put:(Ljava/lang/Object;)Lorg/json/JSONArray;
+       176: pop
+       177: iinc          7, 1
+       180: goto          33
+       183: aload_3
+       184: areturn
+      LineNumberTable:
+        line 106: 0
+        line 108: 8
+        line 109: 14
+        line 111: 21
+        line 112: 47
+        line 113: 56
+        line 114: 69
+        line 115: 82
+        line 116: 109
+        line 117: 134
+        line 119: 147
+        line 120: 155
+        line 123: 170
+        line 111: 177
+        line 125: 183
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           56     121     9   obj   Lorg/json/JSONObject;
+           47     130     8     f   Ljava/io/File;
+            0     185     0  this   Lcom/ctf/DashboardServlet;
+            0     185     1  root   Ljava/io/File;
+            0     185     2 current   Ljava/io/File;
+            8     177     3   arr   Lorg/json/JSONArray;
+           14     171     4 files   [Ljava/io/File;
+      StackMapTable: number_of_entries = 6
+        frame_type = 253 /* append */
+          offset_delta = 21
+          locals = [ class org/json/JSONArray, class "[Ljava/io/File;" ]
+        frame_type = 254 /* append */
+          offset_delta = 11
+          locals = [ class "[Ljava/io/File;", int, int ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 95
+          locals = [ class com/ctf/DashboardServlet, class java/io/File, class java/io/File, class org/json/JSONArray, class "[Ljava/io/File;", class "[Ljava/io/File;", int, int, class java/io/File, class org/json/JSONObject ]
+          stack = [ class org/json/JSONObject, class java/lang/String ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 0
+          locals = [ class com/ctf/DashboardServlet, class java/io/File, class java/io/File, class org/json/JSONArray, class "[Ljava/io/File;", class "[Ljava/io/File;", int, int, class java/io/File, class org/json/JSONObject ]
+          stack = [ class org/json/JSONObject, class java/lang/String, long ]
+        frame_type = 39 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 12
+          locals = [ class com/ctf/DashboardServlet, class java/io/File, class java/io/File, class org/json/JSONArray, class "[Ljava/io/File;" ]
+          stack = []
+
+  private void uploadFile(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.io.IOException, javax.servlet.ServletException;
+    descriptor: (Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=4, locals=10, args_size=3
+         0: aload_1
+         1: ldc           #222                // String file
+         3: invokeinterface #224,  2          // InterfaceMethod javax/servlet/http/HttpServletRequest.getPart:(Ljava/lang/String;)Ljavax/servlet/http/Part;
+         8: astore_3
+         9: aload_3
+        10: ifnonnull     25
+        13: aload_2
+        14: invokeinterface #56,  1           // InterfaceMethod javax/servlet/http/HttpServletResponse.getWriter:()Ljava/io/PrintWriter;
+        19: ldc           #228                // String {\"error\":\"no file\"}
+        21: invokevirtual #62                 // Method java/io/PrintWriter.write:(Ljava/lang/String;)V
+        24: return
+        25: new           #110                // class java/io/File
+        28: dup
+        29: aload_0
+        30: invokevirtual #112                // Method getServletContext:()Ljavax/servlet/ServletContext;
+        33: getstatic     #116                // Field com/ctf/AdminDashboardServlet.resourceDir:Ljava/lang/String;
+        36: invokeinterface #122,  2          // InterfaceMethod javax/servlet/ServletContext.getRealPath:(Ljava/lang/String;)Ljava/lang/String;
+        41: invokespecial #127                // Method java/io/File."<init>":(Ljava/lang/String;)V
+        44: invokevirtual #129                // Method java/io/File.getCanonicalFile:()Ljava/io/File;
+        47: astore        4
+        49: new           #110                // class java/io/File
+        52: dup
+        53: aload         4
+        55: aload_3
+        56: invokeinterface #230,  1          // InterfaceMethod javax/servlet/http/Part.getSubmittedFileName:()Ljava/lang/String;
+        61: invokespecial #133                // Method java/io/File."<init>":(Ljava/io/File;Ljava/lang/String;)V
+        64: invokevirtual #129                // Method java/io/File.getCanonicalFile:()Ljava/io/File;
+        67: astore        5
+        69: getstatic     #147                // Field java/lang/System.out:Ljava/io/PrintStream;
+        72: aload         5
+        74: invokevirtual #190                // Method java/io/File.toPath:()Ljava/nio/file/Path;
+        77: invokevirtual #235                // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+        80: aload         5
+        82: invokevirtual #238                // Method java/io/File.getParentFile:()Ljava/io/File;
+        85: invokevirtual #190                // Method java/io/File.toPath:()Ljava/nio/file/Path;
+        88: aload         4
+        90: invokevirtual #190                // Method java/io/File.toPath:()Ljava/nio/file/Path;
+        93: invokeinterface #241,  2          // InterfaceMethod java/nio/file/Path.startsWith:(Ljava/nio/file/Path;)Z
+        98: ifne          121
+       101: aload_2
+       102: ldc           #143                // String application/json; charset=UTF-8
+       104: invokeinterface #100,  2          // InterfaceMethod javax/servlet/http/HttpServletResponse.setContentType:(Ljava/lang/String;)V
+       109: aload_2
+       110: invokeinterface #56,  1           // InterfaceMethod javax/servlet/http/HttpServletResponse.getWriter:()Ljava/io/PrintWriter;
+       115: ldc           #145                // String {\"error\":\"invalid path\"}
+       117: invokevirtual #62                 // Method java/io/PrintWriter.write:(Ljava/lang/String;)V
+       120: return
+       121: aload_3
+       122: invokeinterface #244,  1          // InterfaceMethod javax/servlet/http/Part.getInputStream:()Ljava/io/InputStream;
+       127: astore        6
+       129: aload         5
+       131: invokevirtual #190                // Method java/io/File.toPath:()Ljava/nio/file/Path;
+       134: iconst_0
+       135: anewarray     #248                // class java/nio/file/OpenOption
+       138: invokestatic  #250                // Method java/nio/file/Files.newOutputStream:(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/OutputStream;
+       141: astore        7
+       143: aload         6
+       145: aload         7
+       147: invokevirtual #256                // Method java/io/InputStream.transferTo:(Ljava/io/OutputStream;)J
+       150: pop2
+       151: aload         7
+       153: ifnull        191
+       156: aload         7
+       158: invokevirtual #262                // Method java/io/OutputStream.close:()V
+       161: goto          191
+       164: astore        8
+       166: aload         7
+       168: ifnull        188
+       171: aload         7
+       173: invokevirtual #262                // Method java/io/OutputStream.close:()V
+       176: goto          188
+       179: astore        9
+       181: aload         8
+       183: aload         9
+       185: invokevirtual #269                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+       188: aload         8
+       190: athrow
+       191: aload         6
+       193: ifnull        231
+       196: aload         6
+       198: invokevirtual #273                // Method java/io/InputStream.close:()V
+       201: goto          231
+       204: astore        7
+       206: aload         6
+       208: ifnull        228
+       211: aload         6
+       213: invokevirtual #273                // Method java/io/InputStream.close:()V
+       216: goto          228
+       219: astore        8
+       221: aload         7
+       223: aload         8
+       225: invokevirtual #269                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+       228: aload         7
+       230: athrow
+       231: aload_2
+       232: invokeinterface #56,  1           // InterfaceMethod javax/servlet/http/HttpServletResponse.getWriter:()Ljava/io/PrintWriter;
+       237: aload         5
+       239: invokevirtual #176                // Method java/io/File.getName:()Ljava/lang/String;
+       242: invokedynamic #274,  0            // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       247: invokevirtual #62                 // Method java/io/PrintWriter.write:(Ljava/lang/String;)V
+       250: return
+      Exception table:
+         from    to  target type
+           143   151   164   Class java/lang/Throwable
+           171   176   179   Class java/lang/Throwable
+           129   191   204   Class java/lang/Throwable
+           211   216   219   Class java/lang/Throwable
+      LineNumberTable:
+        line 131: 0
+        line 132: 9
+        line 133: 13
+        line 134: 24
+        line 137: 25
+        line 138: 49
+        line 140: 69
+        line 142: 80
+        line 143: 101
+        line 144: 109
+        line 145: 120
+        line 148: 121
+        line 149: 129
+        line 150: 143
+        line 151: 151
+        line 148: 164
+        line 151: 191
+        line 148: 204
+        line 153: 231
+        line 154: 250
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+          143      48     7   out   Ljava/io/OutputStream;
+          129     102     6    in   Ljava/io/InputStream;
+            0     251     0  this   Lcom/ctf/DashboardServlet;
+            0     251     1   req   Ljavax/servlet/http/HttpServletRequest;
+            0     251     2  resp   Ljavax/servlet/http/HttpServletResponse;
+            9     242     3  part   Ljavax/servlet/http/Part;
+           49     202     4  base   Ljava/io/File;
+           69     182     5 target   Ljava/io/File;
+      StackMapTable: number_of_entries = 10
+        frame_type = 252 /* append */
+          offset_delta = 25
+          locals = [ class javax/servlet/http/Part ]
+        frame_type = 253 /* append */
+          offset_delta = 95
+          locals = [ class java/io/File, class java/io/File ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 42
+          locals = [ class com/ctf/DashboardServlet, class javax/servlet/http/HttpServletRequest, class javax/servlet/http/HttpServletResponse, class javax/servlet/http/Part, class java/io/File, class java/io/File, class java/io/InputStream, class java/io/OutputStream ]
+          stack = [ class java/lang/Throwable ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 14
+          locals = [ class com/ctf/DashboardServlet, class javax/servlet/http/HttpServletRequest, class javax/servlet/http/HttpServletResponse, class javax/servlet/http/Part, class java/io/File, class java/io/File, class java/io/InputStream, class java/io/OutputStream, class java/lang/Throwable ]
+          stack = [ class java/lang/Throwable ]
+        frame_type = 8 /* same */
+        frame_type = 249 /* chop */
+          offset_delta = 2
+        frame_type = 76 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Throwable ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 14
+          locals = [ class com/ctf/DashboardServlet, class javax/servlet/http/HttpServletRequest, class javax/servlet/http/HttpServletResponse, class javax/servlet/http/Part, class java/io/File, class java/io/File, class java/io/InputStream, class java/lang/Throwable ]
+          stack = [ class java/lang/Throwable ]
+        frame_type = 8 /* same */
+        frame_type = 249 /* chop */
+          offset_delta = 2
+    Exceptions:
+      throws java.io.IOException, javax.servlet.ServletException
+
+  private void downloadFile(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.io.IOException;
+    descriptor: (Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=4, locals=10, args_size=3
+         0: aload_1
+         1: ldc           #103                // String path
+         3: invokeinterface #105,  2          // InterfaceMethod javax/servlet/http/HttpServletRequest.getParameter:(Ljava/lang/String;)Ljava/lang/String;
+         8: astore_3
+         9: aload_3
+        10: ifnonnull     25
+        13: aload_2
+        14: invokeinterface #56,  1           // InterfaceMethod javax/servlet/http/HttpServletResponse.getWriter:()Ljava/io/PrintWriter;
+        19: ldc           #108                // String {\"error\":\"no path\"}
+        21: invokevirtual #62                 // Method java/io/PrintWriter.write:(Ljava/lang/String;)V
+        24: return
+        25: new           #110                // class java/io/File
+        28: dup
+        29: aload_0
+        30: invokevirtual #112                // Method getServletContext:()Ljavax/servlet/ServletContext;
+        33: ldc_w         #277                // String uploads
+        36: invokeinterface #122,  2          // InterfaceMethod javax/servlet/ServletContext.getRealPath:(Ljava/lang/String;)Ljava/lang/String;
+        41: invokespecial #127                // Method java/io/File."<init>":(Ljava/lang/String;)V
+        44: invokevirtual #129                // Method java/io/File.getCanonicalFile:()Ljava/io/File;
+        47: astore        4
+        49: new           #110                // class java/io/File
+        52: dup
+        53: aload         4
+        55: aload_3
+        56: invokespecial #133                // Method java/io/File."<init>":(Ljava/io/File;Ljava/lang/String;)V
+        59: invokevirtual #129                // Method java/io/File.getCanonicalFile:()Ljava/io/File;
+        62: astore        5
+        64: aload         5
+        66: invokevirtual #136                // Method java/io/File.getPath:()Ljava/lang/String;
+        69: aload         4
+        71: invokevirtual #136                // Method java/io/File.getPath:()Ljava/lang/String;
+        74: invokevirtual #139                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+        77: ifne          100
+        80: aload_2
+        81: ldc           #143                // String application/json; charset=UTF-8
+        83: invokeinterface #100,  2          // InterfaceMethod javax/servlet/http/HttpServletResponse.setContentType:(Ljava/lang/String;)V
+        88: aload_2
+        89: invokeinterface #56,  1           // InterfaceMethod javax/servlet/http/HttpServletResponse.getWriter:()Ljava/io/PrintWriter;
+        94: ldc           #145                // String {\"error\":\"invalid path\"}
+        96: invokevirtual #62                 // Method java/io/PrintWriter.write:(Ljava/lang/String;)V
+        99: return
+       100: aload_2
+       101: ldc_w         #279                // String application/octet-stream
+       104: invokeinterface #100,  2          // InterfaceMethod javax/servlet/http/HttpServletResponse.setContentType:(Ljava/lang/String;)V
+       109: aload_2
+       110: ldc_w         #281                // String Content-Disposition
+       113: aload         5
+       115: invokevirtual #176                // Method java/io/File.getName:()Ljava/lang/String;
+       118: ldc_w         #283                // String UTF-8
+       121: invokestatic  #285                // Method java/net/URLEncoder.encode:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       124: invokedynamic #291,  0            // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       129: invokeinterface #292,  3          // InterfaceMethod javax/servlet/http/HttpServletResponse.setHeader:(Ljava/lang/String;Ljava/lang/String;)V
+       134: aload         5
+       136: invokevirtual #190                // Method java/io/File.toPath:()Ljava/nio/file/Path;
+       139: iconst_0
+       140: anewarray     #248                // class java/nio/file/OpenOption
+       143: invokestatic  #296                // Method java/nio/file/Files.newInputStream:(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/InputStream;
+       146: astore        6
+       148: aload_2
+       149: invokeinterface #300,  1          // InterfaceMethod javax/servlet/http/HttpServletResponse.getOutputStream:()Ljavax/servlet/ServletOutputStream;
+       154: astore        7
+       156: aload         6
+       158: aload         7
+       160: invokevirtual #256                // Method java/io/InputStream.transferTo:(Ljava/io/OutputStream;)J
+       163: pop2
+       164: aload         7
+       166: ifnull        204
+       169: aload         7
+       171: invokevirtual #262                // Method java/io/OutputStream.close:()V
+       174: goto          204
+       177: astore        8
+       179: aload         7
+       181: ifnull        201
+       184: aload         7
+       186: invokevirtual #262                // Method java/io/OutputStream.close:()V
+       189: goto          201
+       192: astore        9
+       194: aload         8
+       196: aload         9
+       198: invokevirtual #269                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+       201: aload         8
+       203: athrow
+       204: aload         6
+       206: ifnull        244
+       209: aload         6
+       211: invokevirtual #273                // Method java/io/InputStream.close:()V
+       214: goto          244
+       217: astore        7
+       219: aload         6
+       221: ifnull        241
+       224: aload         6
+       226: invokevirtual #273                // Method java/io/InputStream.close:()V
+       229: goto          241
+       232: astore        8
+       234: aload         7
+       236: aload         8
+       238: invokevirtual #269                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+       241: aload         7
+       243: athrow
+       244: return
+      Exception table:
+         from    to  target type
+           156   164   177   Class java/lang/Throwable
+           184   189   192   Class java/lang/Throwable
+           148   204   217   Class java/lang/Throwable
+           224   229   232   Class java/lang/Throwable
+      LineNumberTable:
+        line 157: 0
+        line 158: 9
+        line 159: 13
+        line 160: 24
+        line 163: 25
+        line 164: 49
+        line 166: 64
+        line 167: 80
+        line 168: 88
+        line 169: 99
+        line 172: 100
+        line 173: 109
+        line 174: 115
+        line 173: 129
+        line 176: 134
+        line 177: 148
+        line 178: 156
+        line 179: 164
+        line 176: 177
+        line 179: 204
+        line 176: 217
+        line 180: 244
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+          156      48     7   out   Ljava/io/OutputStream;
+          148      96     6    in   Ljava/io/InputStream;
+            0     245     0  this   Lcom/ctf/DashboardServlet;
+            0     245     1   req   Ljavax/servlet/http/HttpServletRequest;
+            0     245     2  resp   Ljavax/servlet/http/HttpServletResponse;
+            9     236     3  path   Ljava/lang/String;
+           49     196     4  base   Ljava/io/File;
+           64     181     5  file   Ljava/io/File;
+      StackMapTable: number_of_entries = 10
+        frame_type = 252 /* append */
+          offset_delta = 25
+          locals = [ class java/lang/String ]
+        frame_type = 253 /* append */
+          offset_delta = 74
+          locals = [ class java/io/File, class java/io/File ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 76
+          locals = [ class com/ctf/DashboardServlet, class javax/servlet/http/HttpServletRequest, class javax/servlet/http/HttpServletResponse, class java/lang/String, class java/io/File, class java/io/File, class java/io/InputStream, class java/io/OutputStream ]
+          stack = [ class java/lang/Throwable ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 14
+          locals = [ class com/ctf/DashboardServlet, class javax/servlet/http/HttpServletRequest, class javax/servlet/http/HttpServletResponse, class java/lang/String, class java/io/File, class java/io/File, class java/io/InputStream, class java/io/OutputStream, class java/lang/Throwable ]
+          stack = [ class java/lang/Throwable ]
+        frame_type = 8 /* same */
+        frame_type = 249 /* chop */
+          offset_delta = 2
+        frame_type = 76 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Throwable ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 14
+          locals = [ class com/ctf/DashboardServlet, class javax/servlet/http/HttpServletRequest, class javax/servlet/http/HttpServletResponse, class java/lang/String, class java/io/File, class java/io/File, class java/io/InputStream, class java/lang/Throwable ]
+          stack = [ class java/lang/Throwable ]
+        frame_type = 8 /* same */
+        frame_type = 249 /* chop */
+          offset_delta = 2
+    Exceptions:
+      throws java.io.IOException
+
+  private void getStats(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.io.IOException;
+    descriptor: (Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=4, locals=6, args_size=3
+         0: new           #110                // class java/io/File
+         3: dup
+         4: aload_0
+         5: invokevirtual #112                // Method getServletContext:()Ljavax/servlet/ServletContext;
+         8: getstatic     #116                // Field com/ctf/AdminDashboardServlet.resourceDir:Ljava/lang/String;
+        11: invokeinterface #122,  2          // InterfaceMethod javax/servlet/ServletContext.getRealPath:(Ljava/lang/String;)Ljava/lang/String;
+        16: invokespecial #127                // Method java/io/File."<init>":(Ljava/lang/String;)V
+        19: astore_3
+        20: new           #304                // class com/ctf/DashboardServlet$Stats
+        23: dup
+        24: aconst_null
+        25: invokespecial #306                // Method com/ctf/DashboardServlet$Stats."<init>":(Lcom/ctf/DashboardServlet$1;)V
+        28: astore        4
+        30: aload_0
+        31: aload_3
+        32: aload         4
+        34: invokespecial #309                // Method computeStats:(Ljava/io/File;Lcom/ctf/DashboardServlet$Stats;)V
+        37: new           #171                // class org/json/JSONObject
+        40: dup
+        41: invokespecial #173                // Method org/json/JSONObject."<init>":()V
+        44: astore        5
+        46: aload         5
+        48: ldc_w         #313                // String files
+        51: aload         4
+        53: getfield      #315                // Field com/ctf/DashboardServlet$Stats.files:J
+        56: invokevirtual #210                // Method org/json/JSONObject.put:(Ljava/lang/String;J)Lorg/json/JSONObject;
+        59: pop
+        60: aload         5
+        62: ldc_w         #318                // String folders
+        65: aload         4
+        67: getfield      #320                // Field com/ctf/DashboardServlet$Stats.folders:J
+        70: invokevirtual #210                // Method org/json/JSONObject.put:(Ljava/lang/String;J)Lorg/json/JSONObject;
+        73: pop
+        74: aload         5
+        76: ldc           #201                // String size
+        78: aload         4
+        80: getfield      #322                // Field com/ctf/DashboardServlet$Stats.size:J
+        83: invokevirtual #210                // Method org/json/JSONObject.put:(Ljava/lang/String;J)Lorg/json/JSONObject;
+        86: pop
+        87: aload_2
+        88: invokeinterface #56,  1           // InterfaceMethod javax/servlet/http/HttpServletResponse.getWriter:()Ljava/io/PrintWriter;
+        93: aload         5
+        95: invokevirtual #324                // Method org/json/JSONObject.toString:()Ljava/lang/String;
+        98: invokevirtual #62                 // Method java/io/PrintWriter.write:(Ljava/lang/String;)V
+       101: return
+      LineNumberTable:
+        line 183: 0
+        line 185: 20
+        line 186: 30
+        line 188: 37
+        line 189: 46
+        line 190: 60
+        line 191: 74
+        line 193: 87
+        line 194: 101
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     102     0  this   Lcom/ctf/DashboardServlet;
+            0     102     1   req   Ljavax/servlet/http/HttpServletRequest;
+            0     102     2  resp   Ljavax/servlet/http/HttpServletResponse;
+           20      82     3  base   Ljava/io/File;
+           30      72     4     s   Lcom/ctf/DashboardServlet$Stats;
+           46      56     5   obj   Lorg/json/JSONObject;
+    Exceptions:
+      throws java.io.IOException
+
+  private void computeStats(java.io.File, com.ctf.DashboardServlet$Stats);
+    descriptor: (Ljava/io/File;Lcom/ctf/DashboardServlet$Stats;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=5, locals=7, args_size=3
+         0: aload_1
+         1: invokevirtual #325                // Method java/io/File.exists:()Z
+         4: ifne          8
+         7: return
+         8: aload_1
+         9: invokevirtual #183                // Method java/io/File.isDirectory:()Z
+        12: ifeq          72
+        15: aload_2
+        16: dup
+        17: getfield      #320                // Field com/ctf/DashboardServlet$Stats.folders:J
+        20: lconst_1
+        21: ladd
+        22: putfield      #320                // Field com/ctf/DashboardServlet$Stats.folders:J
+        25: aload_1
+        26: invokevirtual #168                // Method java/io/File.listFiles:()[Ljava/io/File;
+        29: invokestatic  #328                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+        32: checkcast     #334                // class "[Ljava/io/File;"
+        35: astore_3
+        36: aload_3
+        37: arraylength
+        38: istore        4
+        40: iconst_0
+        41: istore        5
+        43: iload         5
+        45: iload         4
+        47: if_icmpge     69
+        50: aload_3
+        51: iload         5
+        53: aaload
+        54: astore        6
+        56: aload_0
+        57: aload         6
+        59: aload_2
+        60: invokespecial #309                // Method computeStats:(Ljava/io/File;Lcom/ctf/DashboardServlet$Stats;)V
+        63: iinc          5, 1
+        66: goto          43
+        69: goto          95
+        72: aload_2
+        73: dup
+        74: getfield      #315                // Field com/ctf/DashboardServlet$Stats.files:J
+        77: lconst_1
+        78: ladd
+        79: putfield      #315                // Field com/ctf/DashboardServlet$Stats.files:J
+        82: aload_2
+        83: dup
+        84: getfield      #322                // Field com/ctf/DashboardServlet$Stats.size:J
+        87: aload_1
+        88: invokevirtual #206                // Method java/io/File.length:()J
+        91: ladd
+        92: putfield      #322                // Field com/ctf/DashboardServlet$Stats.size:J
+        95: return
+      LineNumberTable:
+        line 203: 0
+        line 205: 8
+        line 206: 15
+        line 207: 25
+        line 210: 72
+        line 211: 82
+        line 213: 95
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           56       7     6     c   Ljava/io/File;
+            0      96     0  this   Lcom/ctf/DashboardServlet;
+            0      96     1     f   Ljava/io/File;
+            0      96     2     s   Lcom/ctf/DashboardServlet$Stats;
+      StackMapTable: number_of_entries = 5
+        frame_type = 8 /* same */
+        frame_type = 254 /* append */
+          offset_delta = 34
+          locals = [ class "[Ljava/io/File;", int, int ]
+        frame_type = 248 /* chop */
+          offset_delta = 25
+        frame_type = 2 /* same */
+        frame_type = 22 /* same */
+
+  private void getRecent(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) throws java.io.IOException;
+    descriptor: (Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=4, locals=9, args_size=3
+         0: new           #110                // class java/io/File
+         3: dup
+         4: aload_0
+         5: invokevirtual #112                // Method getServletContext:()Ljavax/servlet/ServletContext;
+         8: getstatic     #116                // Field com/ctf/AdminDashboardServlet.resourceDir:Ljava/lang/String;
+        11: invokeinterface #122,  2          // InterfaceMethod javax/servlet/ServletContext.getRealPath:(Ljava/lang/String;)Ljava/lang/String;
+        16: invokespecial #127                // Method java/io/File."<init>":(Ljava/lang/String;)V
+        19: astore_3
+        20: new           #336                // class java/util/ArrayList
+        23: dup
+        24: invokespecial #338                // Method java/util/ArrayList."<init>":()V
+        27: astore        4
+        29: aload_0
+        30: aload_3
+        31: aload         4
+        33: invokespecial #339                // Method collect:(Ljava/io/File;Ljava/util/List;)V
+        36: aload         4
+        38: invokedynamic #343,  0            // InvokeDynamic #2:compare:()Ljava/util/Comparator;
+        43: invokeinterface #347,  2          // InterfaceMethod java/util/List.sort:(Ljava/util/Comparator;)V
+        48: new           #163                // class org/json/JSONArray
+        51: dup
+        52: invokespecial #167                // Method org/json/JSONArray."<init>":()V
+        55: astore        5
+        57: iconst_0
+        58: istore        6
+        60: iload         6
+        62: bipush        10
+        64: aload         4
+        66: invokeinterface #353,  1          // InterfaceMethod java/util/List.size:()I
+        71: invokestatic  #355                // Method java/lang/Math.min:(II)I
+        74: if_icmpge     180
+        77: aload         4
+        79: iload         6
+        81: invokeinterface #361,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+        86: checkcast     #110                // class java/io/File
+        89: astore        7
+        91: new           #171                // class org/json/JSONObject
+        94: dup
+        95: invokespecial #173                // Method org/json/JSONObject."<init>":()V
+        98: astore        8
+       100: aload         8
+       102: ldc           #174                // String name
+       104: aload         7
+       106: invokevirtual #176                // Method java/io/File.getName:()Ljava/lang/String;
+       109: invokevirtual #177                // Method org/json/JSONObject.put:(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+       112: pop
+       113: aload         8
+       115: ldc           #103                // String path
+       117: aload_3
+       118: invokevirtual #190                // Method java/io/File.toPath:()Ljava/nio/file/Path;
+       121: aload         7
+       123: invokevirtual #190                // Method java/io/File.toPath:()Ljava/nio/file/Path;
+       126: invokeinterface #194,  2          // InterfaceMethod java/nio/file/Path.relativize:(Ljava/nio/file/Path;)Ljava/nio/file/Path;
+       131: invokeinterface #200,  1          // InterfaceMethod java/nio/file/Path.toString:()Ljava/lang/String;
+       136: invokevirtual #177                // Method org/json/JSONObject.put:(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+       139: pop
+       140: aload         8
+       142: ldc           #213                // String lastModified
+       144: aload         7
+       146: invokevirtual #215                // Method java/io/File.lastModified:()J
+       149: invokevirtual #210                // Method org/json/JSONObject.put:(Ljava/lang/String;J)Lorg/json/JSONObject;
+       152: pop
+       153: aload         8
+       155: ldc           #201                // String size
+       157: aload         7
+       159: invokevirtual #206                // Method java/io/File.length:()J
+       162: invokevirtual #210                // Method org/json/JSONObject.put:(Ljava/lang/String;J)Lorg/json/JSONObject;
+       165: pop
+       166: aload         5
+       168: aload         8
+       170: invokevirtual #219                // Method org/json/JSONArray.put:(Ljava/lang/Object;)Lorg/json/JSONArray;
+       173: pop
+       174: iinc          6, 1
+       177: goto          60
+       180: aload_2
+       181: invokeinterface #56,  1           // InterfaceMethod javax/servlet/http/HttpServletResponse.getWriter:()Ljava/io/PrintWriter;
+       186: aload         5
+       188: invokevirtual #162                // Method org/json/JSONArray.toString:()Ljava/lang/String;
+       191: invokevirtual #62                 // Method java/io/PrintWriter.write:(Ljava/lang/String;)V
+       194: return
+      LineNumberTable:
+        line 217: 0
+        line 218: 20
+        line 220: 29
+        line 222: 36
+        line 224: 48
+        line 226: 57
+        line 227: 77
+        line 229: 91
+        line 230: 100
+        line 231: 113
+        line 232: 140
+        line 233: 153
+        line 235: 166
+        line 226: 174
+        line 238: 180
+        line 239: 194
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           91      83     7     f   Ljava/io/File;
+          100      74     8   obj   Lorg/json/JSONObject;
+           60     120     6     i   I
+            0     195     0  this   Lcom/ctf/DashboardServlet;
+            0     195     1   req   Ljavax/servlet/http/HttpServletRequest;
+            0     195     2  resp   Ljavax/servlet/http/HttpServletResponse;
+           20     175     3  base   Ljava/io/File;
+           29     166     4  list   Ljava/util/List;
+           57     138     5   arr   Lorg/json/JSONArray;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+           29     166     4  list   Ljava/util/List<Ljava/io/File;>;
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 60
+          locals = [ class com/ctf/DashboardServlet, class javax/servlet/http/HttpServletRequest, class javax/servlet/http/HttpServletResponse, class java/io/File, class java/util/List, class org/json/JSONArray, int ]
+          stack = []
+        frame_type = 250 /* chop */
+          offset_delta = 119
+    Exceptions:
+      throws java.io.IOException
+
+  private void collect(java.io.File, java.util.List<java.io.File>);
+    descriptor: (Ljava/io/File;Ljava/util/List;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=3, locals=7, args_size=3
+         0: aload_1
+         1: invokevirtual #325                // Method java/io/File.exists:()Z
+         4: ifne          8
+         7: return
+         8: aload_1
+         9: invokevirtual #168                // Method java/io/File.listFiles:()[Ljava/io/File;
+        12: invokestatic  #328                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+        15: checkcast     #334                // class "[Ljava/io/File;"
+        18: astore_3
+        19: aload_3
+        20: arraylength
+        21: istore        4
+        23: iconst_0
+        24: istore        5
+        26: iload         5
+        28: iload         4
+        30: if_icmpge     77
+        33: aload_3
+        34: iload         5
+        36: aaload
+        37: astore        6
+        39: aload         6
+        41: invokevirtual #203                // Method java/io/File.isFile:()Z
+        44: ifeq          56
+        47: aload_2
+        48: aload         6
+        50: invokeinterface #365,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        55: pop
+        56: aload         6
+        58: invokevirtual #183                // Method java/io/File.isDirectory:()Z
+        61: ifeq          71
+        64: aload_0
+        65: aload         6
+        67: aload_2
+        68: invokespecial #339                // Method collect:(Ljava/io/File;Ljava/util/List;)V
+        71: iinc          5, 1
+        74: goto          26
+        77: return
+      LineNumberTable:
+        line 242: 0
+        line 244: 8
+        line 245: 39
+        line 246: 56
+        line 244: 71
+        line 248: 77
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           39      32     6     c   Ljava/io/File;
+            0      78     0  this   Lcom/ctf/DashboardServlet;
+            0      78     1     f   Ljava/io/File;
+            0      78     2  list   Ljava/util/List;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+            0      78     2  list   Ljava/util/List<Ljava/io/File;>;
+      StackMapTable: number_of_entries = 5
+        frame_type = 8 /* same */
+        frame_type = 254 /* append */
+          offset_delta = 17
+          locals = [ class "[Ljava/io/File;", int, int ]
+        frame_type = 252 /* append */
+          offset_delta = 29
+          locals = [ class java/io/File ]
+        frame_type = 250 /* chop */
+          offset_delta = 14
+        frame_type = 248 /* chop */
+          offset_delta = 5
+    Signature: #422                         // (Ljava/io/File;Ljava/util/List<Ljava/io/File;>;)V
+
+  private static int lambda$getRecent$0(java.io.File, java.io.File);
+    descriptor: (Ljava/io/File;Ljava/io/File;)I
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=4, locals=2, args_size=2
+         0: aload_1
+         1: invokevirtual #215                // Method java/io/File.lastModified:()J
+         4: aload_0
+         5: invokevirtual #215                // Method java/io/File.lastModified:()J
+         8: invokestatic  #368                // Method java/lang/Long.compare:(JJ)I
+        11: ireturn
+      LineNumberTable:
+        line 222: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      12     0     a   Ljava/io/File;
+            0      12     1     b   Ljava/io/File;
+}
+SourceFile: "DashboardServlet.java"
+BootstrapMethods:
+  0: #430 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #436 {\"upload\":\"ok\",\"filename\":\"\u0001\"}
+  1: #430 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #438 attachment;filename=\u0001
+  2: #440 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #447 (Ljava/lang/Object;Ljava/lang/Object;)I
+      #449 REF_invokeStatic com/ctf/DashboardServlet.lambda$getRecent$0:(Ljava/io/File;Ljava/io/File;)I
+      #452 (Ljava/io/File;Ljava/io/File;)I
+InnerClasses:
+  private static #454= #304 of #8;        // Stats=class com/ctf/DashboardServlet$Stats of class com/ctf/DashboardServlet
+  static #455;                            // class com/ctf/DashboardServlet$1
+  public static final #461= #457 of #459; // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

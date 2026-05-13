@@ -1,0 +1,194 @@
+{
+  "stationProfiles": [
+    {
+      "stationCode": "BJP",
+      "stationName": "Beijing South",
+      "batchOpen": 0,
+      "rendererProfile": "standard",
+      "noticeProfile": "standard",
+      "signerRoute": "public",
+      "policy": {
+        "stationClass": "national",
+        "layoutClass": "folio-grid-11",
+        "routeName": "north-window-11",
+        "grantCode": "receipt-closeout",
+        "notice": {
+          "laneHeader": "X-Desk-Lane",
+          "laneValue": "north-window-11",
+          "streamHeader": "X-Board-Window",
+          "streamValue": "seat-window-n11",
+          "keyIdHeader": "X-Desk-Key-Id",
+          "keyHeader": "X-Desk-Key"
+        },
+        "board": {
+          "streamValue": "seat-window-n11",
+          "topic": "north-consist",
+          "transport": "platform-feed-v3",
+          "ack": "coach-reviewed"
+        },
+        "claim": {
+          "prefix": "CLM",
+          "reason": "FARE-62",
+          "channel": "fare-desk"
+        },
+        "layout": {
+          "prefix": "reconciliation",
+          "cell": "receipt",
+          "device": "PR-BJP-011"
+        }
+      }
+    },
+    {
+      "stationCode": "HGH",
+      "stationName": "Hangzhou East",
+      "batchOpen": 0,
+      "rendererProfile": "standard",
+      "noticeProfile": "standard",
+      "signerRoute": "public",
+      "policy": {
+        "stationClass": "regional",
+        "layoutClass": "folio-grid-27",
+        "routeName": "delta-window-27",
+        "grantCode": "receipt-closeout",
+        "notice": {
+          "laneHeader": "X-Desk-Lane",
+          "laneValue": "delta-window-27",
+          "streamHeader": "X-Board-Window",
+          "streamValue": "seat-window-e27",
+          "keyIdHeader": "X-Desk-Key-Id",
+          "keyHeader": "X-Desk-Key"
+        },
+        "board": {
+          "streamValue": "seat-window-e27",
+          "topic": "seat-consist",
+          "transport": "platform-feed-v4",
+          "ack": "coach-sealed"
+        },
+        "claim": {
+          "prefix": "CLM",
+          "reason": "FARE-91",
+          "channel": "fare-desk"
+        },
+        "layout": {
+          "prefix": "reconciliation",
+          "cell": "receipt",
+          "device": "PR-HGH-042"
+        }
+      }
+    },
+    {
+      "stationCode": "NKH",
+      "stationName": "Nanjing South",
+      "batchOpen": 0,
+      "rendererProfile": "standard",
+      "noticeProfile": "standard",
+      "signerRoute": "public",
+      "policy": {
+        "stationClass": "regional",
+        "layoutClass": "folio-grid-14",
+        "routeName": "river-window-14",
+        "grantCode": "fare-preview",
+        "notice": {
+          "laneHeader": "X-Desk-Lane",
+          "laneValue": "river-window-14",
+          "streamHeader": "X-Board-Window",
+          "streamValue": "seat-window-r14",
+          "keyIdHeader": "X-Desk-Key-Id",
+          "keyHeader": "X-Desk-Key"
+        },
+        "board": {
+          "streamValue": "seat-window-r14",
+          "topic": "boarding-preview",
+          "transport": "platform-feed-v2",
+          "ack": "desk-preview"
+        },
+        "claim": {
+          "prefix": "CLM",
+          "reason": "FARE-24",
+          "channel": "service-desk"
+        },
+        "layout": {
+          "prefix": "reconciliation",
+          "cell": "deskNote",
+          "device": "PR-NKH-014"
+        }
+      }
+    },
+    {
+      "stationCode": "SHH",
+      "stationName": "Shanghai Hongqiao",
+      "batchOpen": 0,
+      "rendererProfile": "standard",
+      "noticeProfile": "standard",
+      "signerRoute": "public",
+      "policy": {
+        "stationClass": "national",
+        "layoutClass": "folio-grid-31",
+        "routeName": "harbor-window-31",
+        "grantCode": "meal-preview",
+        "notice": {
+          "laneHeader": "X-Desk-Lane",
+          "laneValue": "harbor-window-31",
+          "streamHeader": "X-Board-Window",
+          "streamValue": "seat-window-h31",
+          "keyIdHeader": "X-Desk-Key-Id",
+          "keyHeader": "X-Desk-Key"
+        },
+        "board": {
+          "streamValue": "seat-window-h31",
+          "topic": "voucher-consist",
+          "transport": "platform-feed-v2",
+          "ack": "meal-reviewed"
+        },
+        "claim": {
+          "prefix": "CLM",
+          "reason": "MEAL-12",
+          "channel": "voucher-desk"
+        },
+        "layout": {
+          "prefix": "settlement",
+          "cell": "voucher",
+          "device": "PR-SHH-031"
+        }
+      }
+    }
+  ],
+  "ticketIndex": [
+    {"ticketNo": "T-BJP-1021-001", "passenger": "Li Wei", "trainId": "G1021", "stationCode": "BJP", "status": "checked"},
+    {"ticketNo": "T-HGH-7608-019", "passenger": "Chen Yu", "trainId": "G7608", "stationCode": "HGH", "status": "waitlisted"},
+    {"ticketNo": "T-NKH-7137-004", "passenger": "Zhou Min", "trainId": "G7137", "stationCode": "NKH", "status": "checked"},
+    {"ticketNo": "T-SHH-1021-118", "passenger": "Wang Rui", "trainId": "G1021", "stationCode": "SHH", "status": "meal-review"}
+  ],
+  "enterpriseAccounts": [
+    {"accountId": "ACCT-BJP-01", "companyName": "North Hub Settlement", "stationCode": "BJP", "routePolicy": {"signerRoute": "public", "riskTier": "standard"}, "status": "active"},
+    {"accountId": "ACCT-HGH-27", "companyName": "Delta Clearing Desk", "stationCode": "HGH", "routePolicy": {"signerRoute": "delta-window-27", "riskTier": "regional"}, "status": "active"},
+    {"accountId": "ACCT-SHH-31", "companyName": "Harbor Catering Bureau", "stationCode": "SHH", "routePolicy": {"signerRoute": "harbor-window-31", "riskTier": "voucher"}, "status": "active"}
+  ],
+  "signerPolicies": [
+    {"policyId": "POL-BJP-PUBLIC", "stationCode": "BJP", "routeName": "public", "secretKey": "f8212e22e6a5-12307-public", "renderGrant": "plain", "enabled": 1},
+    {"policyId": "POL-BJP-TRUSTED", "stationCode": "BJP", "routeName": "north-window-11", "secretKey": "b40fbd7bd7-12307-trusted", "renderGrant": "receipt-closeout", "enabled": 1},
+    {"policyId": "POL-HGH-PUBLIC", "stationCode": "HGH", "routeName": "public", "secretKey": "1eab18e2-12307-hgh-public", "renderGrant": "plain", "enabled": 1},
+    {"policyId": "POL-HGH-TRUSTED", "stationCode": "HGH", "routeName": "delta-window-27", "secretKey": "e94c0a8d-12307-hgh-trusted", "renderGrant": "receipt-closeout", "enabled": 1},
+    {"policyId": "POL-NKH-PREVIEW", "stationCode": "NKH", "routeName": "river-window-14", "secretKey": "9f68f013-12307-nkh-preview", "renderGrant": "fare-preview", "enabled": 1},
+    {"policyId": "POL-SHH-MEAL", "stationCode": "SHH", "routeName": "harbor-window-31", "secretKey": "d1eab3c4-12307-shh-voucher", "renderGrant": "meal-preview", "enabled": 1}
+  ],
+  "layoutCells": [
+    {"stationCode": "BJP", "layoutName": "standard", "cellName": "folio", "inputClass": "literal", "deviceRef": "pending", "enabled": 1},
+    {"stationCode": "BJP", "layoutName": "standard", "cellName": "carrier", "inputClass": "json-field", "deviceRef": "data.carrier", "enabled": 1},
+    {"stationCode": "BJP", "layoutName": "standard", "cellName": "desk", "inputClass": "literal", "deviceRef": "counter closed", "enabled": 1},
+    {"stationCode": "HGH", "layoutName": "standard", "cellName": "folio", "inputClass": "literal", "deviceRef": "pending", "enabled": 1},
+    {"stationCode": "HGH", "layoutName": "standard", "cellName": "carrier", "inputClass": "json-field", "deviceRef": "data.carrier", "enabled": 1},
+    {"stationCode": "HGH", "layoutName": "standard", "cellName": "desk", "inputClass": "literal", "deviceRef": "counter closed", "enabled": 1},
+    {"stationCode": "NKH", "layoutName": "standard", "cellName": "deskNote", "inputClass": "literal", "deviceRef": "review pending", "enabled": 1},
+    {"stationCode": "SHH", "layoutName": "standard", "cellName": "voucher", "inputClass": "literal", "deviceRef": "meal desk review", "enabled": 1}
+  ],
+  "deviceRoutes": [
+    {"deviceRef": "PR-BJP-011", "stationCode": "BJP", "deviceClass": "counter-layout", "codec": "settlement-filter", "enabled": 1, "driverProfile": "profile-north-closeout"},
+    {"deviceRef": "PR-HGH-042", "stationCode": "HGH", "deviceClass": "counter-layout", "codec": "settlement-filter", "enabled": 1, "driverProfile": "profile-delta-closeout"},
+    {"deviceRef": "PR-NKH-014", "stationCode": "NKH", "deviceClass": "counter-layout", "codec": "literal", "enabled": 1, "driverProfile": "profile-river-preview"},
+    {"deviceRef": "PR-SHH-031", "stationCode": "SHH", "deviceClass": "voucher-layout", "codec": "literal", "enabled": 1, "driverProfile": "profile-harbor-voucher"},
+    {"deviceRef": "PR-HGH-031", "stationCode": "HGH", "deviceClass": "refund-layout", "codec": "literal", "enabled": 1, "driverProfile": "profile-refund-copy"},
+    {"deviceRef": "PR-NKH-227", "stationCode": "NKH", "deviceClass": "baggage-layout", "codec": "settlement-filter", "enabled": 1, "driverProfile": "profile-baggage-preview"},
+    {"deviceRef": "PR-IZQ-019", "stationCode": "IZQ", "deviceClass": "incident-layout", "codec": "literal", "enabled": 1, "driverProfile": "profile-incident-roster"}
+  ]
+}

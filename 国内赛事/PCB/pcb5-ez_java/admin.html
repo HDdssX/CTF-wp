@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+<div class="dashboard-container" id="bubbleContainer">
+
+    <!-- å·¦ä¾§èå / éæèµæº -->
+    <div class="sidebar">
+        <h3>Static Resources</h3>
+        <ul id="fileList"></ul>
+
+        <div class="sidebar-footer">
+            <button class="refresh-btn">Refresh</button>
+            <button class="new-folder-btn">New Folder</button>
+            <button class="change-res-dir-btn">Change Resource Dir</button>
+        </div>
+    </div>
+
+    <!-- å³ä¾§é¢æ¿ -->
+    <div class="main">
+
+        <!-- ä¸æ¹ç»è®¡ä¿¡æ¯ -->
+        <div class="stats">
+            <div class="card">
+                <h4>Total Files</h4>
+                <p id="stat-total-files">0</p>
+            </div>
+
+            <div class="card">
+                <h4>Total Folders</h4>
+                <p id="stat-total-folders">0</p>
+            </div>
+
+            <div class="card">
+                <h4>Storage Used</h4>
+                <p id="stat-storage">0 MB</p>
+            </div>
+        </div>
+
+        <!-- ä¸ä¼ åè½ -->
+        <div class="upload-section">
+            <h3>Upload File</h3>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" name="file" required>
+                <button type="submit">Upload</button>
+            </form>
+            <div id="uploadMsg"></div>
+        </div>
+
+        <!-- æè¿æ´æ° -->
+        <div class="recent-section">
+            <h3>Recent Updates</h3>
+            <ul id="recentList">
+                <li class="empty">No recent files</li>
+            </ul>
+        </div>
+
+        <!-- æä»¶é¢è§å ä½ -->
+        <div class="preview-section">
+            <h3>Preview</h3>
+            <div id="previewBox" class="preview-box">
+                Select a file to preview...
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>

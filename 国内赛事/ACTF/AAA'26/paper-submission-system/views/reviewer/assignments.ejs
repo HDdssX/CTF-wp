@@ -1,0 +1,34 @@
+<% var title = "Review Assignments - AAA'26 Big-1"; %>
+<%- include('../partials/header') %>
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h2 class="mb-0">Review Assignments</h2>
+  <a href="/reviewer/search" class="btn btn-outline-primary">Dynamic Filter</a>
+</div>
+
+<table class="table table-bordered">
+  <thead><tr><th>Paper</th><th>Title</th><th>Topics</th><th>Your Review</th><th>Aggregate</th><th></th></tr></thead>
+  <tbody>
+    <% docs.forEach((doc) => { %>
+      <tr>
+        <td><%= doc.paper.publicId %></td>
+        <td>
+          <strong><%= doc.paper.title %></strong>
+          <div class="text-muted small"><%= doc.paper.abstract.slice(0, 120) %><%= doc.paper.abstract.length > 120 ? '...' : '' %></div>
+        </td>
+        <td><%= doc.paper.topics.join(', ') || 'n/a' %></td>
+        <td><%= doc.review.score === null ? 'Not filed' : `${doc.review.score} (${doc.review.recommendation})` %></td>
+        <td><%= doc.scores.averageScore === null ? 'n/a' : doc.scores.averageScore.toFixed(1) %> / <%= doc.scores.reviewCount %> reviews</td>
+        <td>
+          <a class="btn btn-sm btn-primary" href="/reviewer/papers/<%= doc.paper.id %>/review">Review</a>
+          <a class="btn btn-sm btn-outline-secondary" href="/papers/<%= doc.paper.id %>/view">View</a>
+        </td>
+      </tr>
+    <% }) %>
+    <% if (!docs.length) { %>
+      <tr><td colspan="6" class="text-muted">No assignments currently visible.</td></tr>
+    <% } %>
+  </tbody>
+</table>
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Date: Sat, 14 Mar 2026 21:17:46 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Set-Cookie: PHPSESSID=62ukqvusni8n3kuo4nl7ot11sp; path=/; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 461
+Content-Type: image/png
+

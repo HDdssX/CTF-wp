@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SU Query</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>SU Query</h1>
+    <p class="sub">Search public notes. The server requires a valid signature.</p>
+    <div class="bar">
+      <input id="q" type="text" placeholder="keyword" autocomplete="off" />
+      <button id="run" type="button">Search</button>
+    </div>
+    <div class="panel">
+      <div id="err" class="err"></div>
+      <pre id="out"></pre>
+    </div>
+    <div class="hint">Tip: slow is smooth.</div>
+  </div>
+  <script src="/static/wasm_exec.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>

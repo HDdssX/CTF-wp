@@ -1,0 +1,28 @@
+<% var title = "Users - AAA'26 Big-1"; %>
+<%- include('../partials/header') %>
+
+<h2>Users</h2>
+<table class="table table-striped">
+  <thead><tr><th>Username</th><th>Email</th><th>Role</th><th>Change Role</th></tr></thead>
+  <tbody>
+    <% users.forEach((row) => { %>
+      <tr>
+        <td><%= row.username %></td>
+        <td><%= row.email %></td>
+        <td><span class="badge text-bg-secondary"><%= row.role %></span></td>
+        <td>
+          <form method="POST" action="/admin/users/<%= row._id %>/role" class="d-flex gap-2">
+            <select name="role" class="form-select form-select-sm role-select">
+              <% ['user', 'reviewer', 'admin'].forEach((role) => { %>
+                <option <%= row.role === role ? 'selected' : '' %>><%= role %></option>
+              <% }) %>
+            </select>
+            <button class="btn btn-sm btn-outline-primary">Save</button>
+          </form>
+        </td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<%- include('../partials/footer') %>

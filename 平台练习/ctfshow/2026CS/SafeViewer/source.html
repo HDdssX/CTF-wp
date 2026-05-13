@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CTFshow CS2026 SafeViewer</title>
+    <link rel="stylesheet" href="/static/app.css">
+</head>
+
+<body>
+    <div class="bg">
+        <div class="grid"></div>
+        <div class="glow"></div>
+    </div>
+    <div class="wrap">
+        <header class="top">
+            <div class="brand">
+
+                <div class="t">
+                    <div class="h">CTFshow CS2026 SafeViewer</div>
+                    <div class="s">本系统内网地址http://viewer/</div>
+                </div>
+            </div>
+            <div class="right"><button class="btn ghost" data-tab="docs">文档</button><button class="btn ghost"
+                    data-tab="policies">策略</button><button class="btn ghost" data-tab="artifacts">模板库</button></div>
+        </header>
+        <main class="main">
+            <section id="tab-docs" class="tab">
+                <div class="row">
+                    <div class="card">
+                        <div class="cardh">
+                            <div class="ttl">新建文档</div>
+                            <div class="sub">创建后可预览与导出</div>
+                        </div>
+                        <div class="form">
+                            <div class="f"><label>标题</label><input id="doc-title" placeholder="可选"></div>
+                            <div class="f"><label>作者</label><input id="doc-author" placeholder="Anonymous"></div>
+                            <div class="f"><label>内容</label><textarea id="doc-content" rows="5"
+                                    placeholder="输入正文内容"></textarea></div>
+                            <div class="f"><label>隐藏标记</label><input id="doc-hide" placeholder="0 或 1" value="0"></div>
+                            <div class="actions"><button class="btn" id="doc-create">创建</button><button
+                                    class="btn ghost" id="doc-reset">清空</button></div>
+                            <div class="hint" id="doc-msg"></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardh">
+                            <div class="ttl">文档列表</div>
+                            <div class="sub">预览文档时，系统会自动调用内部render微服务进行处理</div>
+                        </div>
+                        <div class="toolbar"><input id="doc-filter" class="search" placeholder="搜索标题/ID"><button
+                                class="btn ghost" id="doc-refresh">刷新</button></div>
+                        <div class="list" id="doc-list"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="tab-policies" class="tab hide">
+                <div class="row">
+                    <div class="card">
+                        <div class="cardh">
+                            <div class="ttl">新建策略</div>
+                            <div class="sub">用于渲染流程的策略管理</div>
+                        </div>
+                        <div class="form">
+                            <div class="f"><label>策略内容</label><textarea id="pol-body" rows="8"
+                                    placeholder="输入策略内容"></textarea></div>
+                            <div class="actions"><button class="btn" id="pol-create">创建</button><button
+                                    class="btn ghost" id="pol-clear">清空</button></div>
+                            <div class="hint" id="pol-msg"></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardh">
+                            <div class="ttl">策略列表</div>
+                            <div class="sub">选择后可更新</div>
+                        </div>
+                        <div class="toolbar"><input id="pol-id" class="search" placeholder="策略ID（选择后自动填充）"><button
+                                class="btn ghost" id="pol-refresh">刷新</button></div>
+                        <div class="form">
+                            <div class="f"><label>更新内容</label><textarea id="pol-update-body" rows="8"
+                                    placeholder="选择策略后编辑"></textarea></div>
+                            <div class="actions"><button class="btn" id="pol-update">保存更新</button></div>
+                            <div class="hint" id="pol-upd-msg"></div>
+                        </div>
+                        <div class="list" id="pol-list"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="tab-artifacts" class="tab hide">
+                <div class="row">
+                    <div class="card">
+                        <div class="cardh">
+                            <div class="ttl">模板库</div>
+                            <div class="sub">查看内网渲染服务器(非本服务器)上的模板</div>
+                        </div>
+                        <div class="toolbar"><input id="art-path" class="search" placeholder="path"
+                                value="templates"><input id="art-file" class="search" placeholder="filename(可选)"><button
+                                class="btn" id="art-go">查询</button></div>
+                        <div class="hint" id="art-msg"></div>
+                        <div class="list" id="art-list"></div>
+                    </div>
+                    <div class="card">
+                        <div class="cardh">
+                            <div class="ttl">快速操作</div>
+                            <div class="sub">便捷预览与导出</div>
+                        </div>
+                        <div class="form">
+                            <div class="f"><label>文档ID</label><input id="quick-docid" placeholder="输入 doc_id"></div>
+                            <div class="f"><label>策略ID</label><input id="quick-policy" placeholder="可选"></div>
+                            <div class="actions"><button class="btn" id="quick-preview">预览</button><a class="btn ghost"
+                                    id="quick-download" href="#" rel="nofollow">下载</a></div>
+                            <div class="hint" id="quick-msg"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="foot">
+            <div class="f1">SafeViewer Platform</div>
+            <div class="f2" id="status">Ready</div>
+        </footer>
+    </div>
+    <div class="modal hide" id="modal">
+        <div class="mcard">
+            <div class="mhead">
+                <div class="mttl" id="mtitle">预览</div><button class="x" id="mclose">×</button>
+            </div>
+            <pre class="mpre" id="mpre"></pre>
+        </div>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+
+</html>

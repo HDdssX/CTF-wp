@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    restart: always
+    ports:
+      - 62303:3000
+    mem_limit: 512m
+    cpus: 1.0

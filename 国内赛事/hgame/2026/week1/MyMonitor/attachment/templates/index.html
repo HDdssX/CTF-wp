@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Monitor Frontend</title>
+    <style>
+        body { font-family: Arial, Helvetica, sans-serif; max-width: 900px; margin: 24px auto; padding: 0 16px; }
+        h2 { margin-top: 24px; }
+        form { display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
+        input, select, textarea, button { padding: 8px; font-size: 14px; }
+        textarea { min-height: 120px; white-space: pre-wrap; }
+        .row { display:flex; gap:8px; align-items:center; }
+        .small { width: 120px; }
+        .token { word-break: break-all; background:#f3f3f3; padding:8px; }
+        .out { background:#111; color:#0f0; padding:12px; white-space: pre-wrap; }
+
+        /* New Styles for Tabs */
+        nav { display: flex; gap: 4px; margin-bottom: 20px; border-bottom: 1px solid #ccc; padding-bottom: 8px; }
+        nav button { background: #eee; border: 1px solid #ccc; cursor: pointer; }
+        nav button.active { background: #007bff; color: white; border-color: #007bff; }
+        .page { display: none; }
+        .page.active { display: block; }
+    </style>
+</head>
+<body>
+<h1>Monitor 前端</h1>
+
+<nav>
+    <button onclick="showPage('login')" id="btn-login" class="active">登录</button>
+    <button onclick="showPage('register')" id="btn-register">注册</button>
+    <button onclick="showPage('user')" id="btn-user">User Cmd</button>
+    <button onclick="showPage('admin')" id="btn-admin">Admin Cmd</button>
+</nav>
+
+<div id="page-login" class="page active">
+    <h2>登录</h2>
+    <form id="loginForm">
+        <input id="loginUsername" placeholder="用户名" required />
+        <input id="loginPassword" type="password" placeholder="密码" required />
+        <button type="submit">登录</button>
+    </form>
+</div>
+
+<div id="page-register" class="page">
+    <h2>注册</h2>
+    <form id="registerForm">
+        <input id="regUsername" placeholder="用户名" required />
+        <input id="regPassword" type="password" placeholder="密码" required />
+        <button type="submit">注册</button>
+    </form>
+</div>
+
+<div id="page-user" class="page">
+    <h2>User Command (/api/user/cmd)</h2>
+    <form id="userCmdForm">
+        <input id="userCmdInput" placeholder="命令，例如: ls 或 status" required />
+        <input id="userArgsInput" placeholder="参数（作为一个字符串传递）" />
+        <button type="submit">执行</button>
+    </form>
+</div>
+
+<div id="page-admin" class="page">
+    <h2>Admin Command (/api/admin/cmd)</h2>
+    <form id="adminCmdForm">
+        <input id="adminCmdInput" placeholder="命令" required />
+        <input id="adminArgsInput" placeholder="参数" />
+        <button type="submit">执行</button>
+    </form>
+</div>
+
+<section style="margin-top: 40px; border-top: 2px solid #eee; padding-top: 20px;">
+    <div>
+        <h4>当前 Token</h4>
+        <div class="token" id="tokenDisplay">未登录</div>
+        <button id="logoutBtn" style="margin-top:8px;">登出</button>
+    </div>
+
+    <h4>全局输出</h4>
+    <div id="output" class="out">-- 无 --</div>
+</section>
+
+<script>
+    const baseURL = (location.hostname === 'localhost' || location.hostname === '127.0.0.1') ? 'http://localhost:8080' : '';
+    const tokenKey = 'monitor_jwt';
+
+    function showPage(pageId) {
+        // Hide all pages
+        document.querySelectorAll('.page').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('nav button').forEach(el => el.classList.remove('active'));
+
+        // Show specific page
+        document.getElementById('page-' + pageId).classList.add('active');
+        document.getElementById('btn-' + pageId).classList.add('active');
+    }
+
+    function getToken() {
+        return localStorage.getItem(tokenKey) || '';
+    }
+    function setToken(t) {
+        if (t) localStorage.setItem(tokenKey, t);
+        else localStorage.removeItem(tokenKey);
+        renderToken();
+    }
+    function renderToken() {
+        const el = document.getElementById('tokenDisplay');
+        el.textContent = getToken() || '未登录';
+    }
+
+    async function apiRequest(path, body, useAuth = true) {
+        const headers = { 'Content-Type': 'application/json' };
+        if (useAuth) {
+            const tok = getToken();
+            if (tok) headers['Authorization'] = tok;
+        }
+        const res = await fetch(baseURL + path, {
+            method: 'POST',
+            headers,
+            body: JSON.stringify(body)
+        });
+        const txt = await res.text();
+        // 尝试解析成 JSON，否则返回原始文本
+        try { return { status: res.status, data: JSON.parse(txt) }; }
+        catch (e) { return { status: res.status, data: txt }; }
+    }
+
+    // 注册
+    document.getElementById('registerForm').addEventListener('submit', async (ev) => {
+        ev.preventDefault();
+        const username = document.getElementById('regUsername').value.trim();
+        const password = document.getElementById('regPassword').value;
+        const r = await apiRequest('/api/account/register', { username, password }, false);
+        document.getElementById('output').textContent = JSON.stringify(r, null, 2);
+        if (r?.data?.Authorization) setToken(r.data.Authorization);
+    });
+
+    // 登录
+    document.getElementById('loginForm').addEventListener('submit', async (ev) => {
+        ev.preventDefault();
+        const username = document.getElementById('loginUsername').value.trim();
+        const password = document.getElementById('loginPassword').value;
+        const r = await apiRequest('/api/account/login', { username, password }, false);
+        document.getElementById('output').textContent = JSON.stringify(r, null, 2);
+        if (r?.data?.Authorization) setToken(r.data.Authorization);
+    });
+
+    // 登出
+    document.getElementById('logoutBtn').addEventListener('click', () => {
+        setToken('');
+        document.getElementById('output').textContent = '已登出';
+    });
+
+    // User Command
+    document.getElementById('userCmdForm').addEventListener('submit', async (ev) => {
+        ev.preventDefault();
+        const cmd = document.getElementById('userCmdInput').value.trim();
+        const args = document.getElementById('userArgsInput').value;
+        const r = await apiRequest('/api/user/cmd', { cmd, args }, true);
+        document.getElementById('output').textContent = JSON.stringify(r, null, 2);
+    });
+
+    // Admin Command
+    document.getElementById('adminCmdForm').addEventListener('submit', async (ev) => {
+        ev.preventDefault();
+        const cmd = document.getElementById('adminCmdInput').value.trim();
+        const args = document.getElementById('adminArgsInput').value;
+        const r = await apiRequest('/api/admin/cmd', { cmd, args }, true);
+        document.getElementById('output').textContent = JSON.stringify(r, null, 2);
+    });
+
+    // 初始化
+    renderToken();
+</script>
+</body>
+</html>

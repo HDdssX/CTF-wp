@@ -1,0 +1,398 @@
+[
+  {
+    "id": "cmodgu3xu001a1p65u0na4to1",
+    "ticker": "KXBTC200K-26DEC",
+    "side": "NO",
+    "contractPrice": 78,
+    "signalHmac": "ea229c703692935fbc634718a79059c0",
+    "publishedAt": "Fri Apr 03 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "delta_savage"
+  },
+  {
+    "id": "cmodgu3wc000z1p65h5zzxp02",
+    "ticker": "KXRECESSION-26H2",
+    "side": "YES",
+    "contractPrice": 67,
+    "signalHmac": "1d1243326d9afd96892d0e86378bf543",
+    "publishedAt": "Fri Apr 10 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "retail_phoenix"
+  },
+  {
+    "id": "cmodgu3x200141p65ep6mw19y",
+    "ticker": "KXETHFLIP-27Q1",
+    "side": "NO",
+    "contractPrice": 56,
+    "signalHmac": "2ca23c9ec60f821faf1e90b4da2796a8",
+    "publishedAt": "Fri Dec 26 2025 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "probability_oracle"
+  },
+  {
+    "id": "cmodgu3tc000f1p65f8osozav",
+    "ticker": "KXNKTEST-26AUG",
+    "side": "NO",
+    "contractPrice": 7,
+    "signalHmac": "f3c26a801496719cbfb34f01b1aa9705",
+    "publishedAt": "Fri Feb 06 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "oracle_byzantine"
+  },
+  {
+    "id": "cmodgu3ty000j1p65jfre87c0",
+    "ticker": "KXTAYLORENGAGED-26DEC",
+    "side": "NO",
+    "contractPrice": 18,
+    "signalHmac": "17d80505da02aad9e6d9a712b4a8422c",
+    "publishedAt": "Fri Feb 13 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "alpha_hyena"
+  },
+  {
+    "id": "cmodgu3wh00101p65sansc9dk",
+    "ticker": "KXBTC200K-26DEC",
+    "side": "NO",
+    "contractPrice": 10,
+    "signalHmac": "4737670f1d068d0280d8750398ace11f",
+    "publishedAt": "Fri Jan 16 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "probability_oracle"
+  },
+  {
+    "id": "cmodgu3ts000i1p653rforuuo",
+    "ticker": "KXTIKTOKBAN-26OCT",
+    "side": "NO",
+    "contractPrice": 10,
+    "signalHmac": "703e91bda9ee6fad9697aad517406b83",
+    "publishedAt": "Fri Mar 13 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "oracle_byzantine"
+  },
+  {
+    "id": "cmodgu3sl000a1p65vy2xpzke",
+    "ticker": "KXSPXATH-26Q4",
+    "side": "YES",
+    "contractPrice": 27,
+    "signalHmac": "de342d11c9c5b573ed5692dedc35e594",
+    "publishedAt": "Fri Mar 13 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "quant_sable"
+  },
+  {
+    "id": "cmodgu3v2000q1p65hoc4j1pk",
+    "ticker": "KXFEDCUT-26JUL",
+    "side": "NO",
+    "contractPrice": 88,
+    "signalHmac": "6591f434ef5968805ca268fcb1e5e907",
+    "publishedAt": "Mon Apr 20 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "moon_vector"
+  },
+  {
+    "id": "cmodgu3t7000e1p6536o2iepz",
+    "ticker": "KXDOGETOMOON-26Q4",
+    "side": "NO",
+    "contractPrice": 13,
+    "signalHmac": "8775c42ce5935568ef81181cb1adb9b0",
+    "publishedAt": "Mon Apr 20 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "oracle_byzantine"
+  },
+  {
+    "id": "cmodgu3x600151p654ybkrlky",
+    "ticker": "KXOILSPIKE-26SEP",
+    "side": "NO",
+    "contractPrice": 67,
+    "signalHmac": "ca2f2be28089c336e718823ba74778b2",
+    "publishedAt": "Mon Feb 02 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "probability_oracle"
+  },
+  {
+    "id": "cmodgu3v7000r1p65sipewvnz",
+    "ticker": "KXRECESSION-26H2",
+    "side": "YES",
+    "contractPrice": 71,
+    "signalHmac": "051847158c20895502cadfaa63511d67",
+    "publishedAt": "Mon Jan 05 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "moon_vector"
+  },
+  {
+    "id": "cmodgu3sr000b1p65b8r2c46b",
+    "ticker": "KXELECTION-28NOV",
+    "side": "YES",
+    "contractPrice": 62,
+    "signalHmac": "61335c920e87cdbf91965a3fe9f43467",
+    "publishedAt": "Mon Mar 02 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "quant_sable"
+  },
+  {
+    "id": "cmodgu3sw000c1p65fkzqzgwp",
+    "ticker": "KXAGI-27DEC",
+    "side": "NO",
+    "contractPrice": 48,
+    "signalHmac": "523fb94eb109c1d056129a5414dfa2ab",
+    "publishedAt": "Sat Apr 18 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "quant_sable"
+  },
+  {
+    "id": "cmodgu3uk000n1p65m79zdsc7",
+    "ticker": "KXRECESSION-26H2",
+    "side": "YES",
+    "contractPrice": 14,
+    "signalHmac": "61e6f7841ca16c23452d1386a2fcedb0",
+    "publishedAt": "Sat Feb 07 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "alpha_hyena"
+  },
+  {
+    "id": "cmodgu3xb00161p65qmdp718k",
+    "ticker": "KXTAYLORENGAGED-26DEC",
+    "side": "YES",
+    "contractPrice": 30,
+    "signalHmac": "ac02de97ab57b093a5a44b5bbb5c6038",
+    "publishedAt": "Sat Jan 10 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "delta_savage"
+  },
+  {
+    "id": "cmodgu3sg00091p659f78m2ds",
+    "ticker": "KXHOUSECRASH-27H1",
+    "side": "YES",
+    "contractPrice": 14,
+    "signalHmac": "c1125558751481a54b7414bcb90b5bdc",
+    "publishedAt": "Sat Jan 17 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "quant_sable"
+  },
+  {
+    "id": "cmodgu3xp00191p65n0okpaav",
+    "ticker": "KXBTC200K-26DEC",
+    "side": "NO",
+    "contractPrice": 61,
+    "signalHmac": "cce3d5ab55252ae8399bb2a2d4aeaea1",
+    "publishedAt": "Sat Mar 21 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "delta_savage"
+  },
+  {
+    "id": "cmodgu3wr00121p65znvhntyi",
+    "ticker": "KXCPI2PCT-27MAY",
+    "side": "YES",
+    "contractPrice": 72,
+    "signalHmac": "cce70706dfe56ff5c93216ebc43341c1",
+    "publishedAt": "Sat Mar 21 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "probability_oracle"
+  },
+  {
+    "id": "cmodgu3xz001b1p65jqn1xtnf",
+    "ticker": "KXELECTION-28NOV",
+    "side": "YES",
+    "contractPrice": 12,
+    "signalHmac": "08d011a33eca2ac17e126f3227191ed5",
+    "publishedAt": "Sun Dec 28 2025 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "market_sherpa"
+  },
+  {
+    "id": "cmodgu3w3000x1p65k379arha",
+    "ticker": "KXELECTION-28NOV",
+    "side": "NO",
+    "contractPrice": 13,
+    "signalHmac": "6377f7ac893c3155ab3c17b74ac161aa",
+    "publishedAt": "Sun Feb 01 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "retail_phoenix"
+  },
+  {
+    "id": "cmodgu3uw000p1p65q1ldebgn",
+    "ticker": "KXBITCOINETF-26Q2",
+    "side": "YES",
+    "contractPrice": 58,
+    "signalHmac": "0b3436a4c1cb84b08c7ae2ea2c96ea42",
+    "publishedAt": "Sun Feb 15 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "moon_vector"
+  },
+  {
+    "id": "cmodgu3sa00081p658mxp5h6i",
+    "ticker": "KXOILSPIKE-26SEP",
+    "side": "YES",
+    "contractPrice": 18,
+    "signalHmac": "7f7ad4ab48214a0d203280997d0a3e5f",
+    "publishedAt": "Sun Feb 22 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "quant_sable"
+  },
+  {
+    "id": "cmodgu3yl001f1p652ye993ms",
+    "ticker": "KXUNEMPL5-27Q1",
+    "side": "NO",
+    "contractPrice": 8,
+    "signalHmac": "7acf78e2b2cc78d180f512104b8b1956",
+    "publishedAt": "Sun Jan 04 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "market_sherpa"
+  },
+  {
+    "id": "cmodgu3ye001e1p658bfd52qz",
+    "ticker": "KXMARSLAND-30DEC",
+    "side": "NO",
+    "contractPrice": 52,
+    "signalHmac": "e4c12a85dc9b032bd95b577d33549869",
+    "publishedAt": "Sun Mar 08 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "market_sherpa"
+  },
+  {
+    "id": "cmodgu3uf000m1p652unmkstd",
+    "ticker": "KXTAYLORENGAGED-26DEC",
+    "side": "NO",
+    "contractPrice": 39,
+    "signalHmac": "2728427f34b32af885aca0c059fc095e",
+    "publishedAt": "Sun Mar 22 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "alpha_hyena"
+  },
+  {
+    "id": "cmodgu3u4000k1p65dujt1f6h",
+    "ticker": "KXUNEMPL5-27Q1",
+    "side": "YES",
+    "contractPrice": 39,
+    "signalHmac": "031a1ff17d2de3b18f248929e9206c53",
+    "publishedAt": "Thu Feb 12 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "alpha_hyena"
+  },
+  {
+    "id": "cmodgu3th000g1p657hn8q01x",
+    "ticker": "KXSPXATH-26Q4",
+    "side": "NO",
+    "contractPrice": 55,
+    "signalHmac": "f61ede6a92c9fc46f911e796ccda997f",
+    "publishedAt": "Thu Feb 26 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "oracle_byzantine"
+  },
+  {
+    "id": "cmodgu3ww00131p65yu3kbxbg",
+    "ticker": "KXCPI2PCT-27MAY",
+    "side": "NO",
+    "contractPrice": 86,
+    "signalHmac": "e1c1ccddcc91adbc5ab5d8905b40bef7",
+    "publishedAt": "Thu Feb 26 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "probability_oracle"
+  },
+  {
+    "id": "cmodgu3y9001d1p653qs1uges",
+    "ticker": "KXBTC200K-26DEC",
+    "side": "YES",
+    "contractPrice": 92,
+    "signalHmac": "c2cb2c0bfc92f4400c0ecaaa942e1d00",
+    "publishedAt": "Thu Mar 05 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "market_sherpa"
+  },
+  {
+    "id": "cmodgu3uq000o1p651ybsdr8j",
+    "ticker": "KXELECTION-28NOV",
+    "side": "NO",
+    "contractPrice": 47,
+    "signalHmac": "cf9d0470e592c6ee21974d1139aa78eb",
+    "publishedAt": "Thu Mar 19 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "alpha_hyena"
+  },
+  {
+    "id": "cmodgu3wm00111p65cohec2qy",
+    "ticker": "KXFEDCUT-26JUL",
+    "side": "NO",
+    "contractPrice": 52,
+    "signalHmac": "dda40210bb4df3a408c287c4c92ace67",
+    "publishedAt": "Thu Mar 19 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "probability_oracle"
+  },
+  {
+    "id": "cmodgu3w8000y1p658qhrd9u7",
+    "ticker": "KXUNEMPL5-27Q1",
+    "side": "YES",
+    "contractPrice": 14,
+    "signalHmac": "a7399ef348a71f10d867f43c2967d065",
+    "publishedAt": "Thu Mar 19 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "retail_phoenix"
+  },
+  {
+    "id": "cmodgu3xl00181p65tmj2jcok",
+    "ticker": "KXOILSPIKE-26SEP",
+    "side": "YES",
+    "contractPrice": 56,
+    "signalHmac": "973f470cad4192f1c12bd9f3f5f23ed8",
+    "publishedAt": "Thu Mar 26 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "delta_savage"
+  },
+  {
+    "id": "cmodgu3tn000h1p65g6u7gq17",
+    "ticker": "KXHOUSECRASH-27H1",
+    "side": "YES",
+    "contractPrice": 10,
+    "signalHmac": "1fa28cf4a2b78775bfe1cc23c8f37f3f",
+    "publishedAt": "Tue Feb 17 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "oracle_byzantine"
+  },
+  {
+    "id": "cmodgu3vh000t1p6549xf6ix5",
+    "ticker": "KXRECESSION-26H2",
+    "side": "YES",
+    "contractPrice": 36,
+    "signalHmac": "060da770f34579a34ec77a12f970e575",
+    "publishedAt": "Tue Jan 13 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "moon_vector"
+  },
+  {
+    "id": "cmodgu3vt000v1p65ut5jvhuq",
+    "ticker": "KXTIKTOKBAN-26OCT",
+    "side": "NO",
+    "contractPrice": 24,
+    "signalHmac": "4ee0b3c3df0d9ad3514d849b3ad20d2c",
+    "publishedAt": "Tue Mar 03 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "retail_phoenix"
+  },
+  {
+    "id": "cmodgu3vy000w1p657jkj14io",
+    "ticker": "KXELECTION-28NOV",
+    "side": "NO",
+    "contractPrice": 89,
+    "signalHmac": "0599ba9311dbb844293b2205c5bc3987",
+    "publishedAt": "Tue Mar 24 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "retail_phoenix"
+  },
+  {
+    "id": "cmodgu3y4001c1p658ia3q3pp",
+    "ticker": "KXAGI-27DEC",
+    "side": "NO",
+    "contractPrice": 86,
+    "signalHmac": "23ba7d29ae652bd0d279ea88581800cb",
+    "publishedAt": "Wed Apr 01 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "market_sherpa"
+  },
+  {
+    "id": "cmodgu3xg00171p65fak0iczl",
+    "ticker": "KXGPT6SHIP-27JUN",
+    "side": "YES",
+    "contractPrice": 50,
+    "signalHmac": "35f896e05ce348b5f83da90054d541dc",
+    "publishedAt": "Wed Apr 22 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "delta_savage"
+  },
+  {
+    "id": "cmodgu3vn000u1p65vr1ohdix",
+    "ticker": "KXCPI2PCT-27MAY",
+    "side": "YES",
+    "contractPrice": 34,
+    "signalHmac": "77914312c9b46d66a9360fb023f4e040",
+    "publishedAt": "Wed Apr 22 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "retail_phoenix"
+  },
+  {
+    "id": "cmodgu3vc000s1p65wsx65vnd",
+    "ticker": "KXTIKTOKBAN-26OCT",
+    "side": "YES",
+    "contractPrice": 89,
+    "signalHmac": "e0b3c65064748a4ec786d36cb6fd57ba",
+    "publishedAt": "Wed Feb 04 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "moon_vector"
+  },
+  {
+    "id": "cmodgu3t2000d1p651hfwwknb",
+    "ticker": "KXELECTION-28NOV",
+    "side": "NO",
+    "contractPrice": 81,
+    "signalHmac": "f221bf4943d5e063b2b6c2b2256f443e",
+    "publishedAt": "Wed Feb 11 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "quant_sable"
+  },
+  {
+    "id": "cmodgu3u9000l1p65ynir7w9v",
+    "ticker": "KXGOLD3K-26Q3",
+    "side": "NO",
+    "contractPrice": 6,
+    "signalHmac": "234e520bbc385b7654a38612df2168ff",
+    "publishedAt": "Wed Feb 25 2026 06:12:04 GMT+0800 (中国标准时间)",
+    "handle": "alpha_hyena"
+  }
+]

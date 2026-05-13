@@ -1,0 +1,18 @@
+<% var title = "Login - AAA'26 Big-1"; %>
+<%- include('partials/header') %>
+
+<h2>Login</h2>
+<p class="text-muted small">Welcome back. The program is still TBD, but the review forms are extremely real.</p>
+<form method="POST" action="/login" class="narrow-form">
+  <div class="mb-3">
+    <label class="form-label">Username</label>
+    <input name="username" class="form-control" autocomplete="username" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Password</label>
+    <input name="password" type="password" class="form-control" autocomplete="current-password" required>
+  </div>
+  <button class="btn btn-primary">Login</button>
+</form>
+
+<%- include('partials/footer') %>

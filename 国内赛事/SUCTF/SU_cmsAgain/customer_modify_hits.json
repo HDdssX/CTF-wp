@@ -1,0 +1,53 @@
+[
+  {
+    "MemberID": 1,
+    "fields": {
+      "MemberID": "1",
+      "MemberName": "admin",
+      "MemberGender": "1",
+      "Province": "0",
+      "City": "0",
+      "MemberEmail": "xx@qq.com",
+      "MemberTelephone": "400-699-1720",
+      "IsOEM": "0",
+      "MemberBirthday": "1989-09-22",
+      "RegisterTime": "2012-08-23 20:41:34"
+    }
+  },
+  {
+    "MemberID": 2,
+    "fields": {
+      "MemberID": "2",
+      "MemberGender": "1",
+      "Province": "0",
+      "City": "0",
+      "MemberMobile": "13825650191",
+      "IsOEM": "0",
+      "RegisterTime": "2026-03-15 04:20:46"
+    }
+  },
+  {
+    "MemberID": 3,
+    "fields": {
+      "MemberID": "3",
+      "MemberGender": "1",
+      "Province": "0",
+      "City": "0",
+      "MemberMobile": "13660615372",
+      "IsOEM": "0",
+      "RegisterTime": "2026-03-15 04:22:22"
+    }
+  },
+  {
+    "MemberID": 4,
+    "fields": {
+      "MemberID": "4",
+      "MemberGender": "1",
+      "Province": "0",
+      "City": "0",
+      "MemberMobile": "13786161842",
+      "IsOEM": "0",
+      "RegisterTime": "2026-03-15 04:23:25"
+    }
+  }
+]

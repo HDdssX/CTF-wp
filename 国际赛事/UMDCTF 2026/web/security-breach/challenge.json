@@ -1,0 +1,10 @@
+{
+  "id": "security-breach",
+  "name": "security-breach",
+  "description": "Our agents have infiltrated the world's smallest--I mean largest--insider trading network!\n\nThey left a note for you on the server. Best of luck!\n\n`nc challs.umdctf.io 31337`",
+  "category": "web",
+  "author": "tahmid-23",
+  "points": 102,
+  "solves": 100,
+  "sortWeight": 0
+}

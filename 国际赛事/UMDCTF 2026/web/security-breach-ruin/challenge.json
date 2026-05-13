@@ -1,0 +1,10 @@
+{
+  "id": "security-breach-ruin",
+  "name": "security-breach-ruin",
+  "description": "Just like in FNAF, Security Breach was buggy on release.\n\n`nc challs.umdctf.io 31338`",
+  "category": "web",
+  "author": "tahmid-23",
+  "points": 137,
+  "solves": 62,
+  "sortWeight": 0
+}

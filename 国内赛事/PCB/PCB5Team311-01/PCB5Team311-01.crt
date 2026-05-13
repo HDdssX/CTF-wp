@@ -1,0 +1,92 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 12 (0xc)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=CN, ST=BJ, L=Beijing, O=Heetian, CN=Heetian CA/emailAddress=hao_bwen@heetian.com
+        Validity
+            Not Before: Dec  7 01:48:52 2025 GMT
+            Not After : Dec  5 01:48:52 2035 GMT
+        Subject: C=CN, ST=BJ, L=Beijing, O=Heetian, CN=PCB5Team311-01/emailAddress=hao_bwen@heetian.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (2048 bit)
+                Modulus (2048 bit):
+                    00:cb:3a:0a:36:38:b5:8e:ed:4e:49:e2:ce:80:11:
+                    2c:e9:53:8b:33:0c:87:a8:86:9e:c5:89:05:8a:29:
+                    d3:81:cb:21:0a:12:be:2e:4b:f7:a9:19:ea:e6:96:
+                    ac:70:d5:73:bc:48:d2:38:4a:ed:31:08:1e:1d:a5:
+                    7c:66:09:e1:36:16:ca:32:c0:8d:06:53:a1:f8:06:
+                    4c:e3:b6:f7:8a:cb:50:1f:04:7a:6a:f6:90:53:ad:
+                    64:38:92:a4:25:c1:40:a5:10:01:fc:1b:ef:83:7e:
+                    85:9a:44:18:19:74:8b:c5:97:02:db:f2:39:e0:62:
+                    d6:3c:00:69:dd:77:48:04:65:ba:7f:29:20:95:a0:
+                    fe:52:e3:62:56:0a:ef:f8:fd:36:94:9c:29:96:b8:
+                    60:71:21:de:8a:ad:40:92:f3:46:eb:56:f1:33:c1:
+                    d4:3a:f0:e9:56:d4:1f:3e:28:38:44:0b:93:1c:27:
+                    1c:92:64:29:db:50:5c:4c:44:85:92:cf:2f:d3:87:
+                    71:3d:3c:38:42:10:78:1d:00:d5:96:32:21:54:00:
+                    0f:0f:dd:af:17:f0:53:7a:78:e1:d5:04:69:e1:3f:
+                    d2:d0:ff:6b:a5:cf:61:cf:ca:a0:3c:19:e7:33:a9:
+                    ed:f5:04:43:03:ce:70:06:74:3e:6d:9e:01:6f:c1:
+                    67:23
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                Easy-RSA Generated Certificate
+            X509v3 Subject Key Identifier: 
+                90:B0:4F:44:80:4C:7E:81:89:76:BB:5F:F3:18:EA:58:47:FA:23:2E
+            X509v3 Authority Key Identifier: 
+                keyid:45:8E:ED:28:54:EC:65:E6:18:C6:BD:A4:6B:0D:F1:FF:5C:AA:BF:76
+                DirName:/C=CN/ST=BJ/L=Beijing/O=Heetian/CN=Heetian CA/emailAddress=hao_bwen@heetian.com
+                serial:9B:55:85:96:EA:67:2E:4A
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: sha1WithRSAEncryption
+        77:55:a0:4f:c9:ff:bd:c6:06:5c:21:19:bb:ba:fe:96:b2:23:
+        f9:25:b3:d2:6c:a1:6c:e4:43:33:3b:9e:40:81:9c:8f:5e:0a:
+        39:92:f4:43:4d:3a:7c:5b:be:b7:35:d2:43:92:e2:20:05:99:
+        e9:a0:31:66:42:b2:be:71:26:d3:c6:08:d2:f9:0c:42:2b:f4:
+        0f:fa:5c:75:9c:60:d5:ce:c6:c1:31:dc:34:b8:c7:05:47:67:
+        57:9c:24:d2:95:0b:ba:d7:76:ba:de:6a:71:9c:95:7f:a6:9a:
+        d0:f8:13:ae:ce:49:85:39:da:48:d7:a8:f7:fd:0c:33:b5:52:
+        c1:1b:78:df:22:08:e2:c2:02:b5:77:fc:df:82:17:32:cf:1b:
+        22:cf:8c:b4:9f:44:a6:35:b5:1e:95:55:82:91:4c:aa:65:df:
+        85:f6:df:21:b5:8f:63:ec:50:3a:a7:69:f4:22:52:33:52:88:
+        00:fa:7b:97:24:dc:e1:a2:6f:74:81:11:fe:52:bf:1f:f4:47:
+        34:ef:a3:a9:cc:dc:b6:64:81:64:46:f6:94:11:49:e6:4a:1c:
+        d4:5e:06:d6:6e:dd:75:2e:55:5f:90:bb:e3:1e:73:b5:3a:d8:
+        b4:7f:bf:3d:e2:8a:23:90:18:79:e8:28:59:f6:b4:3f:db:7a:
+        1e:93:7d:e1
+-----BEGIN CERTIFICATE-----
+MIIEnTCCA4WgAwIBAgIBDDANBgkqhkiG9w0BAQUFADB4MQswCQYDVQQGEwJDTjEL
+MAkGA1UECBMCQkoxEDAOBgNVBAcTB0JlaWppbmcxEDAOBgNVBAoTB0hlZXRpYW4x
+EzARBgNVBAMTCkhlZXRpYW4gQ0ExIzAhBgkqhkiG9w0BCQEWFGhhb19id2VuQGhl
+ZXRpYW4uY29tMB4XDTI1MTIwNzAxNDg1MloXDTM1MTIwNTAxNDg1MlowfDELMAkG
+A1UEBhMCQ04xCzAJBgNVBAgTAkJKMRAwDgYDVQQHEwdCZWlqaW5nMRAwDgYDVQQK
+EwdIZWV0aWFuMRcwFQYDVQQDEw5QQ0I1VGVhbTMxMS0wMTEjMCEGCSqGSIb3DQEJ
+ARYUaGFvX2J3ZW5AaGVldGlhbi5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDLOgo2OLWO7U5J4s6AESzpU4szDIeohp7FiQWKKdOByyEKEr4uS/ep
+Germlqxw1XO8SNI4Su0xCB4dpXxmCeE2FsoywI0GU6H4BkzjtveKy1AfBHpq9pBT
+rWQ4kqQlwUClEAH8G++DfoWaRBgZdIvFlwLb8jngYtY8AGndd0gEZbp/KSCVoP5S
+42JWCu/4/TaUnCmWuGBxId6KrUCS80brVvEzwdQ68OlW1B8+KDhEC5McJxySZCnb
+UFxMRIWSzy/Th3E9PDhCEHgdANWWMiFUAA8P3a8X8FN6eOHVBGnhP9LQ/2ulz2HP
+yqA8Geczqe31BEMDznAGdD5tngFvwWcjAgMBAAGjggEsMIIBKDAJBgNVHRMEAjAA
+MC0GCWCGSAGG+EIBDQQgFh5FYXN5LVJTQSBHZW5lcmF0ZWQgQ2VydGlmaWNhdGUw
+HQYDVR0OBBYEFJCwT0SATH6BiXa7X/MY6lhH+iMuMIGqBgNVHSMEgaIwgZ+AFEWO
+7ShU7GXmGMa9pGsN8f9cqr92oXykejB4MQswCQYDVQQGEwJDTjELMAkGA1UECBMC
+QkoxEDAOBgNVBAcTB0JlaWppbmcxEDAOBgNVBAoTB0hlZXRpYW4xEzARBgNVBAMT
+CkhlZXRpYW4gQ0ExIzAhBgkqhkiG9w0BCQEWFGhhb19id2VuQGhlZXRpYW4uY29t
+ggkAm1WFlupnLkowEwYDVR0lBAwwCgYIKwYBBQUHAwIwCwYDVR0PBAQDAgeAMA0G
+CSqGSIb3DQEBBQUAA4IBAQB3VaBPyf+9xgZcIRm7uv6WsiP5JbPSbKFs5EMzO55A
+gZyPXgo5kvRDTTp8W763NdJDkuIgBZnpoDFmQrK+cSbTxgjS+QxCK/QP+lx1nGDV
+zsbBMdw0uMcFR2dXnCTSlQu613a63mpxnJV/pprQ+BOuzkmFOdpI16j3/QwztVLB
+G3jfIgjiwgK1d/zfghcyzxsiz4y0n0SmNbUelVWCkUyqZd+F9t8htY9j7FA6p2n0
+IlIzUogA+nuXJNzhom90gRH+Ur8f9Ec076OpzNy2ZIFkRvaUEUnmShzUXgbWbt11
+LlVfkLvjHnO1Oti0f7894oojkBh56ChZ9rQ/23oek33h
+-----END CERTIFICATE-----

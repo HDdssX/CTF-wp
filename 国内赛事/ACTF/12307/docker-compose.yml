@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    restart: always
+    ports:
+      - 62307:80
+    mem_limit: 768m
+    cpus: 1.0

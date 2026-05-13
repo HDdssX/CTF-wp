@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="/App/Tpl/Member/Default/Public/css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/Public/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="/App/Tpl/Member/Default/Public/js/common.js"></script>
+</head>
+<body id="main_page">
+
+<div class="container">
+    <form enctype="multipart/form-data" method="post" id="frm">
+    <input type="hidden" name="NowPage" id="NowPage" value="1" />
+      <div class="table">
+       <div class="toolbars">
+            <li class="toolbar"><a id="selectall" onclick="CheckAll()"  title="全选">全选</a></li>
+            <li class="toolbar"><a id="del" onclick="BatchDel()" title="批量删除">删除</a></li>
+        </div>
+        <table class="datatable" id="datatable">
+        <tr>
+            <th width="35px"  nowrap="nowrap">选中</th>
+            <th width="60px" >简历编号</th>
+            <th>应聘职位</th>
+            <th width="100px" >姓名</th>
+            <th width="50px" >性别</th>
+            
+            <th width="140px" >联系电话</th>
+            <th width="170px" >电子邮件</th>  
+            <th width="135px" >投递时间</th>
+            <th width="150px">操作</th>
+        </tr>
+                     <tr><td colspan="9"  id="NoData">暂无数据！</td></tr>                                
+        </table>
+        <div class="tfoot"><div class="page"></div></div>
+    </div>
+    <input type="hidden" name="__hash__" value="1c7d120206a753057a855196f179cc07_e76c5abbae7e3d80e6bb0fba3629e59c" /></form>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+function Del(id){
+	ConfirmBox("<div id='icon_delete'>确定删除吗？删除后将无法恢复</div>", function () {
+		url = "/index.php/Member/resume/delResume/ResumeID/"+id+"/p/1";
+		location.href = url;
+	});
+}
+
+//批量删除
+function BatchDel(){
+	//var arrChk = $("input[name='InfoID[]'][checked]"); //在高速浏览器长度总是返回0
+	var arrChk = $("input[name='ResumeID[]']");
+	var n = 0;
+	for(var i = 0; i < arrChk.length; i++){
+		if(arrChk[i].checked) n++;
+	}
+	
+	if( n == 0 ) {
+		WarnBox("请先选中要删除的记录！");
+		return;
+	}
+	
+	ConfirmBox("<div id='icon_delete'>确定删除吗？删除后将无法恢复</div>", function () {
+		$('#frm').attr("action", "/index.php/Member/resume/batchDelResume");
+		$('#frm').submit();
+	});
+}
+</script>

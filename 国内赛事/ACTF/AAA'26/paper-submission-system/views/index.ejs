@@ -1,0 +1,39 @@
+<% var title = "AAA'26 Big-1 Conference"; %>
+<%- include('partials/header') %>
+
+<section class="conference-header">
+  <div>
+    <p class="text-uppercase text-muted small mb-1"><%= conference.organizer %> + <%= conference.cohost %></p>
+    <h1><%= conference.name %></h1>
+    <p class="lead mb-0">The premier venue for papers that definitely deserve another reviewing cycle.</p>
+    <p class="text-muted mb-0"><%= conference.motto %></p>
+    <p class="text-muted mb-0">Held in: <%= conference.venue %></p>
+  </div>
+  <a href="/register" class="btn btn-primary">Submit a Paper</a>
+</section>
+
+<div class="row g-3">
+  <div class="col-md-4">
+    <div class="metric">
+      <div class="metric-label">Track</div>
+      <div class="metric-value">Big-1</div>
+      <div class="text-muted small">Single accepted paper, many disappointed authors, immaculate proceedings energy.</div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="metric">
+      <div class="metric-label">Review Model</div>
+      <div class="metric-value">PC</div>
+      <div class="text-muted small">Reviewer assignments, comments, scores, and double-blind optimism.</div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="metric">
+      <div class="metric-label">Decision Policy</div>
+      <div class="metric-value">Strict</div>
+      <div class="text-muted small">Only chairs can mark a paper as accepted; authors can refresh politely.</div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

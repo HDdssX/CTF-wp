@@ -1,0 +1,19 @@
+<% var title = "Decision - AAA'26 Big-1"; %>
+<%- include('../partials/header') %>
+
+<h2>Final Decision</h2>
+<p class="text-muted"><%= paper.title %></p>
+
+<form method="POST" action="/admin/papers/<%= paper._id %>/status" class="narrow-form">
+  <div class="mb-3">
+    <label class="form-label">Status</label>
+    <select name="status" class="form-select">
+      <% statuses.forEach((status) => { %>
+        <option <%= paper.status === status ? 'selected' : '' %>><%= status %></option>
+      <% }) %>
+    </select>
+  </div>
+  <button class="btn btn-success">Update Decision</button>
+</form>
+
+<%- include('../partials/footer') %>

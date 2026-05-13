@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>easy_login Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="noise"></div>
+
+  <main class="shell">
+    <header class="shell-header">
+      <div class="logo">
+        <span class="logo-dot"></span>
+        <span class="logo-text">easy_login</span>
+      </div>
+      <div class="header-right">
+        <span id="currentUser" class="pill pill-muted">guest</span>
+        <button id="btnMe" class="btn btn-ghost">whoami</button>
+      </div>
+    </header>
+
+    <section class="shell-main">
+      <div class="panel panel-left">
+        <h2 class="panel-title">Login Portal</h2>
+        <p class="panel-subtitle">让你登录你尔多龙吗</p>
+
+        <form id="loginForm" class="form" autocomplete="off">
+          <label class="field">
+            <span class="field-label">Username</span>
+            <input id="username" name="username" type="text" placeholder="user / admin" spellcheck="false" />
+          </label>
+
+          <label class="field">
+            <span class="field-label">Password</span>
+            <input id="password" name="password" type="password" placeholder="password" />
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Login</button>
+            <button id="btnLogout" type="button" class="btn btn-ghost">Logout</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="panel panel-right">
+        <div class="panel-header-row">
+          <h2 class="panel-title">Playground</h2>
+          <div style="display:flex; gap:8px; align-items:center;">
+            <input
+              id="visitUrl"
+              type="text"
+              placeholder="http://127.0.0.1:3000/"
+              spellcheck="false"
+              style="max-width: 260px; border-radius: 999px; border: 1px solid rgba(148,163,184,0.55); padding: 6px 10px; font-size: 0.78rem; background: rgba(15,23,42,0.95); color: #e5e7eb;"
+            />
+            <button id="btnVisit" class="btn btn-ghost">/visit</button>
+            <button id="btnAdmin" class="btn btn-accent">/admin</button>
+          </div>
+        </div>
+
+        <div class="terminal" id="terminal">
+          <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="term-title">network console</span>
+          </div>
+          <div class="terminal-body" id="terminalBody"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

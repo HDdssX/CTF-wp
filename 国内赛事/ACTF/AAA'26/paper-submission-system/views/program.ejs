@@ -1,0 +1,49 @@
+<% var title = "Program - AAA'26 Big-1"; %>
+<%- include('partials/header') %>
+
+<section class="conference-header">
+  <div>
+    <p class="text-uppercase text-muted small mb-1"><%= conference.shortName %> Proceedings</p>
+    <h1>Accepted Papers</h1>
+    <p class="lead mb-0">Camera-ready papers selected for the program.</p>
+  </div>
+  <span class="badge text-bg-light border"><%= papers.length %> paper<%= papers.length === 1 ? '' : 's' %></span>
+</section>
+
+<div class="program-grid">
+  <% papers.forEach((paper) => { %>
+    <article class="program-paper">
+      <div class="program-thumb">
+        <% if (paper.cameraReady && paper.cameraReady.thumbnailPath) { %>
+          <img src="<%= paper.cameraReady.thumbnailPath %>" alt="Thumbnail for <%= paper.title %>">
+        <% } else { %>
+          <div class="program-thumb-empty">Thumbnail pending</div>
+        <% } %>
+      </div>
+      <div class="program-paper-body">
+        <div class="text-muted small">Paper <%= paper.publicId %></div>
+        <h2><%= paper.title %></h2>
+        <p><%= paper.abstract %></p>
+        <div class="program-authors">
+          <% (paper.authors || []).forEach((author, index) => { %>
+            <span><%= author.name %><%= index + 1 === paper.authors.length ? '' : ',' %></span>
+          <% }) %>
+        </div>
+        <div class="mt-3">
+          <% (paper.topics || []).forEach((topic) => { %>
+            <span class="badge text-bg-light border"><%= topic %></span>
+          <% }) %>
+        </div>
+      </div>
+    </article>
+  <% }) %>
+
+  <% if (!papers.length) { %>
+    <div class="empty-state">
+      <h2>Program To Be Determined</h2>
+      <p class="text-muted mb-0">Accepted camera-ready papers will appear here after proceedings preparation and a brief moment of chair disbelief.</p>
+    </div>
+  <% } %>
+</div>
+
+<%- include('partials/footer') %>

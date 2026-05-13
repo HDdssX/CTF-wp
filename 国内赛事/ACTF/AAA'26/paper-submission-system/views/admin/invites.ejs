@@ -1,0 +1,19 @@
+<% var title = "Reviewer Invites - AAA'26 Big-1"; %>
+<%- include('../partials/header') %>
+
+<h2>Reviewer Invitations</h2>
+<table class="table table-bordered">
+  <thead><tr><th>Email</th><th>Code</th><th>Used</th><th>Created</th></tr></thead>
+  <tbody>
+    <% invites.forEach((invite) => { %>
+      <tr>
+        <td><%= invite.email %></td>
+        <td><code><%= invite.code %></code></td>
+        <td><%= invite.used ? 'yes' : 'no' %></td>
+        <td><%= invite.createdAt ? invite.createdAt.toISOString() : '' %></td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<%- include('../partials/footer') %>

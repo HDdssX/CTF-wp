@@ -1,0 +1,5 @@
+[registries.crates-io]
+protocol = "sparse"
+
+[source.crates-io]
+registry = "sparse+https://index.crates.io/"

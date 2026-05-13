@@ -1,0 +1,33 @@
+<% var title = "Dynamic Filter - AAA'26 Big-1"; %>
+<%- include('../partials/header') %>
+
+<h2>Reviewer Dynamic Filter</h2>
+<p class="text-muted">Filter assigned papers with JavaScript expressions over <code>paper</code>, <code>review</code>, <code>reviewer</code>, and <code>scores</code>. Open search is approved by the anonymity subcommittee, whose minutes are anonymous even to itself.</p>
+
+<form method="POST" action="/reviewer/search" class="mb-4">
+  <div class="mb-3">
+    <label class="form-label">Expression</label>
+    <textarea name="expression" rows="5" class="form-control monospace"><%= expression %></textarea>
+  </div>
+  <button class="btn btn-primary">Run Filter</button>
+</form>
+
+<table class="table table-striped">
+  <thead><tr><th>Paper</th><th>Title</th><th>Review</th><th>Average</th><th>Status</th></tr></thead>
+  <tbody>
+    <% docs.forEach((doc) => { %>
+      <tr>
+        <td><a href="/papers/<%= doc.paper.id %>/view"><%= doc.paper.publicId %></a></td>
+        <td><%= doc.paper.title %></td>
+        <td><%= doc.review.score === null ? 'n/a' : `${doc.review.score} / ${doc.review.confidence}` %></td>
+        <td><%= doc.scores.averageScore === null ? 'n/a' : doc.scores.averageScore.toFixed(1) %></td>
+        <td><span class="badge bg-<%= statusClass(doc.paper.status) %>"><%= doc.paper.status %></span></td>
+      </tr>
+    <% }) %>
+    <% if (!docs.length) { %>
+      <tr><td colspan="5" class="text-muted"><%= filtered ? 'No results.' : 'No assignments to filter.' %></td></tr>
+    <% } %>
+  </tbody>
+</table>
+
+<%- include('../partials/footer') %>

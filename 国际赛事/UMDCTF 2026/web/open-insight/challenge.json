@@ -1,0 +1,10 @@
+{
+  "id": "open-insight",
+  "name": "open-insight",
+  "description": "Share your market insights with the world.\n\n[open-insight.challs.umdctf.io](https://open-insight.challs.umdctf.io)\n[open-insight-bot.challs.umdctf.io](https://open-insight-bot.challs.umdctf.io)",
+  "category": "web",
+  "author": "tahmid-23",
+  "points": 82,
+  "solves": 131,
+  "sortWeight": 0
+}

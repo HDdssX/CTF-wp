@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>企业网站管理系统|微网站建设|手机网站建设|中英文网站建设-某某科技有限公司</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="author" content="某某科技有限公司">
+<meta name="keywords" content="企业网站管理系统,微网站建设,手机网站建设,中英文网站建设">
+<meta name="description" content="本系统集手机站、微信站、电脑站三站合一，各站数据同步、只需一个空间,维护更方便！订购热线：010-88888888">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,minimal-ui">
+<meta name="format-detection" content="telephone=no">
+<meta name="HomeLanguageMark" content="cn">
+<link href="favicon.ico" type="image/x-icon" rel="icon">
+<link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
+<link href="//res.youdiancms.com/common.css" rel="stylesheet" type="text/css" />
+<link href="/App/Tpl/Home/Default/Public/css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/Public/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="//res.youdiancms.com/common.js"></script>
+<!-- 全局主题样式控制 -->
+<style type="text/css">
+	/*=====主题色 开始=====*/
+	body{ background-color: #F5F5F5; }
+	.btn{ background-color: #0066CC; }
+	/*父级触发子级*/
+	.ThemeColorParent:hover .ThemeColorChild{ color: #0066CC !important; }
+	.ThemeColorParent:hover .ThemeColorBgChild,.ThemeColorParent:hover .ThemeColorBgChildAfter:after{ background-color: #0066CC !important; color: #FFF !important; }
+	.ThemeColorParent:hover .ThemeColorBgColorChild { color: #FFF !important; }
+	/*自身触发*/
+	.ThemeColor,.ThemeColorHover:hover{ color: #0066CC !important; }
+	.ThemeColorBg,.ThemeColorBgHover:hover{ background-color: #0066CC !important; color: #FFF !important; }
+	.ThemeBeforeColorBg:before,.ThemeAfterColorBg:after { background-color: #0066CC !important; }
+	.ThemeColorBorder,.ThemeColorBorderHover:hover,.ThemeColorBorderAfter:after{ border-color: #0066CC !important; }
+	.ThemeColorBorderBottom,.ThemeColorBorderBottomHover:hover{ border-bottom-color: #0066CC; }
+	.ThemeColorBtnHover:hover { border-color:#0066CC !important; color:#0066CC !important; }
+	/*=====主题色 结束=====*/
+
+	/*=====其他不可内联主题及变量 开始=====*/
+	/*语言切换*/
+	#language a{ background-color: #0066CC; }
+	/*导航*/
+	.logo_main_shade2{ background-color: ; opacity: ; }
+	#logo_main.istop,#logo_main.navigation-style1,#logo_main.navigation-style3{ background-color: ; }
+	#navigation ul.navigationlist>li>a{ padding: 0 px; }
+	#navigation ul.navigationlist li a{ color: ; font-size: px; }
+	/*幻灯片*/
+	.bannerlist li .bannertext{ top: %; text-align: ; }
+	.bannerlist li .bannertext .BannerName{ color: ; font-size: px; }
+	.bannerlist li .bannertext .BannerDescription{ color: ; font-size: px; }
+	/*侧边栏*/
+	.sidebar_title h2 { border-color: #0066CC; }
+	.sidelist li a:hover .InfoTitle{ color: #0066CC; }
+	/*翻页*/
+	.page .current{ background-color: #0066CC; border-color: #0066CC; }
+	/*联系我们图标*/
+	#Map .ContactInfo i{ color: #0066CC; }
+</style>
+
+<script>
+	$(document).ready(function(e) {
+		pageInit();
+		function pageInit(){
+			if( $("#member").length > 0 ){
+				if( "0" == 1 ){
+					$.get("/index.php/public/getJson/l/cn", null, function(data){ UpdateLoginStatus(data['MemberID'], data['MemberName'], data['EnableMember']); },"json");
+				}else{
+					UpdateLoginStatus("4", "13952242864", "1");
+				}
+			}
+		}
+		function UpdateLoginStatus(id, name, flag){
+			if(flag==0){
+				$("#member").remove();
+				return;
+			}
+			var html = "";
+			if( id ){
+				html += '<span class="MemberName">'+name+'&nbsp;</span>';
+				html += '<a href="/index.php/member/public/index" target="_blank">会员中心&nbsp;&nbsp;&nbsp;</a>';
+				html += '<a href="/index.php/member/public/logout" target="_self" style="color: red;">退出登录</a>';
+			}else{
+				html += '<a href="/index.php/public/login/l/cn" target="_self">登录&nbsp;&nbsp;&nbsp;</a>';
+				html += '<a href="/index.php/public/reg/l/cn" target="_self">注册&nbsp;</a>';
+			}
+			$("#member").html( html );
+		}
+	});
+</script>
+
+</head>
+<body class="body_index">
+	<!-- wap Logo 开始-->
+<div id="wap_logo_main">
+  <div id="wap_logo">
+     <div id="menu"></div>
+       <div class="WebLogo">
+       		<a class="WebLogo" href="/index.php"><img src="/Upload/public/logo.png" /></a>
+       		       		<a class="shownavbtn" href="javascript:;"></a>
+       	</div>  </div>
+</div>
+<!--wap Logo 结束-->
+
+<!--wap 导航 开始-->
+<div id="wap_navigation">
+    <i id="wap_navigationshade"></i>
+    <ul class="wap_navigationlist">
+        <div class="seachwrap">
+            <form name="frmInfoSearch" method="post" action="/index.php/channel/search/l/cn">
+                <input class="Keywords" name="Keywords" value="" type="text" placeholder="请输入关键词"/>
+                <input class="btnSearch" name="btnSearch" class="btn" type="submit" value=""  />
+            <input type="hidden" name="__hash__" value="e251273eb74a8ee3f661a7af00915af1_efa9cb249afac45ee325f9d5db9f4d6f" /></form>
+        </div>
+        <li class="depth0">
+          		<a href="/index.php/index.html" class='ThemeColor minBorderBottom'>网站首页</a>
+	                          </li><li class="depth0">
+          		<a href="/index.php/aboutus.html" class=' minBorderBottom'>关于我们</a>
+	              <i class="showmore"></i>
+	                  <ul class="wap_subnavigationlist">
+	                      <li class="depth1"><a class="minBorderBottom" href="/index.php/culture.html">企业文化</a></li><li class="depth1"><a class="minBorderBottom" href="/index.php/honor.html">资质荣誉</a></li><li class="depth1"><a class="minBorderBottom" href="/index.php/organization.html">组织机构</a></li><li class="depth1"><a class="minBorderBottom" href="/index.php/video.html">宣传视频</a></li>	                  </ul>            </li><li class="depth0">
+          		<a href="/index.php/news.html" class=' minBorderBottom'>新闻资讯</a>
+	              <i class="showmore"></i>
+	                  <ul class="wap_subnavigationlist">
+	                      <li class="depth1"><a class="minBorderBottom" href="/index.php/companynews.html">公司新闻</a></li><li class="depth1"><a class="minBorderBottom" href="/index.php/industrytrends.html">行业动态</a></li>	                  </ul>            </li><li class="depth0">
+          		<a href="/index.php/product.html" class=' minBorderBottom'>产品中心</a>
+	              <i class="showmore"></i>
+	                  <ul class="wap_subnavigationlist">
+	                      <li class="depth1"><a class="minBorderBottom" href="/index.php/class1.html">浴室柜</a></li><li class="depth2"><a class="minBorderBottom" href="/index.php/fl1.html">分类1</a></li><li class="depth2"><a class="minBorderBottom" href="/index.php/fl2.html">分类2</a></li><li class="depth1"><a class="minBorderBottom" href="/index.php/class2.html">台盆</a></li><li class="depth1"><a class="minBorderBottom" href="/index.php/class3.html">浴缸</a></li><li class="depth1"><a class="minBorderBottom" href="/index.php/class4.html">洗脸盆</a></li>	                  </ul>            </li><li class="depth0">
+          		<a href="/index.php/case.html" class=' minBorderBottom'>工程案例</a>
+	                          </li><li class="depth0">
+          		<a href="/index.php/download.html" class=' minBorderBottom'>资料下载</a>
+	                          </li><li class="depth0">
+          		<a href="/index.php/job.html" class=' minBorderBottom'>人才招聘</a>
+	                          </li><li class="depth0">
+          		<a href="/index.php/guestbook.html" class=' minBorderBottom'>在线留言</a>
+	                          </li><li class="depth0">
+          		<a href="/index.php/contactus.html" class=' minBorderBottom'>联系我们</a>
+	                          </li>    </ul>
+</div>
+<!--wap 导航 结束-->
+
+<!--区块5041 开始-->
+<div id="n5041" class="component floor_head0_main">
+	<style type="text/css">
+		#n5041{
+			background-color:#FFFFFF;		}
+		#n5041 .floor_head0_shade2{
+			background-color:#FFFFFF;			opacity: 0.3;
+			height: 60px;
+			padding: 10px 0;
+		}
+		#n5041 .floor_head0.navigation-style1{
+			background-color:#FFFFFF;		}
+		#n5041.notTop .floor_head0.navigation-style2{
+			background-color:#FFFFFF;		}
+		#n5041 .floor_head0{
+			padding: 10px 0;
+		}
+		#n5041 .logo img{
+			height: 60px;
+		}
+		#n5041 .navigation{
+			text-align: right;
+		}
+		#n5041 .navigation ul.navigationlist li{
+			line-height: 60px;
+		}
+		#n5041 .navigation ul.navigationlist>li>a{
+			font-size:16px;color:#333333;font-weight: normal;font-style: normal;text-align:;			padding-left: 16px;
+			padding-right: 16px;
+		}
+		#n5041 .subnavigationlist{
+					}
+		#n5041 .subnavigationlist a{
+			font-family:Microsoft YaHei;color:#333333;font-weight: normal;font-style: normal;text-align:;		}
+		#n5041 .user{
+			line-height: 60px;
+		}
+		#n5041 #member a.login_btn{
+			font-size:14px;color:#666666;line-height:2.4em;font-weight: normal;font-style: normal;text-align:center;			width:60px;border-radius:4px;border:1px solid #DDDDDD;			background: ;
+		}
+		#n5041 #member a.login_btn:hover{
+			background:#333333; 		}
+		#n5041 #member a.reg_btn{
+			font-size:14px;color:#FFFFFF;line-height:2.4em;font-weight: normal;font-style: normal;text-align:center;			width:60px;border-radius:4px;border:1px solid #00A1E7;			background: #00A1E7;
+			margin-left: 15px;
+		}
+		#n5041 #member a.reg_btn:hover{
+			opacity: .8;		}
+		#n5041 .navigation ul.navigationlist>li>a.current,
+		#n5041 .navigation ul.navigationlist>li:hover>a{
+			color:#FF0066;font-weight: normal;font-style: normal;text-align:;;
+			;
+		}
+		#n5041 .navigation ul.navigationlist>li.separator{
+			width: 2px;
+			height: 60px;
+					}
+		#n5041 .navigation ul.navigationlist>li.separator span{
+			color: ;
+		}
+		#n5041 .subnavigationlist a:hover{
+			background-image: linear-gradient(45deg, #FF6699, #FF0066);			color:#FFFFFF;font-weight: normal;font-style: normal;text-align:;		}
+		#n5041 .nav_active{
+			background: #FF0066;
+		}
+	</style>
+	<i class="floor_head0_shade1"></i>
+	<div class="floor_head0 navigation-style1" yd-add="1" yd-delete="1" yd-order="1" yd-group="5041" yd-content="channel">
+	    <div class="head0 full-width0">
+			<div class="logo" yd-content="basic" yd-group="5041" yd-tab="基本设置">
+				<a href="/index.php" target="_self">
+					<img src="/Upload/public/logo.png" title="某某科技有限公司" alt="某某科技有限公司" />
+				 </a>
+			</div>
+			<div class="user">
+				<div id="member" class="member" yd-content="reg" yd-group="5041" yd-tab="登录注册设置"></div>							</div>
+			<div class="navigation">
+				<ul class="navigationlist">
+					<i class="nav_active"></i>
+											<li class="list-item" data-index="1">
+							<a href="/index.php/index.html" target="_self" class="current">网站首页</a>
+													</li><li class="separator"><span></span></li>						<li class="list-item" data-index="2">
+							<a href="/index.php/aboutus.html" target="_self" class="">关于我们</a>
+							<ul class="subnavigationlist style1">
+										<li><a href="/index.php/culture.html" target="_self">企业文化</a></li><li><a href="/index.php/honor.html" target="_self">资质荣誉</a></li><li><a href="/index.php/organization.html" target="_self">组织机构</a></li><li><a href="/index.php/video.html" target="_self">宣传视频</a></li>									</ul>						</li><li class="separator"><span></span></li>						<li class="list-item" data-index="3">
+							<a href="/index.php/news.html" target="_self" class="">新闻资讯</a>
+							<ul class="subnavigationlist style1">
+										<li><a href="/index.php/companynews.html" target="_self">公司新闻</a></li><li><a href="/index.php/industrytrends.html" target="_self">行业动态</a></li>									</ul>						</li><li class="separator"><span></span></li>						<li class="list-item" data-index="4">
+							<a href="/index.php/product.html" target="_self" class="">产品中心</a>
+							<ul class="subnavigationlist style1">
+										<li><a href="/index.php/class1.html" target="_self">浴室柜</a></li><li><a href="/index.php/class2.html" target="_self">台盆</a></li><li><a href="/index.php/class3.html" target="_self">浴缸</a></li><li><a href="/index.php/class4.html" target="_self">洗脸盆</a></li>									</ul>						</li><li class="separator"><span></span></li>						<li class="list-item" data-index="5">
+							<a href="/index.php/case.html" target="_self" class="">工程案例</a>
+													</li><li class="separator"><span></span></li>						<li class="list-item" data-index="6">
+							<a href="/index.php/download.html" target="_self" class="">资料下载</a>
+													</li><li class="separator"><span></span></li>						<li class="list-item" data-index="7">
+							<a href="/index.php/job.html" target="_self" class="">人才招聘</a>
+													</li><li class="separator"><span></span></li>						<li class="list-item" data-index="8">
+							<a href="/index.php/guestbook.html" target="_self" class="">在线留言</a>
+													</li><li class="separator"><span></span></li>						<li class="list-item" data-index="9">
+							<a href="/index.php/contactus.html" target="_self" class="">联系我们</a>
+													</li>				</ul>
+			</div>
+	    </div>
+	</div>
+	<script>
+		$(function(){
+			var width = 0;
+			var left = 0;
+			//用户
+			pageInit();
+			function pageInit(){
+				if( $("#n5041 #member").length > 0 ){
+					if( "0" == 1 ){
+						$.get("/index.php/public/getJson/l/cn", null, function(data){ UpdateLoginStatus(data['MemberID'], data['MemberName'], data['EnableMember']); },"json");
+					}else{
+						UpdateLoginStatus("4", "13952242864", "1");
+					}
+				}
+			}
+			function UpdateLoginStatus(id, name, flag){
+				if(flag==0){
+					$("#n5041 #member").remove();
+					return;
+				}
+				var html = "";
+				if( id ){
+					html += '<a href="/index.php/member/public/index" target="_blank" class="MemberName">'+name+'</a>';
+					html += '<a href="/index.php/member/public/logout" target="_self" style="color: red;">退出登录</a>';
+				}else{
+					html += '<a href="/index.php/public/login/l/cn" class="login_btn" target="_self">登录</a>';
+					html += '<a href="/index.php/public/reg/l/cn" class="reg_btn" target="_self">注册</a>';
+				}
+				$("#n5041 #member").html( html );
+			}
+
+			// pc导航栏js
+			$('#n5041 ul.navigationlist li').mousemove(function(){
+				if($(this).find('ul').is(":animated")) return;
+				$(this).find('ul').slideDown(280);
+				if($(this).find('.style2').length > 0){
+					var length = $('#n5041 ul.navigationlist>li.list-item').length;
+					console.log(length - $(this).data('index'), length);
+					if(length - $(this).data('index') <= 3){
+						var child = $(this).find('.subnavigationlist');
+						child.css({
+							marginLeft: - (child.width() - $(this).width()) + 'px',
+						})
+					}
+				}
+			});
+			$('#n5041 ul.navigationlist li').mouseleave(function(){
+				$(this).find('ul').slideUp(280);
+			});
+			
+			$('#n5041 .nav_active').css({
+				width: $('#n5041 .navigationlist li a.current').parent().width(),
+				left: $('#n5041 .navigationlist li a.current').parent()[0] && $('#n5041 .navigationlist li a.current').parent()[0].offsetLeft,
+			});
+			$('#n5041 .navigationlist li').mousemove(function(){
+				$('#n5041 .nav_active').css({
+					width: $(this).width(),
+					left: $(this)[0].offsetLeft
+				});
+			})
+			$('#n5041 .navigationlist li').mouseleave(function(){
+				$('#n5041 .nav_active').css({
+					width: $('#n5041 .navigationlist li a.current').parent().width(),
+					left: $('#n5041 .navigationlist li a.current').parent()[0] && $('#n5041 .navigationlist li a.current').parent()[0].offsetLeft,
+				});
+			})
+
+			$('#n5041 .subnavigationlist').mousemove(function(){
+				$('#n5041 .nav_active').css('left', $(this).parent()[0].offsetLeft);
+			})
+
+			if($('#n5041').find('.floor_head0').hasClass('navigation-style2')){
+				$('#n5041').height('0')
+			}else{
+				$('#n5041').height($('#n5041 .floor_head0')[0].clientHeight)
+			}
+			// 头部固定
+			function logoMainChange(){
+				if($('#n5041').offset().top < $(window).scrollTop()){
+					$('#n5041').addClass('notTop');
+				}else{
+					$('#n5041').removeClass('notTop');
+				}
+			}
+			// 滚动事件
+			$(window).scroll(function(){
+				logoMainChange();
+			});
+		})
+	</script>
+</div>
+<!--区块5041 结束--><!--区块5150 开始-->
+<!--区块5150 结束--><!--区块5133 开始-->
+<!--区块5133 结束-->
+
+
+<!--区块5109 开始-->
+<div id="n5109" class="component floor_banner0_main" yd-add="1" yd-delete="1" yd-order="1" yd-group="5109" yd-content="banner,1">
+	<style type="text/css">
+		#n5109 .bannertext{
+			top: 50%;
+			text-align: center;
+		}
+		#n5109 .bannertext .BannerName{ 
+			color:#333333;font-weight: bold;font-style: normal;text-align:;		}
+		#n5109 .bannertext .BannerDescription{
+			color:#999999;font-weight: normal;font-style: normal;text-align:;		}
+		#n5109 .swiper-pagination{
+			yd-previewable-class: banner_dot banner_dotcircle;
+		}
+		@media screen and (min-width: 1200px) {
+			.floor_banner0{
+				height: 520px;
+			}
+		}
+		@media screen and (max-width: 1199px) {
+			.floor_banner0{
+				height: 160px;
+			}
+		}
+	</style>
+	<div class="floor_banner0">
+		<div class="swiper-container">
+			<ul class="banner0 swiper-wrapper">
+				<li class="swiper-slide">
+						<a href="https://www.baidu.com/" target="_blank" ><img src="" pc-src="/Upload/banner/banner2.jpg" wap-src="/Upload/banner/bannerb.jpg" title="重新定义，好卫浴！" alt="重新定义，好卫浴！" /></a>
+													<div class="bannertext">
+							<div class="BannerName" yd-text="banner,3,BannerName">重新定义，好卫浴！</div>							<div class="BannerDescription" yd-text="banner,3,BannerDescription">Perfect product, Inspiration erupts</div>						</div>
+					</li><li class="swiper-slide">
+						<a href="https://www.baidu.com/" target="_blank" ><img src="" pc-src="/Upload/banner/banner1.jpg" wap-src="/Upload/banner/bannera.jpg" title="为每一个家庭，量身定制1" alt="为每一个家庭，量身定制1" /></a>
+													<div class="bannertext">
+							<div class="BannerName" yd-text="banner,4,BannerName">为每一个家庭，量身定制1</div>							<div class="BannerDescription" yd-text="banner,4,BannerDescription">The sun shone into the living room, and it was so beautiful</div>						</div>
+					</li>			</ul>
+		</div>
+		<div class="swiper-pagination banner_dotcircle"></div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			var isLoad = false;
+			$('#n5109 li img').load(function(){
+				if(isLoad) return;
+				isLoad = true;
+				var mySwiper = new Swiper('#n5109 .swiper-container',{
+					autoplay : 5000,//可选选项，自动滑动
+					autoplayDisableOnInteraction : false, //操作后是否禁止自动滑动
+					loop : true,//可选选项，开启循环
+					pagination : '#n5109 .swiper-pagination', //分页器容器
+					paginationClickable :true, //分页器是否可以点击
+					speed: 1500, //滑动速度
+					mode : 'horizontal',
+	                calculateHeight : true, //自动计算高度
+				})
+				$('#n5109 .floor_banner0').height('auto');
+			})
+		})
+	</script>
+</div>
+<!--区块5109 结束--><!--区块5137 开始-->
+<div id="n5137" class="component floor_article13_main" yd-add="1" yd-delete="1" yd-order="1" yd-group="5137" yd-content="info,67">
+	<style type="text/css">
+			#n5137{
+				background-color:#FFFFFF;				padding:0px 0;
+			}
+			#n5137 .component_title a{ 
+				font-weight: bold;font-style: normal;text-align:;			}
+			#n5137 .component_bottom a,
+			#n5137 li a{ 
+				font-weight: normal;font-style: normal;text-align:;			}
+			#n5137 li a{
+				yd-previewable-class: ydicon- ydicon-dot2;
+			}
+			#n5137 li a:before{
+				color: #666666;
+			}
+			#n5137 li span{ 
+				font-weight: normal;font-style: normal;text-align:;			}
+			#n5137 li{
+				animation-duration: 1.00s;
+				animation-fill-mode: both;
+			}
+		</style>
+		<div class="floor_article13 display1 full-width0">
+			<div class="component_title" yd-group="5137" yd-tab="标题设置">
+				<img src="/Upload/icon/notice.png" />
+				<a href="/index.php/wzgg.html" target="_blank" yd-text="channel,67,ChannelName">网站公告</a>
+			</div>
+			<div class="component_body">
+				<ul class="article13">
+					<li yd-animation="animate__animated animate__flipInX"><a href="/index.php/wzgg/338.html" target="_blank" class="ydicon-dot2">新员工加入，无法快速融入团队，怎么办？</a><span>2020-12-26</span></li><li yd-animation="animate__animated animate__flipInX"><a href="/index.php/wzgg/337.html" target="_blank" class="ydicon-dot2">关于公司放假的公告</a><span>2020-12-26</span></li>				</ul>
+			</div>
+			<div class="component_bottom"><a href="/index.php/wzgg.html" target="_blank">更多<i class="ydicon-right"></i></a></div>
+		</div></div>
+<!--区块5137 结束--><!--区块5110 开始-->
+<div id="n5110" class="component floor_other1_main"  yd-add="1" yd-delete="1" yd-order="1" yd-group="5110" yd-content="_channel,59">
+	<style type="text/css">
+			#n5110{
+				padding:40px 0;
+				background-color:#F5F5F5;			}
+			#n5110 .component_title h2 a{
+				font-weight: normal;font-style: normal;text-align:;			}
+			#n5110 .component_title p{
+				font-weight: normal;font-style: normal;text-align:;			}
+			#n5110 .AlbumTitle{
+				font-size:18px;color:#333333;font-weight: normal;font-style: normal;text-align:;			}
+			#n5110 .AlbumDescription{
+				font-size:14px;color:#666666;font-weight: normal;font-style: normal;text-align:;			}
+			#n5110 li{
+				animation-duration: 3.00s;
+				animation-fill-mode: both;
+				yd-previewable-class: column column2;
+			}
+		</style>
+		<div class="floor_other1 display1 full-width0">
+						<div class="component_body">
+				<ul class="other1" yd-content="_channel,59,4" yd-group="5110" yd-tab="列表设置">
+					<li class="n0 column2" yd-animation="animate__animated animate__">
+							<a class="small-round-corner ThemeColorParent">
+								<div class="AlbumPicture"><img src="/Upload/channel/channel7_album1.jpg" title="超强责任的设计团队" alt="超强责任的设计团队" /></div>
+								<div class="AlbumWrap">
+									<div class="AlbumTitle ThemeColorChild">超强责任的设计团队</div>
+									<div class="AlbumDescription">公司下属有员工100余名。其中高级技术人员30多名；核心生产团队行业经验平均有10年以上；生产员工行业经验平均3年以上</div>
+								</div>
+							</a>
+						</li><li class="n1 column2" yd-animation="animate__animated animate__">
+							<a class="small-round-corner ThemeColorParent">
+								<div class="AlbumPicture"><img src="/Upload/channel/channel7_album2.jpg" title="高素质的研发生产团队" alt="高素质的研发生产团队" /></div>
+								<div class="AlbumWrap">
+									<div class="AlbumTitle ThemeColorChild">高素质的研发生产团队</div>
+									<div class="AlbumDescription">秉持安全设计的理念，采取人工力学工程的方法。选择适合人体要求，不劳烦腰部，还能使得健身达到最大的效果</div>
+								</div>
+							</a>
+						</li>				</ul>
+			</div>
+			<div class="component_bottom"></div>
+		</div></div>
+<!--区块5110 结束--><!--区块5148 开始-->
+<div id="n5148" class="component floor_product0_main" yd-add="1" yd-delete="1" yd-order="1" yd-group="5148">
+    <style type="text/css">
+            #n5148{
+                padding:40px 0;
+                background-color:#FFFFFF;            }
+            #n5148 .component_title h2 a{ 
+                font-weight: normal;font-style: normal;text-align:;            }
+            #n5148 .component_title p{ 
+                font-weight: normal;font-style: normal;text-align:;            }
+            #n5148 .tabbar a{
+                font-weight: normal;font-style: normal;text-align:;            }
+            #n5148 .InfoTitle{ 
+                padding-left:10px;padding-right:10px;font-weight: normal;font-style: normal;text-align:;            }
+            #n5148 .InfoSContent{ 
+                padding-left:10px;padding-right:10px;font-weight: normal;font-style: normal;text-align:;            }
+            #n5148 .InfoPrice{ 
+                font-size:18px;padding-left:10px;padding-right:10px;font-weight: bold;font-style: normal;text-align:;            }
+            #n5148 .component_body ul{
+                yd-previewable-class: -product0 grid-product0;
+            }
+            #n5148 .component_body li{
+                yd-previewable-class: column column3;
+            }
+            #n5148 li{
+                animation-duration: 1.00s;
+                animation-fill-mode: both;
+            }
+            #n5148 .thumb-product0 li .InfoPicture{
+                width: 0%;
+            }
+            #n5148 .product0 li a{
+                background-color:#FFFFFF;                border:1px solid #DDDDDD;                padding: 0px 0px 0px 0px;
+                margin: 0px 5px 10px 5px;
+            }
+        </style>
+        <div class="floor_product0 display1 full-width0">
+            <div class="component_title">
+                <h2 class="h2_2 ThemeBeforeColorBg"><a href="/index.php/product.html" yd-text="channel,23,ChannelName">产品中心</a></h2>
+                    <p yd-text="channel,23,ChannelSContent">创新产品不止于质量 更追求完美</p>                <ul class="tabbar" yd-content="channel,23">
+                    <li><a class="ThemeColorBg n1" href="javascript:;" data-index="1">浴室柜</a></li><li><a class=" n2" href="javascript:;" data-index="2">台盆</a></li><li><a class=" n3" href="javascript:;" data-index="3">浴缸</a></li><li><a class=" n4" href="javascript:;" data-index="4">洗脸盆</a></li>                </ul>
+            </div>
+            <div class="component_body swiper-container" yd-content="info,23" yd-group="5148" yd-tab="列表设置">
+                <div class="swiper-wrapper">
+                    <ul class="n1 swiper-slide product0 grid-product0">
+                            <li class="n0 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class1/178.html" target="_blank" class="small-round-corner" yd-content="_info,178">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product1.jpg" title="挂式双层抽屉浴室柜" alt="挂式双层抽屉浴室柜"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">挂式双层抽屉浴室柜</div>
+                                            <div class="InfoSContent">
+                                                当前商品的图片和内容描述仅用于效果演示                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>888.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li><li class="n1 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class1/182.html" target="_blank" class="small-round-corner" yd-content="_info,182">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product2.jpg" title="挂式浴室柜单层抽屉" alt="挂式浴室柜单层抽屉"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">挂式浴室柜单层抽屉</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>980.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li><li class="n0 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class1/179.html" target="_blank" class="small-round-corner" yd-content="_info,179">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product4.jpg" title="小型浴室挂式浴室柜双抽屉" alt="小型浴室挂式浴室柜双抽屉"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">小型浴室挂式浴室柜双抽屉</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>980.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li><li class="n1 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class1/183.html" target="_blank" class="small-round-corner" yd-content="_info,183">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product3.jpg" title="挂式浴室柜单层抽屉" alt="挂式浴室柜单层抽屉"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">挂式浴室柜单层抽屉</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>568.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li><li class="n0 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class1/49.html" target="_blank" class="small-round-corner" yd-content="_info,49">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product5.jpg" title="挂式双层大理石浴室柜" alt="挂式双层大理石浴室柜"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">挂式双层大理石浴室柜</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>128.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li><li class="n1 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class1/51.html" target="_blank" class="small-round-corner" yd-content="_info,51">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product6.jpg" title="大浴室柜2m白色双人超薄" alt="大浴室柜2m白色双人超薄"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">大浴室柜2m白色双人超薄</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>128.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li>                        </ul><ul class="n7 swiper-slide product0 grid-product0">
+                            <li class="n0 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class2/173.html" target="_blank" class="small-round-corner" yd-content="_info,173">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product27.jpg" title="白色浴室宽台盆双人" alt="白色浴室宽台盆双人"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">白色浴室宽台盆双人</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>980.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li><li class="n1 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class2/yalibiao1.html" target="_blank" class="small-round-corner" yd-content="_info,185">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product10.jpg" title="小型白色圆形台盆单人" alt="小型白色圆形台盆单人"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">小型白色圆形台盆单人</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>999.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li><li class="n0 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class2/186.html" target="_blank" class="small-round-corner" yd-content="_info,186">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product13.jpg" title="浴室台盆，白色长方形，浅" alt="浴室台盆，白色长方形，浅"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">浴室台盆，白色长方形，浅</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>999.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li><li class="n1 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class2/184.html" target="_blank" class="small-round-corner" yd-content="_info,184">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product12.jpg" title="小型白色方形浴室台盆" alt="小型白色方形浴室台盆"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">小型白色方形浴室台盆</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>378.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li><li class="n0 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class2/180.html" target="_blank" class="small-round-corner" yd-content="_info,180">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product13.jpg" title="黑色浴室柜" alt="黑色浴室柜"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">黑色浴室柜</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>980.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li><li class="n1 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class2/181.html" target="_blank" class="small-round-corner" yd-content="_info,181">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product14.jpg" title="实木浴室柜" alt="实木浴室柜"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">实木浴室柜</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>980.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li>                        </ul><ul class="n7 swiper-slide product0 grid-product0">
+                            <li class="n0 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class3/175.html" target="_blank" class="small-round-corner" yd-content="_info,175">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product18.jpg" title="白色圆形浴室浴缸" alt="白色圆形浴室浴缸"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">白色圆形浴室浴缸</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>980.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li><li class="n1 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class3/162.html" target="_blank" class="small-round-corner" yd-content="_info,162">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product19.jpg" title="精巧白色单人双龙头台盆" alt="精巧白色单人双龙头台盆"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">精巧白色单人双龙头台盆</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>128.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li><li class="n0 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class3/32.html" target="_blank" class="small-round-corner" yd-content="_info,32">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product20.jpg" title="高雅黑色小台盆" alt="高雅黑色小台盆"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">高雅黑色小台盆</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>528.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li><li class="n1 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class3/33.html" target="_blank" class="small-round-corner" yd-content="_info,33">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product21.jpg" title="白色圆形台盆单人" alt="白色圆形台盆单人"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">白色圆形台盆单人</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>628.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li><li class="n0 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class3/34.html" target="_blank" class="small-round-corner" yd-content="_info,34">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product22.jpg" title="长方形圆角白色宽台盆" alt="长方形圆角白色宽台盆"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">长方形圆角白色宽台盆</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>728.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li><li class="n1 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class3/35.html" target="_blank" class="small-round-corner" yd-content="_info,35">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product23.jpg" title="白色宽台盆浅单人" alt="白色宽台盆浅单人"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">白色宽台盆浅单人</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>928.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li>                        </ul><ul class="n7 swiper-slide product0 grid-product0">
+                            <li class="n0 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class4/40.html" target="_blank" class="small-round-corner" yd-content="_info,40">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product24.jpg" title="单人宽台盆白色圆角" alt="单人宽台盆白色圆角"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">单人宽台盆白色圆角</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>999.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li><li class="n1 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class4/41.html" target="_blank" class="small-round-corner" yd-content="_info,41">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product25.jpg" title="白色圆形台盆" alt="白色圆形台盆"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">白色圆形台盆</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>999.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li><li class="n0 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class4/42.html" target="_blank" class="small-round-corner" yd-content="_info,42">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product26.jpg" title="黑色圆形台盆" alt="黑色圆形台盆"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">黑色圆形台盆</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>858.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li><li class="n1 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class4/43.html" target="_blank" class="small-round-corner" yd-content="_info,43">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product27.jpg" title="精巧白色长方形台盆" alt="精巧白色长方形台盆"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">精巧白色长方形台盆</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>128.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li><li class="n0 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class4/44.html" target="_blank" class="small-round-corner" yd-content="_info,44">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product2.jpg" title="研磨长方形台盆" alt="研磨长方形台盆"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">研磨长方形台盆</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>858.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li><li class="n1 column3" yd-animation="animate__animated animate__fadeInRight">
+                                    <a href="/index.php/class4/45.html" target="_blank" class="small-round-corner" yd-content="_info,45">
+                                        <div class="InfoPicture small-round-corner"><img src="/Upload/product/product4.jpg" title="双人白色大台盆" alt="双人白色大台盆"/></div>
+                                        <div class="InfoWrap">
+                                            <div class="InfoTitle">双人白色大台盆</div>
+                                            <div class="InfoSContent">
+                                                铝合金支撑脚 尺寸：175mm高，15mm可调，每副2个 开门后的实际宽度为950mm，为方便安装及使用，请预留足够空间                                            </div>
+                                        </div>
+                                        <div class="InfoPrice">
+                                                <span>￥</span>128.00                                                <i class="ydicon-right3"></i>
+                                            </div>                                    </a>
+                                </li>                        </ul>                </div>
+            </div>
+            <div class="component_bottom"></div>
+        </div>
+        <script type="text/javascript">
+            $(function(){
+                var swiper = new Swiper('#n5148 .swiper-container',{
+                    speed: 500, //滑动速度
+                    calculateHeight : true, //自动计算高度
+                    onTouchEnd: function(item){
+                        console.log(item);
+                        $('#n5148 .tabbar a').removeClass('ThemeColorBg');
+                        $('#n5148 .tabbar a.n' + (item.activeIndex + 1)).addClass('ThemeColorBg');
+                    }
+                });
+                $('#n5148 .tabbar a').click(function(){
+                    $('#n5148 .tabbar a').removeClass('ThemeColorBg');
+                    $(this).addClass('ThemeColorBg');
+                    swiper.swipeTo($(this).attr('data-index') - 1, 2000);
+                })
+            })
+        </script></div>
+<!--区块5148 结束--><!--区块5112 开始-->
+<div id="n5112" class="component floor_video2_main" yd-add="1" yd-delete="1" yd-order="1" yd-group="5112" yd-content="info,55">
+    <style type="text/css">
+            #n5112{
+                background-color:#FFFFFF;            }
+            #n5112 .InfoTitle{ 
+                font-size:18px;color:#333333;font-weight: normal;font-style: normal;text-align:;            }
+            #n5112 .InfoSContent,#n5112 .InfoContent{
+                display:none;color:#333333;font-weight: normal;font-style: normal;text-align:;            }
+            #n5112 .swiper-active-switch{
+                background-color: #CC3300;
+            }
+            #n5112 li{
+                animation-duration: 2.00s;
+                animation-fill-mode: both;
+            }
+        </style>
+        <div class="floor_video2 display1">
+            <div class="component_title"></div>
+            <div class="component_body swiper-container">
+                <ul class="video2 swiper-wrapper" yd-animation="animate__animated animate__fadeIn">
+                    <!-- 循环 开始 -->
+                    <li class="swiper-slide">
+                            <div class="InfoPicture" yd-image="info,207,f1">
+                                <img src="/Upload/video/video_icon1.jpg" title="节能环保" alt="节能环保"/>
+                                <i class="ydicon-play" onclick="videoPlay('https://res.youdiancms.com/jieneng.mp4')"></i>
+                            </div>
+                            <a class="ThemeColorParent" href="/index.php/video/207.html" title="节能环保" target="_blank" yd-content="_info,207">
+                                <div class="InfoTitle ThemeColorChild">节能环保</div>
+                                <div class="InfoSContent">即保护森林资源，是国内外常见的一种宣传口号，森林是由树木为主体所组成的地表生物群落，具有丰富的物种，复杂的结构，多种多样的功能。森林与所在空间的非生物环境有机地结合在一起</div>
+                            </a>
+                        </li><li class="swiper-slide">
+                            <div class="InfoPicture" yd-image="info,206,f1">
+                                <img src="/Upload/video/video_icon1.jpg" title="税务" alt="税务"/>
+                                <i class="ydicon-play" onclick="videoPlay('https://res.youdiancms.com/shuiwu.mp4')"></i>
+                            </div>
+                            <a class="ThemeColorParent" href="/index.php/video/206.html" title="税务" target="_blank" yd-content="_info,206">
+                                <div class="InfoTitle ThemeColorChild">税务</div>
+                                <div class="InfoSContent">即保护森林资源，是国内外常见的一种宣传口号，森林是由树木为主体所组成的地表生物群落，具有丰富的物种，复杂的结构，多种多样的功能。森林与所在空间的非生物环境有机地结合在一起</div>
+                            </a>
+                        </li><li class="swiper-slide">
+                            <div class="InfoPicture" yd-image="info,205,f1">
+                                <img src="/Upload/video/video_icon1.jpg" title="保护森林" alt="保护森林"/>
+                                <i class="ydicon-play" onclick="videoPlay('https://res.youdiancms.com/baohu.mp4')"></i>
+                            </div>
+                            <a class="ThemeColorParent" href="/index.php/video/205.html" title="保护森林" target="_blank" yd-content="_info,205">
+                                <div class="InfoTitle ThemeColorChild">保护森林</div>
+                                <div class="InfoSContent">即保护森林资源，是国内外常见的一种宣传口号，森林是由树木为主体所组成的地表生物群落，具有丰富的物种，复杂的结构，多种多样的功能。森林与所在空间的非生物环境有机地结合在一起</div>
+                            </a>
+                        </li>                </ul>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="component_bottom"></div>
+        </div>
+        <script type="text/javascript">
+            $(function(){
+                var swiper = new Swiper('#n5112 .swiper-container',{
+                    pagination : '#n5112 .swiper-pagination', //分页器容器
+                    paginationClickable :true, //分页器是否可以点击
+                    speed: 1000, //滑动速度
+                    calculateHeight : true, //自动计算高度
+                })
+                if($('#n5112 .video2 a').height() <= 0) return;
+                $('#n5112 .swiper-pagination').css('bottom', $('#n5112 .video2 a').height() + 30);
+                $(window).resize(function(){
+                    $('#n5112 .swiper-pagination').css('bottom', $('#n5112 .video2 a').height() + 30);
+                })
+            })
+        </script></div>
+<!--区块5112 结束--><!--区块5155 开始-->
+<div id="n5155" class="component floor_picture0_main" yd-add="1" yd-delete="1" yd-order="1" yd-group="5155">
+	<style type="text/css">
+			#n5155{
+				padding:20px 0;
+				background-color:#FFFFFF;			}
+			#n5155 .component_title h2 a{
+				font-weight: normal;font-style: normal;text-align:;			}
+			#n5155 .component_title p{
+				font-weight: normal;font-style: normal;text-align:;			}
+			#n5155 .InfoTitle{
+				font-size:18px;color:#333333;line-height:1.8em;padding-left:10px;padding-right:10px;font-weight: normal;font-style: normal;text-align:;			}
+			#n5155 .InfoSContent{
+				color:#999999;line-height:1.8em;padding-left:10px;padding-right:10px;font-weight: normal;font-style: normal;text-align:;			}
+			#n5155 ul{
+				yd-previewable-class: -picture0 grid-picture0;
+			}
+			#n5155 li{
+				animation-duration: 1.50s;
+				animation-fill-mode: both;
+				yd-previewable-class: column column4;
+			}
+			#n5155 .thumb-picture0 li .InfoPicture{
+				width: 0%;
+			}
+	        #n5155 .picture0 li .InfoWrap:after{
+	            	        }
+	        #n5155 .picture0 li a{
+	            background-color:#FFFFFF;	            border:1px solid #DDDDDD;	            padding: 0px 0px 0px 0px;
+	            margin: 0px 10px 20px 10px;
+	        }
+		</style>
+	    <div class="floor_picture0 display1 full-width0">
+	    	<div class="component_title">
+		            <h2 class="h2_2 ThemeBeforeColorBg"><a href="/index.php/case.html" yd-text="channel,32,ChannelName">工程案例</a></h2>
+		            <p yd-text="channel,32,ChannelSContent">完善客户的需求 是我们永不止步的追求</p>
+		        </div>	        <div class="component_body">
+	            <ul class="picture0 grid-picture0" yd-group="5155" yd-tab="列表设置" yd-content="info,32">
+	                <li class="n1 column4" yd-animation="animate__animated animate__zoomInUp">
+	                        <a class="ThemeColorParent small-round-corner" href="/index.php/case/63.html" target="_blank" yd-content="_info,63">
+	                            <div class="InfoPicture"><img src="/Upload/case/case5.jpg" title="挥向造假企业、地方环保部门和地方政府" alt="挥向造假企业、地方环保部门和地方政府" /></div>
+	                            <div class="InfoWrap">
+	                                <div class="InfoTitle ThemeColorChild">挥向造假企业、地方环保部门和地方政府</div>
+	                                <div class="InfoSContent">
+	                                    企业造假行为的背后，都存在部门的不作为，甚至主动造假以显示治污政绩。所毁掉的不仅仅是这几个监测技术人员、几个环境监测站长，而在于动摇了环境监测数据的根本，破坏了环保部门的公信力。	                                </div>
+	                            </div>
+	                        </a>
+	                    </li><li class="n2 column4" yd-animation="animate__animated animate__zoomInUp">
+	                        <a class="ThemeColorParent small-round-corner" href="/index.php/case/64.html" target="_blank" yd-content="_info,64">
+	                            <div class="InfoPicture"><img src="/Upload/case/case6.jpg" title="某无人生产车间，仪表自动报警检测" alt="某无人生产车间，仪表自动报警检测" /></div>
+	                            <div class="InfoWrap">
+	                                <div class="InfoTitle ThemeColorChild">某无人生产车间，仪表自动报警检测</div>
+	                                <div class="InfoSContent">
+	                                    在油田或气田的钻井作业中，由于地理位置偏僻，气候环境恶劣，施工条件较差，而且频繁地搬井，所以，在钻井上铺设电缆非常不容易，成本也高。	                                </div>
+	                            </div>
+	                        </a>
+	                    </li><li class="n3 column4" yd-animation="animate__animated animate__zoomInUp">
+	                        <a class="ThemeColorParent small-round-corner" href="/index.php/case/65.html" target="_blank" yd-content="_info,65">
+	                            <div class="InfoPicture"><img src="/Upload/case/case7.jpg" title="为某人工智能企业制造仪器" alt="为某人工智能企业制造仪器" /></div>
+	                            <div class="InfoWrap">
+	                                <div class="InfoTitle ThemeColorChild">为某人工智能企业制造仪器</div>
+	                                <div class="InfoSContent">
+	                                    人工智能是计算机科学的一个分支，它企图了解智能的实质，并生产出一种新的能以人类智能相似的方式做出反应的智能机器，该领域的研究包括机器人	                                </div>
+	                            </div>
+	                        </a>
+	                    </li><li class="n4 column4" yd-animation="animate__animated animate__zoomInUp">
+	                        <a class="ThemeColorParent small-round-corner" href="/index.php/case/66.html" target="_blank" yd-content="_info,66">
+	                            <div class="InfoPicture"><img src="/Upload/case/case8.jpg" title="空气湿度和风向条件、采样仪的流量数据" alt="空气湿度和风向条件、采样仪的流量数据" /></div>
+	                            <div class="InfoWrap">
+	                                <div class="InfoTitle ThemeColorChild">空气湿度和风向条件、采样仪的流量数据</div>
+	                                <div class="InfoSContent">
+	                                    随着系列工程项目的实施，仪器仪表行业日益得到政府的重视和扶持。这将使仪器仪表行业的市场投资价值日渐突出。	                                </div>
+	                            </div>
+	                        </a>
+	                    </li><li class="n5 column4" yd-animation="animate__animated animate__zoomInUp">
+	                        <a class="ThemeColorParent small-round-corner" href="/index.php/case/62.html" target="_blank" yd-content="_info,62">
+	                            <div class="InfoPicture"><img src="/Upload/case/case4.jpg" title="某品牌汽车仪表，采用我们的智能仪表" alt="某品牌汽车仪表，采用我们的智能仪表" /></div>
+	                            <div class="InfoWrap">
+	                                <div class="InfoTitle ThemeColorChild">某品牌汽车仪表，采用我们的智能仪表</div>
+	                                <div class="InfoSContent">
+	                                    汽车仪表的功能就是获取需要的数据并采用合适的方式显示出来。以前的仪表一般限制在3~4个量的显示和4~5个警告功能，现在新式仪表则达到有约光电子学显示仪表光电子学显示仪表15个量显示和约40个警告监测功能。	                                </div>
+	                            </div>
+	                        </a>
+	                    </li><li class="n6 column4" yd-animation="animate__animated animate__zoomInUp">
+	                        <a class="ThemeColorParent small-round-corner" href="/index.php/case/61.html" target="_blank" yd-content="_info,61">
+	                            <div class="InfoPicture"><img src="/Upload/case/case3.jpg" title="高端办公写字楼提供高低温试验箱" alt="高端办公写字楼提供高低温试验箱" /></div>
+	                            <div class="InfoWrap">
+	                                <div class="InfoTitle ThemeColorChild">高端办公写字楼提供高低温试验箱</div>
+	                                <div class="InfoSContent">
+	                                    高低温试验箱一般放置在实验室用于鉴定产品的耐高低温性能。随着各个行业的发展，对于产品的性能也日趋严格。从而带动了高低温试验箱的应用范围，从最初的各个机械行业、科研院校已渐渐延伸到更多的领域。	                                </div>
+	                            </div>
+	                        </a>
+	                    </li><li class="n7 column4" yd-animation="animate__animated animate__zoomInUp">
+	                        <a class="ThemeColorParent small-round-corner" href="/index.php/case/60.html" target="_blank" yd-content="_info,60">
+	                            <div class="InfoPicture"><img src="/Upload/case/case2.jpg" title="精密量产设备在某企业启用" alt="精密量产设备在某企业启用" /></div>
+	                            <div class="InfoWrap">
+	                                <div class="InfoTitle ThemeColorChild">精密量产设备在某企业启用</div>
+	                                <div class="InfoSContent">
+	                                    传统的机械加工方法(普通加工)与精密和超精密加工方法一样。随着新技术、新工艺、新设备以及新的测试技术和仪器的采用，其加工精度都在不断地提高。	                                </div>
+	                            </div>
+	                        </a>
+	                    </li><li class="n8 column4" yd-animation="animate__animated animate__zoomInUp">
+	                        <a class="ThemeColorParent small-round-corner" href="/index.php/case/31.html" target="_blank" yd-content="_info,31">
+	                            <div class="InfoPicture"><img src="/Upload/case/case1.jpg" title="对地方环境空气质量监测数据" alt="对地方环境空气质量监测数据" /></div>
+	                            <div class="InfoWrap">
+	                                <div class="InfoTitle ThemeColorChild">对地方环境空气质量监测数据</div>
+	                                <div class="InfoSContent">
+	                                    随着系列工程项目的实施，仪器仪表行业日益得到政府的重视和扶持。这将使仪器仪表行业的市场投资价值日渐突出。	                                </div>
+	                            </div>
+	                        </a>
+	                    </li>	            </ul>
+	        </div>
+	        <div class="component_bottom"></div>
+	    </div></div>
+<!--区块5155 结束--><!--区块5114 开始-->
+<div id="n5114" class="component floor_page0_main" yd-add="1" yd-delete="1" yd-order="1" yd-group="5114" yd-content="_channel,15,3">
+	<style type="text/css">
+			#n5114 .ChannelWrap{
+				animation-duration: 1.00s;
+				animation-fill-mode: both;
+			}
+			#n5114 .ChannelContent{
+				max-width: 500px;
+			}
+			#n5114 .ChannelSContent{ 
+				color:#FFFFFF;line-height:2em;font-weight: normal;font-style: normal;text-align:;				max-width: 500px;
+			}
+			#n5114 .ChannelContent p{ 
+				color:#333333;font-weight: normal;font-style: normal;text-align:;			}
+			#n5114 .ChannelContent i{
+				background-color: #FFFFFFBD;
+			}
+			#n5114 .ChannelWrap{
+				animation-duration: 1.00s;
+				animation-fill-mode: both;
+			}
+		</style>
+		<div class="floor_page0 display1">
+			<div class="component_body">
+				<img class="BgPicture" src="https://res.youdiancms.com/page1_bg.jpg" title="关于我们" alt="关于我们" />
+				<div class="ChannelWrap" yd-animation="animate__animated animate__zoomInDown">
+					<div class="ChannelSContent" yd-text="channel,15,ChannelSContent">不止于质量 我们更追求完美</div>
+					<div class="ChannelContent BgBackParent" yd-content="_channel,15,3" yd-group="5114" yd-tab="标题设置"><i></i><p>某某电子有限公司成立于2000年，注册资1000万，员工40余人，是一家专业做电子电气的公司。的员工，先进的技术，精良的设备，严格的管理是公司得以不断发展养大、产品能够赢得用户依靠的根本所在。&amp;ldquo;可靠、专业&amp;rdquo;是我们生产精神和服务信念。公司在坚持技术创新的基础上，狠抓质量管理，不断提...</p></div>
+					<div yd-slot="5114A"></div>
+				</div>
+			</div>
+		</div></div>
+<!--区块5114 结束--><!--区块5149 开始-->
+<div id="n5149" class="component floor_article0_main" yd-add="1" yd-delete="1" yd-order="1" yd-group="5149">
+	<style type="text/css">
+			#n5149{
+				background-color:#FFFFFF;				padding:40px 0;
+			}
+			#n5149 .component_title h2 a{
+				font-weight: normal;font-style: normal;text-align:;			}
+			#n5149 .component_title p{
+				font-weight: normal;font-style: normal;text-align:;			}
+			#n5149 .InfoTitle{
+				font-size:18px;padding-left:10px;padding-right:10px;font-weight: normal;font-style: normal;text-align:;			}
+			#n5149 .InfoSContent{
+				font-size:14px;color:#999999;padding-left:10px;padding-right:10px;font-weight: normal;font-style: normal;text-align:;			}
+			#n5149 .InfoTime{
+				font-family:Arial;font-size:16px;color:#999999;padding-left:10px;padding-right:10px;font-weight: normal;font-style: normal;text-align:;			}
+			#n5149 .TitleIcon{
+				width: 16px;
+			}
+			#n5149 li{
+				animation-duration: 2.00s;
+				animation-fill-mode: both;
+				yd-previewable-class: column column4;
+			}
+			#n5149 ul{
+				yd-previewable-class: -article0 grid-article0;
+			}
+			#n5149 .thumb-article0 li .InfoPicture,#n5149 .thumbright-article0 li .InfoPicture{
+				width: 0%;
+			}
+	        #n5149 .article0 li a{
+	            background-color:#FFFFFF;	            border:1px solid #DDDDDD;	            padding: 0px 0px 0px 0px;
+	            margin: 10px 5px 0px 5px;
+	        }
+		</style>
+		<div class="floor_article0 display1 full-width0">
+			<div class="component_title">
+					<h2 class="h2_1 ThemeBeforeColorBg"><a href="/index.php/news.html" yd-text="channel,20,ChannelName">新闻资讯</a></h2>
+					<p yd-text="channel,20,ChannelSContent">企业发展携手你我共前进</p>
+				</div>			<div class="component_body">
+				<ul class="article0 grid-article0" yd-group="5149" yd-tab="列表设置" yd-content="info,20">
+					<li class="n0 column4" yd-animation="animate__animated animate__fadeInUp">
+							<a href="/index.php/industrytrends/200.html" target="_blank" title="小黄车共享单车到底会不会黄？" class="small-round-corner ThemeColorParent" yd-content="_info,200">
+								<div class="InfoPicture">
+									<img src="/Upload/news/news2.jpg" title="小黄车共享单车到底会不会黄？" alt="小黄车共享单车到底会不会黄？" />
+								</div>
+								<div class="InfoWrap">
+									<div class="InfoTitle ThemeColorChild" yd-var="TArticle0InfoTitleFont5149">
+																				小黄车共享单车到底会不会黄？									</div>
+									<div class="InfoSContent" yd-var="TArticle0InfoSContentFont5149">小黄车昭示着共享单车行业的风雨飘摇</div>
+									<div class="InfoTime ThemeColorChild ThemeColorBgChildAfter" yd-var="TArticle0InfoTimeFont5149">2018-06-05</div>
+								</div>
+							</a>
+						</li><li class="n1 column4" yd-animation="animate__animated animate__fadeInUp">
+							<a href="/index.php/industrytrends/201.html" target="_blank" title="国产5G芯片今年下半年将推出" class="small-round-corner ThemeColorParent" yd-content="_info,201">
+								<div class="InfoPicture">
+									<img src="/Upload/news/news1.jpg" title="国产5G芯片今年下半年将推出" alt="国产5G芯片今年下半年将推出" />
+								</div>
+								<div class="InfoWrap">
+									<div class="InfoTitle ThemeColorChild" yd-var="TArticle0InfoTitleFont5149">
+																				国产5G芯片今年下半年将推出									</div>
+									<div class="InfoSContent" yd-var="TArticle0InfoSContentFont5149">紫光集团全球执行副总裁兼紫光展锐CEO曾学忠表示</div>
+									<div class="InfoTime ThemeColorChild ThemeColorBgChildAfter" yd-var="TArticle0InfoTimeFont5149">2018-06-05</div>
+								</div>
+							</a>
+						</li><li class="n0 column4" yd-animation="animate__animated animate__fadeInUp">
+							<a href="/index.php/industrytrends/202.html" target="_blank" title="小米产业链概念股涨幅居前，蓝思科技等多股跟涨" class="small-round-corner ThemeColorParent" yd-content="_info,202">
+								<div class="InfoPicture">
+									<img src="/Upload/news/news3.jpg" title="小米产业链概念股涨幅居前，蓝思科技等多股跟涨" alt="小米产业链概念股涨幅居前，蓝思科技等多股跟涨" />
+								</div>
+								<div class="InfoWrap">
+									<div class="InfoTitle ThemeColorChild" yd-var="TArticle0InfoTitleFont5149">
+																				小米产业链概念股涨幅居前，蓝思科技等多股跟涨									</div>
+									<div class="InfoSContent" yd-var="TArticle0InfoSContentFont5149">一季度国内智能手机市场出货数据较差，行业处于全面去库存。</div>
+									<div class="InfoTime ThemeColorChild ThemeColorBgChildAfter" yd-var="TArticle0InfoTimeFont5149">2018-06-05</div>
+								</div>
+							</a>
+						</li><li class="n1 column4" yd-animation="animate__animated animate__fadeInUp">
+							<a href="/index.php/industrytrends/198.html" target="_blank" title="面对人工智能，一万句我爱你，不如一句我懂你" class="small-round-corner ThemeColorParent" yd-content="_info,198">
+								<div class="InfoPicture">
+									<img src="/Upload/news/news4.jpg" title="面对人工智能，一万句我爱你，不如一句我懂你" alt="面对人工智能，一万句我爱你，不如一句我懂你" />
+								</div>
+								<div class="InfoWrap">
+									<div class="InfoTitle ThemeColorChild" yd-var="TArticle0InfoTitleFont5149">
+																				面对人工智能，一万句我爱你，不如一句我懂你									</div>
+									<div class="InfoSContent" yd-var="TArticle0InfoSContentFont5149">随着信息技术的迅猛发展，互联网已经深入到我们的生活和工作的方方面面。它不仅改变了人们的交流方式，更是成为了推动全球数字化进程的核心力量。本文将探讨互联网的起源、...</div>
+									<div class="InfoTime ThemeColorChild ThemeColorBgChildAfter" yd-var="TArticle0InfoTimeFont5149">2018-06-05</div>
+								</div>
+							</a>
+						</li><li class="n0 column4" yd-animation="animate__animated animate__fadeInUp">
+							<a href="/index.php/industrytrends/199.html" target="_blank" title="那些烈日下的排队、等待，是一加在国内的第一次大狂欢" class="small-round-corner ThemeColorParent" yd-content="_info,199">
+								<div class="InfoPicture">
+									<img src="/Upload/news/news5.jpg" title="那些烈日下的排队、等待，是一加在国内的第一次大狂欢" alt="那些烈日下的排队、等待，是一加在国内的第一次大狂欢" />
+								</div>
+								<div class="InfoWrap">
+									<div class="InfoTitle ThemeColorChild" yd-var="TArticle0InfoTitleFont5149">
+																				那些烈日下的排队、等待，是一加在国内的第一次大狂欢									</div>
+									<div class="InfoSContent" yd-var="TArticle0InfoSContentFont5149">随着信息技术的迅猛发展，互联网已经深入到我们的生活和工作的方方面面。它不仅改变了人们的交流方式，更是成为了推动全球数字化进程的核心力量。本文将探讨互联网的起源、...</div>
+									<div class="InfoTime ThemeColorChild ThemeColorBgChildAfter" yd-var="TArticle0InfoTimeFont5149">2018-06-05</div>
+								</div>
+							</a>
+						</li><li class="n1 column4" yd-animation="animate__animated animate__fadeInUp">
+							<a href="/index.php/industrytrends/197.html" target="_blank" title="比尔·盖茨说，今年暑假要读这些书——盖茨的夏日书单" class="small-round-corner ThemeColorParent" yd-content="_info,197">
+								<div class="InfoPicture">
+									<img src="/Upload/news/news6.jpg" title="比尔·盖茨说，今年暑假要读这些书——盖茨的夏日书单" alt="比尔·盖茨说，今年暑假要读这些书——盖茨的夏日书单" />
+								</div>
+								<div class="InfoWrap">
+									<div class="InfoTitle ThemeColorChild" yd-var="TArticle0InfoTitleFont5149">
+																				比尔·盖茨说，今年暑假要读这些书——盖茨的夏日书单									</div>
+									<div class="InfoSContent" yd-var="TArticle0InfoSContentFont5149">随着信息技术的迅猛发展，互联网已经深入到我们的生活和工作的方方面面。它不仅改变了人们的交流方式，更是成为了推动全球数字化进程的核心力量。本文将探讨互联网的起源、...</div>
+									<div class="InfoTime ThemeColorChild ThemeColorBgChildAfter" yd-var="TArticle0InfoTimeFont5149">2018-06-05</div>
+								</div>
+							</a>
+						</li><li class="n0 column4" yd-animation="animate__animated animate__fadeInUp">
+							<a href="/index.php/industrytrends/188.html" target="_blank" title="社交媒体大数据里，藏着手机江湖的残酷物语和崛起秘辛" class="small-round-corner ThemeColorParent" yd-content="_info,188">
+								<div class="InfoPicture">
+									<img src="/Upload/news/news14.jpg" title="社交媒体大数据里，藏着手机江湖的残酷物语和崛起秘辛" alt="社交媒体大数据里，藏着手机江湖的残酷物语和崛起秘辛" />
+								</div>
+								<div class="InfoWrap">
+									<div class="InfoTitle ThemeColorChild" yd-var="TArticle0InfoTitleFont5149">
+																				社交媒体大数据里，藏着手机江湖的残酷物语和崛起秘辛									</div>
+									<div class="InfoSContent" yd-var="TArticle0InfoSContentFont5149">随着信息技术的迅猛发展，互联网已经深入到我们的生活和工作的方方面面。它不仅改变了人们的交流方式，更是成为了推动全球数字化进程的核心力量。本文将探讨互联网的起源、...</div>
+									<div class="InfoTime ThemeColorChild ThemeColorBgChildAfter" yd-var="TArticle0InfoTimeFont5149">2018-06-05</div>
+								</div>
+							</a>
+						</li><li class="n1 column4" yd-animation="animate__animated animate__fadeInUp">
+							<a href="/index.php/companynews/189.html" target="_blank" title="人民日报评美拍：让我们的网络空间清朗起来" class="small-round-corner ThemeColorParent" yd-content="_info,189">
+								<div class="InfoPicture">
+									<img src="/Upload/news/news13.jpg" title="人民日报评美拍：让我们的网络空间清朗起来" alt="人民日报评美拍：让我们的网络空间清朗起来" />
+								</div>
+								<div class="InfoWrap">
+									<div class="InfoTitle ThemeColorChild" yd-var="TArticle0InfoTitleFont5149">
+																				人民日报评美拍：让我们的网络空间清朗起来									</div>
+									<div class="InfoSContent" yd-var="TArticle0InfoSContentFont5149">随着信息技术的迅猛发展，互联网已经深入到我们的生活和工作的方方面面。它不仅改变了人们的交流方式，更是成为了推动全球数字化进程的核心力量。本文将探讨互联网的起源、...</div>
+									<div class="InfoTime ThemeColorChild ThemeColorBgChildAfter" yd-var="TArticle0InfoTimeFont5149">2018-06-05</div>
+								</div>
+							</a>
+						</li>				</ul>
+			</div>
+			<div class="component_bottom"></div>
+		</div></div>
+<!--区块5149 结束--><!--区块5117 开始-->
+<div id="n5117" class="component floor_other2_main" yd-add="1" yd-delete="1" yd-order="1" yd-group="5117" yd-content="_channel,60">
+	<style type="text/css">
+			#n5117{
+				padding:30px 0;
+				background-color:#F4F5F9;			}
+			#n5117 .component_title h2 {
+				font-weight: normal;font-style: normal;text-align:;			}
+			#n5117 .component_title p{
+				font-weight: normal;font-style: normal;text-align:;			}
+			#n5117 .AlbumTitle{
+				font-size:18px;color:#333333;font-weight: bold;font-style: normal;text-align:;			}
+			#n5117 .AlbumDescription{
+				color:#999999;font-weight: normal;font-style: normal;text-align:;			}
+			#n5117 li{
+				animation-duration: 3.00s;
+				animation-fill-mode: both;
+			}
+			#n5117 li .AlbumWrap{
+				border-width:4px;
+				border-style:solid;
+				border-color:#F4F5F9;
+				padding:0px;
+			}
+		</style>
+		<div class="floor_other2 display1 full-width0">
+			<div class="component_title">
+					<h2 class="h2_1 ThemeBeforeColorBg" yd-text="channel,60,ChannelName">我们的客户</h2>
+					<p yd-text="channel,60,ChannelSContent">我们很荣幸地与各单位合作并提供产品和服务</p>
+				</div>			<div class="component_body picture-container" yd-content="_channel,60,4" yd-group="5117" yd-tab="列表设置">
+				<ul class="other2 swiper-wrapper picture-other2">
+					<li class="swiper-slide column5" yd-animation="16">
+							<div class="AlbumWrap small-round-corner">
+								<img src="/Upload/customer/customer1.jpg"  alt="客户1" title="客户1" />
+								<div class="AlbumTitle">客户1</div>
+															</div>
+						</li><li class="swiper-slide column5" yd-animation="16">
+							<div class="AlbumWrap small-round-corner">
+								<img src="/Upload/customer/customer1.jpg"  alt="客户2" title="客户2" />
+								<div class="AlbumTitle">客户2</div>
+															</div>
+						</li><li class="swiper-slide column5" yd-animation="16">
+							<div class="AlbumWrap small-round-corner">
+								<img src="/Upload/customer/customer1.jpg"  alt="客户3" title="客户3" />
+								<div class="AlbumTitle">客户3</div>
+															</div>
+						</li><li class="swiper-slide column5" yd-animation="16">
+							<div class="AlbumWrap small-round-corner">
+								<img src="/Upload/customer/customer1.jpg"  alt="客户4" title="客户4" />
+								<div class="AlbumTitle">客户4</div>
+															</div>
+						</li><li class="swiper-slide column5" yd-animation="16">
+							<div class="AlbumWrap small-round-corner">
+								<img src="/Upload/customer/customer1.jpg"  alt="客户5" title="客户5" />
+								<div class="AlbumTitle">客户5</div>
+															</div>
+						</li><li class="swiper-slide column5" yd-animation="16">
+							<div class="AlbumWrap small-round-corner">
+								<img src="/Upload/customer/customer1.jpg"  alt="客户6" title="客户6" />
+								<div class="AlbumTitle">客户6</div>
+															</div>
+						</li><li class="swiper-slide column5" yd-animation="16">
+							<div class="AlbumWrap small-round-corner">
+								<img src="/Upload/customer/customer1.jpg"  alt="客户7" title="客户7" />
+								<div class="AlbumTitle">客户7</div>
+															</div>
+						</li><li class="swiper-slide column5" yd-animation="16">
+							<div class="AlbumWrap small-round-corner">
+								<img src="/Upload/customer/customer1.jpg"  alt="客户8" title="客户8" />
+								<div class="AlbumTitle">客户8</div>
+															</div>
+						</li><li class="swiper-slide column5" yd-animation="16">
+							<div class="AlbumWrap small-round-corner">
+								<img src="/Upload/customer/customer1.jpg"  alt="客户9" title="客户9" />
+								<div class="AlbumTitle">客户9</div>
+															</div>
+						</li><li class="swiper-slide column5" yd-animation="16">
+							<div class="AlbumWrap small-round-corner">
+								<img src="/Upload/customer/customer1.jpg"  alt="客户10" title="客户10" />
+								<div class="AlbumTitle">客户10</div>
+															</div>
+						</li>				</ul>
+			</div>
+			<div class="component_bottom"></div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				var swiper = new Swiper('#n5117 .swiper-container',{
+					autoplay: 2000,
+					autoplayDisableOnInteraction: false,
+					slidesPerView: 'auto',
+					calculateHeight : true,
+                    loop: true,
+                    loopedSlides: 10				})
+			})
+		</script></div>
+<!--区块5117 结束--><!--区块5119 开始-->
+<div id="n5119" class="component floor_link4_main" yd-add="1" yd-delete="1" yd-content="link" yd-order="1" yd-group="5119">
+	<style type="text/css">
+			#n5119{ 
+				padding:10px 0;
+				background-color:#FFFFFF;			}
+			#n5119 .linklist .link_name{ 
+				font-size:16px;color:#000000;line-height:1em;font-weight: normal;font-style: normal;text-align:;;
+			}
+			#n5119 .linklist li{
+				animation-duration: 1.50s;
+				animation-fill-mode: both;
+				margin-right:10px;
+				font-size:13px;color:#999999;line-height:2em;font-weight: normal;font-style: normal;text-align:;			}
+			#n5119 .linklist li a{ 
+				font-size:13px;color:#999999;line-height:2em;font-weight: normal;font-style: normal;text-align:;			}
+			#n5119 .linklist li img{ 
+				width:86px;
+				height:30px;
+			}
+		</style>
+		<div class="floor_link4 display1 full-width0">
+			<div class="component_title"></div>
+			<div class="component_body">
+				<ul class="linklist">
+					<li class="link_name " yd-animation="6">友情链接：</li>
+						<li yd-animation="6">/</li>																			<li yd-animation="6">
+								<a class="ThemeColorHover" href="http://news.qq.com/" target="_blank">腾讯新闻</a>
+							</li>							<li yd-animation="6">/</li>							<li yd-animation="6">
+								<a class="ThemeColorHover" href="http://www.chinanews.com/" target="_blank">中国新闻网</a>
+							</li>							<li yd-animation="6">/</li>							<li yd-animation="6">
+								<a class="ThemeColorHover" href="http://www.sogou.com/" target="_blank">搜狗</a>
+							</li>							<li yd-animation="6">/</li>							<li yd-animation="6">
+								<a class="ThemeColorHover" href="http://www.sina.com.cn" target="_blank">新浪</a>
+							</li>							<li yd-animation="6">/</li>							<li yd-animation="6">
+								<a class="ThemeColorHover" href="http://www.youdiancms.com" target="_blank">CMS系统</a>
+							</li>							<li yd-animation="6">/</li>							<li yd-animation="6">
+								<a class="ThemeColorHover" href="http://www.baidu.com" target="_blank">百度</a>
+							</li>							<li yd-animation="6">/</li>							<li yd-animation="6">
+								<a class="ThemeColorHover" href="http://www.haosou.com" target="_blank">好搜</a>
+							</li>							<li yd-animation="6">/</li>							<li yd-animation="6">
+								<a class="ThemeColorHover" href="http://www.baidu.com" target="_blank">百度搜索</a>
+							</li>							<li yd-animation="6">/</li>							<li yd-animation="6">
+								<a class="ThemeColorHover" href="http://www.sogou.com" target="_blank">搜狗搜索</a>
+							</li>							<li yd-animation="6">/</li>							<li yd-animation="6">
+								<a class="ThemeColorHover" href="http://www.sina.com.cn" target="_blank">新浪网</a>
+							</li>							<li yd-animation="6">/</li>							<li yd-animation="6">
+								<a class="ThemeColorHover" href="http://www.youdiancms.com" target="_blank">CMS建站</a>
+							</li>							<li yd-animation="6">/</li>							<li yd-animation="6">
+								<a class="ThemeColorHover" href="https://www.yahoo.com/" target="_blank">雅虎</a>
+							</li>							<li yd-animation="6">/</li>							<li yd-animation="6">
+								<a class="ThemeColorHover" href="http://www.youdiancms.com/" target="_blank">CMS</a>
+							</li>							<li yd-animation="6">/</li>							<li yd-animation="6">
+								<a class="ThemeColorHover" href="http://www.netease.com" target="_blank">网易</a>
+							</li>							<li yd-animation="6">/</li>							<li yd-animation="6">
+								<a class="ThemeColorHover" href="http://www.sohu.com" target="_blank">搜狐</a>
+							</li>				</ul>
+			</div>
+			<div class="component_bottom"></div>
+		</div></div>
+<!--区块5119 结束-->
+
+    <!--区块5078 开始-->
+<div id="n5078" class="component floor_foot2_main" yd-add="1" yd-delete="1" yd-order="1" yd-group="5078">
+	<style type="text/css">
+		#n5078{ 
+			background-color:#303030;		}
+		#n5078 .component_title,#n5078 .component_body,#n5078 .component_bottom{
+			padding-top:30px;
+		}
+		#n5078 .component_body{
+			padding-bottom:30px;
+		}
+		#n5078 .component_body:before,#n5078 .component_body:after{
+			background-color:#444444;
+		}
+		#n5078 .floor_foot2{
+			animation-duration: 3.00s;
+			animation-fill-mode: both;
+		}
+		#n5078 .foot2_title { 
+			font-size:18px;font-weight: bold;font-style: normal;text-align:;		}
+		#n5078 .foot2_WeChat .LogoText{ 
+			font-size:14px;line-height:1.8em;font-weight: normal;font-style: normal;text-align:;		}
+		#n5078 .foot2_contact_wrap p{ 
+			font-size:14px;line-height:2em;font-weight: normal;font-style: normal;text-align:;		}
+		#n5078 .foot2_contact_wrap .Telephone{
+			font-size:28px;color:#FFFFFF;font-weight: normal;font-style: normal;text-align:;		}
+		#n5078 .foot2_navigation .channel1{ 
+			font-size:14px;font-weight: normal;font-style: normal;text-align:;		}
+		#n5078 .foot2_Content img {
+			width:px;
+		}
+		#n5078 .foot2_Content .foot2_right_text {
+			font-size:14px;line-height:1.8em;font-weight: normal;font-style: normal;text-align:;		}
+		@media screen and (max-width: 768px) {
+			#n5078 .component_bottom {
+				padding-bottom:30px;
+			}
+		}
+	</style>
+	<div class="floor_foot2 full-width0" yd-animation="12">
+		<div class="component_title" yd-group="5078" yd-tab="左侧栏设置">
+			<div class="foot2_title">关于我们</div>			<div class="foot2_WeChat">
+				<img src="/Upload/public/gzh_qrcode.png" title="扫一扫，关注我们最新消息" alt="扫一扫，关注我们最新消息" /><span class="LogoText">扫一扫，关注我们最新消息</span>			</div>
+			<div yd-slot="5078Afoot"></div>
+		</div>
+		<div class="component_body" yd-group="5078" yd-tab="中间栏设置">
+			<div class="foot2_title">联系我们</div>			<div class="foot2_contact_wrap" yd-content="contact">
+				<div class="Telephone">010-12340000</div>
+				<p>工作时间：周一至周五 9:00-18:00</p>				<p>联系人：李经理</p>				<p>手机：18900000000</p>				<p>邮件：123456@xx.com</p>				<p>地址：北京市丰台区国际大厦1230</p>			</div>
+			<div yd-slot="5078Bfoot"><!--区块5079 开始-->
+<div id="n5079" class="component floor_child5_main" yd-group="5079" yd-delete="1" yd-animation="animate__animated animate__fadeInLeft">
+	<style type="text/css">
+		#n5079{
+			animation-duration: 1.00s;
+			animation-fill-mode: both;
+		}
+		#n5079 .floor_child5{
+			padding: 10px 10px 10px 10px;
+		}
+		#n5079 .Picture{
+			width: 24px;
+			height: 24px;
+			padding: 6px;
+			border:0px solid #FFFFFF;border-radius:89px;box-shadow: 0 3px 6px rgba(0,0,0,.1);		}
+		#n5079 .Picture:hover{
+			background: #F0F0F0 !important;
+		}
+		#n5079 .SubPicture img{
+			width: 115px;
+		}
+		#n5079 ul{
+			text-align: center;
+		}
+		#n5079 li{
+			margin: 0 15px;
+		}
+		#n5079 li .Title{
+			font-size:16px;line-height:2.4em;font-weight: normal;font-style: normal;text-align:;			yd-previewable-class: align align0;
+		}
+	</style>
+	<ul class="floor_child5">
+		<li yd-animation="animate__animated animate__fadeInLeft">
+				<a href="//www.baidu.com" target="_blank">
+					<img class="Picture" src="https://res.youdiancms.com/icon_wx.png" alt="微信" style="background-color: #FFFFFF" title="微信" alt="微信" />
+					<div class="Title align0">微信</div>
+				</a>
+				<div class="SubPicture"><img src="/Upload/public/gzh_qrcode.png" title="微信" alt="微信" /></div>			</li><li yd-animation="animate__animated animate__fadeInLeft">
+				<a href="javascript:void(0);" target="_self">
+					<img class="Picture" src="https://res.youdiancms.com/icon_wb.png" alt="" style="background-color: #FFFFFF" title="" alt="" />
+					<div class="Title align0"></div>
+				</a>
+				<div class="SubPicture"><img src="/Upload/public/gzh_qrcode.png" title="" alt="" /></div>			</li><li yd-animation="animate__animated animate__fadeInLeft">
+				<a href="javascript:void(0);" target="_self">
+					<img class="Picture" src="https://res.youdiancms.com/icon_qq.png" alt="" style="background-color: #FFFFFF" title="" alt="" />
+					<div class="Title align0"></div>
+				</a>
+							</li><li yd-animation="animate__animated animate__fadeInLeft">
+				<a href="/index.php/advantage.html" target="_blank">
+					<img class="Picture" src="https://res.youdiancms.com/icon_fb.png" alt="" style="background-color: #FFFFFF" title="" alt="" />
+					<div class="Title align0"></div>
+				</a>
+							</li>	</ul>
+</div>
+<!--区块5079 结束--></div>
+		</div>
+		<div class="component_bottom" yd-group="5078" yd-tab="右侧栏设置">
+			<div class="foot2_title">底部导航</div>			<ul class="foot2_navigation" yd-content="channel">
+				<li>
+						<a class="channel1 ThemeColorHover" href="/index.php/aboutus.html" target="_self" >关于我们</a>
+					</li><li>
+						<a class="channel1 ThemeColorHover" href="/index.php/news.html" target="_self" >新闻资讯</a>
+					</li><li>
+						<a class="channel1 ThemeColorHover" href="/index.php/product.html" target="_self" >产品中心</a>
+					</li><li>
+						<a class="channel1 ThemeColorHover" href="/index.php/case.html" target="_self" >工程案例</a>
+					</li><li>
+						<a class="channel1 ThemeColorHover" href="/index.php/contactus.html" target="_self" >联系我们</a>
+					</li>			</ul>
+			<div class="foot2_Content">
+				<div class="foot2_right_text">某某电子有限公司成立于2000年，注册资金1000万，员工40余人，是一家专业做电子电气的公司。优秀的员工，先进的技术，精良的设备，严格的管理是公司得以不断发展养大、产品能够赢得用户依靠的根本所在</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--区块5078 结束--><!--区块5015 开始-->
+<div id="n5015" class="component floor_support1_main" yd-add="1" yd-delete="1" yd-order="1" yd-group="5015">
+	<style type="text/css">
+			#n5015{ 
+				background-color:#333333;			}
+			#n5015 .component_body {
+				padding:10px 0;border-top:0px solid #FF0000;
+			}
+			#n5015 .component_body .footer_text{ 
+				text-align:center;
+				font-size:14px;color:#f0f0f0;line-height:1.2em;font-weight: normal;font-style: normal;			}
+			#n5015 .WebInfo,#n5015 .WebInfo a{ 
+				text-align:center;
+				font-size:14px;color:#999999;line-height:1.4em;font-weight: normal;font-style: normal;			}
+			#n5015 .support1_text{
+				font-size:14px;color:#f0f0f0;line-height:1.2em;font-weight: normal;font-style: normal;				center			}
+		</style>
+		<div class="floor_support1 full-width1">
+			<div class="component_title"></div>
+			<div class="component_body">
+				<div class="footer_text">本站内容、图片、视频为网站模板演示数据，如有涉及侵犯版权，请联系我们提供书面反馈，我们核实后会立即删除。 <br />
+本站涵盖的内容、图片、视频等模板演示数据，部分未能与原作者取得联系。若涉及版权问题，请及时通知我们并提供相关证明材料，我们将支付合理报酬或立即予以删除！</div>				<div class="WebInfo support1_center" yd-content="basic">
+					<span class="support1_left"><a  href="http://www.xx.com" target="_self">某某科技有限公司</a>&nbsp;版权所有&nbsp;<a href="https://beian.miit.gov.cn" rel="nofollow" target="_blank">湘ICP备12345678号-1</a>&nbsp;</span>
+			        <span class="support1_right">技术支持：<a href="http://www.youdiancms.com" target="_blank">友点软件</a></span>				</div>
+			</div>
+			<div class="component_bottom"></div>
+		</div></div>
+<!--区块5015 结束-->
+<div class="tool_back"></div>
+	<div id="tool" yd-group="2">
+		<ul class="toollist" style="background-color: #66CCFF;">
+            <li><a  href="/index.php/index.html" ><img src="/Upload/icon/home.png"><p>首页</p></a></li>            <li><a  href="tel:18912340000" ><img src="/Upload/icon/tel.png"><p>拨号</p></a></li>            <li><a  href="/index.php/product.html" ><img src="/Upload/icon/product.png"><p>产品</p></a></li>			<li><a  href="/index.php/contactus.html" ><img src="/Upload/icon/contact.png"><p>联系</p></a></li>		</ul>
+	</div>
+<style>
+/*----------------------通用样式----------------------*/ 
+
+/*----------------------大屏幕 大桌面显示器 (≥1200px)----------------------*/
+@media screen and (min-width: 1200px) {
+
+}
+
+/*----------------------小屏幕 平板 (≥700px并且≤1199px)----------------------*/
+@media screen and (min-width: 700px) and (max-width: 1199px) {
+
+}
+
+/*----------------------超小屏幕 手机 (≤699px)----------------------*/
+@media screen and (max-width: 699px) {
+
+}
+</style>
+
+<!----------------------自定义脚本代码---------------------->
+<script  type="text/javascript">
+$(document).ready(function(){
+
+});
+</script><!--gotop start-->
+    <style>
+            #topcontrol .yd-gotop{
+                 transition-duration: .2s;  text-align: center; cursor: pointer; background: #FFFFFF; 
+                 width: 50px;  height: 60px;line-height: 60px;
+                border-radius:3px; box-shadow: 0 2px 18px rgba(0,0,0,.1);
+            }
+            #topcontrol .yd-gotop:hover{ background: #F9F9F9; }
+            #topcontrol .yd-gotop i{ font-size:30px; color:#0066CC; }
+            #topcontrol .yd-gotop:hover i{ color:#0066CC; }
+    </style>
+    <script>
+        scrolltotop.controlattrs={offsetx:12, offsety:120 };
+        scrolltotop.controlHTML = '<div yd-content="gotop" class="yd-gotop"><i class="ydicon-gotop18"></i></div>';
+        scrolltotop.anchorkeyword = '#yd-gotop';
+        scrolltotop.title = "回顶部";
+        scrolltotop.init();
+    </script>
+    <!--gotop end-->
+
+		<!--在线客服start-->
+		<link rel='stylesheet' type='text/css' href='/Public/online/style/common.css'/>
+            <script type='text/javascript' src='/Public/online/jquery.online.js'></script>
+		<style>
+			.SonlineBox .openTrigger, .SonlineBox .titleBox{ background-color:#0066CC; }
+			.SonlineBox .contentBox{ border:2px solid #0066CC;  }
+		</style>
+		<script type='text/javascript'>
+		$(window).load(function(){
+			$().Sonline({
+				Position:'right', Top:320, Width:55, Style:3, Effect:false, 
+				DefaultsOpen:true, Tel:'1', Title:'在线客服',
+				FooterText:"<img alt='微信扫一扫 关注我们' src='/Upload/public/kefu_qrcode.jpg' style='width: 130px; height: 130px;margin-top:8px;' title='微信扫一扫 关注微信公众号' /><br /><b style='color: rgb(255, 0, 0);'>wangzhan</b><br /><strong>扫一扫，关注微信公众号</strong>", Website:'',
+				IconColor: '#FFFFFF', ThemeColor: '#0066CC',
+				Qqlist:'/Upload/public/kefu_qrcode.jpg|微信客服|9,010-12340000|联系电话|8,|测试|10,123456|业务咨询|1'
+			});
+		});
+		</script>
+		<!--在线客服end-->
+		
+
+
+</body>
+</html>

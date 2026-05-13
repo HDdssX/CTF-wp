@@ -1,0 +1,29 @@
+<% var title = "Register Paper - AAA'26 Big-1"; %>
+<%- include('../partials/header') %>
+
+<h2>Register Paper</h2>
+<form method="POST" action="/papers/new" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label class="form-label">Title</label>
+    <input name="title" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Abstract</label>
+    <textarea name="abstract" class="form-control" rows="6" required></textarea>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Authors (one per line: Name, email)</label>
+    <textarea name="authors" class="form-control" rows="4" required></textarea>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Topics</label>
+    <input name="topics" class="form-control" placeholder="systems, security, crypto">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">PDF File</label>
+    <input type="file" name="pdf" accept=".pdf,application/pdf" class="form-control" required>
+  </div>
+  <button class="btn btn-success">Register Paper</button>
+</form>
+
+<%- include('../partials/footer') %>

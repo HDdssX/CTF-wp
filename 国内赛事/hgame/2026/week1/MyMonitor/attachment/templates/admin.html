@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Monitor - Admin Cmd</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 900px;
+            margin: 24px auto;
+            padding: 0 16px;
+        }
+
+        input,
+        button {
+            padding: 8px;
+            font-size: 14px;
+            margin-top: 8px;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .token {
+            word-break: break-all;
+            background: #f3f3f3;
+            padding: 8px;
+            margin-top: 20px;
+        }
+
+        .out {
+            background: #111;
+            color: #0f0;
+            padding: 12px;
+            white-space: pre-wrap;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>Admin Command</h1>
+
+    <form id="adminCmdForm">
+        <input id="adminCmdInput" placeholder="命令" required />
+        <input id="adminArgsInput" placeholder="参数" />
+        <button type="submit">执行</button>
+    </form>
+
+    <button onclick="logout()">登出</button>
+    <div id="output" class="out" style="margin-top:20px;"></div>
+
+    <script>
+        const tokenKey = 'monitor_jwt';
+
+        function getToken() { return localStorage.getItem(tokenKey) || ''; }
+        function logout() {
+            localStorage.removeItem(tokenKey);
+            // Redirect to login or show message
+            location.href = '/login';
+        }
+
+        async function apiRequest(path, body) {
+            const headers = { 'Content-Type': 'application/json' };
+            const tok = getToken();
+            if (tok) headers['Authorization'] = tok;
+
+            const res = await fetch(path, {
+                method: 'POST',
+                headers,
+                body: JSON.stringify(body)
+            });
+            const txt = await res.text();
+            try { return { status: res.status, data: JSON.parse(txt) }; }
+            catch (e) { return { status: res.status, data: txt }; }
+        }
+
+        document.getElementById('adminCmdForm').addEventListener('submit', async (ev) => {
+            ev.preventDefault();
+            const cmd = document.getElementById('adminCmdInput').value.trim();
+            const args = document.getElementById('adminArgsInput').value;
+            const outDiv = document.getElementById('output');
+
+            outDiv.textContent = 'Executing...';
+            outDiv.style.color = '#0f0';
+
+            const payload = { cmd };
+            if (args) {
+                payload.args = args;
+            }
+
+            const r = await apiRequest('/api/admin/cmd', payload);
+
+            if (r.status === 200) {
+                let content = r.data;
+                if (r.data && typeof r.data === 'object' && r.data.output) {
+                    content = r.data.output;
+                }
+                outDiv.textContent = typeof content === 'object' ? JSON.stringify(content, null, 2) : content;
+            } else {
+                outDiv.style.color = '#ff5555';
+                outDiv.textContent = `Error ${r.status}: ` + (typeof r.data === 'string' ? r.data : JSON.stringify(r.data));
+            }
+        });
+
+    </script>
+</body>
+
+</html>

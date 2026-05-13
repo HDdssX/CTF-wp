@@ -1,0 +1,83 @@
+<% var title = paper.title + " - AAA'26 Big-1"; %>
+<%- include('../partials/header') %>
+
+<div class="d-flex justify-content-between align-items-start mb-3">
+  <div>
+    <h2><%= paper.title %></h2>
+    <p class="text-muted mb-0">Paper <%= paper.publicId %> by <%= paper.owner ? paper.owner.username : 'unknown author' %></p>
+  </div>
+  <span class="badge fs-6 bg-<%= statusClass(paper.status) %>"><%= paper.status %></span>
+</div>
+
+<div class="row g-4">
+  <div class="col-lg-8">
+    <h5>Abstract</h5>
+    <pre class="paper-abstract"><%= paper.abstract %></pre>
+
+    <h5>Authors</h5>
+    <ul>
+      <% (paper.authors || []).forEach((author) => { %>
+        <li><%= author.name %> <% if (author.email) { %>(<%= author.email %>)<% } %></li>
+      <% }) %>
+    </ul>
+
+    <% if (canSubmitForReview) { %>
+      <div class="alert alert-secondary">
+        <strong>Registered:</strong> this paper is visible to authors only until it is submitted for review.
+        The PC cannot form opinions yet, but it is practicing.
+        <form method="POST" action="/papers/<%= paper._id %>/submit" class="d-inline ms-2">
+          <button class="btn btn-sm btn-success">Submit for Review</button>
+        </form>
+      </div>
+    <% } %>
+
+    <% if (canPrepareCameraReady && !(paper.cameraReady && paper.cameraReady.preparedAt)) { %>
+      <div class="alert alert-info">
+        <strong>Accepted:</strong> camera-ready preparation is open for this paper.
+        <a href="/papers/<%= paper._id %>/camera-ready" class="btn btn-sm btn-success ms-2">Prepare Camera-Ready</a>
+      </div>
+    <% } %>
+
+  </div>
+  <div class="col-lg-4">
+    <div class="side-panel">
+      <h5>Artifacts</h5>
+      <a href="<%= paper.pdfPath %>" target="_blank" class="btn btn-outline-primary w-100">View PDF</a>
+      <% if (paper.cameraReady && paper.cameraReady.preparedAt) { %>
+        <a href="<%= paper.cameraReady.pdfPath %>" target="_blank" class="btn btn-outline-success w-100 mt-2">Camera-Ready PDF</a>
+        <% if (paper.cameraReady.thumbnailPath) { %>
+          <img src="<%= paper.cameraReady.thumbnailPath %>" class="img-fluid camera-thumb mt-3" alt="Camera-ready thumbnail">
+        <% } else if (paper.cameraReady.thumbnailError) { %>
+          <div class="alert alert-warning small mt-3 mb-0">Thumbnail generator reported: <%= paper.cameraReady.thumbnailError %></div>
+        <% } %>
+      <% } %>
+      <hr>
+      <h5>Topics</h5>
+      <% (paper.topics || []).forEach((topic) => { %>
+        <span class="badge text-bg-light border"><%= topic %></span>
+      <% }) %>
+      <% if (!(paper.topics || []).length) { %><span class="text-muted">None</span><% } %>
+    </div>
+  </div>
+</div>
+
+<h4 class="mt-4">Reviews</h4>
+<div class="row g-3">
+  <% reviews.forEach((review) => { %>
+    <div class="col-md-6">
+      <div class="review-card">
+        <div class="d-flex justify-content-between">
+          <strong><%= review.reviewerName %></strong>
+          <span>Score <%= review.score %> / Confidence <%= review.confidence %></span>
+        </div>
+        <div class="text-muted small"><%= review.recommendation %></div>
+        <p class="mb-0 mt-2"><%= review.comments %></p>
+      </div>
+    </div>
+  <% }) %>
+  <% if (!reviews.length) { %>
+    <div class="col-12 text-muted">No visible reviews yet. Enjoy the brief era of possibility.</div>
+  <% } %>
+</div>
+
+<%- include('../partials/footer') %>

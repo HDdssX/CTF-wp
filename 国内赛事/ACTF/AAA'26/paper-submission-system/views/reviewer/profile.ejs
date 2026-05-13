@@ -1,0 +1,97 @@
+<% var title = "Reviewer Profile - AAA'26 Big-1"; %>
+<%- include('../partials/header') %>
+
+<%
+  var profile = typeof reviewerProfile !== 'undefined' && reviewerProfile ? reviewerProfile : {};
+  var draft = profile.draft || {};
+  var submitted = profile.submitted || null;
+  var summary = profile.serviceRecordSummary || null;
+  var sync = profile.serviceSync || null;
+  var areas = Array.isArray(draft.areas) && draft.areas.length ? draft.areas : ['systems', 'review process', 'artifact sanity'];
+  while (areas.length < 3) areas.push('');
+%>
+
+<h2>Reviewer Profile</h2>
+<p class="text-muted">Tell the PC where you can help. The track chair may synchronize reviewer service records when a slot opens.</p>
+
+<div class="mb-4">
+  <span class="badge bg-secondary"><%= profile.status || 'Draft' %></span>
+  <% if (sync && sync.message) { %>
+    <span class="ms-2 text-muted"><%= sync.message %></span>
+  <% } %>
+</div>
+
+<form method="POST" action="/reviewer/profile" enctype="multipart/form-data" class="narrow-form mb-4">
+  <div class="mb-3">
+    <label class="form-label">Preferred track</label>
+    <select name="track" class="form-select">
+      <% ['systems', 'security', 'artifacts', 'process'].forEach((track) => { %>
+        <option value="<%= track %>" <%= (draft.track || 'systems') === track ? 'selected' : '' %>><%= track[0].toUpperCase() + track.slice(1) %></option>
+      <% }) %>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Areas</label>
+    <input name="areas" class="form-control mb-2" value="<%= areas[0] %>">
+    <input name="areas" class="form-control mb-2" value="<%= areas[1] %>">
+    <input name="areas" class="form-control" value="<%= areas[2] %>">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Service score</label>
+    <input name="score" type="number" min="0" max="100" class="form-control" value="<%= draft.score === undefined ? 10 : draft.score %>">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Statement</label>
+    <textarea name="statement" class="form-control" rows="4"><%= draft.statement || 'I can review baselines, artifacts, and deadline-shaped arguments.' %></textarea>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Service record</label>
+    <input name="profileFile" type="file" class="form-control">
+  </div>
+  <button class="btn btn-primary">Save Reviewer Profile</button>
+</form>
+
+<div class="row g-3 mb-4">
+  <div class="col-md-6">
+    <h3 class="h5">Service Record</h3>
+    <% if (summary) { %>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr><th>Source</th><td><%= summary.source %></td></tr>
+          <tr><th>Label</th><td><%= summary.label %></td></tr>
+          <tr><th>File</th><td><%= summary.filename %></td></tr>
+          <tr><th>Areas</th><td><%= (summary.areas || []).join(', ') || 'TBD' %></td></tr>
+        </tbody>
+      </table>
+    <% } else { %>
+      <p class="text-muted">No service record has been imported yet.</p>
+    <% } %>
+  </div>
+  <div class="col-md-6">
+    <h3 class="h5">Submitted Profile</h3>
+    <% if (submitted) { %>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr><th>Track</th><td><%= submitted.track %></td></tr>
+          <tr><th>Areas</th><td><%= (submitted.areas || []).join(', ') %></td></tr>
+          <tr><th>Score</th><td><%= submitted.score %></td></tr>
+        </tbody>
+      </table>
+    <% } else { %>
+      <p class="text-muted">The profile has not been submitted to the PC desk.</p>
+    <% } %>
+  </div>
+</div>
+
+<div class="d-flex gap-2 mb-3">
+  <form method="POST" action="/reviewer/profile/submit">
+    <button class="btn btn-outline-primary">Submit Profile</button>
+  </form>
+  <form method="POST" action="/reviewer/profile/service-sync">
+    <button class="btn btn-outline-secondary">Check Committee Service</button>
+  </form>
+</div>
+
+<p><a href="/reviewer/claim">Have an invitation code?</a></p>
+
+<%- include('../partials/footer') %>

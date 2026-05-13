@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: easy_login_app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - MONGO_URI=mongodb://mongo:27017/easy_login
+      - MONGO_DB_NAME=easy_login
+      - FLAG=${FLAG}
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:6
+    container_name: easy_login_mongo
+    restart: unless-stopped
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:

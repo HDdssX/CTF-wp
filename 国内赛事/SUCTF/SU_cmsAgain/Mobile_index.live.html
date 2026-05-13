@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>会员中心</title>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<link href="/Public/jquery/weui.css"  rel="stylesheet" type="text/css">
+<link href="/Public/jquery/jquery-weui.css"  rel="stylesheet" type="text/css">
+<link href="/Public/tpl/user/css/style.css" rel="stylesheet" type="text/css">
+<script src="/Public/jquery/jquery.min.js"></script>
+<script src="/Public/jquery/jquery.form.js"></script>
+<script src="/Public/jquery/jquery-weui.js"></script>
+<script src="/Public/tpl/user/js/common.js"></script>
+    <style>
+		.AvailableQuantity{ color:#F30;}
+	</style>
+</head>
+<body id="index" class="webapp">
+	<div class="menu_header"> 
+     <div class="menu_topbar">
+		  <h2 class="head-title">会员中心</h2>
+		  <a class="head_btn_left" onclick="GoBack()"><span></span></a>
+		  <a class="head_btn_right" href="/index.php/wap"><span></span></a>
+     </div>
+</div>
+	<div class="usercenter">
+         <div class="MemberAvatar" >
+         	<img src="/Public/tpl/user/images/default.png" />         </div>
+		<span class="MemberName">13998833370</span>
+		<span class="MemberGroupName">注册会员</span>
+	</div>
+	
+    <div class="weui-cells" style='margin-top:0;' >
+            <a class="weui-cell weui-cell_access" href="/index.php/Member/mobile/memberInfo">
+                      		<div class="weui-cell__hd"><img src="/Public/tpl/user/images/63.png" class="MenuIcon" /></div>
+                            <div class="weui-cell__bd"><p>我的个人资料</p></div>
+                            <div class="weui-cell__ft"></div>
+                      </a><a class="weui-cell weui-cell_access" href="/index.php/Member/mobile/pwd">
+                      		<div class="weui-cell__hd"><img src="/Public/tpl/user/images/65.png" class="MenuIcon" /></div>
+                            <div class="weui-cell__bd"><p>修改我的密码</p></div>
+                            <div class="weui-cell__ft"></div>
+                      </a>       </div><div class="weui-cells"  >
+            <a class="weui-cell weui-cell_access" href="/index.php/Member/mobile/guestbook">
+                      		<div class="weui-cell__hd"><img src="/Public/tpl/user/images/67.png" class="MenuIcon" /></div>
+                            <div class="weui-cell__bd"><p>我的留言</p></div>
+                            <div class="weui-cell__ft"></div>
+                      </a><a class="weui-cell weui-cell_access" href="/index.php/Member/mobile/consignee">
+                      		<div class="weui-cell__hd"><img src="/Public/tpl/user/images/145.png" class="MenuIcon" /></div>
+                            <div class="weui-cell__bd"><p>我的收货地址</p></div>
+                            <div class="weui-cell__ft"></div>
+                      </a><a class="weui-cell weui-cell_access" href="/index.php/Member/mobile/order">
+                      		<div class="weui-cell__hd"><img src="/Public/tpl/user/images/79.png" class="MenuIcon" /></div>
+                            <div class="weui-cell__bd"><p>我的订单</p></div>
+                            <div class="weui-cell__ft"></div>
+                      </a><a class="weui-cell weui-cell_access" href="/index.php/Member/mobile/resume">
+                      		<div class="weui-cell__hd"><img src="/Public/tpl/user/images/89.png" class="MenuIcon" /></div>
+                            <div class="weui-cell__bd"><p>我的应聘</p></div>
+                            <div class="weui-cell__ft"></div>
+                      </a><a class="weui-cell weui-cell_access" href="/index.php/Member/mobile/favorite">
+                      		<div class="weui-cell__hd"><img src="/Public/tpl/user/images/130.png" class="MenuIcon" /></div>
+                            <div class="weui-cell__bd"><p>我的收藏</p></div>
+                            <div class="weui-cell__ft"></div>
+                      </a><a class="weui-cell weui-cell_access" href="/index.php/Member/mobile/cash">
+                      		<div class="weui-cell__hd"><img src="/Public/tpl/user/images/132.png" class="MenuIcon" /></div>
+                            <div class="weui-cell__bd"><p>我的资金</p></div>
+                            <div class="weui-cell__ft"><span class="AvailableQuantity">￥0</span></div>
+                      </a><a class="weui-cell weui-cell_access" href="/index.php/Member/mobile/point">
+                      		<div class="weui-cell__hd"><img src="/Public/tpl/user/images/143.png" class="MenuIcon" /></div>
+                            <div class="weui-cell__bd"><p>我的积分</p></div>
+                            <div class="weui-cell__ft">0</div>
+                      </a><a class="weui-cell weui-cell_access" href="/index.php/Member/mobile/coupon">
+                      		<div class="weui-cell__hd"><img src="/Public/tpl/user/images/142.png" class="MenuIcon" /></div>
+                            <div class="weui-cell__bd"><p>我的优惠券</p></div>
+                            <div class="weui-cell__ft">0</div>
+                      </a>       </div>    
+    <!--插件 开始-->
+        <!--插件 结束-->
+    
+    <div class="weui-cells">
+    	<a class="weui-cell weui-cell_access" href="/index.php/Member/mobile/logout">
+        	  <div class="weui-cell__hd"><img src="/Public/tpl/user/images/logout.png" class="MenuIcon" /></div>
+              <div class="weui-cell__bd"><p>安全退出</p></div>
+         </a>
+    </div>
+	<!--工具条 开始-->
+<div class="weui-tabbar">
+    <a href="/index.php/Member/mobile/index" class='weui-tabbar__item weui-bar__item--on'>
+        <img src="/Public/tpl/user/images/my_on.png" class="weui-tabbar__icon" />
+        <p class="weui-tabbar__label">我的</p>
+    </a>
+    
+    <a href="/index.php/Member/mobile/memberInfo" class='weui-tabbar__item '>
+        <img src="/Public/tpl/user/images/about.png" class="weui-tabbar__icon" />
+        <p class="weui-tabbar__label">资料</p>
+    </a>
+    
+    <a href="/index.php/Member/mobile/guestbook" class='weui-tabbar__item '>
+        <img src="/Public/tpl/user/images/guestbook.png" class="weui-tabbar__icon" />
+        <p class="weui-tabbar__label">留言</p>
+    </a>
+    
+    <a href="/index.php/Member/mobile/order" class='weui-tabbar__item  '>
+        <img src="/Public/tpl/user/images/order.png" class="weui-tabbar__icon" />
+        <p class="weui-tabbar__label">订单</p>
+    </a>
+    
+    <a href="/index.php/Member/mobile/logout" class='weui-tabbar__item'>
+        <img src="/Public/tpl/user/images/signout.png"  class="weui-tabbar__icon" />
+        <p class="weui-tabbar__label">退出</p>
+    </a>
+</div>
+<!--工具条 结束-->
+</body>
+</html>
+<script>
+	function GoBack(){
+		location.href = "/index.php/wap";
+	}
+</script>

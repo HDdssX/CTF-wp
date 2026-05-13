@@ -1,0 +1,141 @@
+body {
+  padding-top: 4.5rem;
+  background: #f6f7f9;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
+
+.conference-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background: #fff;
+  border: 1px solid #e4e7ec;
+  border-radius: 8px;
+}
+
+.metric,
+.side-panel,
+.review-card {
+  background: #fff;
+  border: 1px solid #e4e7ec;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.metric-label {
+  color: #667085;
+  font-size: .85rem;
+  text-transform: uppercase;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.narrow-form {
+  max-width: 520px;
+}
+
+.paper-abstract {
+  white-space: pre-wrap;
+  background: #fff;
+  border: 1px solid #e4e7ec;
+  border-radius: 8px;
+  padding: 1rem;
+  font-family: inherit;
+}
+
+.camera-thumb {
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.program-paper,
+.empty-state {
+  background: #fff;
+  border: 1px solid #e4e7ec;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.program-thumb {
+  aspect-ratio: 4 / 3;
+  background: #eef2f6;
+  border-bottom: 1px solid #e4e7ec;
+  display: grid;
+  place-items: center;
+}
+
+.program-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.program-thumb-empty {
+  color: #667085;
+  font-size: .9rem;
+}
+
+.program-paper-body,
+.empty-state {
+  padding: 1rem;
+}
+
+.program-paper h2,
+.empty-state h2 {
+  font-size: 1.25rem;
+  margin: .25rem 0 .5rem;
+}
+
+.program-paper p {
+  color: #475467;
+  margin-bottom: .75rem;
+}
+
+.program-authors {
+  color: #344054;
+  font-weight: 600;
+}
+
+.monospace {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.role-select {
+  max-width: 140px;
+}
+
+.paper-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .conference-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

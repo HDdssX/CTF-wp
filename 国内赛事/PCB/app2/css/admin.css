@@ -1,0 +1,250 @@
+.file-ops button {
+    margin-left: 6px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+}
+.file-ops button:hover {
+    opacity: 0.7;
+}
+
+.file-name {
+    cursor: pointer;
+}
+
+.context-menu {
+    position: absolute;
+    background: white;
+    border: 1px solid #aaa;
+    box-shadow: 0 2px 8px rgba(0,0,0,.2);
+    z-index: 9999;
+    border-radius: 6px;
+    min-width: 150px;
+}
+.context-menu div {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.context-menu div:hover {
+    background: #eee;
+}
+
+
+
+/* ===========================
+   æ´ä½èæ¯
+=========================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    position: relative;
+}
+
+/* ===========================
+   æ°æ³¡èæ¯ï¼å¢å¼ºçï¼
+=========================== */
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.85);
+    opacity: 0.7;
+    box-shadow: 0 0 25px rgba(255,255,255,0.9);
+    filter: blur(2px);
+    pointer-events: none;
+
+    /* é»è®¤å¤§å°ä¸­ç­ï¼å¦ææ²¡å é¢å¤ class */
+    width: 35px;
+    height: 35px;
+
+    animation: rise 16s infinite ease-in-out;
+}
+
+/* ä¸åå°ºå¯¸çæ°æ³¡ï¼éæºä½¿ç¨ï¼ */
+.bubble.small { width: 18px; height: 18px; }
+.bubble.medium { width: 35px; height: 35px; }
+.bubble.large { width: 60px; height: 60px; }
+
+/* æ°æ³¡æ¼æµ®å¨ç»ï¼å¢å å·¦å³æ¼ç§» + ç¼å¨ï¼ */
+@keyframes rise {
+    0% {
+        transform: translate(0, 100vh) scale(0.6);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate(40px, 40vh) scale(1);
+        opacity: 0.9;
+    }
+    100% {
+        transform: translate(-40px, -110vh) scale(1.2);
+        opacity: 0;
+    }
+}
+
+/* ===========================
+   ä¸»å®¹å¨å¸å±
+=========================== */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+}
+
+/* ===========================
+   å·¦ä¾§ä¾§æ 
+=========================== */
+.sidebar {
+    width: 260px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    color: #fff;
+    box-shadow: 4px 0 25px rgba(0,0,0,0.2);
+    border-right: 2px solid rgba(255,255,255,0.3);
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    color: #222;
+    font-weight: bold;
+}
+
+#fileList {
+    list-style: none;
+    padding-left: 0;
+}
+
+#fileList li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+    transition: background 0.25s, transform 0.2s;
+}
+
+#fileList li:hover {
+    background: rgba(255,255,255,0.85);
+    transform: translateX(4px) scale(1.03);
+    color: #009acd;
+}
+
+/* ===========================
+   ä¸»åå®¹åºå
+=========================== */
+.main {
+    flex: 1;
+    overflow-y: auto;
+    padding: 25px;
+}
+
+/* ===========================
+   å¡çéç¨é£æ ¼
+=========================== */
+.card,
+.upload-section,
+.recent-section,
+.preview-section {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    border: 1px solid rgba(255,255,255,0.4);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.card:hover,
+.upload-section:hover,
+.recent-section:hover,
+.preview-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.20);
+}
+
+.card p {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0 0;
+    background: linear-gradient(90deg, #0066ff, #00eaff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* ===========================
+   ç»è®¡ä¿¡æ¯
+=========================== */
+.stats {
+    display: flex;
+    gap: 20px;
+}
+
+/* ===========================
+   ä¸ä¼ åº
+=========================== */
+input[type="file"] {
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: linear-gradient(90deg, #00bfff, #2f7bff);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+/* ===========================
+   æè¿æ´æ°
+=========================== */
+#recentList {
+    list-style: none;
+    padding-left: 0;
+}
+
+#recentList li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    color: #444;
+}
+
+#recentList li.empty {
+    text-align: center;
+    color: #777;
+}
+
+/* ===========================
+   æä»¶é¢è§
+=========================== */
+.preview-box {
+    height: 260px;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 15px;
+    overflow-y: auto;
+    border: 1px solid rgba(0,0,0,0.15);
+    box-shadow: inset 0 0 18px rgba(0,0,0,0.08);
+}
+
