@@ -1,0 +1,1343 @@
+8004cfa0 Build a house to my liking to receive the flag.
+8004e201          (((((                  
+8004e242 AAAAAA
+8004e262 BBBBBB
+8004e388          (((((                  
+8004e3c9 AAAAAA
+8004e3e9 BBBBBB
+8004e5f0 0000000000000000                
+8004e886 oCCA
+8004e908 B7Hv
+8004e938 Cv4W
+8004eae0 0000000000000000                
+8004eec8 [B] Block: %s
+8004eed6 XYZ: %d %d %d
+8004eee4 Placed: %d  Taste: %d
+8004eefa FPS: %.1f
+8004ef08 Begin with a tasteful foundation.
+8004ef30 Hmm, my house seems to be coming along nicely.
+8004ef60 Could you move it a little further to the right?
+8004ef98 The proportions are nearly acceptable.
+8004efc0 Charming, in the way a shed can be charming.
+8004eff0 I want rustic elegance, not municipal storage annex.
+8004f028 loadSprite
+8004f038 src/renderer.cpp
+8004f050 Renderer: failed to load sprite %s
+8004f078 rom:/grass_top.rgba32.sprite
+8004f098 rom:/grass_side.rgba32.sprite
+8004f0b8 rom:/dirt.rgba32.sprite
+8004f0d0 rom:/stone.rgba32.sprite
+8004f0f0 rom:/wood_top.rgba32.sprite
+8004f110 rom:/wood_side.rgba32.sprite
+8004f130 rom:/leaves.rgba32.sprite
+8004f150 rom:/sand.rgba32.sprite
+8004f168 rom:/brick.rgba32.sprite
+8004f190 Grass
+8004f198 Dirt
+8004f1a0 Stone
+8004f1a8 Wood
+8004f1b0 Leaves
+8004f1b8 Sand
+8004f1c0 Brick
+8004f1c8 currentViewport
+8004f1d8 src/t3d/t3d.c
+8004f1e8 t3d_light_set_directional needs a viewport to be attached!
+8004f228 !(cullFront && cullBack)
+8004f248 viewport != NULL
+8004f260 Viewport is NULL!
+8004f278 x0fx <= x1fx
+8004f288 x1 must be greater or equal to x0
+8004f2b0 y0fx <= y1fx
+8004f2c0 y1 must be greater or equal to y0
+8004f2e8 x0fx >= 0
+8004f2f8 x0 must be positive
+8004f310 y0fx >= 0
+8004f320 y0 must be positive
+8004f338 x1fx <= 0xFFF
+8004f348 x1 must be less than 1024
+8004f368 y1fx <= 0xFFF
+8004f378 y1 must be less than 1024
+8004f398 rsp_tiny3d_clipping
+8004f3b0 rsp_tiny3d
+8004f3c0 rsp_tinypx
+8004f3d0 branch
+8004f3d8 hash
+8004f3e0 commit-date
+8004f3f0 dirty
+8004f3f8 true
+8004f400 ((uint32_t)addr % 16) == 0 && (length % 16) == 0
+8004f438 src/n64sys.c
+8004f448 libdragon.version
+8004f460 !hw_memset_broken
+8004f478 Your emulator is not accurate enough to run this ROM.
+8004f4ae Specifically, it doesn't support MI repeat mode
+8004f4e0 src/interrupt.c
+8004f4f0 Unhandled iQue interrupt: IDE
+8004f510 Unhandled iQue interrupt: PI_ERR
+8004f538 BB_USB0_callback != NULL && BB_USB0_callback->callback != NULL
+8004f578 No handler was registered for iQue USB0 interrupt despite being enabled
+8004f5c0 BB_USB1_callback != NULL && BB_USB1_callback->callback != NULL
+8004f600 No handler was registered for iQue USB1 interrupt despite being enabled
+8004f648 Unhandled iQue interrupt: BTN
+8004f668 ++last_cart_interrupt_count < 128
+8004f690 CART interrupt deadlock: a CART interrupt is continuously triggering, with no ack
+8004f6e8 *head
+8004f6f0 Out of memory
+8004f700 Too many pre-NMI handlers
+8004f720 __interrupt_depth > 0
+8004f738 unbalanced enable_interrupts() call
+8004f760 <EXCEPTION HANDLER>
+8004f778     
+8004f780 , function: 
+8004f790 ASSERTION FAILED: %s
+8004f7a5 file "%s", line %d%s%s
+8004f7c8 %08lx %04x  
+8004f7d8 %02x 
+8004f800 Backtrace:
+8004f810 Direct std::terminate() call
+8004f830 Unknown exception
+8004f848 ROMPAK: Cookie changed (expected 0x%08lx, got 0x%08lx)
+8004f880 ROMPAK: Corrupted TOC detected (entry_size=0x%04x, num_entries=0x%04x)
+8004f8c8 header->entry_size < 1024
+8004f8e8 src/rompak.c
+8004f8f8 Corrupted rompak TOC: entry size too big (0x%x)
+8004f928 header->num_entries < 1024
+8004f948 Corrupted rompak TOC: too many entries (0x%x)
+8004f978 DragonFS 2.1
+8004f988 lookup
+8004f990 src/dragonfs.c
+8004f9a8 Your emulator is not accurate enough to run this ROM.
+8004f9de Specifically, it doesn't support accurate PI DMA
+8004fa10 .dfs
+8004fa18 dfs_init: WARNING: base_fs_loc is a virtual address: %08lX
+8004fa53 Please update your code to use a PI addresses instead.
+8004fa90 rom:/
+8004fa98 __buffers == 0
+8004faa8 src/display.c
+8004fab8 display_init() called while the display is already initialized.
+8004faf8 Please close the current display with display_close() first.
+8004fb38 res.width >= 320
+8004fb50 FILTERS_DISABLED is not supported by the hardware for widths <= 320.
+8004fb95 Please use FILTERS_RESAMPLE instead.
+8004fbc0 res.width > 320
+8004fbd0 FILTERS_DEDITHER is not supported by the hardware for widths <= 320.
+8004fc15 Please use FILTERS_RESAMPLE instead.
+8004fc40 res.width > 0
+8004fc50 nonpositive width
+8004fc68 res.height > 0
+8004fc78 nonpositive height
+8004fc90 res.width <= 800
+8004fca8 invalid width
+8004fcb8 res.height <= 720
+8004fcd0 heights > 720 are buggy on hardware
+8004fcf8 res.width % 4 == 0
+8004fd10 width must be divisible by 4 for 16-bit depth
+8004fd40 res.width % 2 == 0
+8004fd58 width must be divisible by 2 for 32-bit depth
+8004fd88 surfaces
+8004fd98 surfaces[i].buffer
+8004fdb0 __buffers != 0
+8004fdc0 Display not initialized.
+8004fde0 wait loop timed out (%d ms)
+8004fe00 i >= 0 && i < __buffers
+8004fe18 Display context is not valid!
+8004fe38 !(ready_mask & (1 << i))
+8004fe58 display_show called again on the same display %d (mask: %lx)
+8004fe98 drawing_mask & (1 << i)
+8004feb0 display_show called on non-locked display %d (mask: %lx)
+8004fef0 fps >= 0.0f
+8004ff00 FMT_???
+8004ff08 (format & ~SURFACE_FLAGS_TEXFORMAT) == 0
+8004ff38 src/surface.c
+8004ff48 invalid surface format: 0x%x (%d)
+8004ff70 FMT_NONE
+8004ff80 FMT_RGBA16
+8004ff90 FMT_RGBA32
+8004ffa0 FMT_YUV16
+8004ffb0 FMT_CI4
+8004ffb8 FMT_CI8
+8004ffc0 FMT_IA4
+8004ffc8 FMT_IA8
+8004ffd0 FMT_IA16
+8004ffe0 FMT_I4
+8004ffe8 FMT_I8
+8004fff0 !cookie->seeked
+80050000 src/asset.c
+80050010 Cannot seek in file opened via asset_fopen (it might be compressed)
+80050060 fd >= 0
+80050068 File not found: %s
+8005007b Did you forget the filesystem prefix? (e.g. "rom:/")
+800500b0 File not found: %s
+800500c3 Did you forget to call dfs_init(), or did it return an error?
+80050108 error opening file %s: %s
+80050130 unsupported asset version: %c
+8005014e Make sure to rebuild libdragon tools and your assets
+80050188 header_size < sizeof(asset_header_t)
+800501b0 header size too large
+800501c8 (cur & 1) == 0
+800501d8 asset_read_header: header not 2-byte aligned (pos=%d)
+80050210 compressed_size == *sz
+80050228 Wrong compressed size (%d/%d)
+80050248 algo >= 1 && algo <= 3
+80050260 unsupported compression algorithm: %d
+80050288 algos_full[algo-1].decompress_full
+800502b0 asset: compression level %d not initialized. Call asset_init_compression(%d) at initialization time
+80050318 *sz >= 0
+80050328 Invalid uncompressed size
+80050348 ((uintptr_t)(buf) & (ASSET_ALIGNMENT_MIN-1)) == 0
+80050380 Asset buffer incorrectly aligned.
+800503a8 algo->decompress_init && algo->decompress_read
+800503d8 asset: compression level does not support streaming decompression
+80050420 state
+80050428 n == size
+80050438 asset: decompression error: corrupted? (%d/%d)
+80050468 margin >= 0
+80050478 addr % 2 == 0
+80050488 asset_load requires ROM data to be 2-byte aligned
+800504c8 ((uint32_t)start % 8) == 0
+800504e8 src/rsp.c
+800504f8 (imem_offset % 8) == 0
+80050510 (dmem_offset % 8) == 0
+80050530 %s (%s:%d)
+80050540 RSP CRASH | %s | %.*s
+80050558 Crash symptom: 
+80050568 RDP CRASHED: the code triggered a RDP hardware bug.
+800505a0 Use the rdpq validator (rdpq_debug_start()) to analyze.
+800505d8 RSP ASSERTION FAILED (0x%x)
+80050600 PC:%03lx | STATUS:%4lx [
+80050620 halt 
+80050628 broke 
+80050630 dma_busy 
+80050640 dma_full 
+80050650 io_full 
+80050660 sstep 
+80050668 irqbreak 
+80050678 sig0 
+80050680 sig1 
+80050688 sig2 
+80050690 sig3 
+80050698 sig4 
+800506a0 sig5 
+800506a8 sig6 
+800506b0 sig7 
+800506b8 ] | DP_STATUS:%4lx [
+800506d0 xbus 
+800506d8 freeze 
+800506e0 flush 
+800506e8 gclk 
+800506f0 tmem 
+800506f8 pipe 
+80050700 busy 
+80050708 ready 
+80050710 dma 
+80050718 start 
+80050720 end 
+80050728 -------------------------------------------------GP Registers--
+80050768 zr:%08lX 
+80050778 at:%08lX 
+80050788 v0:%08lX 
+80050798 v1:%08lX 
+800507a8 a0:%08lX
+800507b8 a1:%08lX 
+800507c8 a2:%08lX 
+800507d8 a3:%08lX 
+800507e8 t0:%08lX 
+800507f8 t1:%08lX
+80050808 t2:%08lX 
+80050818 t3:%08lX 
+80050828 t4:%08lX 
+80050838 t5:%08lX 
+80050848 t6:%08lX
+80050858 t7:%08lX 
+80050868 t8:%08lX 
+80050878 t9:%08lX 
+80050888 s0:%08lX 
+80050898 s1:%08lX
+800508a8 s2:%08lX 
+800508b8 s3:%08lX 
+800508c8 s4:%08lX 
+800508d8 s5:%08lX 
+800508e8 s6:%08lX
+800508f8 s7:%08lX 
+80050908 gp:%08lX 
+80050918 sp:%08lX 
+80050928 fp:%08lX 
+80050938 ra:%08lX
+80050948 -------------------------------------------------VP Registers--
+80050990 $v%02d:%04x %04x %04x %04x %04x %04x %04x %04x   
+800509c8 $v%02d:%04x %04x %04x %04x %04x %04x %04x %04x
+800509f8 acc_hi:%04x %04x %04x %04x %04x %04x %04x %04x
+80050a28 acc_md:%04x %04x %04x %04x %04x %04x %04x %04x
+80050a58 acc_lo:%04x %04x %04x %04x %04x %04x %04x %04x
+80050a88 -----------------------------------------------COP0 Registers--
+80050ac8 $c0  DMA_SPADDR    %08lx    |  
+80050ae8 $c8  DP_START      %08lx
+80050b08 $c1  DMA_RAMADDR   %08lx    |  
+80050b28 $c9  DP_END        %08lx
+80050b48 $c2  DMA_READ      %08lx    |  
+80050b68 $c10 DP_CURRENT    %08lx
+80050b88 $c3  DMA_WRITE     %08lx    |  
+80050ba8 $c11 DP_STATUS     %08lx
+80050bc8 $c4  SP_STATUS     %08lx    |  
+80050be8 $c12 DP_CLOCK      %08lx
+80050c08 $c5  DMA_FULL      %08lx    |  
+80050c28 $c13 DP_BUSY       %08lx
+80050c48 $c6  DMA_BUSY      %08lx    |  
+80050c68 $c14 DP_PIPE_BUSY  %08lx
+80050c88 $c7  SEMAPHORE     %08lx    |  
+80050ca8 $c15 DP_TMEM_BUSY  %08lx
+80050cc8 -----------------------------------------------Ucode data------
+80050d08 DMEM:
+80050d10 rsp_crash
+80050d20     
+80050d25 G%s: 
+80050d3a W%4s: 
+80050d41 T%-19s%s
+80050d52 W%s: 
+80050d61 WBacktrace:
+80050d70 Threads
+80050d79 Wkernel not initialized
+80050d98 [%.*s]
+80050da1 W%-*s
+80050db0  %.*s 
+80050db8 %-*s
+80050dc0 suspended 
+80050dd0 detached 
+80050de0 zombie 
+80050de8 joined(
+80050df0 joinable 
+80050e00 joinable finished 
+80050e18     
+80050e1d WPriority: 
+80050e29 T%-30d
+80050e30 WStack size: 
+80050e3e T%d KiB
+80050e48     
+80050e4d WType: 
+80050e55 T%-34.34s
+80050e5f WStack: 
+80050e70     
+80050e75 WPC: 
+80050e80 (%s:%d)
+80050e88 [0x%08lx]
+80050ea8 Versions
+80050ebb ---> 
+80050ec9      
+80050ed0 %08lx %s (%s:%d)
+80050ee8 CPU Floating Point Registers (Double)
+80050f10 CPU Floating Point Registers (Hex)
+80050f38 CPU Floating Point Registers (Single)
+80050f60 CPU Registers
+80050f70 .version
+80050f81 W%s:
+80050f90 idle
+80050f98 LibDragon Inspector | %s%s (%s, %.7s) | Page %d/%d
+80050fe0 smove
+80050fe8 ztlbr
+80050ff0 hdmtc0
+80050ff8 hmtc0
+80051000 hdmfc0
+80051008 hmfc0
+80051010 ybc1t
+80051018 ybc1tl
+80051020 ybc1f
+80051028 ybc1fl
+80051038 zeret
+80051040 ztlbp
+80051048 ztlbwr
+80051050 ztlbwi
+80051058 znop
+80051060 gmtc1
+80051068 gdmtc1
+80051070 gdmfc1
+80051078 gmfc1
+80051080 %s.%s
+80051088 %08lx: 
+80051090 G%-9s 
+80051097 Y%08lx <%s>
+800510a8 %08lx: 
+800510b0 G%-9s 
+800510b7 Y%s, %s, %d
+800510c8 %08lx: 
+800510d0 G%-9s 
+800510d7 Y%s, %d
+800510e0 %08lx: 
+800510e8 G%-9s 
+800510ef Y%s, %d(%s)
+80051100 %08lx: 
+80051108 G%-9s 
+8005110f Y%s, %s, %s
+80051120 %08lx: 
+80051128 G%-9s 
+8005112f Y%s, %s
+80051138 %08lx: 
+80051140 G%-9s 
+80051147 Y%s, %s, %ld
+80051158 %08lx: 
+80051160 G%-9s 
+80051167 Y%s, %s, %08lx <%s>
+80051180 %08lx: 
+80051188 G%-9s 
+80051198 %08lx: 
+800511a0 G%-9s
+800511a8 %08lx: 
+800511b0 G%-9s 
+800511b7 Y0x%lx
+800511c0 %08lx: 
+800511c8 G%-9s 
+800511cf Y%s, %s, 0x%lx
+800511e0 Disassembly
+800511f1 <invalid address>
+80051209 W---> 
+80051210      
+80051218 CPU Exception
+80051231 WInstruction:
+80051240     %s
+80051250     <Invalid PC: %08lx>
+80051271 WThread:
+8005127a     %s
+80051288 CPU Assertion
+8005129a OASSERTION FAILED: 
+800512b1 WFailed expression:
+800512d2 OASSERTION FAILED: %s
+800512f0 Uncaught C++ Exception
+8005130a OC++ Exception: %s
+80051321 WException type:
+80051338 src/inspector.c
+80051348 Too many inspector pages
+80051370 Index
+80051378 Random
+80051380 EntryLo0
+80051390 EntryLo1
+800513a0 Context
+800513a8 PageMask
+800513b8 Wired
+800513c0 Reserved7
+800513d0 BadVAddr
+800513e0 Count
+800513e8 EntryHi
+800513f0 Compare
+800513f8 Status
+80051400 Cause
+80051410 PRId
+80051418 Config
+80051420 LLAddr
+80051428 WatchLo
+80051430 WatchHi
+80051438 XContext
+80051448 Reserved21
+80051458 Reserved22
+80051468 Reserved23
+80051478 Reserved24
+80051488 Reserved25
+80051498 ParityErr
+800514a8 CacheErr
+800514b8 TagLo
+800514c0 TagHi
+800514c8 ErrorEPC
+800514d8 Reserved31
+800514e8 radd
+800514f0 rsub
+800514f8 rmul
+80051500 rdiv
+80051508 ssqrt
+80051510 sabs
+80051518 smov
+80051520 sneg
+80051528 sround.l
+80051538 strunc.l
+80051548 sceil.l
+80051550 sfloor.l
+80051560 sround.w
+80051570 strunc.w
+80051580 sceil.w
+80051588 sfloor.w
+80051598 scvt.s
+800515a0 scvt.d
+800515a8 scvt.w
+800515b0 scvt.l
+800515b8 hc.f
+800515c0 hc.un
+800515c8 hc.eq
+800515d0 hc.ueq
+800515d8 hc.olt
+800515e0 hc.ult
+800515e8 hc.ole
+800515f0 hc.ule
+800515f8 hc.sf
+80051600 hc.ngle
+80051608 hc.seq
+80051610 hc.ngl
+80051618 hc.lt
+80051620 hc.nge
+80051628 hc.le
+80051630 hc.ngt
+80051638 esll
+80051640 esrl
+80051648 esra
+80051650 rsllv
+80051658 rsrlv
+80051660 rsrav
+80051670 wjalr
+80051678 asyscall
+80051688 abreak
+80051690 _sync
+80051698 cmfhi
+800516a0 wmthi
+800516a8 cmflo
+800516b0 wmtlo
+800516b8 rdsslv
+800516c0 rdsrlv
+800516c8 rdsrav
+800516d0 hmult
+800516d8 hmultu
+800516e0 hdiv
+800516e8 hdivu
+800516f0 hdmult
+800516f8 hdmultu
+80051700 hddiv
+80051708 hddivu
+80051710 raddu
+80051718 rsubu
+80051720 rand
+80051728 rxor
+80051730 rnor
+80051738 rslt
+80051740 rsltu
+80051748 rdadd
+80051750 rdaddu
+80051758 rdsub
+80051760 rdsubu
+80051768 ttge
+80051770 ttgeu
+80051778 ttlt
+80051780 ttltu
+80051788 tteq
+80051790 ttne
+80051798 edsll
+800517a0 edsrl
+800517a8 edsra
+800517b0 edsll32
+800517b8 edsrl32
+800517c0 edsra32
+800517d0 jjal
+800517d8 bbeq
+800517e0 bbne
+800517e8 bblez
+800517f0 bbgtz
+800517f8 iaddi
+80051800 iaddiu
+80051808 islti
+80051810 isltiu
+80051818 iandi
+80051820 iori
+80051828 ixori
+80051830 klui
+80051838 qcop0
+80051840 fcop1
+80051848 ccop2
+80051850 ccop3
+80051858 bbeql
+80051860 bbnel
+80051868 bblezl
+80051870 bbgtzl
+80051878 idaddi
+80051880 idaddiu
+80051888 mldl
+80051890 mldr
+800518a8 mlwl
+800518b8 mlbu
+800518c0 mlhu
+800518c8 mlwr
+800518d0 mlwu
+800518e8 mswl
+800518f8 msdl
+80051900 msdr
+80051908 mswr
+80051918 nlwc1
+80051920 mlwc2
+80051928 mlld
+80051930 nldc1
+80051938 mldc2
+80051950 nswc1
+80051958 mswc2
+80051960 mscd
+80051968 nsdc1
+80051970 msdc2
+800519d0 $f10
+800519d8 $f11
+800519e0 $f12
+800519e8 $f13
+800519f0 $f14
+800519f8 $f15
+80051a00 $f16
+80051a08 $f17
+80051a10 $f18
+80051a18 $f19
+80051a20 $f20
+80051a28 $f21
+80051a30 $f22
+80051a38 $f23
+80051a40 $f24
+80051a48 $f25
+80051a50 $f26
+80051a58 $f27
+80051a60 $f28
+80051a68 $f29
+80051a70 $f30
+80051a78 $f31
+80051b90 memcmp(sprite, ASSET_MAGIC, 3) != 0
+80051bb8 src/sprite.c
+80051bc8 Sprite is compressed: use sprite_load() instead of reading the file manually
+80051c18 sx->version == SPRITE_EXT_VERSION
+80051c40 Invalid sprite version (%d); please regenerate your asset files
+80051c80 sz >= sizeof(sprite_t)
+80051c98 Sprite buffer too small (sz=%d)
+80051cb8 LSPR
+80051cc0 memcmp(buf, "LSPR", 4) != 0
+80051ce0 lossy sprite support not implemented yet
+80051d10 num_level >= 0 && num_level < 8
+80051d30 len > 0
+80051d38 src/dma.c
+80051d48 ((ram_address ^ pi_address) & 1) == 0
+80051d70 (pi_address & 2) == 0 && (ram_address & 7) == 0
+80051da0 misaligned transfer not supported at this PI address
+80051dd8 io_read: WARNING: deprecated usage of virtual address: %08lX
+80051e18 io_write: WARNING: deprecated usage of virtual address: %08lX
+80051e58 %4s: %s (%16s | %22s)
+80051e70 %s: %s%s
+80051e80 Write to read-only memory
+80051ea0 Uninitialized floating point variable
+80051ec8 Misaligned write to memory
+80051ee8 Invalid floating point value (denormal)
+80051f10 Read from invalid memory address
+80051f38 Floating point negative square root
+80051f60 Misaligned read from memory
+80051f80 Write to invalid memory address
+80051fa0 Unknown emux
+80051fb0 Floating point integer cast overflow
+80051fd8 Floating point divide by zero
+80051ff8 Floating point invalid operation
+80052020 Floating point overflow
+80052038 Floating point underflow
+80052058 Floating point inexact operation
+80052080 Generic floating point
+80052098 Invalid program counter address
+800520b8 NULL pointer dereference (read)
+800520d8 Read from TLS in interrupt handler
+80052100 Integer divide by zero
+80052118 NULL pointer dereference (write)
+80052140 Write to TLS in interrupt handler
+80052168 Unhandled syscall
+80052180 Called uninitialized function pointer
+800521a8 Program counter in invalid 64-bit address
+800521d8 Misaligned program counter address
+80052200 Read from invalid 64-bit address
+80052228 Uninitialized pointer dereference
+80052250 Trap
+80052258 %s exception at PC:%08lX
+80052278 Exception address: %08lX
+80052298 Exception address: %016llX
+800522b8 denormal
+800522c9 Denormal values are often generated when integer data or pointers are misinterpreted as floating point.
+80052338 FPU status: %08lX [
+80052350 %sINEXACT
+80052360 %sOVERFLOW
+80052370 %sUNDERFLOW
+80052380 %sDIV0
+80052388 %sINVALID
+80052398 %sNOTIMPL
+800523b0 COP: %ld
+800523c0 Watched address: %08lX
+800523d8 Syscall code: %05lX
+800523f0 On hardware, the console would now be frozen.
+80052420 ---- ---- %04llx %04llx
+80052438 %04llx %04llx %04llx %04llx
+80052458 <Denormal>
+80052468 <NaN>
+80052470 <+Inf>
+80052478 <-Inf>
+80052480 %016llx
+80052488 %.12g
+80052490 %.17g
+8005249a ******* CPU EXCEPTION *******
+800524c0 GPR:
+800524c8 FPR:
+800524d0 first_code <= 0xFFFFF
+800524e8 src/exception.c
+800524f8 The maximum allowed syscall code is 0xFFFFF (requested: %05lx)
+80052538 last_code <= 0xFFFFF
+80052550 first_code <= last_code
+80052568 Invalid range for syscall handler (first: %05lx, last: %05lx)
+800525a8 Syscall handler %p already registered for code range %05lx - %05lx
+800525f0 Too many syscall handlers
+80052610 Cached access to non-RDRAM area
+80052630 64-bit read from non-RDRAM area
+80052650 Access to RCP unmapped area
+80052670 Interrupt
+80052680 TLB Modification
+80052698 TLB Miss (load/instruction fetch)
+800526c0 TLB Miss (store)
+800526d8 Address Error (load/instruction fetch)
+80052700 Address Error (store)
+80052718 Bus Error (instruction fetch)
+80052738 Bus Error (load/store)
+80052750 Syscall
+80052758 Breakpoint
+80052768 Reserved Instruction
+80052780 Coprocessor Unusable
+80052798 Arithmetic Overflow
+800527b0 Reserved
+800527c0 Floating-Point
+800527d0 Watch
+800527d8 Emux
+800527e0 (uint32_t) ctor_sentinel[0] != 0xFFFFFFFF
+80052810 src/do_ctors.c
+80052820 Invalid constructor sentinel.
+8005283e When linking with g++, please specify:
+80052865    --wrap __do_global_ctors
+80052888 (uint32_t) ctor_sentinel[0] == 0xFFFFFFFF && (uint32_t) ctor_sentinel[(__CTOR_END__ - __CTOR_LIST__) - 1] == 0x0
+80052900 Invalid sentinel, ensure you link via g++
+80052930 *ctor_addr != NULL
+80052948 Loaded DSOs (modules)
+80052961 G%s 
+80052966 T(%p-%p)
+80052970 !(th->flags & TH_FLAG_INLIST)
+80052990 src/kernel/kernel.c
+800529a8 (uintptr_t)th->stack_state >= (uintptr_t)th->stack + STACK_GUARD
+800529f0 stack overflow in thread: %s[%p]
+80052a11 SP:%p | Stack top: %p | Overflow: %d bytes
+80052a40 cookie[i] == STACK_COOKIE
+80052a60 stack overflow in thread: %s[%p]
+80052a81 Stack guard is corrupted
+80052aa0 th->flags & TH_FLAG_INLIST
+80052ac0 thread %s[%p] not in list
+80052ae0 !(th_cur->flags & TH_FLAG_INLIST)
+80052b08 th_cur->flags & TH_FLAG_DETACHED
+80052b30 !(th_cur->flags & TH_FLAG_DETACHED)
+80052b58 thread %s[%p] is waiting for a joiner, but is detached
+80052b90 th_cur->flags & TH_FLAG_INLIST
+80052bb0 *(uint32_t*)th_cur->stack_state->epc == 0x0000000C
+80052be8 invalid opcode found by __kthread_syscall_schedule:
+80052c1c expected 0x0000000C (SYSCALL 0x0), found: %08lx
+80052c50 thread %s[%p] in list? flags=%x
+80052c70 th_next != NULL
+80052c80 !exception_is_running()
+80052c98 cannot yield while an exception is running
+80052cc8 mutex
+80052cd0 out of free memory
+80052ce8 !mutex->owner
+80052cf8 kmutex_destroy() called, but mutex is locked by %s[%p]
+80052d30 !mutex->waiting
+80052d40 kmutex_destroy() called, but threads are waiting
+80052d78 cannot lock a mutex from an exception handler
+80052da8 mutex->flags & KMUTEX_RECURSIVE
+80052dc8 a non-recursive mutex cannot be locked twice
+80052df8 mutex->owner == PhysicalAddr(th)
+80052e20 mutex_unlock() called, but mutex is not locked by %s[%p]
+80052e60 mutex->counter > 0
+80052e78 mutex_unlock() called, but mutex is not locked
+80052ea8 cannot wait on a condition variable from an exception handler
+80052ee8 kcond_wait() called, but mutex is not locked by %s[%p]
+80052f20 mutex->counter == 1
+80052f38 kcond_wait() called, but mutex is locked multiple times
+80052f70 device->style == JOYPAD_STYLE_N64
+80052f98 src/joybus/joypad.c
+80052fb0 joypad_init_refcount > 0
+80052fd0 joypad_init() was not called
+80052ff0 (port) >= 0 && (port) < JOYPAD_PORT_COUNT
+80053020 axis < sizeof(joypad_inputs_t)
+80053040 ctx->buffers[0] && ctx->buffers[1]
+80053068 src/rspq/rspq.c
+80053078 size >= RSPQ_MAX_COMMAND_SIZE+2
+80053098 invalid terminator command in chain: %08lx
+800530c8 next
+800530d0 builtin
+800530e0 MISALIGNED
+800530f0 RSPQ: Normal  DRAM address: %08lx
+80053118 RSPQ: Highpri DRAM address: %08lx
+80053140 RSPQ: Current DRAM address: %08lx + GP=%lx = %08lx
+80053178 RSPQ: RDP     DRAM address: %08lx
+800531a0 RSPQ: Current Overlay: %s (%x)
+800531c0 RSPQ: Command queue:
+800531d8 %08lx%c
+800531e0 RSPQ: RDRAM Command queue: %s
+80053200 RSPQ: RDP Command queue: %s
+80053220 %08lx
+80053228 Invalid overlay
+80053238 Overlay 0x%01lx not registered
+80053258 Invalid command
+80053268 Command %02x not found in overlay %s (0x%01x)
+80053298 rspq_rdp_dynamic_buffers[0] && rspq_rdp_dynamic_buffers[1]
+800532d8 Dragon RSP Queue
+800532f0 !memcmp(rsp_queue.data + banner_offset, "Dragon RSP Queue", 16)
+80053330 rsp_queue_t does not seem to match DMEM; did you forget to update it?
+80053378 rspq_ctx != &highpri
+80053390 already in highpri mode
+800533a8 !rspq_block
+800533b8 cannot switch to highpri mode while creating a block
+800533f0 !rspq_queue_recording
+80053408 cannot switch to highpri mode while recording a queue
+80053440 rspq_ctx == &highpri
+80053458 not in highpri mode
+80053470 a block was already being created
+80053498 cannot create a block in highpri mode
+800534c0 cannot create a block while recording a queue
+800534f0 block
+800534f8 rspq_block
+80053508 a block was not being created
+80053528 rspq_block->nesting_level < RSPQ_MAX_BLOCK_NESTING_LEVEL
+80053568 reached maximum number of nested block runs
+80053598 prev <= (uint32_t*)(rspq_ctx->buffers[1-rspq_ctx->buf_idx]) + rspq_ctx->buf_size
+800535f0 block run is not supported in highpri mode
+80053620 Calling a placeholder is only supported inside a block
+80053658 block->nesting_level < block->min_ph_level
+80053688 Block nesting level overlaps with used placeholders
+800536c0 rspq_queue_recording->nesting_level < RSPQ_MAX_BLOCK_NESTING_LEVEL
+80053708 reached maximum number of nested queue runs
+80053738 cannot create syncpoint in highpri mode
+80053760 cannot create syncpoint in a block
+80053788 cannot create syncpoint in a queue
+800537b0 rspq_initialized
+800537c8 rspq_overlay_register must be called after rspq_init!
+80053800 overlay_ucode
+80053810 memcmp(rsp_queue_text_start, overlay_ucode->code, rspq_text_size) == 0
+80053858 Common code of overlay %s does not match!
+80053888 memcmp(rsp_queue_data_start, overlay_ucode->data, rspq_data_size) == 0
+800538d0 Common data of overlay %s does not match!
+80053900 (rspq_data.rspq_ovl_table.data_rdram[i] & 0x00FFFFFF) != PhysicalAddr(overlay_data)
+80053958 Overlay %s is already registered!
+80053980 (uint16_t)(overlay_header->state_size + 1) > 0
+800539b0 Size of saved state must not be zero (overlay: %s)
+800539e8 (overlay_header->state_size + 1) <= 0x1000
+80053a18 Saved state is too large: %#x
+80053a38 Overlays can only define up to %d commands!
+80053a68 rspq_data.rspq_ovl_table.data_rdram[id + i] == 0
+80053aa0 Tried to register overlay %s in already occupied slot!
+80053ad8 id != 0
+80053ae0 Not enough consecutive free slots available for overlay %s (%ld commands)!
+80053b30 (overlay_id & 0x0FFFFFFF) == 0
+80053b50 the specified overlay_id should only use the top 4 bits (must be preshifted by 28) (overlay: %s)
+80053bb8 get_interrupts_state() == INTERRUPTS_ENABLED
+80053be8 deadlock: interrupts are disabled
+80053c10 cannot wait in a queue
+80053c28 cannot wait in a block
+80053c40 cannot wait in highpri mode
+80053c60 state_offset >= rspq_data_size + sizeof(rspq_overlay_header_t)
+80053ca0 Saved overlay state must start after the overlay header (overlay: %s)!
+80053ce8 state_ptr + overlay_header->state_size + 1 <= overlay_ucode->data_end
+80053d30 Saved overlay state must be completely within the data segment (overlay: %s)
+80053d80 rsp_queue
+80053d90 *SP_STATUS & SP_STATUS_SIG_RDPSYNCFULL
+80053db8 src/rdpq/rdpq.c
+80053dc8 Unexpected RDP interrupt
+80053de8 Cannot call rdpq_mode_blender in fill or copy mode
+80053e20 Interpolated mipmap cannot work with a custom 2-pass combiner
+80053e60 RSP triangle command called but C reference implementation was enabled
+80053ea8 RDPSend buffer: %lx %lx
+80053ec8 TMEM is full, cannot load more data
+80053ef0 incorrect usage of auto-TMEM: unpaired begin/end
+80053f28 Z-clear command issued with a too small temporary buffer
+80053f68 Unknown assert
+80053f78 parms->s.shift >= -5 && parms->s.shift <= 10
+80053fa8 libdragon/include/rdpq.h
+80053fc8 invalid s shift %d: must be in [-5..10]
+80053ff0 parms->t.shift >= -5 && parms->t.shift <= 10
+80054020 invalid t shift %d: must be in [-5..10]
+80054048 parms->palette < 16
+80054060 invalid palette %d: must be in [0..15]
+80054088 (tmem_addr % 8) == 0
+800540a0 invalid tmem_addr %ld: must be multiple of 8
+800540d0 (tmem_pitch % 8) == 0
+800540e8 invalid tmem_pitch %d: must be multiple of 8
+80054118 head
+80054120 __rdpq_block_recycle: NULL head
+80054140 (PhysicalAddr(st->wptr) & 0x7) == 0
+80054168 start not aligned to 8 bytes: %lx
+80054190 (PhysicalAddr(st->wend) & 0x7) == 0
+800541b8 end not aligned to 8 bytes: %lx
+800541d8 __rdpq_inited
+800541e8 a rdpq command was issued during block recording, but rdpq_init() hasn't been called yet
+80054250 (phys_old & 0x7) == 0
+80054268 old not aligned to 8 bytes: %lx
+80054288 (phys_new & 0x7) == 0
+800542a0 new not aligned to 8 bytes: %lx
+800542c0 width <= 1024
+800542d0 Texture width out of range [1,1024]: %d
+800542f8 height <= 1024
+80054308 Texture height out of range [1,1024]: %d
+80054338 format == FMT_RGBA32 || format == FMT_RGBA16 || format == FMT_I8 || format == FMT_CI8
+80054390 Image format is not supported as color image: %s
+800543c1 It must be FMT_RGBA32, FMT_RGBA16, FMT_I8 or FMT_CI8
+800543f8 (PhysicalAddr(surface->buffer) & 63) == 0
+80054428 buffer pointer is not aligned to 64 bytes, so it cannot be used as RDP color image
+80054480 surface->width <= 1023
+80054498 surface width is too large for auto-scissoring (max: 1023)
+800544d8 surface->height <= 1023
+800544f0 surface height is too large for auto-scissoring (max: 1023)
+80054530 TEX_FORMAT_BITDEPTH(surface_get_format(surface)) == 16
+80054568 the format of the Z-buffer surface must be 16-bit (RGBA16, IA16)
+800545b0 buffer pointer is not aligned to 64 bytes, so it cannot be used as RDP Z image
+80054600 misalign == 0 || misalign >= 8 || TEX_FORMAT_BITDEPTH(fmt) == 4
+80054640 texture buffer address %p is misaligned and can cause RDP crashes; please use 8-bytes alignment
+800546a0 (rdpq_state->rdram_state_address & 7) == 0
+800546d0 (rdpq_state->rdram_syncpoint_id & 7) == 0
+80054700 (tmem_bytes % 8) == 0
+80054718 tmem_bytes must be a multiple of 8
+80054740 rsp_rdpq
+80054750 tlut == TLUT_NONE || tlut == TLUT_RGBA16 || tlut == TLUT_IA16
+80054790 libdragon/include/rdpq_mode.h
+800547b0 invalid TLUT type
+800547c8 (fog & SOMX_BLEND_2PASS) == 0
+800547e8 Fogging cannot be used with two-pass blending formulas
+80054820 sprite_fits_tmem(sprite)
+80054840 src/rdpq/rdpq_sprite.c
+80054858 sprite doesn't fit in TMEM
+80054878 (width > 0 && height > 0)
+80054898 src/rdpq/rdpq_tex.c
+800548b0 The sub rectangle of a texture can't be of negative size (%i,%i)
+800548f8 parms->s.repeats >= 0 && parms->t.repeats >= 0
+80054928 Repetition count (%f, %f) cannot be negative
+80054958 1<<xmask == width
+80054970 Mirror and/or wrapping on S axis allowed only with X dimension (%i tx) = power of 2
+800549c8 1<<ymask == height
+800549e0 Mirror and/or wrapping on T axis allowed only with Y dimension (%i tx) = power of 2
+80054a38 (!res->s.clamp || parms->s.translate >= 0)
+80054a68 Translation S (%f) cannot be negative with active clamping
+80054aa8 (!res->t.clamp || parms->t.translate >= 0)
+80054ad8 Translation T (%f) cannot be negative with active clamping
+80054b18 s1 <= tload->tex->width && t1 <= tload->tex->height
+80054b50 rdpq tex loader does not support clamping/mirroring
+80054b88 height * tload->rect.tmem_pitch <= tmem_size
+80054bb8 A rectangle of size %dx%d format %s is too big to fit in TMEM
+80054bf8 (s0) >= 0 && (t0) >= 0 && (s1) >= 0 && (t1) >= 0
+80054c30 texture coordinates must be positive
+80054c58 (s0) < 1024 && (t0) < 1024 && (s1) < 1024 && (t1) < 1024
+80054c98 texture coordinates must be smaller than 1024
+80054cc8 (s0) <= 1024*4 && (t0) <= 1024*4 && (s1) <= 1024*4 && (t1) <= 1024*4
+80054d10 (s0/2) >= 0 && (t0) >= 0 && (s1/2) >= 0 && (t1) >= 0
+80054d48 (s0/2) < 1024 && (t0) < 1024 && (s1/2) < 1024 && (t1) < 1024
+80054d88 ROUND_UP(tload->tex->width, 2) % 4 == 0
+80054db0 Internal Error: invalid width for LOAD_BLOCK (%d)
+80054de8 num_texels <= 2048
+80054e00 invalid num_texels %d: must be smaller than 2048
+80054e38 s0 <= s1
+80054e48 Invalid texture load: s0:%d s1:%d
+80054e70 t0 <= t1
+80054e80 Invalid texture load: t0:%d t1:%d
+80054ea8 parms == NULL || parms->tmem_addr == 0
+80054ed0 Do not specify a TMEM address while doing a multi-texture upload
+80054f18 multi_upload.bytes <= multi_upload.limit
+80054f48 Multi-texture upload exceeded TMEM size
+80054f70 multi_upload.used
+80054f88 Reusing existing texture needs to be done through multi-texture upload
+80054fd0 last_tload.fmt != FMT_NONE
+80054ff0 Reusing existing texture is not possible without uploading at least one texture first
+80055048 Do not specify a TMEM address while reusing an existing texture
+80055088 s0 >= 0 && t0 >= 0 && s1 <= tload.rect.width && t1 <= tload.rect.height
+800550d0 Sub coordinates (%i,%i)-(%i,%i) must be within bounds of the texture reused (%ix%i)
+80055128 t0 % 2 == 0
+80055138 t0=%i must be in multiples of 2 pixels
+80055160 tmem_offset % 8 == 0
+80055178 Due to 8-byte texture alignment, for %s format, s0=%i must be in multiples of %i pixels
+800551d0 num_colors <= 256
+800551e8 invalid palette length %d: must be smaller than 256
+80055220 multi_upload.used >= 0
+80055238 src/rdpq/rdpq_attach.c
+80055250 rdpq not initialized: please call rdpq_init()
+80055280 attach_stack_ptr < ATTACH_STACK_SIZE
+800552a8 Too many nested attachments
+800552c8 surf_z-> width == surf_color->width && surf_z->height == surf_color->height
+80055318 Color and Z buffers must have the same size
+80055348 rdpq_is_attached()
+80055360 No render target is currently attached
+80055388 surf_z
+80055390 No Z buffer is currently attached
+800553b8 src/rdpq/rdpq_font.c
+800553d0 rdpq_init() must be called before loading a font
+80055408 sz >= sizeof(rdpq_font_t)
+80055428 Font buffer too small (sz=%d)
+80055450 memcmp(fnt->magic, FONT_MAGIC_LOADED, 3)
+80055480 Trying to load already loaded font data (buf=%p, sz=%08x)
+800554c8 !memcmp(fnt->magic, FONT_MAGIC, 3)
+800554f0 invalid font data (magic: %c%c%c)
+80055518 fnt->version == 11
+80055530 unsupported font version: %d
+8005554d Please regenerate fonts with an updated mkfont tool
+80055588 unsupported bitmap font format %s
+800555b0 fnt->sparse_range
+800555c8 ch->style_id < fnt->num_styles
+800555e8 style %d not defined in this font
+80055610 (g->s/2) >= 0 && (g->t) >= 0 && ((g->s+width+1)/2) >= 0 && (g->t+height) >= 0
+80055660 (g->s) >= 0 && (g->t) >= 0 && (g->s+width) >= 0 && (g->t+height) >= 0
+800556a8 font_id != 0
+800556b8 src/rdpq/rdpq_text.c
+800556d0 font id 0 is reserved
+800556e8 !fonts[font_id]
+800556f8 font 0x%02x already registered
+80055718 builder.layout->flags & RDPQ_PARAGRAPH_FLAG_MALLOC
+80055750 src/rdpq/rdpq_paragraph.c
+80055770 paragraph of text is too long and cannot be dynamically extended
+800557b8 builder.layout
+800557c8 fnt0
+800557d0 fnt1
+800557d8 builder.font
+800557e8 font %d not registered
+80055800 builder.font->ellipsis_glyph && builder.font->ellipsis_reps
+80055840 ellipses wrap mode requires an ellipses glyph to be specified in the font
+80055890 initial_font_id > 0
+800558a8 invalid usage of font ID 0 (reserved)
+800558d0 parms->width
+800558e0 wrapping modes require a width
+80055900 parms->width >= 0
+80055918 width must be positive
+80055930 parms->height >= 0
+80055948 height must be positive
+80055960 xcur < 2048
+80055970 Paragraph width %d exceeds maximum width
+800559a0 ycur < 2048
+800559b0 Paragraph height %d exceeds maximum height
+800559e0 wrap_font_id > 0
+800559f8 builder.layout->nchars <= builder.layout->capacity
+80055a30 paragraph too long (%d/%d chars)
+80055a58 !error
+80055a60 invalid font id: %c%c at position %d (font id must be two hex digits)
+80055aa8 invalid style id: %c%c at position %d (font id must be two hex digits)
+80055af0 ch <= layout->chars + layout->nchars
+80055b18 approx >= 0 && approx <= 5
+80055b38 src/math/fmath.c
+80055b50 invalid approximation level %d
+80055b70 +0x%lx
+80055b78 backtrace: interrupted because of invalid return address 0x%08lx
+80055bc0 backtrace: framepointer used but not saved onto stack at %p
+80055c00 backtrace: interrupted because of invalid frame pointer 0x%08lx
+80055c48 <NULL POINTER>
+80055c58 <INVALID ADDRESS>
+80055c70  (inline)
+80055c80 %s+0x%lx (%s:%d) [0x%08lx]%s
+80055ca0 .sym
+80055ca8 backtrace: no symbol table found in the rompak
+80055cd8 backtrace: invalid symbol table found at 0x%08lx
+80055d10 backtrace: unsupported symbol table version %ld -- please update your n64sym tool
+80055d68 shift < 64
+80055d78 src/utils.c
+80055d88 Varint overflow
+80055d98 VI WARNING: setting VI_WIDTH < 8 is known to sometimes crash the VI
+80055de0 VI WARNING: dedithering is only useful with 16 bpp
+80055e18 VI WARNING: setting VI_AA_MODE_NONE with 16 bpp, X_SCALE <= 0x200 and H_START < 128 can cause visual artifacts
+80055e88 A common scenario where this happens: NTSC units, with default output area, and 320x240 framebuffer.
+80055ef0 Possible workarounds: activate resampling with VI_AA_MODE_RESAMPLE, increase X_SCALE
+80055f48 VI WARNING: divot filter is only useful when the AA filter is enabled
+80055f90 VI WARNING: setting VI_AA_MODE_RESAMPLE with dedithering can cause artifacts
+80055fe0 VI WARNING: setting VI_AA_MODE_RESAMPLE_FETCH_NEEDED with VI_X_SCALE >= 0x280 (aka: framebuffer widths > 400) can cause artifacts
+80056068 VI WARNING: setting VI_AA_MODE_RESAMPLE_FETCH_ALWAYS with 32 bpp can often cause image corruption
+800560d0 VI WARNING: dedithering requires VI_AA_MODE_NONE or VI_AA_MODE_RESAMPLE_FETCH_ALWAYS
+80056128 VI WARNING: __vblank_interrupt outside of vblank period: %d
+80056168 reg_idx >= 0 && reg_idx < VI_REGISTERS_COUNT
+80056198 src/vi.c
+800561a8 (value & ~wmask) == 0
+800561c0 cfg_refcount > 0
+800561d8 vi_write_end without matching begin
+80056200 PhysicalAddr(buffer) % 8 == 0
+80056220 Invalid VI buffer alignment: %p
+80056240 bpp == 16 || bpp == 32
+80056258 Invalid VI buffer bpp: %d (must be 16 or 32)
+80056288 fmt == FMT_RGBA16 || fmt == FMT_RGBA32
+800562b0 PhysicalAddr(fb->buffer) % 8 == 0
+800562d8 fb->stride % 8 == 0
+800562f0 cfg_pending == 0
+80056308 false
+80056310 Too many vblank handlers
+80056330 VBlank handler not found
+80056350 vi_initialized > 0
+80056368 p->vi_v_total % 2 == 1
+80056380 invalid VI preset: VI_V_TOTAL must be odd (for progressive scan)
+800563c8 render_buffer
+800563d8 src/console.c
+800563e8 loop_count < 1000
+80056400 src/timer.c
+80056410 timer interrupt is stuck in an infinite loop.
+8005643e Check continuous timers with a very short period.
+80056478 timer_init_refcount > 0
+80056490 timer module not initialized
+800564b0 timer
+800564b8 (SI_regs->status & (SI_STATUS_DMA_BUSY | SI_STATUS_IO_BUSY)) == 0
+80056500 src/joybus/joybus.c
+80056518 Internal error: SI interrupt while joybus state is idle
+80056550 (msgs_widx + 1) % MAX_JOYBUS_MSGS != msgs_ridx
+80056580 joybus task queue is full
+800565a0 (port >= 0) && (port < JOYBUS_PORT_COUNT)
+800565d0 libdragon/include/joybus.h
+800565f0 (port + send_len + recv_len) < (JOYBUS_BLOCK_SIZE - 4)
+80056628 Too many detection callbacks registered
+80056650 src/joybus/joypad_accessory.c
+80056670 Unknown joybus_accessory_io_status_t value: %d
+800566a0 transfer_pak_wait_timer is NULL on port %d
+800566d0 Unknown joypad_accessory_state_t value: %d
+80056700 src/system_newlib_locks.c
+80056720 _GLOBAL_
+80056730 (anonymous namespace)
+80056748 auto
+80056750 decltype(auto)
+80056760 string literal
+80056778 decltype(nullptr)
+80056790 [abi:
+800567a8 {default arg#
+800567c0 auto:
+800567c8 template parameter object for 
+800567e8 initializer for module 
+80056800 vtable for 
+80056810 VTT for 
+80056820 construction vtable for 
+80056840 -in-
+80056848 typeinfo for 
+80056858 typeinfo name for 
+80056870 typeinfo fn for 
+80056888 non-virtual thunk to 
+800568a0 virtual thunk to 
+800568b8 covariant return thunk to 
+800568d8 java Class for 
+800568e8 guard variable for 
+80056900 TLS init function for 
+80056918 TLS wrapper function for 
+80056938 reference temporary #
+80056950 hidden alias for 
+80056968 transaction clone for 
+80056980 non-transaction clone for 
+800569a0 operator
+800569b0 operator 
+800569e8 new 
+80056a00 java resource 
+80056a10 decltype (
+80056a28 this
+80056a30 {parm#
+80056a38 global constructors keyed to 
+80056a58 global destructors keyed to 
+80056a78 {lambda
+80056a88 {unnamed type#
+80056a98  [clone 
+80056aa8 [friend]
+80056ab8 typename
+80056ac8 template
+80056ad8  class
+80056ae0  requires 
+80056af0  restrict
+80056b00  volatile
+80056b10  const
+80056b18  transaction_safe
+80056b30  noexcept
+80056b40  throw
+80056b50  _Complex
+80056b60  _Imaginary
+80056b78  __vector(
+80056b88 this 
+80056b90 (...
+80056b98 ...)
+80056ba0  ... 
+80056bc0 std::allocator
+80056bd0 allocator
+80056be0 std::basic_string
+80056bf8 basic_string
+80056c08 std::string
+80056c18 std::basic_string<char, std::char_traits<char>, std::allocator<char> >
+80056c60 std::istream
+80056c70 std::basic_istream<char, std::char_traits<char> >
+80056ca8 basic_istream
+80056cb8 std::ostream
+80056cc8 std::basic_ostream<char, std::char_traits<char> >
+80056d00 basic_ostream
+80056d10 std::iostream
+80056d20 std::basic_iostream<char, std::char_traits<char> >
+80056d58 basic_iostream
+80056da8 alignof 
+80056dc0 co_await 
+80056de0 const_cast
+80056e28 [...]=
+80056e38 delete[] 
+80056e50 dynamic_cast
+80056e70 delete 
+80056f40 operator"" 
+80056fc0 new[]
+80056ff0 noexcept
+800570a8 reinterpret_cast
+800570e8 sizeof...
+80057108 static_cast
+80057120 sizeof 
+80057138 throw
+80057148 throw 
+80057150 signed char
+80057160 bool
+80057168 boolean
+80057170 char
+80057178 byte
+80057180 double
+80057188 long double
+80057198 float
+800571a0 __float128
+800571b0 unsigned char
+800571c8 unsigned int
+800571d8 unsigned
+800571e8 long
+800571f0 unsigned long
+80057200 __int128
+80057210 unsigned __int128
+80057228 short
+80057230 unsigned short
+80057240 void
+80057248 wchar_t
+80057250 long long
+80057260 unsigned long long
+80057278 decimal32
+80057288 decimal64
+80057298 decimal128
+800572a8 half
+800572b0 char8_t
+800572b8 char16_t
+800572c8 char32_t
+800572d8 _Float
+800572e0 std::bfloat16_t
+800572f0 terminate called recursively
+80057310 terminate called after throwing an instance of '
+80057350 terminate called without an active exception
+80057380   what():  
+80057390 GLIBCXX_TUNABLES
+800573a8 obj_size
+800573b8 obj_count
+800573c8 glibcxx.eh_pool
+800573f8 0123456789ABCDEF
+80057410 0123456789abcdef
+80057428 (null)
+80057430 Success
+80057438 Not owner
+80057448 No such file or directory
+80057468 No such process
+80057478 Interrupted system call
+80057490 I/O error
+800574a0 No such device or address
+800574c0 Arg list too long
+800574d8 Exec format error
+800574f0 Socket already connected
+80057510 Bad file number
+80057520 No children
+80057530 Destination address required
+80057550 No more processes
+80057568 Not enough space
+80057580 Permission denied
+80057598 Bad address
+800575a8 Device or resource busy
+800575c0 File exists
+800575d0 Cross-device link
+800575e8 No such device
+800575f8 Not a directory
+80057608 Host is down
+80057618 Connection already in progress
+80057638 Is a directory
+80057648 Invalid argument
+80057660 Network interface is not configured
+80057688 Connection aborted by network
+800576a8 Too many open files in system
+800576c8 File descriptor value too large
+800576e8 Not a character device
+80057700 Text file busy
+80057710 File too large
+80057720 Host is unreachable
+80057738 No space left on device
+80057750 Not supported
+80057760 Illegal seek
+80057770 Read-only file system
+80057788 Too many links
+80057798 Broken pipe
+800577a8 Mathematics argument out of domain of function
+800577d8 Result too large
+800577f0 No message of desired type
+80057810 Identifier removed
+80057828 Illegal byte sequence
+80057840 Deadlock
+80057850 Network is unreachable
+80057868 No lock
+80057870 Not a stream
+80057880 Stream ioctl timeout
+80057898 No stream resources
+800578b0 Virtual circuit is gone
+800578c8 Protocol error
+800578d8 Unknown protocol
+800578f0 Multihop attempted
+80057908 Bad message
+80057918 Function not implemented
+80057938 Directory not empty
+80057950 File or path name too long
+80057970 Too many symbolic links
+80057988 No buffer space available
+800579a8 No data
+800579b0 Address family not supported by protocol family
+800579e0 Protocol wrong type for socket
+80057a00 Socket operation on non-socket
+80057a20 Protocol not available
+80057a38 Connection refused
+80057a50 Connection reset by peer
+80057a70 Address already in use
+80057a88 Address not available
+80057aa0 Software caused connection abort
+80057ac8 Socket is not connected
+80057ae0 Socket is already connected
+80057b00 Operation canceled
+80057b18 State not recoverable
+80057b30 Previous owner died
+80057b48 Operation not supported on socket
+80057b70 Value too large for defined data type
+80057b98 Message too long
+80057bb0 Connection timed out
+80057bc8 Infinity
+80057be0 Balloc succeeded
+80057bf8 ../../../newlib-4.4.0.20231231/newlib/libc/stdlib/dtoa.c
+80057c38 ../../../newlib-4.4.0.20231231/newlib/libc/stdlib/mprec.c
+80057c80 POSIX
+80057ca8 "M*S"M8l"M8l"M,I"M(R"M2
+80057cc4 "M6V"N6V"N*S"N2
+80057cd4 "N,I"N8l"N(R"N9
+80057cec "O*S"O6V"O,I"O9
+80057cfc "O8l"O8l"O(R"P6V"P8l"P9
+80057d14 "P,I"P8l"P2
+80057d20 "P(R"P*S$M9
+80057d2c $M8l$M*S$M,I$M(R$M(R$M2
+80057d44 $M6V$N9
+80057d50 $N*S$N,I$N6V$N(R$N8l$N*S$O2
+80057d74 $O,I$O*S$O8l$O(R$O6V$P(R$P*S$P9
+80057d94 $P,I$P9
+80057d9c $P8l$P6V$P2
+80057da8 &D6V&D*S&D2
+80057db4 &D,I&D9
+80057dbc &D8l&D2
+80057dc4 &D(R&E9
+80057dcc &E6V&E8l&E,I&E(R&E6V&E2
+80057de4 &E*S&F*S&F(R&F2
+80057df4 &F,I&F9
+80057dfc &F8l&F6V&F6V&G(R&G2
+80057e10 &G*S&G,I&G6V&G8l&G9
+80057e28 &H6V&H8l&H*S&H,I&H9
+80057e3c &H8l&H(R&H2
+80057e4c &I(R&I9
+80057e54 &I,I&I6V&I*S&I8l&I9
+80057e68 &J*S&J9
+80057e70 &J6V&J,I&J8l&J(R&J8l&J2
+80057e88 &K8l&K*S&K6V&K,I&K9
+80057ea4 &K(R&L6V&L*S&L6V&L,I&L9
+80057ebc &L8l&L2
+80057ec4 &L(R&M8l&M2
+80057ed4 &M,I&M6V&M2
+80057ee0 &M(R&M*S&N6V&N9
+80057ef4 &N,I&N(R&N2
+80057f00 &N8l&N*S&O8l&O2
+80057f14 &O,I&O9
+80057f1c &O*S&O6V&O(R&P8l&P9
+80057f34 &P,I&P*S&P(R&P2
+80057f44 &P6V&R,I&R6V&R2
+80057f54 &R*S&R9
+80057f5c &R8l&R(R&R*S&S*S&S6V&S8l&S9
+80057f78 &S(R&S*S&S,I&S2
+80057f88 &T8l&T6V&T9
+80057f94 &T*S&T,I&T(R&T2
+80057fac &U6V&U8l&U9
+80057fb8 &U,I&U(R&U,I&U*S&V(R&V6V&V,I&V2
+80057fd8 &V*S&V8l&V*S&V9
+80057fec (D(R(D8l(D,I(D*S(D6V(D9

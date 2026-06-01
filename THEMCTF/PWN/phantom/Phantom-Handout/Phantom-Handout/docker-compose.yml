@@ -1,0 +1,25 @@
+services:
+  phantom:
+    pids_limit: 50
+    cap_drop:
+      - ALL
+    cap_add:
+      - SETUID
+      - SETGID
+    build:
+      context: ./challenge
+      dockerfile: Dockerfile
+    ports:
+      - "38142:38142"
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 1G
+    read_only: true
+    tmpfs:
+      - /tmp:size=10M
+      - /run:size=10M
+    security_opt:
+      - no-new-privileges:true

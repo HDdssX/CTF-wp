@@ -1,0 +1,498 @@
+Classfile jar:file:///F:/CTF/CTF��������Ŀ/CTF-wp/��������/THEMCTF/REVERSE/cheesemes.one/challenge.jar!/com/update/ctf/Challenge.class
+  Last modified 2026��5��29��; size 3484 bytes
+  SHA-256 checksum 7f75f7b73351109df492d9f21fee3e81ba4a440311e5be907a6cc5451b1748fb
+public final class com.update.ctf.Challenge
+  minor version: 0
+  major version: 65
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // com/update/ctf/Challenge
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 7, methods: 6, attributes: 3
+Constant pool:
+    #1 = Utf8               com/update/ctf/Challenge
+    #2 = Class              #1            // com/update/ctf/Challenge
+    #3 = Utf8               java/lang/Object
+    #4 = Class              #3            // java/lang/Object
+    #5 = Utf8               com/update/ctf/C13f425e5aa
+    #6 = Class              #5            // com/update/ctf/C13f425e5aa
+    #7 = Utf8               java/lang/invoke/MethodHandles$Lookup
+    #8 = Class              #7            // java/lang/invoke/MethodHandles$Lookup
+    #9 = Utf8               java/lang/invoke/MethodHandles
+   #10 = Class              #9            // java/lang/invoke/MethodHandles
+   #11 = Utf8               Lookup
+   #12 = Utf8               f33106d35
+   #13 = Utf8               I
+   #14 = Integer            47
+   #15 = Utf8               f1a7331ea
+   #16 = Integer            0
+   #17 = Utf8               f4595ffbd
+   #18 = Integer            16
+   #19 = Utf8               f1a72bd89
+   #20 = Utf8               f4596741e
+   #21 = Utf8               f1a724928
+   #22 = Integer            32
+   #23 = Utf8               f4596e87f
+   #24 = Integer            15
+   #25 = Utf8               checkPart1
+   #26 = Utf8               ([B)Z
+   #27 = Integer            617673358
+   #28 = Utf8               internal/j64mft/ajyiv
+   #29 = Class              #28           // internal/j64mft/ajyiv
+   #30 = Utf8               _djkmg
+   #31 = Utf8               (I)I
+   #32 = NameAndType        #30:#31       // _djkmg:(I)I
+   #33 = Methodref          #29.#32       // internal/j64mft/ajyiv._djkmg:(I)I
+   #34 = Utf8               java/lang/IllegalStateException
+   #35 = Class              #34           // java/lang/IllegalStateException
+   #36 = Utf8               tx20487f
+   #37 = String             #36           // tx20487f
+   #38 = Utf8               <init>
+   #39 = Utf8               (Ljava/lang/String;)V
+   #40 = NameAndType        #38:#39       // "<init>":(Ljava/lang/String;)V
+   #41 = Methodref          #35.#40       // java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+   #42 = Integer            890435639
+   #43 = Integer            11141290
+   #44 = Integer            901445823
+   #45 = Utf8               [B
+   #46 = Class              #45           // "[B"
+   #47 = Integer            1172155079
+   #48 = Utf8               m5519ffad
+   #49 = NameAndType        #48:#26       // m5519ffad:([B)Z
+   #50 = Methodref          #6.#49        // com/update/ctf/C13f425e5aa.m5519ffad:([B)Z
+   #51 = Integer            147
+   #52 = Integer            164
+   #53 = Integer            311
+   #54 = Utf8               checkPart2
+   #55 = Utf8               Xv3yznB72036iBOSEkAWseOnFoDyaPx_HoLGDguxeccOr-_EZ3nGE_WJQsJCFUamq6NHlL5mtnscjdhXCw
+   #56 = String             #55           // Xv3yznB72036iBOSEkAWseOnFoDyaPx_HoLGDguxeccOr-_EZ3nGE_WJQsJCFUamq6NHlL5mtnscjdhXCw
+   #57 = Utf8               _jjwy8
+   #58 = Utf8               (Ljava/lang/String;)Ljava/lang/String;
+   #59 = NameAndType        #57:#58       // _jjwy8:(Ljava/lang/String;)Ljava/lang/String;
+   #60 = Methodref          #29.#59       // internal/j64mft/ajyiv._jjwy8:(Ljava/lang/String;)Ljava/lang/String;
+   #61 = Utf8               Xv3yznB72036iBOSEkAWseOnFoDyaPx_HoLGDguxeccOr-_EZ3nGE_WJQsJCFUamq6NHlA
+   #62 = String             #61           // Xv3yznB72036iBOSEkAWseOnFoDyaPx_HoLGDguxeccOr-_EZ3nGE_WJQsJCFUamq6NHlA
+   #63 = Utf8               internal/j64mft/obmwy
+   #64 = Class              #63           // internal/j64mft/obmwy
+   #65 = Utf8               _s7n9c
+   #66 = Utf8               (Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+   #67 = NameAndType        #65:#66       // _s7n9c:(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+   #68 = Methodref          #64.#67       // internal/j64mft/obmwy._s7n9c:(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+   #69 = Utf8               _nzrf
+   #70 = Utf8               (Ljava/lang/Object;)Z
+   #71 = NameAndType        #69:#70       // _nzrf:(Ljava/lang/Object;)Z
+   #72 = Methodref          #64.#71       // internal/j64mft/obmwy._nzrf:(Ljava/lang/Object;)Z
+   #73 = Utf8               checkPart3
+   #74 = Utf8               main
+   #75 = Utf8               ([Ljava/lang/String;)V
+   #76 = Utf8               com/update/ctf/Caf54bdb423
+   #77 = Class              #76           // com/update/ctf/Caf54bdb423
+   #78 = Utf8               dispatch_0
+   #79 = NameAndType        #78:#75       // dispatch_0:([Ljava/lang/String;)V
+   #80 = Methodref          #77.#79       // com/update/ctf/Caf54bdb423.dispatch_0:([Ljava/lang/String;)V
+   #81 = Utf8               ()V
+   #82 = NameAndType        #38:#81       // "<init>":()V
+   #83 = Methodref          #4.#82        // java/lang/Object."<init>":()V
+   #84 = Utf8               <clinit>
+   #85 = Utf8               java/lang/Throwable
+   #86 = Class              #85           // java/lang/Throwable
+   #87 = Utf8               java/lang/Exception
+   #88 = Class              #87           // java/lang/Exception
+   #89 = Utf8               os.name
+   #90 = String             #89           // os.name
+   #91 = Utf8
+   #92 = String             #91           //
+   #93 = Utf8               java/lang/System
+   #94 = Class              #93           // java/lang/System
+   #95 = Utf8               getProperty
+   #96 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #97 = NameAndType        #95:#96       // getProperty:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #98 = Methodref          #94.#97       // java/lang/System.getProperty:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #99 = Utf8               java/util/Locale
+  #100 = Class              #99           // java/util/Locale
+  #101 = Utf8               ROOT
+  #102 = Utf8               Ljava/util/Locale;
+  #103 = NameAndType        #101:#102     // ROOT:Ljava/util/Locale;
+  #104 = Fieldref           #100.#103     // java/util/Locale.ROOT:Ljava/util/Locale;
+  #105 = Utf8               java/lang/String
+  #106 = Class              #105          // java/lang/String
+  #107 = Utf8               toLowerCase
+  #108 = Utf8               (Ljava/util/Locale;)Ljava/lang/String;
+  #109 = NameAndType        #107:#108     // toLowerCase:(Ljava/util/Locale;)Ljava/lang/String;
+  #110 = Methodref          #106.#109     // java/lang/String.toLowerCase:(Ljava/util/Locale;)Ljava/lang/String;
+  #111 = Utf8               win
+  #112 = String             #111          // win
+  #113 = Utf8               contains
+  #114 = Utf8               (Ljava/lang/CharSequence;)Z
+  #115 = NameAndType        #113:#114     // contains:(Ljava/lang/CharSequence;)Z
+  #116 = Methodref          #106.#115     // java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+  #117 = Utf8               /native/challenge_native.dll
+  #118 = String             #117          // /native/challenge_native.dll
+  #119 = Utf8               /native/challenge_native.so
+  #120 = String             #119          // /native/challenge_native.so
+  #121 = Utf8               java/lang/Class
+  #122 = Class              #121          // java/lang/Class
+  #123 = Utf8               getResourceAsStream
+  #124 = Utf8               (Ljava/lang/String;)Ljava/io/InputStream;
+  #125 = NameAndType        #123:#124     // getResourceAsStream:(Ljava/lang/String;)Ljava/io/InputStream;
+  #126 = Methodref          #122.#125     // java/lang/Class.getResourceAsStream:(Ljava/lang/String;)Ljava/io/InputStream;
+  #127 = Utf8               java/lang/UnsatisfiedLinkError
+  #128 = Class              #127          // java/lang/UnsatisfiedLinkError
+  #129 = Utf8               native library not present for this platform: \u0001
+  #130 = String             #129          // native library not present for this platform: \u0001
+  #131 = Utf8               java/lang/invoke/StringConcatFactory
+  #132 = Class              #131          // java/lang/invoke/StringConcatFactory
+  #133 = Utf8               makeConcatWithConstants
+  #134 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #135 = NameAndType        #133:#134     // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #136 = Methodref          #132.#135     // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #137 = MethodHandle       6:#136        // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #138 = NameAndType        #133:#58      // makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #139 = InvokeDynamic      #0:#138       // #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #140 = Methodref          #128.#40      // java/lang/UnsatisfiedLinkError."<init>":(Ljava/lang/String;)V
+  #141 = Utf8               java/io/InputStream
+  #142 = Class              #141          // java/io/InputStream
+  #143 = Utf8               cnlib
+  #144 = String             #143          // cnlib
+  #145 = Utf8               .dll
+  #146 = String             #145          // .dll
+  #147 = Utf8               .so
+  #148 = String             #147          // .so
+  #149 = Utf8               java/io/File
+  #150 = Class              #149          // java/io/File
+  #151 = Utf8               createTempFile
+  #152 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;
+  #153 = NameAndType        #151:#152     // createTempFile:(Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;
+  #154 = Methodref          #150.#153     // java/io/File.createTempFile:(Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;
+  #155 = Utf8               deleteOnExit
+  #156 = NameAndType        #155:#81      // deleteOnExit:()V
+  #157 = Methodref          #150.#156     // java/io/File.deleteOnExit:()V
+  #158 = Utf8               java/io/FileOutputStream
+  #159 = Class              #158          // java/io/FileOutputStream
+  #160 = Utf8               (Ljava/io/File;)V
+  #161 = NameAndType        #38:#160      // "<init>":(Ljava/io/File;)V
+  #162 = Methodref          #159.#161     // java/io/FileOutputStream."<init>":(Ljava/io/File;)V
+  #163 = Utf8               transferTo
+  #164 = Utf8               (Ljava/io/OutputStream;)J
+  #165 = NameAndType        #163:#164     // transferTo:(Ljava/io/OutputStream;)J
+  #166 = Methodref          #142.#165     // java/io/InputStream.transferTo:(Ljava/io/OutputStream;)J
+  #167 = Utf8               java/io/OutputStream
+  #168 = Class              #167          // java/io/OutputStream
+  #169 = Utf8               close
+  #170 = NameAndType        #169:#81      // close:()V
+  #171 = Methodref          #168.#170     // java/io/OutputStream.close:()V
+  #172 = Utf8               addSuppressed
+  #173 = Utf8               (Ljava/lang/Throwable;)V
+  #174 = NameAndType        #172:#173     // addSuppressed:(Ljava/lang/Throwable;)V
+  #175 = Methodref          #86.#174      // java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+  #176 = Methodref          #142.#170     // java/io/InputStream.close:()V
+  #177 = Utf8               getAbsolutePath
+  #178 = Utf8               ()Ljava/lang/String;
+  #179 = NameAndType        #177:#178     // getAbsolutePath:()Ljava/lang/String;
+  #180 = Methodref          #150.#179     // java/io/File.getAbsolutePath:()Ljava/lang/String;
+  #181 = Utf8               load
+  #182 = NameAndType        #181:#39      // load:(Ljava/lang/String;)V
+  #183 = Methodref          #94.#182      // java/lang/System.load:(Ljava/lang/String;)V
+  #184 = Utf8               valueOf
+  #185 = Utf8               (Ljava/lang/Object;)Ljava/lang/String;
+  #186 = NameAndType        #184:#185     // valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+  #187 = Methodref          #106.#186     // java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+  #188 = Utf8               native load failed: \u0001
+  #189 = String             #188          // native load failed: \u0001
+  #190 = InvokeDynamic      #1:#138       // #1:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #191 = Utf8               ConstantValue
+  #192 = Utf8               Code
+  #193 = Utf8               StackMapTable
+  #194 = Utf8               InnerClasses
+  #195 = Utf8               BootstrapMethods
+  #196 = Utf8               NestMembers
+{
+  public static final int f33106d35;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 47
+
+  public static final int f1a7331ea;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 0
+
+  public static final int f4595ffbd;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 16
+
+  public static final int f1a72bd89;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 16
+
+  public static final int f4596741e;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 16
+
+  public static final int f1a724928;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 32
+
+  public static final int f4596e87f;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 15
+
+  static boolean checkPart1(byte[]);
+    descriptor: ([B)Z
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=5, locals=5, args_size=1
+         0: ldc           #27                 // int 617673358
+         2: dup
+         3: invokestatic  #33                 // Method internal/j64mft/ajyiv._djkmg:(I)I
+         6: if_icmpeq     19
+         9: new           #35                 // class java/lang/IllegalStateException
+        12: dup
+        13: ldc           #37                 // String tx20487f
+        15: invokespecial #41                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+        18: athrow
+        19: ldc           #42                 // int 890435639
+        21: ldc           #43                 // int 11141290
+        23: istore_3
+        24: istore        4
+        26: iconst_0
+        27: iload         4
+        29: iconst_m1
+        30: ixor
+        31: iload_3
+        32: iconst_1
+        33: iadd
+        34: ineg
+        35: ior
+        36: iload         4
+        38: iconst_m1
+        39: ixor
+        40: iload_3
+        41: iconst_1
+        42: iadd
+        43: ineg
+        44: ixor
+        45: isub
+        46: isub
+        47: iconst_1
+        48: isub
+        49: ldc           #44                 // int 901445823
+        51: if_icmpeq     64
+        54: new           #35                 // class java/lang/IllegalStateException
+        57: dup
+        58: ldc           #37                 // String tx20487f
+        60: invokespecial #41                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+        63: athrow
+        64: aload_0
+        65: ldc           #47                 // int 1172155079
+        67: ldc           #47                 // int 1172155079
+        69: ixor
+        70: ifeq          83
+        73: new           #35                 // class java/lang/IllegalStateException
+        76: dup
+        77: ldc           #37                 // String tx20487f
+        79: invokespecial #41                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+        82: athrow
+        83: invokestatic  #50                 // Method com/update/ctf/C13f425e5aa.m5519ffad:([B)Z
+        86: ldc           #51                 // int 147
+        88: ldc           #52                 // int 164
+        90: iadd
+        91: ldc           #53                 // int 311
+        93: if_icmpeq     106
+        96: new           #35                 // class java/lang/IllegalStateException
+        99: dup
+       100: ldc           #37                 // String tx20487f
+       102: invokespecial #41                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+       105: athrow
+       106: ireturn
+      StackMapTable: number_of_entries = 4
+        frame_type = 19 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 44
+          locals = [ class "[B", top, top, int, int ]
+          stack = []
+        frame_type = 82 /* same_locals_1_stack_item */
+          stack = [ class "[B" ]
+        frame_type = 86 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  static boolean checkPart2(byte[]);
+    descriptor: ([B)Z
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=7, locals=1, args_size=1
+         0: ldc           #56                 // String Xv3yznB72036iBOSEkAWseOnFoDyaPx_HoLGDguxeccOr-_EZ3nGE_WJQsJCFUamq6NHlL5mtnscjdhXCw
+         2: invokestatic  #60                 // Method internal/j64mft/ajyiv._jjwy8:(Ljava/lang/String;)Ljava/lang/String;
+         5: pop
+         6: ldc           #2                  // class com/update/ctf/Challenge
+         8: ldc           #62                 // String Xv3yznB72036iBOSEkAWseOnFoDyaPx_HoLGDguxeccOr-_EZ3nGE_WJQsJCFUamq6NHlA
+        10: invokestatic  #60                 // Method internal/j64mft/ajyiv._jjwy8:(Ljava/lang/String;)Ljava/lang/String;
+        13: aconst_null
+        14: iconst_1
+        15: anewarray     #4                  // class java/lang/Object
+        18: dup
+        19: iconst_0
+        20: aload_0
+        21: aastore
+        22: invokestatic  #68                 // Method internal/j64mft/obmwy._s7n9c:(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+        25: invokestatic  #72                 // Method internal/j64mft/obmwy._nzrf:(Ljava/lang/Object;)Z
+        28: ireturn
+
+  static native boolean checkPart3(byte[]);
+    descriptor: ([B)Z
+    flags: (0x0108) ACC_STATIC, ACC_NATIVE
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #80                 // Method com/update/ctf/Caf54bdb423.dispatch_0:([Ljava/lang/String;)V
+         4: return
+
+  private com.update.ctf.Challenge();
+    descriptor: ()V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #83                 // Method java/lang/Object."<init>":()V
+         4: return
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=3, locals=16, args_size=0
+         0: ldc           #90                 // String os.name
+         2: ldc           #92                 // String
+         4: invokestatic  #98                 // Method java/lang/System.getProperty:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+         7: getstatic     #104                // Field java/util/Locale.ROOT:Ljava/util/Locale;
+        10: invokevirtual #110                // Method java/lang/String.toLowerCase:(Ljava/util/Locale;)Ljava/lang/String;
+        13: astore        8
+        15: aload         8
+        17: ldc           #112                // String win
+        19: invokevirtual #116                // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+        22: istore        9
+        24: iload         9
+        26: ifeq          34
+        29: ldc           #118                // String /native/challenge_native.dll
+        31: goto          36
+        34: ldc           #120                // String /native/challenge_native.so
+        36: astore        10
+        38: ldc           #2                  // class com/update/ctf/Challenge
+        40: aload         10
+        42: invokevirtual #126                // Method java/lang/Class.getResourceAsStream:(Ljava/lang/String;)Ljava/io/InputStream;
+        45: astore        11
+        47: aload         11
+        49: ifnonnull     67
+        52: new           #128                // class java/lang/UnsatisfiedLinkError
+        55: dup
+        56: aload         10
+        58: invokedynamic #139,  0            // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+        63: invokespecial #140                // Method java/lang/UnsatisfiedLinkError."<init>":(Ljava/lang/String;)V
+        66: athrow
+        67: ldc           #144                // String cnlib
+        69: iload         9
+        71: ifeq          79
+        74: ldc           #146                // String .dll
+        76: goto          81
+        79: ldc           #148                // String .so
+        81: invokestatic  #154                // Method java/io/File.createTempFile:(Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;
+        84: astore        12
+        86: aload         12
+        88: invokevirtual #157                // Method java/io/File.deleteOnExit:()V
+        91: new           #159                // class java/io/FileOutputStream
+        94: dup
+        95: aload         12
+        97: invokespecial #162                // Method java/io/FileOutputStream."<init>":(Ljava/io/File;)V
+       100: astore        13
+       102: aload         11
+       104: aload         13
+       106: invokevirtual #166                // Method java/io/InputStream.transferTo:(Ljava/io/OutputStream;)J
+       109: pop2
+       110: aload         13
+       112: invokevirtual #171                // Method java/io/OutputStream.close:()V
+       115: goto          140
+       118: astore        14
+       120: aload         13
+       122: invokevirtual #171                // Method java/io/OutputStream.close:()V
+       125: goto          137
+       128: astore        15
+       130: aload         14
+       132: aload         15
+       134: invokevirtual #175                // Method java/lang/Throwable.addSuppressed:(Ljava/lang/Throwable;)V
+       137: aload         14
+       139: athrow
+       140: aload         11
+       142: invokevirtual #176                // Method java/io/InputStream.close:()V
+       145: aload         12
+       147: invokevirtual #180                // Method java/io/File.getAbsolutePath:()Ljava/lang/String;
+       150: invokestatic  #183                // Method java/lang/System.load:(Ljava/lang/String;)V
+       153: goto          176
+       156: astore        8
+       158: new           #128                // class java/lang/UnsatisfiedLinkError
+       161: dup
+       162: aload         8
+       164: invokestatic  #187                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+       167: invokedynamic #190,  0            // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       172: invokespecial #140                // Method java/lang/UnsatisfiedLinkError."<init>":(Ljava/lang/String;)V
+       175: athrow
+       176: return
+      Exception table:
+         from    to  target type
+           102   110   118   Class java/lang/Throwable
+           120   125   128   Class java/lang/Throwable
+             0   153   156   Class java/lang/Exception
+      StackMapTable: number_of_entries = 11
+        frame_type = 255 /* full_frame */
+          offset_delta = 34
+          locals = [ top, top, top, top, top, top, top, top, class java/lang/String, int ]
+          stack = []
+        frame_type = 65 /* same_locals_1_stack_item */
+          stack = [ class java/lang/String ]
+        frame_type = 253 /* append */
+          offset_delta = 30
+          locals = [ class java/lang/String, class java/io/InputStream ]
+        frame_type = 75 /* same_locals_1_stack_item */
+          stack = [ class java/lang/String ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 1
+          locals = [ top, top, top, top, top, top, top, top, class java/lang/String, int, class java/lang/String, class java/io/InputStream ]
+          stack = [ class java/lang/String, class java/lang/String ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 36
+          locals = [ top, top, top, top, top, top, top, top, class java/lang/String, int, class java/lang/String, class java/io/InputStream, class java/io/File, class java/io/FileOutputStream ]
+          stack = [ class java/lang/Throwable ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 9
+          locals = [ top, top, top, top, top, top, top, top, class java/lang/String, int, class java/lang/String, class java/io/InputStream, class java/io/File, class java/io/FileOutputStream, class java/lang/Throwable ]
+          stack = [ class java/lang/Throwable ]
+        frame_type = 8 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 15
+          locals = []
+          stack = [ class java/lang/Exception ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 19
+          locals = [ top, top, top, top, top, top, top, top, class java/lang/String, int, class java/lang/String, class java/io/InputStream, class java/io/File, class java/io/FileOutputStream ]
+          stack = []
+}
+InnerClasses:
+  public static final #11= #8 of #10;     // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+BootstrapMethods:
+  0: #137 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #130 native library not present for this platform: \u0001
+  1: #137 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #189 native load failed: \u0001
+NestMembers:
+  com/update/ctf/C13f425e5aa

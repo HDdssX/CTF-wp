@@ -1,0 +1,338 @@
+Classfile /F:/CTF/CTF��������Ŀ/CTF-wp/��������/THEMCTF/REVERSE/cheesemes.one/_dump_bts/internal/j64mft/obmwyxuh$apw.class
+  Last modified 2026��5��31��; size 1941 bytes
+  SHA-256 checksum dde18da3c56d8ce98e72b29e93c810a28365072235af3379c483f24bd106f15a
+final class internal.j64mft.obmwyxuh$apw
+  minor version: 0
+  major version: 65
+  flags: (0x0030) ACC_FINAL, ACC_SUPER
+  this_class: #2                          // internal/j64mft/obmwyxuh$apw
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 10, methods: 6, attributes: 1
+Constant pool:
+    #1 = Utf8               internal/j64mft/obmwyxuh$apw
+    #2 = Class              #1            // internal/j64mft/obmwyxuh$apw
+    #3 = Utf8               java/lang/Object
+    #4 = Class              #3            // java/lang/Object
+    #5 = Utf8               internal/j64mft/obmwyxuh
+    #6 = Class              #5            // internal/j64mft/obmwyxuh
+    #7 = Utf8               _fum0no
+    #8 = Utf8               I
+    #9 = Utf8               _fa32nl
+   #10 = Utf8               _fbbbzd
+   #11 = Utf8               _fe80ll
+   #12 = Utf8               Ljava/lang/String;
+   #13 = Utf8               _fzj6do
+   #14 = Utf8               Ljava/lang/Class;
+   #15 = Utf8               Ljava/lang/Class<*>;
+   #16 = Utf8               _pf718559
+   #17 = Integer            780353109
+   #18 = Utf8               _pfa36ae7
+   #19 = Integer            780353140
+   #20 = Utf8               _pfc99bb4
+   #21 = Integer            780353171
+   #22 = Utf8               _pfa3447a
+   #23 = Integer            780353202
+   #24 = Utf8               _pfb86bfb
+   #25 = Integer            780353233
+   #26 = Utf8               <init>
+   #27 = Utf8               (IIILjava/lang/String;)V
+   #28 = Utf8               ()V
+   #29 = NameAndType        #26:#28       // "<init>":()V
+   #30 = Methodref          #4.#29        // java/lang/Object."<init>":()V
+   #31 = NameAndType        #7:#8         // _fum0no:I
+   #32 = Fieldref           #2.#31        // internal/j64mft/obmwyxuh$apw._fum0no:I
+   #33 = NameAndType        #9:#8         // _fa32nl:I
+   #34 = Fieldref           #2.#33        // internal/j64mft/obmwyxuh$apw._fa32nl:I
+   #35 = NameAndType        #10:#8        // _fbbbzd:I
+   #36 = Fieldref           #2.#35        // internal/j64mft/obmwyxuh$apw._fbbbzd:I
+   #37 = NameAndType        #11:#12       // _fe80ll:Ljava/lang/String;
+   #38 = Fieldref           #2.#37        // internal/j64mft/obmwyxuh$apw._fe80ll:Ljava/lang/String;
+   #39 = Utf8               _mrl6hz
+   #40 = Utf8               (Ljava/lang/Class;Ljava/lang/Throwable;)Z
+   #41 = Utf8               (Ljava/lang/Class<*>;Ljava/lang/Throwable;)Z
+   #42 = Integer            395286301
+   #43 = Utf8               java/lang/Thread
+   #44 = Class              #43           // java/lang/Thread
+   #45 = Utf8               currentThread
+   #46 = Utf8               ()Ljava/lang/Thread;
+   #47 = NameAndType        #45:#46       // currentThread:()Ljava/lang/Thread;
+   #48 = Methodref          #44.#47       // java/lang/Thread.currentThread:()Ljava/lang/Thread;
+   #49 = Utf8               getName
+   #50 = Utf8               ()Ljava/lang/String;
+   #51 = NameAndType        #49:#50       // getName:()Ljava/lang/String;
+   #52 = Methodref          #44.#51       // java/lang/Thread.getName:()Ljava/lang/String;
+   #53 = Utf8               java/lang/IllegalStateException
+   #54 = Class              #53           // java/lang/IllegalStateException
+   #55 = Utf8               errcode_75a81
+   #56 = String             #55           // errcode_75a81
+   #57 = Utf8               (Ljava/lang/String;)V
+   #58 = NameAndType        #26:#57       // "<init>":(Ljava/lang/String;)V
+   #59 = Methodref          #54.#58       // java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+   #60 = Utf8               errcode_8cab8
+   #61 = String             #60           // errcode_8cab8
+   #62 = Utf8               java/lang/StringBuilder
+   #63 = Class              #62           // java/lang/StringBuilder
+   #64 = Methodref          #63.#29       // java/lang/StringBuilder."<init>":()V
+   #65 = Utf8               errcode_c9da2:
+   #66 = String             #65           // errcode_c9da2:
+   #67 = Utf8               append
+   #68 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #69 = NameAndType        #67:#68       // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #70 = Methodref          #63.#69       // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #71 = Utf8               hashCode
+   #72 = Utf8               ()I
+   #73 = NameAndType        #71:#72       // hashCode:()I
+   #74 = Methodref          #4.#73        // java/lang/Object.hashCode:()I
+   #75 = Utf8               (I)Ljava/lang/StringBuilder;
+   #76 = NameAndType        #67:#75       // append:(I)Ljava/lang/StringBuilder;
+   #77 = Methodref          #63.#76       // java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+   #78 = Utf8               toString
+   #79 = NameAndType        #78:#50       // toString:()Ljava/lang/String;
+   #80 = Methodref          #63.#79       // java/lang/StringBuilder.toString:()Ljava/lang/String;
+   #81 = Integer            227980411
+   #82 = Utf8               errcode_a4733
+   #83 = String             #82           // errcode_a4733
+   #84 = Utf8               errcode_fad8f
+   #85 = String             #84           // errcode_fad8f
+   #86 = Utf8               :
+   #87 = String             #86           // :
+   #88 = Utf8               java/lang/String
+   #89 = Class              #88           // java/lang/String
+   #90 = Utf8               concat
+   #91 = Utf8               (Ljava/lang/String;)Ljava/lang/String;
+   #92 = NameAndType        #90:#91       // concat:(Ljava/lang/String;)Ljava/lang/String;
+   #93 = Methodref          #89.#92       // java/lang/String.concat:(Ljava/lang/String;)Ljava/lang/String;
+   #94 = Utf8               63c013c3
+   #95 = String             #94           // 63c013c3
+   #96 = Utf8               isBlank
+   #97 = Utf8               ()Z
+   #98 = NameAndType        #96:#97       // isBlank:()Z
+   #99 = Methodref          #89.#98       // java/lang/String.isBlank:()Z
+  #100 = NameAndType        #13:#14       // _fzj6do:Ljava/lang/Class;
+  #101 = Fieldref           #2.#100       // internal/j64mft/obmwyxuh$apw._fzj6do:Ljava/lang/Class;
+  #102 = Utf8               _mgfwog
+  #103 = Utf8               (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Class;
+  #104 = NameAndType        #102:#103     // _mgfwog:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Class;
+  #105 = Methodref          #6.#104       // internal/j64mft/obmwyxuh._mgfwog:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Class;
+  #106 = Utf8               java/lang/Class
+  #107 = Class              #106          // java/lang/Class
+  #108 = Utf8               isInstance
+  #109 = Utf8               (Ljava/lang/Object;)Z
+  #110 = NameAndType        #108:#109     // isInstance:(Ljava/lang/Object;)Z
+  #111 = Methodref          #107.#110     // java/lang/Class.isInstance:(Ljava/lang/Object;)Z
+  #112 = Utf8               _pm4687cc
+  #113 = Utf8               _pm712d3b
+  #114 = Utf8               _pmd13d31
+  #115 = Utf8               _pm1eb8ff
+  #116 = Utf8               Signature
+  #117 = Utf8               ConstantValue
+  #118 = Utf8               Code
+  #119 = Utf8               StackMapTable
+  #120 = Utf8               NestHost
+{
+  private final int _fum0no;
+    descriptor: I
+    flags: (0x1012) ACC_PRIVATE, ACC_FINAL, ACC_SYNTHETIC
+
+  private final int _fa32nl;
+    descriptor: I
+    flags: (0x1012) ACC_PRIVATE, ACC_FINAL, ACC_SYNTHETIC
+
+  private final int _fbbbzd;
+    descriptor: I
+    flags: (0x1012) ACC_PRIVATE, ACC_FINAL, ACC_SYNTHETIC
+
+  private final java.lang.String _fe80ll;
+    descriptor: Ljava/lang/String;
+    flags: (0x1012) ACC_PRIVATE, ACC_FINAL, ACC_SYNTHETIC
+
+  private volatile java.lang.Class<?> _fzj6do;
+    descriptor: Ljava/lang/Class;
+    flags: (0x1042) ACC_PRIVATE, ACC_VOLATILE, ACC_SYNTHETIC
+    Signature: #15                          // Ljava/lang/Class<*>;
+
+  private static final int _pf718559;
+    descriptor: I
+    flags: (0x101a) ACC_PRIVATE, ACC_STATIC, ACC_FINAL, ACC_SYNTHETIC
+    ConstantValue: int 780353109
+
+  private static final int _pfa36ae7;
+    descriptor: I
+    flags: (0x101a) ACC_PRIVATE, ACC_STATIC, ACC_FINAL, ACC_SYNTHETIC
+    ConstantValue: int 780353140
+
+  private static final int _pfc99bb4;
+    descriptor: I
+    flags: (0x101a) ACC_PRIVATE, ACC_STATIC, ACC_FINAL, ACC_SYNTHETIC
+    ConstantValue: int 780353171
+
+  private static final int _pfa3447a;
+    descriptor: I
+    flags: (0x101a) ACC_PRIVATE, ACC_STATIC, ACC_FINAL, ACC_SYNTHETIC
+    ConstantValue: int 780353202
+
+  private static final int _pfb86bfb;
+    descriptor: I
+    flags: (0x101a) ACC_PRIVATE, ACC_STATIC, ACC_FINAL, ACC_SYNTHETIC
+    ConstantValue: int 780353233
+
+  private internal.j64mft.obmwyxuh$apw(int, int, int, java.lang.String);
+    descriptor: (IIILjava/lang/String;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=2, locals=5, args_size=5
+         0: aload_0
+         1: invokespecial #30                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: iload_1
+         6: putfield      #32                 // Field _fum0no:I
+         9: aload_0
+        10: iload_2
+        11: putfield      #34                 // Field _fa32nl:I
+        14: aload_0
+        15: iload_3
+        16: putfield      #36                 // Field _fbbbzd:I
+        19: aload_0
+        20: aload         4
+        22: putfield      #38                 // Field _fe80ll:Ljava/lang/String;
+        25: return
+
+  private boolean _mrl6hz(java.lang.Class<?>, java.lang.Throwable);
+    descriptor: (Ljava/lang/Class;Ljava/lang/Throwable;)Z
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=4, args_size=3
+         0: ldc           #42                 // int 395286301
+         2: goto          5
+         5: lookupswitch  { // 6
+
+               395286301: 158
+
+              1013141870: 64
+
+              1013141901: 81
+
+              1013141932: 91
+
+              1013141963: 122
+
+              1013141994: 137
+                 default: 137
+            }
+        64: invokestatic  #48                 // Method java/lang/Thread.currentThread:()Ljava/lang/Thread;
+        67: invokevirtual #52                 // Method java/lang/Thread.getName:()Ljava/lang/String;
+        70: pop
+        71: new           #54                 // class java/lang/IllegalStateException
+        74: dup
+        75: ldc           #56                 // String errcode_75a81
+        77: invokespecial #59                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+        80: athrow
+        81: new           #54                 // class java/lang/IllegalStateException
+        84: dup
+        85: ldc           #61                 // String errcode_8cab8
+        87: invokespecial #59                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+        90: athrow
+        91: new           #63                 // class java/lang/StringBuilder
+        94: dup
+        95: invokespecial #64                 // Method java/lang/StringBuilder."<init>":()V
+        98: ldc           #66                 // String errcode_c9da2:
+       100: invokevirtual #70                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       103: aload_0
+       104: invokevirtual #74                 // Method java/lang/Object.hashCode:()I
+       107: invokevirtual #77                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+       110: invokevirtual #80                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       113: new           #54                 // class java/lang/IllegalStateException
+       116: dup_x1
+       117: swap
+       118: invokespecial #59                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+       121: athrow
+       122: ldc           #81                 // int 227980411
+       124: iconst_3
+       125: ixor
+       126: pop
+       127: new           #54                 // class java/lang/IllegalStateException
+       130: dup
+       131: ldc           #83                 // String errcode_a4733
+       133: invokespecial #59                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+       136: athrow
+       137: ldc           #85                 // String errcode_fad8f
+       139: ldc           #87                 // String :
+       141: invokevirtual #93                 // Method java/lang/String.concat:(Ljava/lang/String;)Ljava/lang/String;
+       144: ldc           #95                 // String 63c013c3
+       146: invokevirtual #93                 // Method java/lang/String.concat:(Ljava/lang/String;)Ljava/lang/String;
+       149: new           #54                 // class java/lang/IllegalStateException
+       152: dup_x1
+       153: swap
+       154: invokespecial #59                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+       157: athrow
+       158: aload_0
+       159: getfield      #38                 // Field _fe80ll:Ljava/lang/String;
+       162: ifnull        175
+       165: aload_0
+       166: getfield      #38                 // Field _fe80ll:Ljava/lang/String;
+       169: invokevirtual #99                 // Method java/lang/String.isBlank:()Z
+       172: ifeq          177
+       175: iconst_1
+       176: ireturn
+       177: aload_0
+       178: getfield      #101                // Field _fzj6do:Ljava/lang/Class;
+       181: astore_3
+       182: aload_3
+       183: ifnonnull     200
+       186: aload_1
+       187: aload_0
+       188: getfield      #38                 // Field _fe80ll:Ljava/lang/String;
+       191: invokestatic  #105                // Method internal/j64mft/obmwyxuh._mgfwog:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Class;
+       194: astore_3
+       195: aload_0
+       196: aload_3
+       197: putfield      #101                // Field _fzj6do:Ljava/lang/Class;
+       200: aload_3
+       201: aload_2
+       202: invokevirtual #111                // Method java/lang/Class.isInstance:(Ljava/lang/Object;)Z
+       205: ireturn
+      StackMapTable: number_of_entries = 10
+        frame_type = 69 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 58 /* same */
+        frame_type = 16 /* same */
+        frame_type = 9 /* same */
+        frame_type = 30 /* same */
+        frame_type = 14 /* same */
+        frame_type = 20 /* same */
+        frame_type = 16 /* same */
+        frame_type = 1 /* same */
+        frame_type = 252 /* append */
+          offset_delta = 22
+          locals = [ class java/lang/Class ]
+    Signature: #41                          // (Ljava/lang/Class<*>;Ljava/lang/Throwable;)Z
+
+  private static void _pm4687cc();
+    descriptor: ()V
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=0, locals=0, args_size=0
+         0: return
+
+  private static void _pm712d3b();
+    descriptor: ()V
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=0, locals=0, args_size=0
+         0: return
+
+  private static void _pmd13d31();
+    descriptor: ()V
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=0, locals=0, args_size=0
+         0: return
+
+  private static void _pm1eb8ff();
+    descriptor: ()V
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=0, locals=0, args_size=0
+         0: return
+}
+NestHost: class internal/j64mft/obmwyxuh

@@ -1,0 +1,1489 @@
+
+OP 00 handler 0x51c75
+051c75: push     r9
+051c77: movabs   r9, 0x624c439df1496a24
+051c81: xor      r9, 0x7908f72e
+051c88: or       r9, 1
+051c8c: test     r9, 1
+051c93: jne      0x7ffd8c151c9b
+051c99: pause    
+051c9b: not      r9
+051c9e: pop      r9
+051ca0: xor      r15, r15
+051ca3: neg      r15
+051ca6: mov      r15, qword ptr [r12 + 0x1970]
+051cae: xor      r15, 0x7a85d63a
+051cb5: xor      r15, 0x7a85d63a
+051cbc: cmp      r15, qword ptr [r12 + 0x1970]
+051cc4: je       0x7ffd8c151cd3
+051cca: add      r15, 0x4c
+051cce: test     r15, r15
+051cd1: ud2      
+051cd3: mov      r15, rsi
+051cd6: shl      r15, 5
+051cda: test     r15, 0x1f
+051ce1: je       0x7ffd8c151d01
+051ce7: rol      r15, 9
+051ceb: test     r15, r15
+051cee: movabs   r15, 0x98d496589b595645
+051cf8: add      r15, 0xc7
+051cff: ud2      
+051d01: sub      r15, 0x2b
+051d05: movabs   r15, 0xb925d3232b0dcec7
+051d0f: dec      r15
+051d12: rol      r15, 0x1e
+051d16: mov      r10d, 0
+051d1c: mov      r10b, byte ptr [rsi]
+051d1f: xor      r10b, byte ptr [r12 + 0x19a8]
+051d27: inc      rsi
+051d2a: mov      r9d, dword ptr [rsi]
+051d2d: xor      r9d, dword ptr [r12 + 0x19a8]
+051d35: add      rsi, 4
+051d39: mov      qword ptr [r12 + r10*8 + 8], r9
+051d3e: rol      r15, 0x27
+051d42: sub      r15, 0x81
+051d49: rol      r15, 0xc
+051d4d: neg      r15
+051d50: not      r15
+
+OP 11 handler 0x617f1
+0617f1: push     rax
+0617f2: movabs   rax, 0x34a7faf1504af9d0
+0617fc: and      rax, 0xfffffffffffffffe
+061800: inc      rax
+061803: test     rax, 1
+061809: jne      0x7ffd8c161811
+06180f: pause    
+061811: rol      rax, 3
+061815: ror      rax, 3
+061819: pop      rax
+06181a: inc      rdx
+06181d: xor      rdx, rdx
+061820: dec      rdx
+061823: mov      rdx, 0x2e92dfb
+06182a: and      rdx, 0
+06182e: cmp      rdx, 0
+061832: je       0x7ffd8c16184b
+061838: movabs   rdx, 0x14a64535d2dc0136
+061842: sub      rdx, 0xec
+061849: ud2      
+06184b: mov      rdx, qword ptr [r12 + 0x1970]
+061853: xor      rdx, 0xffffffffad0e5af6
+06185a: xor      rdx, 0xffffffffad0e5af6
+061861: cmp      rdx, qword ptr [r12 + 0x1970]
+061869: je       0x7ffd8c161888
+06186f: movabs   rdx, 0x6717264316f59c8c
+061879: inc      rdx
+06187c: add      rdx, 0xde
+061883: neg      rdx
+061886: ud2      
+061888: add      rdx, 0x66
+06188c: add      rdx, 0x9a
+061893: mov      eax, 0
+061898: mov      al, byte ptr [rsi]
+06189a: xor      al, byte ptr [r12 + 0x19a8]
+0618a2: inc      rsi
+0618a5: mov      r14d, 0
+0618ab: mov      r14b, byte ptr [rsi]
+0618ae: xor      r14b, byte ptr [r12 + 0x19a8]
+0618b6: inc      rsi
+0618b9: mov      edx, 0
+0618be: mov      dl, byte ptr [rsi]
+0618c0: xor      dl, byte ptr [r12 + 0x19a8]
+0618c8: inc      rsi
+0618cb: mov      r11, qword ptr [r12 + r14*8 + 8]
+
+OP 12 handler 0x62d40
+062d40: push     rdx
+062d41: movabs   rdx, 0x3772faee8419879b
+062d4b: xor      rdx, rdx
+062d4e: inc      rdx
+062d51: test     rdx, rdx
+062d54: jne      0x7ffd8c162d5c
+062d5a: pause    
+062d5c: add      rdx, 0x2018f69f
+062d63: pop      rdx
+062d64: rol      r13, 0x11
+062d68: neg      r13
+062d6b: sub      r13, 0x45
+062d6f: rol      r13, 0x18
+062d73: movabs   r13, 0xe87373e92dbab898
+062d7d: dec      r13
+062d80: mov      r13, 0xffffffffecbf7252
+062d87: and      r13, 0
+062d8b: cmp      r13, 0
+062d8f: je       0x7ffd8c162da4
+062d95: neg      r13
+062d98: movabs   r13, 0x568aa2fda0d5ef31
+062da2: ud2      
+062da4: mov      r13, qword ptr [r12 + 0x19f0]
+062dac: add      r13, 0x143d
+062db3: sub      r13, 0x143d
+062dba: cmp      r13, qword ptr [r12 + 0x19f0]
+062dc2: je       0x7ffd8c162dd7
+062dc8: inc      r13
+062dcb: not      r13
+062dce: not      r13
+062dd1: add      r13, 0x69
+062dd5: ud2      
+062dd7: dec      r13
+062dda: movabs   r13, 0x35b915a97395352c
+062de4: mov      r10d, 0
+062dea: mov      r10b, byte ptr [rsi]
+062ded: xor      r10b, byte ptr [r12 + 0x19a8]
+062df5: inc      rsi
+062df8: mov      r8d, 0
+062dfe: mov      r8b, byte ptr [rsi]
+062e01: xor      r8b, byte ptr [r12 + 0x19a8]
+062e09: inc      rsi
+062e0c: mov      r14, qword ptr [r12 + r8*8 + 8]
+062e11: mov      r13d, 0
+062e17: mov      r13b, byte ptr [rsi - 3]
+
+OP 15 handler 0x7bc27
+07bc27: push     rax
+07bc28: push     rdx
+07bc29: push     rcx
+07bc2a: push     r8
+07bc2c: rdtsc    
+07bc2e: mov      r8, rax
+07bc31: pause    
+07bc33: xchg     rcx, rcx
+07bc36: rdtsc    
+07bc38: sub      rax, r8
+07bc3b: cmp      rax, 0x1369b
+07bc42: jb       0x7ffd8c17bc4a
+07bc48: pause    
+07bc4a: pop      r8
+07bc4c: pop      rcx
+07bc4d: pop      rdx
+07bc4e: pop      rax
+07bc4f: test     r9, r9
+07bc52: dec      r9
+07bc55: movabs   r9, 0xd83b1323ebbf941d
+07bc5f: mov      r9, qword ptr [r12 + 0x1970]
+07bc67: xor      r9, 0x4ef45ea9
+07bc6e: xor      r9, 0x4ef45ea9
+07bc75: cmp      r9, qword ptr [r12 + 0x1970]
+07bc7d: je       0x7ffd8c17bc95
+07bc83: neg      r9
+07bc86: xor      r9, r9
+07bc89: movabs   r9, 0x65813b5c64f2fc33
+07bc93: ud2      
+07bc95: mov      r9, qword ptr [r12 + 0x1970]
+07bc9d: xor      r9, 0x29446433
+07bca4: xor      r9, 0x29446433
+07bcab: cmp      r9, qword ptr [r12 + 0x1970]
+07bcb3: je       0x7ffd8c17bcc1
+07bcb9: not      r9
+07bcbc: neg      r9
+07bcbf: ud2      
+07bcc1: neg      r9
+07bcc4: xor      r9, r9
+07bcc7: mov      r14d, 0
+07bccd: mov      r14b, byte ptr [rsi]
+07bcd0: xor      r14b, byte ptr [r12 + 0x19a8]
+07bcd8: inc      rsi
+07bcdb: mov      r10d, 0
+07bce1: mov      r10b, byte ptr [rsi]
+
+OP 1b handler 0x4c2ab
+04c2ab: push     rax
+04c2ac: push     rdx
+04c2ad: push     rcx
+04c2ae: push     r8
+04c2b0: rdtsc    
+04c2b2: mov      r8, rax
+04c2b5: pause    
+04c2b7: nop      
+04c2b8: rdtsc    
+04c2ba: sub      rax, r8
+04c2bd: cmp      rax, 0xfd86
+04c2c4: jb       0x7ffd8c14c2cc
+04c2ca: pause    
+04c2cc: pop      r8
+04c2ce: pop      rcx
+04c2cf: pop      rdx
+04c2d0: pop      rax
+04c2d1: movabs   rax, 0x4a49ce0a8655fb88
+04c2db: inc      rax
+04c2de: rol      rax, 0x3e
+04c2e2: not      rax
+04c2e5: test     rax, rax
+04c2e8: mov      rax, rsi
+04c2eb: xor      rax, 0x3191623
+04c2f2: xor      rax, 0x3191623
+04c2f9: cmp      rax, rsi
+04c2fc: je       0x7ffd8c14c315
+04c302: sub      rax, 0x92
+04c309: neg      rax
+04c30c: rol      rax, 0x29
+04c310: inc      rax
+04c313: ud2      
+04c315: mov      rax, qword ptr [r12 + 0x1970]
+04c31d: shr      rax, 1
+04c320: shl      rax, 1
+04c323: test     rax, 1
+04c329: je       0x7ffd8c14c348
+04c32f: sub      rax, 0xe6
+04c336: movabs   rax, 0xfc1605fa1cf2b8cc
+04c340: xor      rax, rax
+04c343: inc      rax
+04c346: ud2      
+04c348: neg      rax
+04c34b: sub      rax, 0xc5
+04c352: sub      rax, 0x49
+
+OP 33 handler 0x3bb1d
+03bb1d: add      r14, 2
+03bb21: rol      r14, 0x2f
+03bb25: dec      r14
+03bb28: mov      r10, qword ptr [rsi]
+03bb2b: add      rsi, 8
+03bb2f: mov      ebx, 0
+03bb34: mov      bl, byte ptr [rsi]
+03bb36: xor      bl, byte ptr [r12 + 0x19a8]
+03bb3e: inc      rsi
+03bb41: mov      r11d, 0
+03bb47: mov      r11b, byte ptr [rsi]
+03bb4a: xor      r11b, byte ptr [r12 + 0x19a8]
+03bb52: inc      rsi
+03bb55: mov      r13d, 0
+03bb5b: mov      r13b, byte ptr [rsi]
+03bb5e: xor      r13b, byte ptr [r12 + 0x19a8]
+03bb66: inc      rsi
+03bb69: xor      r15, r15
+03bb6c: mov      rcx, qword ptr [r12 + r11*8 + 8]
+03bb71: mov      r8, qword ptr [r12 + r13*8 + 8]
+03bb76: and      rcx, r8
+03bb79: not      rcx
+03bb7c: mov      qword ptr [r12 + 0x1868], rcx
+03bb84: xor      r9, r9
+03bb87: test     r10, r10
+03bb8a: je       0x7ffd8c13bbb6
+03bb90: movabs   rax, 0x8ffda33f
+03bb9a: xor      rdx, rdx
+03bb9d: mov      r14, r10
+03bba0: div      r14
+03bba3: test     rdx, rdx
+03bba6: mov      r14, 1
+03bbad: cmove    r9, r14
+03bbb1: jmp      0x7ffd8c13bbb6
+03bbb6: mov      rcx, qword ptr [r12 + 0x1868]
+03bbbe: imul     rcx, r9
+03bbc2: add      r15, rcx
+03bbc5: sub      r14, 0x5f
+03bbc9: inc      r14
+03bbcc: mov      rcx, qword ptr [r12 + r11*8 + 8]
+03bbd1: mov      r8, qword ptr [r12 + r13*8 + 8]
+03bbd6: and      rcx, r8
+03bbd9: mov      qword ptr [r12 + 0x1868], rcx
+03bbe1: xor      r9, r9
+03bbe4: test     r10, r10
+
+OP 3f handler 0x5e0ea
+05e0ea: push     rax
+05e0eb: push     rdx
+05e0ec: push     rcx
+05e0ed: push     r8
+05e0ef: rdtsc    
+05e0f1: mov      r8, rax
+05e0f4: pause    
+05e0f6: pause    
+05e0f8: rdtsc    
+05e0fa: sub      rax, r8
+05e0fd: cmp      rax, 0x989d
+05e104: jb       0x7ffd8c15e10c
+05e10a: pause    
+05e10c: pop      r8
+05e10e: pop      rcx
+05e10f: pop      rdx
+05e110: pop      rax
+05e111: neg      r13
+05e114: dec      r13
+05e117: not      r13
+05e11a: test     r13, r13
+05e11d: inc      r13
+05e120: mov      r13, rsi
+05e123: shl      r13, 8
+05e127: test     r13, 0xff
+05e12e: je       0x7ffd8c15e140
+05e134: not      r13
+05e137: rol      r13, 0x23
+05e13b: xor      r13, r13
+05e13e: ud2      
+05e140: mov      r13, qword ptr [r12 + 0x1970]
+05e148: neg      r13
+05e14b: neg      r13
+05e14e: cmp      r13, qword ptr [r12 + 0x1970]
+05e156: je       0x7ffd8c15e178
+05e15c: movabs   r13, 0x7cd9d8b19fec3dac
+05e166: movabs   r13, 0xd8ae20b66819c690
+05e170: not      r13
+05e173: inc      r13
+05e176: ud2      
+05e178: neg      r13
+05e17b: xor      r13, r13
+05e17e: mov      r14d, 0
+05e184: mov      r14b, byte ptr [rsi]
+05e187: xor      r14b, byte ptr [r12 + 0x19a8]
+
+OP 44 handler 0x61935
+061935: push     rax
+061936: push     rdx
+061937: push     rcx
+061938: push     r8
+06193a: rdtsc    
+06193c: mov      r8, rax
+06193f: pause    
+061941: nop      
+061942: rdtsc    
+061944: sub      rax, r8
+061947: cmp      rax, 0x14795
+06194e: jb       0x7ffd8c161956
+061954: pause    
+061956: pop      r8
+061958: pop      rcx
+061959: pop      rdx
+06195a: pop      rax
+06195b: not      r15
+06195e: not      r15
+061961: rol      r15, 0x33
+061965: test     r15, r15
+061968: xor      r15, r15
+06196b: xor      r15, r15
+06196e: mov      r15, qword ptr [r12 + 0x1970]
+061976: and      r15, 0x7ffffffe
+06197d: test     r15, 1
+061984: je       0x7ffd8c161999
+06198a: test     r15, r15
+06198d: movabs   r15, 0x3a1297cbbeabd232
+061997: ud2      
+061999: mov      r15, qword ptr [r12 + 0x19f0]
+0619a1: add      r15, 0x5631
+0619a8: sub      r15, 0x5631
+0619af: cmp      r15, qword ptr [r12 + 0x19f0]
+0619b7: je       0x7ffd8c1619c5
+0619bd: inc      r15
+0619c0: dec      r15
+0619c3: ud2      
+0619c5: neg      r15
+0619c8: dec      r15
+0619cb: sub      r15, 0xc6
+0619d2: add      r15, 0xf2
+0619d9: mov      r14d, 0
+0619df: mov      r14b, byte ptr [rsi]
+0619e2: xor      r14b, byte ptr [r12 + 0x19a8]
+
+OP 49 handler 0x36dbe
+036dbe: add      r14, 0xd6
+036dc5: mov      r10, qword ptr [rsi]
+036dc8: add      rsi, 8
+036dcc: mov      ebx, 0
+036dd1: mov      bl, byte ptr [rsi]
+036dd3: xor      bl, byte ptr [r12 + 0x19a8]
+036ddb: inc      rsi
+036dde: mov      r11d, 0
+036de4: mov      r11b, byte ptr [rsi]
+036de7: xor      r11b, byte ptr [r12 + 0x19a8]
+036def: inc      rsi
+036df2: mov      r13d, 0
+036df8: mov      r13b, byte ptr [rsi]
+036dfb: xor      r13b, byte ptr [r12 + 0x19a8]
+036e03: inc      rsi
+036e06: xor      r15, r15
+036e09: mov      rcx, qword ptr [r12 + r11*8 + 8]
+036e0e: mov      r8, qword ptr [r12 + r13*8 + 8]
+036e13: mov      r14, rcx
+036e16: and      r14, r8
+036e19: or       rcx, r8
+036e1c: add      rcx, r14
+036e1f: mov      qword ptr [r12 + 0x1868], rcx
+036e27: xor      r9, r9
+036e2a: test     r10, r10
+036e2d: je       0x7ffd8c136e59
+036e33: movabs   rax, 0x8253b707
+036e3d: xor      rdx, rdx
+036e40: mov      r14, r10
+036e43: div      r14
+036e46: test     rdx, rdx
+036e49: mov      r14, 1
+036e50: cmove    r9, r14
+036e54: jmp      0x7ffd8c136e59
+036e59: mov      rcx, qword ptr [r12 + 0x1868]
+036e61: imul     rcx, r9
+036e65: add      r15, rcx
+036e68: add      r14, 0xf5
+036e6f: movabs   r14, 0x9dcaa4e17a1eda4a
+036e79: mov      rcx, qword ptr [r12 + r11*8 + 8]
+036e7e: mov      r8, qword ptr [r12 + r13*8 + 8]
+036e83: add      rcx, r8
+036e86: xor      rcx, 0xffffffffd49b6f81
+036e8d: mov      qword ptr [r12 + 0x1868], rcx
+036e95: xor      r9, r9
+
+OP 4a handler 0x6c309
+06c309: push     rax
+06c30a: push     rdx
+06c30b: push     rcx
+06c30c: push     r8
+06c30e: rdtsc    
+06c310: mov      r8, rax
+06c313: pause    
+06c315: nop      
+06c316: rdtsc    
+06c318: sub      rax, r8
+06c31b: cmp      rax, 0xf669
+06c322: jb       0x7ffd8c16c32a
+06c328: pause    
+06c32a: pop      r8
+06c32c: pop      rcx
+06c32d: pop      rdx
+06c32e: pop      rax
+06c32f: xor      rax, rax
+06c332: rol      rax, 0x28
+06c336: sub      rax, 0xc3
+06c33d: dec      rax
+06c340: inc      rax
+06c343: mov      rax, qword ptr [r12 + 0x1970]
+06c34b: and      rax, 0x7ffffffe
+06c352: test     rax, 1
+06c358: je       0x7ffd8c16c366
+06c35e: not      rax
+06c361: xor      rax, rax
+06c364: ud2      
+06c366: mov      rax, qword ptr [r12 + 0x19f0]
+06c36e: add      rax, 0x1483
+06c375: sub      rax, 0x1483
+06c37c: cmp      rax, qword ptr [r12 + 0x19f0]
+06c384: je       0x7ffd8c16c395
+06c38a: neg      rax
+06c38d: dec      rax
+06c390: dec      rax
+06c393: ud2      
+06c395: dec      rax
+06c398: movabs   rax, 0x550ca69226ded8f0
+06c3a2: mov      edx, 0
+06c3a7: mov      dl, byte ptr [rsi]
+06c3a9: xor      dl, byte ptr [r12 + 0x19a8]
+06c3b1: inc      rsi
+06c3b4: mov      r13d, 0
+
+OP 4d handler 0x42c5e
+042c5e: push     rax
+042c5f: push     rdx
+042c60: push     rcx
+042c61: push     r8
+042c63: rdtsc    
+042c65: mov      r8, rax
+042c68: pause    
+042c6a: lea      rcx, [rcx]
+042c6d: rdtsc    
+042c6f: sub      rax, r8
+042c72: cmp      rax, 0xfc87
+042c79: jb       0x7ffd8c142c81
+042c7f: pause    
+042c81: pop      r8
+042c83: pop      rcx
+042c84: pop      rdx
+042c85: pop      rax
+042c86: xor      rax, rax
+042c89: add      rax, 0xb6
+042c90: rol      rax, 0x31
+042c94: rol      rax, 0x37
+042c98: mov      rax, qword ptr [r12 + 0x19d8]
+042ca0: shl      rax, 4
+042ca4: test     rax, 1
+042caa: je       0x7ffd8c142cc2
+042cb0: test     rax, rax
+042cb3: inc      rax
+042cb6: movabs   rax, 0x8e0e8269bf9dd4f2
+042cc0: ud2      
+042cc2: mov      rax, rsi
+042cc5: add      rax, rax
+042cc8: test     rax, 1
+042cce: je       0x7ffd8c142ce2
+042cd4: dec      rax
+042cd7: not      rax
+042cda: xor      rax, rax
+042cdd: test     rax, rax
+042ce0: ud2      
+042ce2: sub      rax, 0x2f
+042ce6: add      rax, 0x56
+042cea: neg      rax
+042ced: dec      rax
+042cf0: mov      r8d, 0
+042cf6: mov      r8b, byte ptr [rsi]
+042cf9: xor      r8b, byte ptr [r12 + 0x19a8]
+
+OP 4e handler 0x301d4
+0301d4: push     r10
+0301d6: movabs   r10, 0x70014c735a58dc02
+0301e0: xor      r10, 0x7c407e06
+0301e7: or       r10, 1
+0301eb: test     r10, 1
+0301f2: jne      0x7ffd8c1301fa
+0301f8: pause    
+0301fa: not      r10
+0301fd: pop      r10
+0301ff: xor      r15, r15
+030202: neg      r15
+030205: rol      r15, 0x2d
+030209: movabs   r15, 0x22f2c46ebdc89d75
+030213: mov      r15, rsi
+030216: rol      r15, 0x11
+03021a: ror      r15, 0x11
+03021e: cmp      r15, rsi
+030221: je       0x7ffd8c130239
+030227: neg      r15
+03022a: not      r15
+03022d: movabs   r15, 0x209abc944678dfc9
+030237: ud2      
+030239: mov      r15, qword ptr [r12 + 0x1970]
+030241: and      r15, 0x7ffffffe
+030248: test     r15, 1
+03024f: je       0x7ffd8c130264
+030255: dec      r15
+030258: dec      r15
+03025b: test     r15, r15
+03025e: add      r15, 0xd
+030262: ud2      
+030264: dec      r15
+030267: xor      r15, r15
+03026a: dec      r15
+03026d: test     r15, r15
+030270: dec      r15
+030273: neg      r15
+030276: movabs   r15, 0xc66056da39e099f7
+030280: add      r15, 8
+030284: dec      r15
+030287: test     r15, r15
+03028a: test     r15, r15
+03028d: ret      
+
+OP 59 handler 0x7d097
+07d097: push     rcx
+07d098: movabs   rcx, 0x13e80a16834e9aa5
+07d0a2: xor      rcx, 0x359d78e
+07d0a9: or       rcx, 1
+07d0ad: test     rcx, 1
+07d0b4: jne      0x7ffd8c17d0bc
+07d0ba: pause    
+07d0bc: not      rcx
+07d0bf: pop      rcx
+07d0c0: neg      rdx
+07d0c3: movabs   rdx, 0x3c391bb709d732bf
+07d0cd: inc      rdx
+07d0d0: mov      rdx, qword ptr [r12 + 0x19f0]
+07d0d8: inc      rdx
+07d0db: dec      rdx
+07d0de: cmp      rdx, qword ptr [r12 + 0x19f0]
+07d0e6: je       0x7ffd8c17d0f4
+07d0ec: dec      rdx
+07d0ef: dec      rdx
+07d0f2: ud2      
+07d0f4: mov      rdx, rsi
+07d0f7: xor      rdx, 0xffffffffba9f5532
+07d0fe: xor      rdx, 0xffffffffba9f5532
+07d105: cmp      rdx, rsi
+07d108: je       0x7ffd8c17d11c
+07d10e: neg      rdx
+07d111: inc      rdx
+07d114: dec      rdx
+07d117: test     rdx, rdx
+07d11a: ud2      
+07d11c: xor      rdx, rdx
+07d11f: movabs   rdx, 0x37609e0b6aa57b21
+07d129: xor      rdx, rdx
+07d12c: mov      r14d, 0
+07d132: mov      r14b, byte ptr [rsi]
+07d135: xor      r14b, byte ptr [r12 + 0x19a8]
+07d13d: inc      rsi
+07d140: mov      r13, qword ptr [r12 + 0x19f0]
+07d148: mov      qword ptr [r12 + r14*8 + 8], r13
+07d14d: xor      rdx, rdx
+07d150: movabs   rdx, 0x1985eb30419cc254
+07d15a: inc      rdx
+07d15d: movabs   rdx, 0xead45f443a2be446
+07d167: neg      rdx
+07d16a: test     rdx, rdx
+
+OP 5e handler 0x3364b
+03364b: neg      r14
+03364e: mov      r10, qword ptr [rsi]
+033651: add      rsi, 8
+033655: mov      ebx, 0
+03365a: mov      bl, byte ptr [rsi]
+03365c: xor      bl, byte ptr [r12 + 0x19a8]
+033664: inc      rsi
+033667: mov      r11d, 0
+03366d: mov      r11b, byte ptr [rsi]
+033670: xor      r11b, byte ptr [r12 + 0x19a8]
+033678: inc      rsi
+03367b: mov      r13d, 0
+033681: mov      r13b, byte ptr [rsi]
+033684: xor      r13b, byte ptr [r12 + 0x19a8]
+03368c: inc      rsi
+03368f: xor      r15, r15
+033692: mov      rcx, qword ptr [r12 + r11*8 + 8]
+033697: mov      r8, qword ptr [r12 + r13*8 + 8]
+03369c: or       rcx, r8
+03369f: sub      rcx, 1
+0336a3: mov      qword ptr [r12 + 0x1868], rcx
+0336ab: xor      r9, r9
+0336ae: test     r10, r10
+0336b1: je       0x7ffd8c1336dd
+0336b7: movabs   rax, 0x80a87f41
+0336c1: xor      rdx, rdx
+0336c4: mov      r14, r10
+0336c7: div      r14
+0336ca: test     rdx, rdx
+0336cd: mov      r14, 1
+0336d4: cmove    r9, r14
+0336d8: jmp      0x7ffd8c1336dd
+0336dd: mov      rcx, qword ptr [r12 + 0x1868]
+0336e5: imul     rcx, r9
+0336e9: add      r15, rcx
+0336ec: not      r14
+0336ef: rol      r14, 0x1a
+0336f3: mov      rcx, qword ptr [r12 + r11*8 + 8]
+0336f8: mov      r8, qword ptr [r12 + r13*8 + 8]
+0336fd: or       rcx, r8
+033700: sub      rcx, 1
+033704: mov      qword ptr [r12 + 0x1868], rcx
+03370c: xor      r9, r9
+03370f: test     r10, r10
+033712: je       0x7ffd8c13373b
+
+OP 5f handler 0x633ec
+0633ec: push     rax
+0633ed: push     rdx
+0633ee: push     rcx
+0633ef: push     r8
+0633f1: rdtsc    
+0633f3: mov      r8, rax
+0633f6: pause    
+0633f8: nop      
+0633f9: rdtsc    
+0633fb: sub      rax, r8
+0633fe: cmp      rax, 0xaf83
+063405: jb       0x7ffd8c16340d
+06340b: pause    
+06340d: pop      r8
+06340f: pop      rcx
+063410: pop      rdx
+063411: pop      rax
+063412: dec      r10
+063415: test     r10, r10
+063418: rol      r10, 0x3a
+06341c: sub      r10, 0x9a
+063423: mov      r10, qword ptr [r12 + 0x1970]
+06342b: neg      r10
+06342e: neg      r10
+063431: cmp      r10, qword ptr [r12 + 0x1970]
+063439: je       0x7ffd8c16344b
+06343f: test     r10, r10
+063442: sub      r10, 0x7b
+063446: neg      r10
+063449: ud2      
+06344b: mov      r10, rsi
+06344e: shl      r10, 4
+063452: test     r10, 0xf
+063459: je       0x7ffd8c16346b
+06345f: add      r10, 0x8c
+063466: test     r10, r10
+063469: ud2      
+06346b: test     r10, r10
+06346e: test     r10, r10
+063471: mov      r8d, 0
+063477: mov      r8b, byte ptr [rsi]
+06347a: xor      r8b, byte ptr [r12 + 0x19a8]
+063482: inc      rsi
+063485: mov      r13d, 0
+06348b: mov      r13b, byte ptr [rsi]
+
+OP 67 handler 0x548dc
+0548dc: push     r11
+0548de: movabs   r11, 0x970b2a75de69cc89
+0548e8: rol      r11, 5
+0548ec: xor      r11, 0x519ac1a3
+0548f3: or       r11, 1
+0548f7: test     r11, 1
+0548fe: jne      0x7ffd8c154905
+054904: int3     
+054905: pop      r11
+054907: inc      rdx
+05490a: sub      rdx, 0x14
+05490e: add      rdx, 0x58
+054912: movabs   rdx, 0xe7a4231c8cca27d3
+05491c: test     rdx, rdx
+05491f: xor      rdx, rdx
+054922: test     rdx, rdx
+054925: mov      rdx, rsi
+054928: and      rdx, 0
+05492c: cmp      rdx, 0
+054930: je       0x7ffd8c15493e
+054936: dec      rdx
+054939: xor      rdx, rdx
+05493c: ud2      
+05493e: mov      rdx, rsi
+054941: add      rdx, rdx
+054944: test     rdx, 1
+05494b: je       0x7ffd8c154963
+054951: test     rdx, rdx
+054954: movabs   rdx, 0xc4e5fbc008cca4b3
+05495e: inc      rdx
+054961: ud2      
+054963: not      rdx
+054966: sub      rdx, 0xb
+05496a: test     rdx, rdx
+05496d: mov      r14d, 0
+054973: mov      r14b, byte ptr [rsi]
+054976: xor      r14b, byte ptr [r12 + 0x19a8]
+05497e: inc      rsi
+054981: mov      r9d, 0
+054987: mov      r9b, byte ptr [rsi]
+05498a: xor      r9b, byte ptr [r12 + 0x19a8]
+054992: inc      rsi
+054995: mov      edx, 0
+05499a: mov      dl, byte ptr [rsi]
+05499c: xor      dl, byte ptr [r12 + 0x19a8]
+
+OP 72 handler 0x5e219
+05e219: push     r10
+05e21b: movabs   r10, 0xb03d00748ec68b6a
+05e225: and      r10, 0xfffffffffffffffe
+05e229: inc      r10
+05e22c: test     r10, 1
+05e233: jne      0x7ffd8c15e23b
+05e239: pause    
+05e23b: rol      r10, 3
+05e23f: ror      r10, 3
+05e243: pop      r10
+05e245: rol      r13, 0xd
+05e249: inc      r13
+05e24c: movabs   r13, 0xbf89c3405dc1fbec
+05e256: rol      r13, 0x14
+05e25a: mov      r13, qword ptr [r12 + 0x1970]
+05e262: or       r13, 0x63
+05e266: test     r13, 1
+05e26d: jne      0x7ffd8c15e280
+05e273: rol      r13, 7
+05e277: rol      r13, 0x2c
+05e27b: xor      r13, r13
+05e27e: ud2      
+05e280: mov      r13, qword ptr [r12 + 0x1970]
+05e288: or       r13, 1
+05e28c: test     r13, 1
+05e293: jne      0x7ffd8c15e2bc
+05e299: xor      r13, r13
+05e29c: movabs   r13, 0x22241817a4665d39
+05e2a6: movabs   r13, 0x48c8b3ebf30ad606
+05e2b0: movabs   r13, 0x818a5f1a67235110
+05e2ba: ud2      
+05e2bc: xor      r13, r13
+05e2bf: add      r13, 0xbb
+05e2c6: add      r13, 0x39
+05e2ca: movabs   r13, 0xbb514b982faacc79
+05e2d4: mov      r11d, 0
+05e2da: mov      r11b, byte ptr [rsi]
+05e2dd: xor      r11b, byte ptr [r12 + 0x19a8]
+05e2e5: inc      rsi
+05e2e8: mov      r10, qword ptr [rsi]
+05e2eb: xor      r10, qword ptr [r12 + 0x19a8]
+05e2f3: add      rsi, 8
+05e2f7: mov      qword ptr [r12 + r11*8 + 8], r10
+05e2fc: movabs   r13, 0xad4be67636e4980a
+05e306: test     r13, r13
+
+OP 79 handler 0x34ea7
+034ea7: push     rax
+034ea8: push     rdx
+034ea9: push     rcx
+034eaa: push     r8
+034eac: rdtsc    
+034eae: mov      r8, rax
+034eb1: pause    
+034eb3: pause    
+034eb5: rdtsc    
+034eb7: sub      rax, r8
+034eba: cmp      rax, 0xf253
+034ec1: jb       0x7ffd8c134ec9
+034ec7: pause    
+034ec9: pop      r8
+034ecb: pop      rcx
+034ecc: pop      rdx
+034ecd: pop      rax
+034ece: neg      rdx
+034ed1: movabs   rdx, 0xb4a020791c05bc77
+034edb: rol      rdx, 4
+034edf: movabs   rdx, 0xd153762d54ab8316
+034ee9: mov      rdx, qword ptr [r12 + 0x1970]
+034ef1: xor      rdx, 0xffffffffc5db7d7d
+034ef8: xor      rdx, 0xffffffffc5db7d7d
+034eff: cmp      rdx, qword ptr [r12 + 0x1970]
+034f07: je       0x7ffd8c134f26
+034f0d: test     rdx, rdx
+034f10: sub      rdx, 0xae
+034f17: dec      rdx
+034f1a: movabs   rdx, 0x4f18b95d67d79381
+034f24: ud2      
+034f26: mov      rdx, qword ptr [r12 + 0x1970]
+034f2e: neg      rdx
+034f31: neg      rdx
+034f34: cmp      rdx, qword ptr [r12 + 0x1970]
+034f3c: je       0x7ffd8c134f4e
+034f42: add      rdx, 0xe6
+034f49: test     rdx, rdx
+034f4c: ud2      
+034f4e: movabs   rdx, 0xfc36885614c57267
+034f58: test     rdx, rdx
+034f5b: mov      r11d, 0
+034f61: mov      r11b, byte ptr [rsi]
+034f64: xor      r11b, byte ptr [r12 + 0x19a8]
+034f6c: inc      rsi
+
+OP 7a handler 0x6c7f4
+06c7f4: push     rdx
+06c7f5: movabs   rdx, 0x9c7c805ddfd60a7b
+06c7ff: rol      rdx, 0xf
+06c803: xor      rdx, 0xffffffffd22945d6
+06c80a: or       rdx, 1
+06c80e: test     rdx, 1
+06c815: jne      0x7ffd8c16c81c
+06c81b: int3     
+06c81c: pop      rdx
+06c81d: xor      r14, r14
+06c820: not      r14
+06c823: neg      r14
+06c826: rol      r14, 0x34
+06c82a: xor      r14, r14
+06c82d: mov      r14, qword ptr [r12 + 0x1970]
+06c835: or       r14, 0x7f
+06c839: test     r14, 1
+06c840: jne      0x7ffd8c16c854
+06c846: inc      r14
+06c849: dec      r14
+06c84c: xor      r14, r14
+06c84f: test     r14, r14
+06c852: ud2      
+06c854: mov      r14, qword ptr [r12 + 0x1970]
+06c85c: and      r14, 0x7ffffffe
+06c863: test     r14, 1
+06c86a: je       0x7ffd8c16c87f
+06c870: not      r14
+06c873: movabs   r14, 0xe8267d8141ea9925
+06c87d: ud2      
+06c87f: xor      r14, r14
+06c882: rol      r14, 0xe
+06c886: neg      r14
+06c889: neg      r14
+06c88c: mov      edx, 0
+06c891: mov      dl, byte ptr [rsi]
+06c893: xor      dl, byte ptr [r12 + 0x19a8]
+06c89b: inc      rsi
+06c89e: mov      r9, qword ptr [r12 + 8]
+06c8a3: mov      qword ptr [r12 + rdx*8 + 8], r9
+06c8a8: inc      r14
+06c8ab: test     r14, r14
+06c8ae: test     r14, r14
+06c8b1: not      r14
+06c8b4: rol      r14, 0xb
+
+OP 7b handler 0x71634
+071634: push     rcx
+071635: movabs   rcx, 0xd481649fece6e76
+07163f: and      rcx, 0xfffffffffffffffe
+071643: inc      rcx
+071646: test     rcx, 1
+07164d: jne      0x7ffd8c171655
+071653: pause    
+071655: rol      rcx, 3
+071659: ror      rcx, 3
+07165d: pop      rcx
+07165e: sub      r11, 0xb5
+071665: add      r11, 0xb2
+07166c: dec      r11
+07166f: mov      r11, qword ptr [r12 + 0x1970]
+071677: xor      r11, 0xffffffffd60be080
+07167e: xor      r11, 0xffffffffd60be080
+071685: cmp      r11, qword ptr [r12 + 0x1970]
+07168d: je       0x7ffd8c1716a6
+071693: rol      r11, 0x2d
+071697: inc      r11
+07169a: inc      r11
+07169d: add      r11, 0xfb
+0716a4: ud2      
+0716a6: mov      r11, rsi
+0716a9: add      r11, r11
+0716ac: test     r11, 1
+0716b3: je       0x7ffd8c1716c6
+0716b9: add      r11, 0x2e
+0716bd: sub      r11, 0xd1
+0716c4: ud2      
+0716c6: neg      r11
+0716c9: not      r11
+0716cc: mov      r14d, dword ptr [rsi]
+0716cf: xor      r14d, dword ptr [r12 + 0x19a8]
+0716d7: add      rsi, 4
+0716db: movsxd   r14, r14d
+0716de: add      rsi, r14
+0716e1: xor      r11, r11
+0716e4: neg      r11
+0716e7: neg      r11
+0716ea: not      r11
+0716ed: dec      r11
+0716f0: xor      r11, r11
+0716f3: mov      r11, rsi
+0716f6: rol      r11, 0xa
+
+OP 7c handler 0x7cf42
+07cf42: push     rax
+07cf43: push     rdx
+07cf44: push     rcx
+07cf45: push     r8
+07cf47: rdtsc    
+07cf49: mov      r8, rax
+07cf4c: pause    
+07cf4e: xchg     rcx, rcx
+07cf51: rdtsc    
+07cf53: sub      rax, r8
+07cf56: cmp      rax, 0x8139
+07cf5d: jb       0x7ffd8c17cf65
+07cf63: pause    
+07cf65: pop      r8
+07cf67: pop      rcx
+07cf68: pop      rdx
+07cf69: pop      rax
+07cf6a: sub      r13, 0x74
+07cf6e: inc      r13
+07cf71: movabs   r13, 0xca9e208037eca8f0
+07cf7b: mov      r13, rsi
+07cf7e: or       r13, 0x20
+07cf82: test     r13, 0x20
+07cf89: jne      0x7ffd8c17cfa2
+07cf8f: dec      r13
+07cf92: rol      r13, 0x32
+07cf96: add      r13, 0xd1
+07cf9d: neg      r13
+07cfa0: ud2      
+07cfa2: mov      r13, rsi
+07cfa5: not      r13
+07cfa8: not      r13
+07cfab: cmp      r13, rsi
+07cfae: je       0x7ffd8c17cfc3
+07cfb4: movabs   r13, 0x9c24137362acf027
+07cfbe: dec      r13
+07cfc1: ud2      
+07cfc3: inc      r13
+07cfc6: not      r13
+07cfc9: inc      r13
+07cfcc: mov      r15d, 0
+07cfd2: mov      r15b, byte ptr [rsi]
+07cfd5: xor      r15b, byte ptr [r12 + 0x19a8]
+07cfdd: inc      rsi
+07cfe0: mov      r9, qword ptr [r12 + r15*8 + 8]
+
+OP 80 handler 0x57373
+057373: push     rax
+057374: push     rdx
+057375: push     rcx
+057376: push     r8
+057378: rdtsc    
+05737a: mov      r8, rax
+05737d: pause    
+05737f: xchg     rcx, rcx
+057382: rdtsc    
+057384: sub      rax, r8
+057387: cmp      rax, 0xcf9e
+05738e: jb       0x7ffd8c157396
+057394: pause    
+057396: pop      r8
+057398: pop      rcx
+057399: pop      rdx
+05739a: pop      rax
+05739b: add      r14, 0xdc
+0573a2: neg      r14
+0573a5: not      r14
+0573a8: neg      r14
+0573ab: mov      r14, rsi
+0573ae: sub      r14, rsi
+0573b1: je       0x7ffd8c1573bf
+0573b7: inc      r14
+0573ba: inc      r14
+0573bd: ud2      
+0573bf: mov      r14, qword ptr [r12 + 0x1970]
+0573c7: neg      r14
+0573ca: neg      r14
+0573cd: cmp      r14, qword ptr [r12 + 0x1970]
+0573d5: je       0x7ffd8c1573e6
+0573db: not      r14
+0573de: dec      r14
+0573e1: xor      r14, r14
+0573e4: ud2      
+0573e6: inc      r14
+0573e9: rol      r14, 0x28
+0573ed: sub      r14, 0x1e
+0573f1: add      r14, 0xae
+0573f8: mov      r11d, 0
+0573fe: mov      r11b, byte ptr [rsi]
+057401: xor      r11b, byte ptr [r12 + 0x19a8]
+057409: inc      rsi
+05740c: mov      r13d, 0
+
+OP 8a handler 0x5d8b5
+05d8b5: push     r11
+05d8b7: movabs   r11, 0x30df20e27ba56641
+05d8c1: lea      r11, [r11 + 1]
+05d8c5: test     r11, 1
+05d8cc: je       0x7ffd8c15d8d6
+05d8d2: ror      r11, 0xf
+05d8d6: pop      r11
+05d8d8: rol      r11, 0xf
+05d8dc: xor      r11, r11
+05d8df: xor      r11, r11
+05d8e2: xor      r11, r11
+05d8e5: xor      r11, r11
+05d8e8: mov      r11, qword ptr [r12 + 0x19d8]
+05d8f0: xor      r11, 0x4bb6fb9f
+05d8f7: xor      r11, 0x4bb6fb9f
+05d8fe: cmp      r11, qword ptr [r12 + 0x19d8]
+05d906: je       0x7ffd8c15d915
+05d90c: not      r11
+05d90f: sub      r11, 0x5d
+05d913: ud2      
+05d915: mov      r11, qword ptr [r12 + 0x1970]
+05d91d: neg      r11
+05d920: neg      r11
+05d923: cmp      r11, qword ptr [r12 + 0x1970]
+05d92b: je       0x7ffd8c15d93a
+05d931: test     r11, r11
+05d934: add      r11, 7
+05d938: ud2      
+05d93a: dec      r11
+05d93d: sub      r11, 0xc7
+05d944: not      r11
+05d947: rol      r11, 0x2a
+05d94b: mov      r14d, 0
+05d951: mov      r14b, byte ptr [rsi]
+05d954: xor      r14b, byte ptr [r12 + 0x19a8]
+05d95c: inc      rsi
+05d95f: mov      r10d, 0
+05d965: mov      r10b, byte ptr [rsi]
+05d968: xor      r10b, byte ptr [r12 + 0x19a8]
+05d970: inc      rsi
+05d973: mov      r11d, 0
+05d979: mov      r11b, byte ptr [rsi]
+05d97c: xor      r11b, byte ptr [r12 + 0x19a8]
+05d984: inc      rsi
+05d987: mov      r15, qword ptr [r12 + r10*8 + 8]
+
+OP 8f handler 0x642fe
+0642fe: push     rax
+0642ff: push     rdx
+064300: push     rcx
+064301: push     r8
+064303: rdtsc    
+064305: mov      r8, rax
+064308: pause    
+06430a: pause    
+06430c: rdtsc    
+06430e: sub      rax, r8
+064311: cmp      rax, 0x12150
+064318: jb       0x7ffd8c164320
+06431e: pause    
+064320: pop      r8
+064322: pop      rcx
+064323: pop      rdx
+064324: pop      rax
+064325: xor      rax, rax
+064328: test     rax, rax
+06432b: xor      rax, rax
+06432e: mov      rax, qword ptr [r12 + 0x19d8]
+064336: xor      rax, 0x165e599d
+06433d: xor      rax, 0x165e599d
+064344: cmp      rax, qword ptr [r12 + 0x19d8]
+06434c: je       0x7ffd8c16435f
+064352: rol      rax, 0x3c
+064356: sub      rax, 0x7b
+06435a: test     rax, rax
+06435d: ud2      
+06435f: mov      rax, rsi
+064362: shl      rax, 0xc
+064366: test     rax, 0xfff
+06436c: je       0x7ffd8c16437a
+064372: inc      rax
+064375: dec      rax
+064378: ud2      
+06437a: movabs   rax, 0x55f35c8da2dde725
+064384: test     rax, rax
+064387: mov      r15d, 0
+06438d: mov      r15b, byte ptr [rsi]
+064390: xor      r15b, byte ptr [r12 + 0x19a8]
+064398: inc      rsi
+06439b: mov      r13d, 0
+0643a1: mov      r13b, byte ptr [rsi]
+0643a4: xor      r13b, byte ptr [r12 + 0x19a8]
+
+OP 93 handler 0x31f45
+031f45: dec      r14
+031f48: xor      r14, r14
+031f4b: inc      r14
+031f4e: mov      r10, qword ptr [rsi]
+031f51: add      rsi, 8
+031f55: mov      ebx, 0
+031f5a: mov      bl, byte ptr [rsi]
+031f5c: xor      bl, byte ptr [r12 + 0x19a8]
+031f64: inc      rsi
+031f67: mov      r11d, 0
+031f6d: mov      r11b, byte ptr [rsi]
+031f70: xor      r11b, byte ptr [r12 + 0x19a8]
+031f78: inc      rsi
+031f7b: mov      r13d, 0
+031f81: mov      r13b, byte ptr [rsi]
+031f84: xor      r13b, byte ptr [r12 + 0x19a8]
+031f8c: inc      rsi
+031f8f: xor      r15, r15
+031f92: mov      rcx, qword ptr [r12 + r11*8 + 8]
+031f97: mov      r8, qword ptr [r12 + r13*8 + 8]
+031f9c: sub      rcx, r8
+031f9f: mov      qword ptr [r12 + 0x1868], rcx
+031fa7: xor      r9, r9
+031faa: test     r10, r10
+031fad: je       0x7ffd8c131fd9
+031fb3: movabs   rax, 0x91558ced
+031fbd: xor      rdx, rdx
+031fc0: mov      r14, r10
+031fc3: div      r14
+031fc6: test     rdx, rdx
+031fc9: mov      r14, 1
+031fd0: cmove    r9, r14
+031fd4: jmp      0x7ffd8c131fd9
+031fd9: mov      rcx, qword ptr [r12 + 0x1868]
+031fe1: imul     rcx, r9
+031fe5: add      r15, rcx
+031fe8: xor      r14, r14
+031feb: mov      rcx, qword ptr [r12 + r11*8 + 8]
+031ff0: mov      r8, qword ptr [r12 + r13*8 + 8]
+031ff5: sub      rcx, r8
+031ff8: xor      rcx, 0xffffffffb0247d3b
+031fff: mov      qword ptr [r12 + 0x1868], rcx
+032007: xor      r9, r9
+03200a: test     r10, r10
+03200d: je       0x7ffd8c132039
+
+OP 95 handler 0x7de40
+07de40: push     rax
+07de41: push     rdx
+07de42: push     rcx
+07de43: push     r8
+07de45: rdtsc    
+07de47: mov      r8, rax
+07de4a: pause    
+07de4c: pause    
+07de4e: rdtsc    
+07de50: sub      rax, r8
+07de53: cmp      rax, 0x12ad2
+07de5a: jb       0x7ffd8c17de62
+07de60: pause    
+07de62: pop      r8
+07de64: pop      rcx
+07de65: pop      rdx
+07de66: pop      rax
+07de67: rol      r9, 0x34
+07de6b: rol      r9, 0x3a
+07de6f: neg      r9
+07de72: xor      r9, r9
+07de75: not      r9
+07de78: sub      r9, 6
+07de7c: mov      r9, rsi
+07de7f: and      r9, 0
+07de83: cmp      r9, 0
+07de87: je       0x7ffd8c17de9a
+07de8d: inc      r9
+07de90: add      r9, 0x37
+07de94: sub      r9, 0x78
+07de98: ud2      
+07de9a: mov      r9, qword ptr [r12 + 0x19f0]
+07dea2: add      r9, 0x575b
+07dea9: sub      r9, 0x575b
+07deb0: cmp      r9, qword ptr [r12 + 0x19f0]
+07deb8: je       0x7ffd8c17decf
+07debe: add      r9, 0x45
+07dec2: add      r9, 0x9e
+07dec9: rol      r9, 0x15
+07decd: ud2      
+07decf: neg      r9
+07ded2: xor      r9, r9
+07ded5: dec      r9
+07ded8: mov      edx, 0
+07dedd: mov      dl, byte ptr [rsi]
+
+OP 9d handler 0x5fa96
+05fa96: push     r8
+05fa98: movabs   r8, 0xd885f8a042ffd6e
+05faa2: rol      r8, 3
+05faa6: xor      r8, 0xffffffffa72257d7
+05faad: or       r8, 1
+05fab1: test     r8, 1
+05fab8: jne      0x7ffd8c15fabf
+05fabe: int3     
+05fabf: pop      r8
+05fac1: rol      r9, 0x3c
+05fac5: sub      r9, 0xa4
+05facc: movabs   r9, 0xa34e92e897667272
+05fad6: not      r9
+05fad9: movabs   r9, 0xbfd67c2b4f8208a2
+05fae3: mov      r9, qword ptr [r12 + 0x1970]
+05faeb: shr      r9, 1
+05faee: shl      r9, 1
+05faf1: test     r9, 1
+05faf8: je       0x7ffd8c15fb11
+05fafe: inc      r9
+05fb01: sub      r9, 0x1c
+05fb05: movabs   r9, 0xf5cc93df9a872e3
+05fb0f: ud2      
+05fb11: mov      r9, qword ptr [r12 + 0x19f0]
+05fb19: add      r9, 0x19df
+05fb20: sub      r9, 0x19df
+05fb27: cmp      r9, qword ptr [r12 + 0x19f0]
+05fb2f: je       0x7ffd8c15fb47
+05fb35: neg      r9
+05fb38: movabs   r9, 0x57579beec55a114c
+05fb42: not      r9
+05fb45: ud2      
+05fb47: not      r9
+05fb4a: add      r9, 0x28
+05fb4e: sub      r9, 0x67
+05fb52: dec      r9
+05fb55: mov      r8d, 0
+05fb5b: mov      r8b, byte ptr [rsi]
+05fb5e: xor      r8b, byte ptr [r12 + 0x19a8]
+05fb66: inc      rsi
+05fb69: mov      edx, 0
+05fb6e: mov      dl, byte ptr [rsi]
+05fb70: xor      dl, byte ptr [r12 + 0x19a8]
+05fb78: inc      rsi
+05fb7b: mov      r9d, 0
+
+OP ab handler 0x674d8
+0674d8: push     r11
+0674da: movabs   r11, 0xd4b34d8187f8f821
+0674e4: rol      r11, 0x18
+0674e8: xor      r11, 0x30772e6d
+0674ef: or       r11, 1
+0674f3: test     r11, 1
+0674fa: jne      0x7ffd8c167501
+067500: int3     
+067501: pop      r11
+067503: movabs   rax, 0xb977b95d943cdc7e
+06750d: dec      rax
+067510: neg      rax
+067513: test     rax, rax
+067516: movabs   rax, 0x20d3f0c4d6b35f92
+067520: movabs   rax, 0xa18dfd31e713b3fd
+06752a: mov      rax, rsi
+06752d: rol      rax, 0x16
+067531: ror      rax, 0x16
+067535: cmp      rax, rsi
+067538: je       0x7ffd8c167558
+06753e: movabs   rax, 0xe5905268d1f8bb0d
+067548: movabs   rax, 0x500a87f62fbe45f3
+067552: rol      rax, 0x1a
+067556: ud2      
+067558: mov      rax, rsi
+06755b: rol      rax, 0x10
+06755f: ror      rax, 0x10
+067563: cmp      rax, rsi
+067566: je       0x7ffd8c167574
+06756c: test     rax, rax
+06756f: inc      rax
+067572: ud2      
+067574: test     rax, rax
+067577: sub      rax, 0xf1
+06757e: mov      r14d, 0
+067584: mov      r14b, byte ptr [rsi]
+067587: xor      r14b, byte ptr [r12 + 0x19a8]
+06758f: inc      rsi
+067592: mov      r13d, 0
+067598: mov      r13b, byte ptr [rsi]
+06759b: xor      r13b, byte ptr [r12 + 0x19a8]
+0675a3: inc      rsi
+0675a6: mov      eax, 0
+0675ab: mov      al, byte ptr [rsi]
+0675ad: xor      al, byte ptr [r12 + 0x19a8]
+
+OP ac handler 0x341ce
+0341ce: mov      ecx, dword ptr [r12 + 0x18a8]
+0341d6: test     ecx, ecx
+0341d8: je       0x7ffd8c13427c
+0341de: mov      rax, qword ptr [r12 + 8]
+0341e3: dec      ecx
+0341e5: mov      dword ptr [r12 + 0x18a8], ecx
+0341ed: mov      rdx, qword ptr [r12 + 0x19c0]
+0341f5: sub      rdx, 0x838
+0341fc: cmp      rdx, qword ptr [r12 + 0x1948]
+034204: jb       0x7ffd8c13427a
+03420a: mov      qword ptr [r12 + 0x19c0], rdx
+034212: mov      r8, qword ptr [r12 + 0x19d8]
+03421a: xor      r8, rdx
+03421d: xor      r8, qword ptr [rdx]
+034220: xor      r8, rcx
+034223: cmp      r8, qword ptr [rdx + 0x18]
+034227: jne      0x7ffd8c13427a
+03422d: mov      r8, qword ptr [rdx + 0x30]
+034231: mov      qword ptr [r12 + 0x19a8], r8
+034239: mov      rsi, qword ptr [rdx]
+03423c: mov      r8, qword ptr [rdx + 8]
+034240: mov      qword ptr [r12 + 0x1a08], r8
+034248: mov      r8, qword ptr [rdx + 0x10]
+03424c: mov      qword ptr [r12 + 0x1970], r8
+034254: mov      r9d, 0
+03425a: mov      r8, qword ptr [rdx + r9*8 + 0x38]
+03425f: mov      qword ptr [r12 + r9*8 + 8], r8
+034264: inc      r9d
+034267: cmp      r9d, 0x100
+03426e: jb       0x7ffd8c13425a
+034274: mov      qword ptr [r12 + 8], rax
+034279: ret      
+
+OP ae handler 0x61104
+061104: push     r8
+061106: movabs   r8, 0xddf2eebc7b52ba
+061110: lea      r8, [r8 + 1]
+061114: test     r8, 1
+06111b: je       0x7ffd8c161125
+061121: ror      r8, 0x1e
+061125: pop      r8
+061127: movabs   r9, 0xfb81771f032f53ad
+061131: rol      r9, 0x20
+061135: neg      r9
+061138: movabs   r9, 0x42bfb5ee78fa85d
+061142: xor      r9, r9
+061145: mov      r9, qword ptr [r12 + 0x1970]
+06114d: neg      r9
+061150: neg      r9
+061153: cmp      r9, qword ptr [r12 + 0x1970]
+06115b: je       0x7ffd8c16116f
+061161: inc      r9
+061164: test     r9, r9
+061167: neg      r9
+06116a: not      r9
+06116d: ud2      
+06116f: mov      r9, rsi
+061172: or       r9, 0x20
+061176: test     r9, 0x20
+06117d: jne      0x7ffd8c161192
+061183: inc      r9
+061186: not      r9
+061189: sub      r9, 0xe6
+061190: ud2      
+061192: sub      r9, 0xd8
+061199: inc      r9
+06119c: mov      r10d, 0
+0611a2: mov      r10b, byte ptr [rsi]
+0611a5: xor      r10b, byte ptr [r12 + 0x19a8]
+0611ad: inc      rsi
+0611b0: mov      eax, 0
+0611b5: mov      al, byte ptr [rsi]
+0611b7: xor      al, byte ptr [r12 + 0x19a8]
+0611bf: inc      rsi
+0611c2: mov      r9d, 0
+0611c8: mov      r9b, byte ptr [rsi]
+0611cb: xor      r9b, byte ptr [r12 + 0x19a8]
+0611d3: inc      rsi
+0611d6: mov      rdx, qword ptr [r12 + rax*8 + 8]
+
+OP b1 handler 0x5a8ef
+05a8ef: push     rax
+05a8f0: push     rdx
+05a8f1: push     rcx
+05a8f2: push     r8
+05a8f4: rdtsc    
+05a8f6: mov      r8, rax
+05a8f9: pause    
+05a8fb: xchg     rcx, rcx
+05a8fe: rdtsc    
+05a900: sub      rax, r8
+05a903: cmp      rax, 0xf33b
+05a90a: jb       0x7ffd8c15a912
+05a910: pause    
+05a912: pop      r8
+05a914: pop      rcx
+05a915: pop      rdx
+05a916: pop      rax
+05a917: add      r8, 7
+05a91b: test     r8, r8
+05a91e: rol      r8, 0x1a
+05a922: xor      r8, r8
+05a925: mov      r8, rsi
+05a928: sub      r8, rsi
+05a92b: je       0x7ffd8c15a946
+05a931: movabs   r8, 0x6d6376d13768fbe1
+05a93b: test     r8, r8
+05a93e: not      r8
+05a941: xor      r8, r8
+05a944: ud2      
+05a946: mov      r8, qword ptr [r12 + 0x19d8]
+05a94e: imul     r8, r8, 2
+05a952: test     r8, 1
+05a959: je       0x7ffd8c15a96f
+05a95f: add      r8, 0x12
+05a963: dec      r8
+05a966: sub      r8, 0xe0
+05a96d: ud2      
+05a96f: xor      r8, r8
+05a972: rol      r8, 0x2f
+05a976: mov      r15d, 0
+05a97c: mov      r15b, byte ptr [rsi]
+05a97f: xor      r15b, byte ptr [r12 + 0x19a8]
+05a987: inc      rsi
+05a98a: mov      eax, 0
+05a98f: mov      al, byte ptr [rsi]
+
+OP b8 handler 0x7c65c
+07c65c: push     r8
+07c65e: movabs   r8, 0xd5d9617caa2dbd68
+07c668: xor      r8, r8
+07c66b: inc      r8
+07c66e: test     r8, r8
+07c671: jne      0x7ffd8c17c679
+07c677: pause    
+07c679: add      r8, 0x58792878
+07c680: pop      r8
+07c682: add      r14, 0xdc
+07c689: sub      r14, 0x5a
+07c68d: movabs   r14, 0xcd6b9a65e77a5a46
+07c697: sub      r14, 0x35
+07c69b: sub      r14, 0xc5
+07c6a2: not      r14
+07c6a5: mov      r14, qword ptr [r12 + 0x19d8]
+07c6ad: shl      r14, 6
+07c6b1: test     r14, 1
+07c6b8: je       0x7ffd8c17c6cd
+07c6be: movabs   r14, 0x808907f6e9ce92c9
+07c6c8: not      r14
+07c6cb: ud2      
+07c6cd: mov      r14, rsi
+07c6d0: sub      r14, rsi
+07c6d3: je       0x7ffd8c17c6ec
+07c6d9: test     r14, r14
+07c6dc: rol      r14, 0x26
+07c6e0: movabs   r14, 0xb6a4e24cc1cb7f4b
+07c6ea: ud2      
+07c6ec: add      r14, 0xe5
+07c6f3: inc      r14
+07c6f6: add      r14, 0x2f
+07c6fa: test     r14, r14
+07c6fd: mov      edx, 0
+07c702: mov      dl, byte ptr [rsi]
+07c704: xor      dl, byte ptr [r12 + 0x19a8]
+07c70c: inc      rsi
+07c70f: movabs   r14, 0x35a57d333b1e6bf
+07c719: not      r14
+07c71c: movabs   r14, 0xcd05407f9d3cac15
+07c726: neg      r14
+07c729: mov      r14, rsi
+07c72c: rol      r14, 6
+07c730: ror      r14, 6
+07c734: cmp      r14, rsi

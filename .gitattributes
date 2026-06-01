@@ -1,0 +1,5 @@
+ACTF/ArrAnge[[:space:]]in[[:space:]]Asceding/pubkey/galois.key filter=lfs diff=lfs merge=lfs -text
+THEMCTF/forensics/Kenjiro's[[:space:]]Notes/extracted/keepass_memmap/pid.5776.dmp filter=lfs diff=lfs merge=lfs -text
+THEMCTF/forensics/Kenjiro's[[:space:]]Notes/sphinx.mem filter=lfs diff=lfs merge=lfs -text
+THEMCTF/forensics/Kenjiro's[[:space:]]Notes/sphinx.zip filter=lfs diff=lfs merge=lfs -text
+THEMCTF/forensics/well[[:space:]]well[[:space:]]well/well-well-well.tar.gz filter=lfs diff=lfs merge=lfs -text

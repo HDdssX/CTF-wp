@@ -1,0 +1,839 @@
+
+=== RVA b7800 off a7c00 ===
+b7800: lea      r10, [rip + 0x17f9]
+b7807: lea      r11, [rip - 0x80e]
+b780e: lea      rax, [rip - 0x97815]
+b7815: jmp      0x2028af217
+b781a: int3     
+b781b: int3     
+b781c: int3     
+b781d: int3     
+b781e: int3     
+b781f: int3     
+b7820: mov      r8, 0xffffffffd1cb777e
+b7827: xor      r8, rdx
+b782a: add      rsi, 2
+b782e: ret      
+b782f: int3     
+b7830: shr      r9, 0xb
+b7834: add      rcx, r9
+b7837: add      rsi, 2
+b783b: ret      
+b783c: int3     
+b783d: int3     
+b783e: int3     
+b783f: int3     
+b7840: mov      r9, 0xffffffffa7358675
+b7847: xor      r9, rax
+b784a: add      rsi, 2
+b784e: ret      
+b784f: int3     
+b7850: shr      rdx, 0xa
+b7854: add      rcx, rdx
+b7857: add      rsi, 1
+b785b: ret      
+b785c: int3     
+b785d: int3     
+b785e: int3     
+b785f: int3     
+b7860: mov      rdx, 0x3ed42cf1
+b7867: xor      rdx, r8
+b786a: add      rsi, 2
+b786e: ret      
+b786f: int3     
+b7870: mov      rdx, 0x37d8ec58
+b7877: mov      r8, 0xffffffffc517ca0e
+b787e: xor      rdx, r8
+b7881: add      rsi, 2
+b7885: ret      
+b7886: int3     
+b7887: int3     
+b7888: int3     
+b7889: int3     
+b788a: int3     
+b788b: int3     
+b788c: int3     
+b788d: int3     
+b788e: int3     
+b788f: int3     
+b7890: mov      r9, 0xffffffffd5705ef0
+b7897: rol      r9, 0xc
+b789b: xor      rax, r9
+b789e: add      r9, rax
+b78a1: add      rsi, 1
+b78a5: ret      
+b78a6: int3     
+b78a7: int3     
+b78a8: int3     
+b78a9: int3     
+b78aa: int3     
+b78ab: int3     
+b78ac: int3     
+b78ad: int3     
+b78ae: int3     
+b78af: int3     
+b78b0: mov      rcx, 0xfffffffff13ec984
+b78b7: mov      r9, 0xffffffff9051599c
+b78be: xor      rcx, r9
+b78c1: add      rsi, 2
+b78c5: ret      
+b78c6: int3     
+b78c7: int3     
+b78c8: int3     
+b78c9: int3     
+b78ca: int3     
+b78cb: int3     
+b78cc: int3     
+b78cd: int3     
+b78ce: int3     
+b78cf: int3     
+b78d0: mov      rax, 0xffffffff8c5f4bec
+b78d7: not      rax
+b78da: or       r9, rax
+b78dd: shr      r9, 4
+b78e1: add      rsi, 2
+b78e5: ret      
+b78e6: int3     
+b78e7: int3     
+b78e8: int3     
+b78e9: int3     
+b78ea: int3     
+b78eb: int3     
+b78ec: int3     
+b78ed: int3     
+b78ee: int3     
+b78ef: int3     
+b78f0: mov      rcx, 0xffffffffd2fac015
+b78f7: mov      r8, 0xffffffffea3dfcf8
+b78fe: xor      rcx, r8
+b7901: add      rsi, 1
+b7905: ret      
+b7906: int3     
+b7907: int3     
+b7908: int3     
+b7909: int3     
+b790a: int3     
+b790b: int3     
+b790c: int3     
+b790d: int3     
+b790e: int3     
+b790f: int3     
+b7910: mov      rax, 0xffffffffbf4643f1
+b7917: mov      rcx, 0x7097d1f
+b791e: xor      rax, rcx
+b7921: add      rsi, 2
+b7925: ret      
+b7926: int3     
+b7927: int3     
+b7928: int3     
+b7929: int3     
+b792a: int3     
+b792b: int3     
+b792c: int3     
+b792d: int3     
+b792e: int3     
+b792f: int3     
+b7930: mov      rax, 0x19e72ca
+b7937: xor      rax, rcx
+b793a: not      rax
+b793d: not      rax
+b7940: or       rax, rcx
+b7943: add      rsi, 3
+b7947: ret      
+b7948: int3     
+b7949: int3     
+b794a: int3     
+b794b: int3     
+b794c: int3     
+b794d: int3     
+b794e: int3     
+b794f: int3     
+b7950: mov      rax, 0x6477ffd6
+b7957: rol      rax, 0xf
+b795b: xor      rcx, rax
+b795e: add      rax, rcx
+b7961: add      rsi, 2
+b7965: ret      
+b7966: int3     
+b7967: int3     
+b7968: int3     
+b7969: int3     
+b796a: int3     
+b796b: int3     
+b796c: int3     
+b796d: int3     
+b796e: int3     
+b796f: int3     
+b7970: mov      rdx, 0x7e23876d
+b7977: xor      rdx, rax
+b797a: not      rdx
+b797d: not      rdx
+b7980: or       rdx, rax
+b7983: add      rsi, 1
+b7987: ret      
+b7988: int3     
+b7989: int3     
+b798a: int3     
+b798b: int3     
+b798c: int3     
+b798d: int3     
+b798e: int3     
+b798f: int3     
+b7990: mov      r9, 0xffffffffc81f193c
+b7997: mov      rcx, 0xffffffffafa66797
+b799e: xor      r9, rcx
+b79a1: add      rsi, 2
+b79a5: ret      
+b79a6: int3     
+b79a7: int3     
+b79a8: int3     
+b79a9: int3     
+b79aa: int3     
+b79ab: int3     
+b79ac: int3     
+b79ad: int3     
+b79ae: int3     
+b79af: int3     
+b79b0: mov      r9, 0xffffffffcaf1eeb4
+b79b7: mov      r8, 0xffffffffd4e1644e
+b79be: xor      r9, r8
+b79c1: add      rsi, 1
+b79c5: ret      
+b79c6: int3     
+b79c7: int3     
+b79c8: int3     
+b79c9: int3     
+b79ca: int3     
+b79cb: int3     
+b79cc: int3     
+b79cd: int3     
+b79ce: int3     
+b79cf: int3     
+b79d0: shr      r8, 0xf
+b79d4: add      rcx, r8
+b79d7: add      rsi, 2
+b79db: ret      
+b79dc: int3     
+b79dd: int3     
+b79de: int3     
+b79df: int3     
+b79e0: shr      rcx, 4
+b79e4: add      r9, rcx
+b79e7: add      rsi, 3
+b79eb: ret      
+b79ec: int3     
+b79ed: int3     
+b79ee: int3     
+b79ef: int3     
+b79f0: mov      r9, 0xffffffffb19a3b15
+b79f7: xor      r9, rdx
+b79fa: not      r9
+b79fd: not      r9
+b7a00: or       r9, rdx
+b7a03: add      rsi, 2
+b7a07: ret      
+b7a08: int3     
+b7a09: int3     
+b7a0a: int3     
+b7a0b: int3     
+b7a0c: int3     
+b7a0d: int3     
+b7a0e: int3     
+b7a0f: int3     
+b7a10: shr      r9, 6
+b7a14: add      rdx, r9
+b7a17: add      rsi, 1
+b7a1b: ret      
+b7a1c: int3     
+b7a1d: int3     
+b7a1e: int3     
+b7a1f: int3     
+b7a20: mov      rdx, 0xffffffffd5d40538
+b7a27: rol      rdx, 0xb
+b7a2b: xor      r8, rdx
+b7a2e: add      rdx, r8
+b7a31: add      rsi, 3
+b7a35: ret      
+b7a36: int3     
+b7a37: int3     
+b7a38: int3     
+b7a39: int3     
+b7a3a: int3     
+b7a3b: int3     
+b7a3c: int3     
+b7a3d: int3     
+b7a3e: int3     
+b7a3f: int3     
+b7a40: mov      rax, 0x30b7fbd
+b7a47: xor      rax, r9
+b7a4a: add      rsi, 2
+b7a4e: ret      
+b7a4f: int3     
+b7a50: mov      rcx, 0xffffffff83192015
+b7a57: rol      rcx, 0xe
+b7a5b: xor      rdx, rcx
+b7a5e: add      rcx, rdx
+b7a61: add      rsi, 1
+b7a65: ret      
+b7a66: int3     
+b7a67: int3     
+b7a68: int3     
+b7a69: int3     
+b7a6a: int3     
+b7a6b: int3     
+b7a6c: int3     
+b7a6d: int3     
+b7a6e: int3     
+b7a6f: int3     
+b7a70: mov      r8, 0x1a8b71ff
+b7a77: xor      r8, r9
+b7a7a: add      rsi, 1
+b7a7e: ret      
+b7a7f: int3     
+b7a80: mov      r8, 0x1b86acc6
+b7a87: xor      r8, r9
+b7a8a: not      r8
+b7a8d: not      r8
+b7a90: or       r8, r9
+b7a93: add      rsi, 1
+b7a97: ret      
+b7a98: int3     
+b7a99: int3     
+b7a9a: int3     
+b7a9b: int3     
+b7a9c: int3     
+b7a9d: int3     
+b7a9e: int3     
+b7a9f: int3     
+b7aa0: mov      r8, 0x3503c5fd
+b7aa7: rol      r8, 8
+b7aab: xor      r9, r8
+b7aae: add      r8, r9
+b7ab1: add      rsi, 2
+b7ab5: ret      
+b7ab6: int3     
+b7ab7: int3     
+b7ab8: int3     
+b7ab9: int3     
+b7aba: int3     
+b7abb: int3     
+b7abc: int3     
+b7abd: int3     
+b7abe: int3     
+b7abf: int3     
+b7ac0: mov      r8, 0xffffffffb7287642
+b7ac7: xor      r8, r9
+b7aca: add      rsi, 3
+b7ace: ret      
+b7acf: int3     
+b7ad0: mov      rax, 0xfffffffff19c2788
+b7ad7: xor      rax, rcx
+b7ada: not      rax
+b7add: not      rax
+b7ae0: or       rax, rcx
+b7ae3: add      rsi, 2
+b7ae7: ret      
+b7ae8: int3     
+b7ae9: int3     
+b7aea: int3     
+b7aeb: int3     
+b7aec: int3     
+b7aed: int3     
+b7aee: int3     
+b7aef: int3     
+b7af0: mov      rax, 0x521dbbe6
+b7af7: rol      rax, 2
+b7afb: xor      rcx, rax
+b7afe: add      rax, rcx
+b7b01: add      rsi, 2
+b7b05: ret      
+b7b06: int3     
+b7b07: int3     
+b7b08: int3     
+b7b09: int3     
+b7b0a: int3     
+b7b0b: int3     
+b7b0c: int3     
+b7b0d: int3     
+b7b0e: int3     
+b7b0f: int3     
+b7b10: mov      r8, 0x197d9abd
+b7b17: mov      r9, 0xcabd550
+b7b1e: xor      r8, r9
+b7b21: add      rsi, 2
+b7b25: ret      
+b7b26: int3     
+b7b27: int3     
+b7b28: int3     
+b7b29: int3     
+b7b2a: int3     
+b7b2b: int3     
+b7b2c: int3     
+b7b2d: int3     
+b7b2e: int3     
+b7b2f: int3     
+b7b30: mov      r8, 0xffffffffbdfb6bc2
+b7b37: xor      r8, r9
+b7b3a: add      rsi, 1
+b7b3e: ret      
+b7b3f: int3     
+b7b40: mov      rax, 0xffffffffc704dcd3
+b7b47: rol      rax, 4
+b7b4b: xor      r9, rax
+b7b4e: add      rax, r9
+b7b51: add      rsi, 2
+b7b55: ret      
+b7b56: int3     
+b7b57: int3     
+b7b58: int3     
+b7b59: int3     
+b7b5a: int3     
+b7b5b: int3     
+b7b5c: int3     
+b7b5d: int3     
+b7b5e: int3     
+b7b5f: int3     
+b7b60: shr      r9, 0xf
+b7b64: add      rax, r9
+b7b67: add      rsi, 1
+b7b6b: ret      
+b7b6c: int3     
+b7b6d: int3     
+b7b6e: int3     
+b7b6f: int3     
+b7b70: mov      r8, 0xffffffffd3263383
+b7b77: xor      r8, rcx
+b7b7a: add      rsi, 1
+b7b7e: ret      
+b7b7f: int3     
+b7b80: mov      rdx, 0x109f517c
+b7b87: mov      rcx, 0x41083767
+b7b8e: xor      rdx, rcx
+b7b91: add      rsi, 2
+b7b95: ret      
+b7b96: int3     
+b7b97: int3     
+b7b98: int3     
+b7b99: int3     
+b7b9a: int3     
+b7b9b: int3     
+b7b9c: int3     
+b7b9d: int3     
+b7b9e: int3     
+b7b9f: int3     
+b7ba0: mov      r8, 0xe045d6
+b7ba7: rol      r8, 5
+b7bab: xor      rdx, r8
+b7bae: add      r8, rdx
+b7bb1: add      rsi, 3
+b7bb5: ret      
+b7bb6: int3     
+b7bb7: int3     
+b7bb8: int3     
+b7bb9: int3     
+b7bba: int3     
+b7bbb: int3     
+b7bbc: int3     
+b7bbd: int3     
+b7bbe: int3     
+b7bbf: int3     
+b7bc0: mov      r9, 0x11c097b8
+b7bc7: mov      rdx, 0x62e573a4
+b7bce: xor      r9, rdx
+b7bd1: add      rsi, 2
+b7bd5: ret      
+b7bd6: int3     
+b7bd7: int3     
+b7bd8: int3     
+b7bd9: int3     
+b7bda: int3     
+b7bdb: int3     
+b7bdc: int3     
+b7bdd: int3     
+b7bde: int3     
+b7bdf: int3     
+b7be0: mov      rdx, 0xffffffffa29d14bd
+b7be7: not      rdx
+b7bea: or       r8, rdx
+b7bed: shr      r8, 2
+b7bf1: add      rsi, 2
+b7bf5: ret      
+b7bf6: int3     
+b7bf7: int3     
+b7bf8: int3     
+b7bf9: int3     
+b7bfa: int3     
+b7bfb: int3     
+b7bfc: int3     
+b7bfd: int3     
+b7bfe: int3     
+b7bff: int3     
+b7c00: mov      rcx, 0x11b26ab1
+b7c07: rol      rcx, 6
+b7c0b: xor      rdx, rcx
+b7c0e: add      rcx, rdx
+b7c11: add      rsi, 3
+b7c15: ret      
+b7c16: int3     
+b7c17: int3     
+b7c18: int3     
+b7c19: int3     
+b7c1a: int3     
+b7c1b: int3     
+b7c1c: int3     
+b7c1d: int3     
+b7c1e: int3     
+b7c1f: int3     
+b7c20: mov      rax, 0xfffffffffa20988d
+b7c27: rol      rax, 0xc
+b7c2b: xor      rcx, rax
+b7c2e: add      rax, rcx
+b7c31: add      rsi, 3
+b7c35: ret      
+b7c36: int3     
+b7c37: int3     
+b7c38: int3     
+b7c39: int3     
+b7c3a: int3     
+b7c3b: int3     
+b7c3c: int3     
+b7c3d: int3     
+b7c3e: int3     
+b7c3f: int3     
+b7c40: mov      r9, 0x465250c6
+b7c47: xor      r9, r8
+b7c4a: add      rsi, 1
+b7c4e: ret      
+b7c4f: int3     
+b7c50: mov      rax, 0x1d1ce8d9
+b7c57: rol      rax, 8
+b7c5b: xor      rcx, rax
+b7c5e: add      rax, rcx
+b7c61: add      rsi, 3
+b7c65: ret      
+b7c66: int3     
+b7c67: int3     
+b7c68: int3     
+b7c69: int3     
+b7c6a: int3     
+b7c6b: int3     
+b7c6c: int3     
+b7c6d: int3     
+b7c6e: int3     
+b7c6f: int3     
+b7c70: mov      rdx, 0x5dbf8dfc
+b7c77: rol      rdx, 0xb
+b7c7b: xor      r8, rdx
+b7c7e: add      rdx, r8
+b7c81: add      rsi, 1
+b7c85: ret      
+b7c86: int3     
+b7c87: int3     
+b7c88: int3     
+b7c89: int3     
+b7c8a: int3     
+b7c8b: int3     
+b7c8c: int3     
+b7c8d: int3     
+b7c8e: int3     
+b7c8f: int3     
+b7c90: mov      r9, 0xffffffffbb15831b
+b7c97: xor      r9, r8
+b7c9a: add      rsi, 2
+b7c9e: ret      
+b7c9f: int3     
+b7ca0: mov      rax, 0x43fc579
+b7ca7: xor      rax, rcx
+b7caa: add      rsi, 3
+b7cae: ret      
+b7caf: int3     
+b7cb0: mov      rcx, 0x27acff53
+b7cb7: rol      rcx, 0xa
+b7cbb: xor      r9, rcx
+b7cbe: add      rcx, r9
+b7cc1: add      rsi, 1
+b7cc5: ret      
+b7cc6: int3     
+b7cc7: int3     
+b7cc8: int3     
+b7cc9: int3     
+b7cca: int3     
+b7ccb: int3     
+b7ccc: int3     
+b7ccd: int3     
+b7cce: int3     
+b7ccf: int3     
+b7cd0: mov      r8, 0xffffffffd9c2720a
+b7cd7: not      r8
+b7cda: or       rax, r8
+b7cdd: shr      rax, 4
+b7ce1: add      rsi, 2
+b7ce5: ret      
+b7ce6: int3     
+b7ce7: int3     
+b7ce8: int3     
+b7ce9: int3     
+b7cea: int3     
+b7ceb: int3     
+b7cec: int3     
+b7ced: int3     
+b7cee: int3     
+b7cef: int3     
+b7cf0: mov      rax, 0xffffffff9722c9b6
+b7cf7: mov      r8, 0xffffffffacca47ed
+b7cfe: xor      rax, r8
+b7d01: add      rsi, 1
+b7d05: ret      
+b7d06: int3     
+b7d07: int3     
+b7d08: int3     
+b7d09: int3     
+b7d0a: int3     
+b7d0b: int3     
+b7d0c: int3     
+b7d0d: int3     
+b7d0e: int3     
+b7d0f: int3     
+b7d10: shr      rdx, 8
+b7d14: add      r9, rdx
+b7d17: add      rsi, 2
+b7d1b: ret      
+b7d1c: int3     
+b7d1d: int3     
+b7d1e: int3     
+b7d1f: int3     
+b7d20: mov      r8, 0xfffffffff2967083
+b7d27: xor      r8, rcx
+b7d2a: add      rsi, 3
+b7d2e: ret      
+b7d2f: int3     
+b7d30: mov      r9, 0xffffffffa51f711f
+b7d37: rol      r9, 4
+b7d3b: xor      rax, r9
+b7d3e: add      r9, rax
+b7d41: add      rsi, 3
+b7d45: ret      
+b7d46: int3     
+b7d47: int3     
+b7d48: int3     
+b7d49: int3     
+b7d4a: int3     
+b7d4b: int3     
+b7d4c: int3     
+b7d4d: int3     
+b7d4e: int3     
+b7d4f: int3     
+b7d50: mov      r8, 0x505d20dc
+b7d57: mov      rdx, 0x504aeba
+b7d5e: xor      r8, rdx
+b7d61: add      rsi, 2
+b7d65: ret      
+b7d66: int3     
+b7d67: int3     
+b7d68: int3     
+b7d69: int3     
+b7d6a: int3     
+b7d6b: int3     
+b7d6c: int3     
+b7d6d: int3     
+b7d6e: int3     
+b7d6f: int3     
+b7d70: mov      rax, 0xfffffffff29cf865
+b7d77: rol      rax, 4
+b7d7b: xor      rcx, rax
+b7d7e: add      rax, rcx
+b7d81: add      rsi, 3
+b7d85: ret      
+b7d86: int3     
+b7d87: int3     
+b7d88: int3     
+b7d89: int3     
+b7d8a: int3     
+b7d8b: int3     
+b7d8c: int3     
+b7d8d: int3     
+b7d8e: int3     
+b7d8f: int3     
+b7d90: mov      rdx, 0x3c7e3f92
+b7d97: mov      r8, 0xcbbbc76
+b7d9e: add      rdx, r8
+b7da1: rol      r8, 9
+b7da5: xor      rdx, r8
+b7da8: add      rsi, 2
+b7dac: ret      
+b7dad: int3     
+b7dae: int3     
+b7daf: int3     
+b7db0: mov      rax, 0xffffffffa3542cf7
+b7db7: mov      r9, 0xffffffffacb85d09
+b7dbe: add      rax, r9
+b7dc1: rol      r9, 0xf
+b7dc5: xor      rax, r9
+b7dc8: add      rsi, 3
+b7dcc: ret      
+b7dcd: int3     
+b7dce: int3     
+b7dcf: int3     
+b7dd0: mov      r8, 0x29c05edc
+b7dd7: xor      r8, r9
+b7dda: add      rsi, 1
+b7dde: ret      
+b7ddf: int3     
+b7de0: mov      r8, 0x7afdbd23
+b7de7: not      r8
+b7dea: or       rdx, r8
+b7ded: shr      rdx, 1
+b7df1: add      rsi, 1
+b7df5: ret      
+b7df6: int3     
+b7df7: int3     
+b7df8: int3     
+b7df9: int3     
+b7dfa: int3     
+b7dfb: int3     
+b7dfc: int3     
+b7dfd: int3     
+b7dfe: int3     
+b7dff: int3     
+b7e00: mov      rcx, 0x6acb461b
+b7e07: not      rcx
+b7e0a: or       rax, rcx
+b7e0d: shr      rax, 7
+b7e11: add      rsi, 2
+b7e15: ret      
+b7e16: int3     
+b7e17: int3     
+b7e18: int3     
+b7e19: int3     
+b7e1a: int3     
+b7e1b: int3     
+b7e1c: int3     
+b7e1d: int3     
+b7e1e: int3     
+b7e1f: int3     
+b7e20: mov      r8, 0x2d5abc35
+b7e27: xor      r8, r9
+b7e2a: add      rsi, 2
+b7e2e: ret      
+b7e2f: int3     
+b7e30: mov      rax, 0xfffffffff83af358
+b7e37: rol      rax, 3
+b7e3b: xor      r9, rax
+b7e3e: add      rax, r9
+b7e41: add      rsi, 3
+b7e45: ret      
+b7e46: int3     
+b7e47: int3     
+b7e48: int3     
+b7e49: int3     
+b7e4a: int3     
+b7e4b: int3     
+b7e4c: int3     
+b7e4d: int3     
+b7e4e: int3     
+b7e4f: int3     
+b7e50: mov      r8, 0x1812d9aa
+b7e57: xor      r8, r9
+b7e5a: not      r8
+b7e5d: not      r8
+b7e60: or       r8, r9
+b7e63: add      rsi, 3
+b7e67: ret      
+b7e68: int3     
+b7e69: int3     
+b7e6a: int3     
+b7e6b: int3     
+b7e6c: int3     
+b7e6d: int3     
+b7e6e: int3     
+b7e6f: int3     
+b7e70: mov      r9, 0x39b17e49
+b7e77: mov      rcx, 0x789f1c72
+b7e7e: xor      r9, rcx
+b7e81: add      rsi, 3
+b7e85: ret      
+b7e86: int3     
+b7e87: int3     
+b7e88: int3     
+b7e89: int3     
+b7e8a: int3     
+b7e8b: int3     
+b7e8c: int3     
+b7e8d: int3     
+b7e8e: int3     
+b7e8f: int3     
+b7e90: mov      rdx, 0xffffffffbb0b2bf6
+b7e97: not      rdx
+b7e9a: or       r8, rdx
+b7e9d: shr      r8, 7
+b7ea1: add      rsi, 1
+b7ea5: ret      
+b7ea6: int3     
+b7ea7: int3     
+b7ea8: int3     
+b7ea9: int3     
+b7eaa: int3     
+b7eab: int3     
+b7eac: int3     
+b7ead: int3     
+b7eae: int3     
+b7eaf: int3     
+b7eb0: mov      r8, 0x309fa71e
+b7eb7: xor      r8, rax
+b7eba: not      r8
+b7ebd: not      r8
+b7ec0: or       r8, rax
+b7ec3: add      rsi, 1
+b7ec7: ret      
+b7ec8: int3     
+b7ec9: int3     
+b7eca: int3     
+b7ecb: int3     
+b7ecc: int3     
+b7ecd: int3     
+b7ece: int3     
+b7ecf: int3     
+b7ed0: mov      r8, 0xffffffff9d0b2c58
+b7ed7: rol      r8, 2
+b7edb: xor      r9, r8
+b7ede: add      r8, r9
+b7ee1: add      rsi, 2
+b7ee5: ret      
+b7ee6: int3     
+b7ee7: int3     
+b7ee8: int3     
+b7ee9: int3     
+b7eea: int3     
+b7eeb: int3     
+b7eec: int3     
+b7eed: int3     
+b7eee: int3     
+b7eef: int3     
+b7ef0: shr      rcx, 0xe
+b7ef4: add      r8, rcx
+b7ef7: add      rsi, 2
+b7efb: ret      
+b7efc: int3     
+b7efd: int3     
+b7efe: int3     
+b7eff: int3     
+
+=== RVA b7000 off a7400 ===
+b7000: jne      0x2028b701e
+b7002: test     dword ptr [rdx], eax
+b7004: add      al, byte ptr [rax]
+b7006: add      byte ptr [rax], al
+
+=== RVA be000 off aae00 ===
+be000: add      byte ptr [rax - 0x4110fff4], dh
+be006: lodsd    eax, dword ptr [rsi]
+be007: fsubp    st(7)
+be009: mov      esi, 0xbabedead
+be00e: dec      dl
+be010: out      9, al
+be013: push     -0x7b
+be015: scasb    al, byte ptr [rdi]
+be016: mov      ebx, 0x3c6ef372
+be01c: cmp      dh, ch
+be01e: movsq    qword ptr [rdi], qword ptr [rsi]
+be020: jg       0x2028be074

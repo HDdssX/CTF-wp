@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>控制台 - 税务数据金库</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #f8fafc;
+            --accent-primary: #3b82f6;
+            --accent-secondary: #60a5fa;
+            --card-bg: rgba(30, 41, 59, 0.6);
+            --card-border: rgba(255, 255, 255, 0.08);
+        }
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        nav {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--card-border);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #60a5fa, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: #fff; }
+        
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .header-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        h2 { font-size: 2.2em; margin: 0; font-weight: 800; }
+        .btn-create {
+            background: var(--accent-primary);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+        .btn-create:hover { background: #2563eb; transform: translateY(-2px); }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .profile-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        .profile-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(96, 165, 250, 0.3);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+        }
+        .status-badge {
+            position: absolute;
+            top: 20px; right: 20px;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        .badge-SUBMITTED { background: rgba(16, 185, 129, 0.1); color: #10b981; }
+        .badge-DRAFT { background: rgba(245, 158, 11, 0.1); color: #f59e0b; }
+        .badge-AUDIT_PENDING { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
+
+        .card-title { font-size: 1.4em; font-weight: 800; margin-top: 0; margin-bottom: 20px; }
+        .card-row { display: flex; justify-content: space-between; margin-bottom: 10px; color: #94a3b8; font-size: 0.95em; }
+        .card-row span { color: #f8fafc; font-weight: 600; }
+        
+        .actions { margin-top: 25px; display: flex; gap: 10px; }
+        .btn-preview {
+            flex: 1;
+            text-align: center;
+            background: rgba(255,255,255,0.05);
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        .btn-preview:hover { background: rgba(255,255,255,0.1); }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">税务数据金库 2026</div>
+        <div class="nav-links">
+            <span style="color: #64748b; margin-right: 15px;">角色: {{ role }}</span>
+            <a href="/logout">安全退出</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header-actions">
+            <h2>您的税务档案</h2>
+            <form action="/api/create_profile" method="POST" style="margin:0;">
+                <button type="submit" class="btn-create">+ 新建有效档案</button>
+            </form>
+        </div>
+        
+        <div class="profile-grid">
+            {% for p in profiles %}
+            <div class="profile-card">
+                <div class="status-badge badge-{{ p['state'] }}">{{ p['state'] }}</div>
+                <div class="card-title">税务年度 {{ p['year'] }}</div>
+                
+                <div class="card-row">
+                    总收入: <span>${{ p['income'] }}</span>
+                </div>
+                <div class="card-row">
+                    各项扣除: <span>${{ p['deductions'] }}</span>
+                </div>
+                <div class="card-row">
+                    应纳税净额: <span>${{ p['income'] - p['deductions'] }}</span>
+                </div>
+                
+                <div class="actions">
+                    <a href="/preview/{{ p['id'] }}" class="btn-preview">预览报告</a>
+                </div>
+            </div>
+            {% endfor %}
+            
+            {% if not profiles %}
+            <div style="grid-column: 1/-1; text-align: center; padding: 50px; background: var(--card-bg); border-radius: 16px; color: #94a3b8;">
+                未找到税务档案。请创建一个以开始您的申报。
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

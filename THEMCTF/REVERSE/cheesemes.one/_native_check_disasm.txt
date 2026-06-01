@@ -1,0 +1,968 @@
+
+=== RVA 1390 ===
+01390: jmp     0x2028b7800
+01395: int3    
+01396: int3    
+01397: int3    
+01398: int3    
+01399: int3    
+0139a: int3    
+0139b: int3    
+0139c: int3    
+0139d: int3    
+0139e: int3    
+0139f: int3    
+013a0: int3    
+013a1: int3    
+013a2: int3    
+013a3: int3    
+013a4: int3    
+013a5: int3    
+013a6: int3    
+013a7: int3    
+013a8: int3    
+013a9: int3    
+013aa: int3    
+013ab: int3    
+013ac: int3    
+013ad: int3    
+013ae: int3    
+013af: int3    
+013b0: int3    
+013b1: int3    
+013b2: int3    
+013b3: int3    
+013b4: int3    
+013b5: int3    
+013b6: int3    
+013b7: int3    
+013b8: int3    
+013b9: int3    
+013ba: int3    
+013bb: int3    
+013bc: int3    
+013bd: int3    
+013be: int3    
+013bf: int3    
+013c0: int3    
+013c1: int3    
+013c2: int3    
+013c3: int3    
+013c4: int3    
+013c5: int3    
+013c6: int3    
+013c7: int3    
+013c8: int3    
+013c9: int3    
+013ca: int3    
+013cb: int3    
+013cc: int3    
+013cd: int3    
+013ce: int3    
+013cf: int3    
+013d0: int3    
+013d1: int3    
+013d2: int3    
+013d3: int3    
+013d4: int3    
+013d5: int3    
+013d6: int3    
+013d7: int3    
+013d8: int3    
+013d9: int3    
+013da: int3    
+013db: int3    
+013dc: int3    
+013dd: int3    
+013de: int3    
+013df: int3    
+013e0: int3    
+013e1: int3    
+013e2: int3    
+013e3: int3    
+013e4: int3    
+013e5: int3    
+013e6: int3    
+013e7: int3    
+013e8: int3    
+013e9: int3    
+013ea: int3    
+013eb: int3    
+013ec: int3    
+013ed: int3    
+013ee: int3    
+013ef: int3    
+013f0: int3    
+013f1: int3    
+013f2: int3    
+013f3: int3    
+013f4: int3    
+013f5: int3    
+013f6: int3    
+013f7: int3    
+013f8: int3    
+013f9: int3    
+013fa: int3    
+013fb: int3    
+013fc: int3    
+013fd: int3    
+013fe: int3    
+013ff: int3    
+01400: int3    
+01401: int3    
+01402: int3    
+01403: int3    
+01404: int3    
+01405: int3    
+01406: int3    
+01407: int3    
+01408: int3    
+01409: int3    
+0140a: int3    
+0140b: int3    
+0140c: int3    
+0140d: int3    
+0140e: int3    
+0140f: int3    
+01410: int3    
+01411: int3    
+01412: int3    
+01413: int3    
+01414: int3    
+01415: int3    
+01416: int3    
+01417: int3    
+01418: int3    
+01419: int3    
+0141a: int3    
+0141b: int3    
+0141c: int3    
+0141d: int3    
+0141e: int3    
+0141f: int3    
+01420: int3    
+01421: int3    
+01422: int3    
+01423: int3    
+01424: int3    
+01425: int3    
+01426: int3    
+01427: int3    
+01428: int3    
+01429: int3    
+0142a: int3    
+0142b: int3    
+0142c: int3    
+0142d: int3    
+0142e: int3    
+0142f: int3    
+01430: int3    
+01431: int3    
+01432: int3    
+01433: int3    
+01434: int3    
+01435: int3    
+01436: int3    
+01437: int3    
+01438: int3    
+01439: int3    
+0143a: int3    
+0143b: int3    
+0143c: int3    
+0143d: int3    
+0143e: int3    
+0143f: int3    
+01440: int3    
+01441: int3    
+01442: int3    
+01443: int3    
+01444: int3    
+01445: int3    
+01446: int3    
+01447: int3    
+01448: int3    
+01449: int3    
+0144a: int3    
+0144b: int3    
+0144c: int3    
+0144d: int3    
+0144e: int3    
+0144f: int3    
+01450: int3    
+01451: int3    
+01452: int3    
+01453: int3    
+01454: int3    
+01455: int3    
+01456: int3    
+01457: int3    
+01458: int3    
+01459: int3    
+0145a: int3    
+0145b: int3    
+0145c: int3    
+0145d: int3    
+0145e: int3    
+0145f: int3    
+01460: int3    
+01461: int3    
+01462: int3    
+01463: int3    
+01464: int3    
+01465: int3    
+01466: int3    
+01467: int3    
+01468: int3    
+01469: int3    
+0146a: int3    
+0146b: int3    
+0146c: int3    
+0146d: int3    
+0146e: int3    
+0146f: int3    
+01470: int3    
+01471: int3    
+01472: int3    
+01473: int3    
+01474: int3    
+01475: int3    
+01476: int3    
+01477: int3    
+01478: int3    
+01479: int3    
+0147a: int3    
+0147b: int3    
+0147c: int3    
+0147d: int3    
+0147e: int3    
+0147f: int3    
+01480: int3    
+01481: int3    
+01482: int3    
+01483: int3    
+01484: int3    
+01485: int3    
+01486: int3    
+01487: int3    
+01488: int3    
+01489: int3    
+0148a: int3    
+0148b: int3    
+0148c: int3    
+0148d: int3    
+0148e: int3    
+0148f: int3    
+01490: int3    
+01491: int3    
+01492: int3    
+01493: int3    
+01494: int3    
+01495: int3    
+01496: int3    
+01497: int3    
+01498: int3    
+01499: int3    
+0149a: int3    
+0149b: int3    
+0149c: int3    
+0149d: int3    
+0149e: int3    
+0149f: int3    
+014a0: int3    
+014a1: int3    
+014a2: int3    
+014a3: int3    
+014a4: int3    
+014a5: int3    
+014a6: int3    
+014a7: int3    
+014a8: int3    
+014a9: int3    
+014aa: int3    
+014ab: int3    
+014ac: int3    
+014ad: int3    
+014ae: int3    
+014af: int3    
+014b0: int3    
+014b1: int3    
+014b2: int3    
+014b3: int3    
+014b4: int3    
+014b5: int3    
+014b6: int3    
+014b7: int3    
+014b8: int3    
+014b9: int3    
+014ba: int3    
+014bb: int3    
+014bc: int3    
+014bd: int3    
+014be: int3    
+014bf: int3    
+014c0: int3    
+014c1: int3    
+014c2: int3    
+014c3: int3    
+014c4: int3    
+014c5: int3    
+014c6: int3    
+014c7: int3    
+014c8: int3    
+014c9: int3    
+014ca: int3    
+014cb: int3    
+014cc: int3    
+014cd: int3    
+014ce: int3    
+014cf: int3    
+014d0: int3    
+014d1: int3    
+014d2: int3    
+014d3: int3    
+014d4: int3    
+014d5: int3    
+014d6: int3    
+014d7: int3    
+014d8: int3    
+014d9: int3    
+014da: int3    
+014db: int3    
+014dc: int3    
+014dd: int3    
+014de: int3    
+014df: int3    
+014e0: int3    
+014e1: int3    
+014e2: int3    
+014e3: int3    
+014e4: int3    
+014e5: int3    
+014e6: int3    
+014e7: int3    
+014e8: int3    
+014e9: int3    
+014ea: int3    
+014eb: int3    
+014ec: int3    
+014ed: int3    
+014ee: int3    
+014ef: int3    
+014f0: int3    
+014f1: int3    
+014f2: int3    
+014f3: int3    
+014f4: int3    
+014f5: int3    
+014f6: int3    
+014f7: int3    
+014f8: int3    
+014f9: int3    
+014fa: int3    
+014fb: int3    
+014fc: int3    
+014fd: int3    
+014fe: int3    
+014ff: int3    
+01500: int3    
+01501: int3    
+01502: int3    
+01503: int3    
+01504: int3    
+01505: int3    
+01506: int3    
+01507: int3    
+01508: int3    
+01509: int3    
+0150a: int3    
+0150b: int3    
+0150c: int3    
+0150d: int3    
+0150e: int3    
+0150f: int3    
+01510: int3    
+01511: int3    
+01512: int3    
+01513: int3    
+01514: int3    
+01515: int3    
+01516: int3    
+01517: int3    
+01518: int3    
+01519: int3    
+0151a: int3    
+0151b: int3    
+0151c: int3    
+0151d: int3    
+0151e: int3    
+0151f: int3    
+01520: int3    
+01521: int3    
+01522: int3    
+01523: int3    
+01524: int3    
+01525: int3    
+01526: int3    
+01527: int3    
+01528: int3    
+01529: int3    
+0152a: int3    
+0152b: int3    
+0152c: int3    
+0152d: int3    
+0152e: int3    
+0152f: int3    
+01530: int3    
+01531: int3    
+01532: int3    
+01533: int3    
+01534: int3    
+01535: int3    
+01536: int3    
+01537: int3    
+01538: int3    
+01539: int3    
+0153a: int3    
+0153b: int3    
+0153c: int3    
+0153d: int3    
+0153e: int3    
+0153f: int3    
+01540: int3    
+01541: int3    
+01542: int3    
+01543: int3    
+01544: int3    
+01545: int3    
+01546: int3    
+01547: int3    
+01548: int3    
+01549: int3    
+0154a: int3    
+0154b: int3    
+0154c: int3    
+0154d: int3    
+0154e: int3    
+0154f: int3    
+01550: int3    
+01551: int3    
+01552: int3    
+01553: int3    
+01554: int3    
+01555: int3    
+01556: int3    
+01557: int3    
+01558: int3    
+01559: int3    
+0155a: int3    
+0155b: int3    
+0155c: int3    
+0155d: int3    
+0155e: int3    
+0155f: int3    
+01560: int3    
+01561: int3    
+01562: int3    
+01563: int3    
+01564: int3    
+01565: int3    
+01566: int3    
+01567: int3    
+01568: int3    
+01569: int3    
+0156a: int3    
+0156b: int3    
+0156c: int3    
+0156d: int3    
+0156e: int3    
+0156f: int3    
+01570: int3    
+01571: int3    
+01572: int3    
+01573: int3    
+01574: int3    
+01575: int3    
+01576: int3    
+01577: int3    
+01578: int3    
+01579: int3    
+0157a: int3    
+0157b: int3    
+0157c: int3    
+0157d: int3    
+0157e: int3    
+0157f: int3    
+01580: int3    
+01581: int3    
+01582: int3    
+01583: int3    
+01584: int3    
+01585: int3    
+01586: int3    
+01587: int3    
+01588: int3    
+01589: int3    
+0158a: int3    
+0158b: int3    
+0158c: int3    
+0158d: int3    
+0158e: int3    
+0158f: int3    
+01590: int3    
+01591: int3    
+01592: int3    
+01593: int3    
+01594: int3    
+01595: int3    
+01596: int3    
+01597: int3    
+01598: int3    
+01599: int3    
+0159a: int3    
+0159b: int3    
+0159c: int3    
+0159d: int3    
+0159e: int3    
+0159f: int3    
+015a0: int3    
+015a1: int3    
+015a2: int3    
+015a3: int3    
+015a4: int3    
+015a5: int3    
+015a6: int3    
+015a7: int3    
+015a8: int3    
+015a9: int3    
+015aa: int3    
+015ab: int3    
+015ac: int3    
+015ad: int3    
+015ae: int3    
+015af: int3    
+015b0: int3    
+015b1: int3    
+015b2: int3    
+015b3: int3    
+015b4: int3    
+015b5: int3    
+015b6: int3    
+015b7: int3    
+015b8: int3    
+015b9: int3    
+015ba: int3    
+015bb: int3    
+015bc: int3    
+015bd: int3    
+015be: int3    
+015bf: int3    
+015c0: int3    
+015c1: int3    
+015c2: int3    
+015c3: int3    
+015c4: int3    
+015c5: int3    
+015c6: int3    
+015c7: int3    
+015c8: int3    
+015c9: int3    
+015ca: int3    
+015cb: int3    
+015cc: int3    
+015cd: int3    
+015ce: int3    
+015cf: int3    
+015d0: int3    
+015d1: int3    
+015d2: int3    
+015d3: int3    
+015d4: int3    
+015d5: int3    
+015d6: int3    
+015d7: int3    
+015d8: int3    
+015d9: int3    
+015da: int3    
+015db: int3    
+015dc: int3    
+015dd: int3    
+015de: int3    
+015df: int3    
+015e0: int3    
+015e1: int3    
+015e2: int3    
+015e3: int3    
+015e4: int3    
+015e5: int3    
+015e6: int3    
+015e7: int3    
+015e8: int3    
+015e9: int3    
+015ea: int3    
+015eb: int3    
+015ec: int3    
+015ed: int3    
+015ee: int3    
+015ef: int3    
+
+=== RVA 15f6 ===
+015f6: sub     rsp, 0x38
+015fa: mov     qword ptr [rsp + 0x28], 0
+01603: lea     rdx, [rsp + 0x28]
+01608: mov     rax, qword ptr [rcx]
+0160b: mov     r8d, 0x10006
+01611: call    qword ptr [rax + 0x30]
+01614: test    eax, eax
+01616: jne     0x20280165b
+01618: mov     rcx, qword ptr [rsp + 0x28]
+0161d: mov     rax, qword ptr [rcx]
+01620: lea     rdx, [rip + 0x29d9]
+01627: call    qword ptr [rax + 0x30]
+0162a: mov     rdx, rax
+0162d: test    rax, rax
+01630: je      0x202801662
+01632: mov     rcx, qword ptr [rsp + 0x28]
+01637: mov     rax, qword ptr [rcx]
+0163a: mov     r9d, 1
+01640: lea     r8, [rip + 0x29e9]
+01647: call    qword ptr [rax + 0x6b8]
+0164d: neg     eax
+0164f: sbb     eax, eax
+01651: or      eax, 0x10006
+01656: add     rsp, 0x38
+0165a: ret     
+0165b: mov     eax, 0xffffffff
+01660: jmp     0x202801656
+01662: mov     eax, 0xffffffff
+01667: jmp     0x202801656
+01669: nop     
+0166a: nop     
+0166b: nop     
+0166c: nop     
+0166d: nop     
+0166e: nop     
+0166f: nop     
+01670: push    rbp
+01671: mov     rbp, rsp
+01674: sub     rsp, 0x20
+01678: mov     rax, qword ptr [rip + 0x1991]
+0167f: mov     rax, qword ptr [rax]
+01682: test    rax, rax
+01685: je      0x2028016ad
+01687: nop     word ptr [rax + rax]
+01690: call    rax
+01692: mov     rax, qword ptr [rip + 0x1977]
+01699: lea     rdx, [rax + 8]
+0169d: mov     rax, qword ptr [rax + 8]
+016a1: mov     qword ptr [rip + 0x1968], rdx
+016a8: test    rax, rax
+016ab: jne     0x202801690
+016ad: add     rsp, 0x20
+016b1: pop     rbp
+016b2: ret     
+016b3: nop     word ptr [rax + rax]
+016be: nop     
+016c0: push    rbp
+016c1: push    rsi
+016c2: push    rbx
+016c3: sub     rsp, 0x20
+016c7: lea     rbp, [rsp + 0x20]
+016cc: mov     rdx, qword ptr [rip + 0x2b5d]
+016d3: mov     rax, qword ptr [rdx]
+016d6: mov     ecx, eax
+016d8: cmp     eax, -1
+016db: je      0x202801720
+016dd: test    ecx, ecx
+016df: je      0x202801703
+016e1: mov     eax, ecx
+016e3: sub     ecx, 1
+016e6: lea     rbx, [rdx + rax*8]
+016ea: sub     rax, rcx
+016ed: lea     rsi, [rdx + rax*8 - 8]
+016f2: nop     word ptr [rax + rax]
+016f8: call    qword ptr [rbx]
+016fa: sub     rbx, 8
+016fe: cmp     rbx, rsi
+01701: jne     0x2028016f8
+01703: lea     rcx, [rip - 0x9a]
+0170a: add     rsp, 0x20
+0170e: pop     rbx
+0170f: pop     rsi
+01710: pop     rbp
+01711: jmp     0x202801360
+01716: nop     word ptr [rax + rax]
+01720: xor     eax, eax
+01722: nop     word ptr [rax + rax]
+01728: lea     r8d, [rax + 1]
+0172c: mov     ecx, eax
+0172e: cmp     qword ptr [rdx + r8*8], 0
+01733: mov     rax, r8
+01736: jne     0x202801728
+01738: jmp     0x2028016dd
+0173a: nop     word ptr [rax + rax]
+01740: mov     eax, dword ptr [rip + 0x58da]
+01746: test    eax, eax
+01748: je      0x202801750
+0174a: ret     
+0174b: nop     dword ptr [rax + rax]
+
+=== RVA 1000 ===
+01000: lea     rcx, [rip + 0x5ff9]
+01007: jmp     0x2028024b0
+0100c: nop     dword ptr [rax]
+01010: push    rbp
+01011: push    r14
+01013: push    r13
+01015: push    r12
+01017: push    rdi
+01018: push    rsi
+01019: push    rbx
+0101a: sub     rsp, 0x20
+0101e: lea     rbp, [rsp + 0x20]
+01023: mov     rdi, rcx
+01026: mov     r12, r8
+01029: test    edx, edx
+0102b: jne     0x2028010b0
+01031: mov     eax, dword ptr [rip + 0x5fe1]
+01037: test    eax, eax
+01039: jle     0x202801099
+0103b: sub     eax, 1
+0103e: mov     rbx, qword ptr [rip + 0x325b]
+01045: xor     r12d, r12d
+01048: mov     edi, 1
+0104d: mov     dword ptr [rip + 0x5fc5], eax
+01053: mov     r13, qword ptr [rip + 0x80ce]
+0105a: jmp     0x202801068
+0105c: nop     dword ptr [rax]
+01060: mov     ecx, 0x3e8
+01065: call    r13
+01068: mov     rax, r12
+0106b: lock cmpxchg qword ptr [rbx], rdi
+01070: mov     rsi, rax
+01073: test    rax, rax
+01076: jne     0x202801060
+01078: mov     rdi, qword ptr [rip + 0x3231]
+0107f: mov     eax, dword ptr [rdi]
+01081: cmp     eax, 2
+01084: je      0x202801150
+0108a: mov     ecx, 0x1f
+0108f: call    0x202802628
+01094: mov     edx, 1
+01099: mov     eax, edx
+0109b: add     rsp, 0x20
+0109f: pop     rbx
+010a0: pop     rsi
+010a1: pop     rdi
+010a2: pop     r12
+010a4: pop     r13
+010a6: pop     r14
+010a8: pop     rbp
+010a9: ret     
+010aa: nop     word ptr [rax + rax]
+010b0: cmp     edx, 1
+010b3: jne     0x202801094
+010b5: mov     rax, qword ptr gs:[0x30]
+010be: mov     rbx, qword ptr [rip + 0x31db]
+010c5: mov     rsi, qword ptr [rax + 8]
+010c9: xor     r13d, r13d
+010cc: mov     r14, qword ptr [rip + 0x8055]
+010d3: jmp     0x2028010e9
+010d5: nop     dword ptr [rax]
+010d8: cmp     rsi, rax
+010db: je      0x202801170
+010e1: mov     ecx, 0x3e8
+010e6: call    r14
+010e9: mov     rax, r13
+010ec: lock cmpxchg qword ptr [rbx], rsi
+010f1: test    rax, rax
+010f4: jne     0x2028010d8
+010f6: xor     r13d, r13d
+010f9: mov     rsi, qword ptr [rip + 0x31b0]
+01100: mov     eax, dword ptr [rsi]
+01102: cmp     eax, 1
+01105: je      0x2028011d0
+0110b: mov     eax, dword ptr [rsi]
+0110d: test    eax, eax
+0110f: je      0x202801190
+01111: mov     eax, dword ptr [rsi]
+01113: cmp     eax, 1
+01116: je      0x2028011b0
+0111c: test    r13d, r13d
+0111f: je      0x202801180
+01121: mov     rax, qword ptr [rip + 0x3138]
+01128: mov     rax, qword ptr [rax]
+0112b: test    rax, rax
+0112e: je      0x20280113d
+01130: mov     r8, r12
+01133: mov     edx, 2
+01138: mov     rcx, rdi
+0113b: call    rax
+0113d: add     dword ptr [rip + 0x5ed4], 1
+01144: mov     edx, 1
+01149: jmp     0x202801099
+0114e: nop     
+01150: lea     rcx, [rip + 0x5ea9]
+01157: call    0x2028025b0
+0115c: mov     dword ptr [rdi], 0
+01162: xchg    qword ptr [rbx], rsi
+01165: jmp     0x202801094
+0116a: nop     word ptr [rax + rax]
+01170: mov     r13d, 1
+01176: jmp     0x2028010f9
+01178: nop     dword ptr [rax + rax]
+01180: xor     eax, eax
+01182: xchg    qword ptr [rbx], rax
+01185: jmp     0x202801121
+01187: nop     word ptr [rax + rax]
+01190: mov     rdx, qword ptr [rip + 0x3159]
+01197: mov     rcx, qword ptr [rip + 0x3142]
+0119e: mov     dword ptr [rsi], 1
+011a4: call    0x202802630
+011a9: jmp     0x202801111
+011ae: nop     
+011b0: mov     rdx, qword ptr [rip + 0x3119]
+011b7: mov     rcx, qword ptr [rip + 0x3102]
+011be: call    0x202802630
+011c3: mov     dword ptr [rsi], 2
+011c9: jmp     0x20280111c
+011ce: nop     
+011d0: mov     ecx, 0x1f
+011d5: call    0x202802628
+011da: jmp     0x202801111
+011df: nop     
+011e0: push    rbp
+011e1: push    r13
+011e3: push    r12
+011e5: push    rdi
+011e6: push    rsi
+011e7: push    rbx
+011e8: sub     rsp, 0x28
+011ec: lea     rbp, [rsp + 0x20]
+011f1: mov     r12, qword ptr [rip + 0x3098]
+011f8: mov     rsi, rcx
+011fb: mov     dword ptr [r12], edx
+011ff: mov     ebx, edx
+01201: mov     rdi, r8
+01204: test    edx, edx
+01206: jne     0x202801268
+01208: mov     eax, dword ptr [rip + 0x5e0a]
+0120e: test    eax, eax
+01210: je      0x202801248
+01212: call    0x202801a10
+01217: mov     r8, rdi
+0121a: xor     edx, edx
+0121c: mov     rcx, rsi
+0121f: call    0x202802470
+01224: mov     r8, rdi
+01227: mov     edx, ebx
+01229: mov     rcx, rsi
+0122c: call    0x202802460
+01231: mov     r8, rdi
+01234: mov     edx, ebx
+01236: mov     rcx, rsi
+01239: mov     r13d, eax
+0123c: call    0x202801010
+01241: test    eax, eax
+01243: jne     0x20280124b
+01245: nop     dword ptr [rax]
+01248: xor     r13d, r13d
+0124b: mov     eax, r13d
+0124e: mov     dword ptr [r12], 0xffffffff
+01256: add     rsp, 0x28
+0125a: pop     rbx
+0125b: pop     rsi
+0125c: pop     rdi
+0125d: pop     r12
+0125f: pop     r13
+01261: pop     rbp
+01262: ret     
+01263: nop     dword ptr [rax + rax]
+01268: call    0x202801a10
+0126d: lea     eax, [rbx - 1]
+01270: mov     r8, rdi
+01273: mov     edx, ebx
+01275: mov     rcx, rsi
+01278: cmp     eax, 1
+0127b: ja      0x2028012b8
+0127d: call    0x202801010
+01282: test    eax, eax
+01284: je      0x202801248
+01286: mov     r8, rdi
+01289: mov     edx, ebx
+0128b: mov     rcx, rsi
+0128e: call    0x202802460
+01293: test    eax, eax
+01295: je      0x2028012d0
+01297: cmp     ebx, 1
+0129a: je      0x2028012f0
+0129c: mov     r8, rdi
+0129f: mov     edx, 2
+012a4: mov     rcx, rsi
+012a7: call    0x202802470
+012ac: mov     r13d, eax
+012af: jmp     0x20280124b
+012b1: nop     dword ptr [rax]
+012b8: call    0x202802470
+012bd: mov     r13d, eax
+012c0: cmp     ebx, 3
+012c3: jne     0x20280124b
+012c5: jmp     0x202801224
+012ca: nop     word ptr [rax + rax]
+012d0: cmp     ebx, 1
+012d3: jne     0x202801248
+012d9: mov     r8, rdi
+012dc: xor     edx, edx
+012de: mov     rcx, rsi
+012e1: call    0x202801010
+012e6: jmp     0x202801248
+012eb: nop     dword ptr [rax + rax]
+012f0: call    0x202801740
+012f5: mov     r8, rdi
+012f8: mov     edx, 1
+012fd: mov     rcx, rsi
+01300: call    0x202802470
+01305: mov     r13d, eax
+01308: test    eax, eax
+0130a: jne     0x20280124b
+01310: mov     r8, rdi
+01313: xor     edx, edx
+01315: mov     rcx, rsi
+01318: call    0x202802470
+0131d: mov     r8, rdi
+01320: xor     edx, edx
+01322: mov     rcx, rsi
+01325: call    0x202802460
+0132a: mov     r8, rdi
+0132d: xor     edx, edx
+0132f: mov     rcx, rsi
+01332: call    0x202801010
+01337: jmp     0x20280124b
+0133c: nop     dword ptr [rax]
+01340: mov     rax, qword ptr [rip + 0x2f39]
+01347: mov     dword ptr [rax], 0
+0134d: jmp     0x2028011e0
+01352: nop     word ptr [rax + rax]
+0135d: nop     dword ptr [rax]
+01360: mov     rdx, rcx
+01363: lea     rcx, [rip + 0x5c96]
+0136a: jmp     0x2028024d0
+0136f: nop     
+01370: lea     rcx, [rip + 9]
+01377: jmp     0x202801360
+0137c: nop     dword ptr [rax]
+01380: ret     
+01381: nop     
+01382: nop     
+01383: nop     
+01384: nop     
+01385: nop     
+01386: nop     
+01387: nop     
+01388: nop     
+01389: nop     
+0138a: nop     
+0138b: nop     
+0138c: nop     
+0138d: nop     
+0138e: nop     
+0138f: nop     

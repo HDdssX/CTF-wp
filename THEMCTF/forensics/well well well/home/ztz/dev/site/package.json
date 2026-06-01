@@ -1,0 +1,26 @@
+{
+  "name": "api-gateway",
+  "version": "1.0.0",
+  "description": "Lightweight API Gateway with Drizzle ORM",
+  "main": "src/app.js",
+  "scripts": {
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js"
+  },
+  "dependencies": {
+    "axios": "^1.8.0",
+    "better-sqlite3": "^11.8.1",
+    "chalk": "^4.1.2",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.45.2",
+    "express": "^4.21.2",
+    "fast-http-client": "^2.3.1",
+    "lodash": "^4.17.21",
+    "pino": "^9.6.0"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.10"
+  }
+}

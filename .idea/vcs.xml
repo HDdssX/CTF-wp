@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DEFCON/re/game/ndrewh_ctf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DEFCON/re/game/ndrewh_ctf_blog" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/RCTF/RootKB/MaxKB" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/THEMCTF/forensics/well well well/home/ztz/dev/site" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/红明谷/Active/bravery9" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/红明谷/Active/feihong" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/红明谷/Active/insightglacier" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/红明谷/Active/lostworld" vcs="Git" />
+  </component>
+</project>

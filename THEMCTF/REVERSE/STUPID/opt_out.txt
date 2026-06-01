@@ -1,0 +1,4 @@
+ir=1126427 ast_counts={'move': 247093, 'mul': 100175, 'add': 136367, 'loop': 31867, '.': 57, 'scan': 20322, ',': 1} max_depth=8
+code=5523601 build_elapsed=5.39s
+running
++

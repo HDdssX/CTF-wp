@@ -1,0 +1,5 @@
+services:
+  one_more_pwn:
+    build: .
+    ports:
+      - "36769:36769"

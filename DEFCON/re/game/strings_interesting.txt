@@ -1,0 +1,314 @@
+--- embedded_exact.elf
+00000362 !H$@
+00000a5f D $ 
+00000cf1 4#H$
+000010d6 $$e,
+000013aa 8!&s
+000013f8 !8%\
+0000161d @ %L
+000018b1 E(!(
+00001d16 8dB?
+00001d66 8$B|
+00001ecd 1<dB@
+00002249 ` %T@
+00002532 B$cX
+00002547  0%$
+000025dd  $bP
+000025f1 U$cP
+00002777 sEPb
+000027af `dc{
+00002910 $0BL
+00002f3f p@0%
+00002f4f @H%%) 
+000030a0 (%%k
+000030ca &P*Q@
+00003a69 !@0@
+00003b93 PsTb
+00003e69 +8%H
+000042bc !$Bgp
+0000443c %P@0
+0000458b PHP`
+000045e1 q*Pb
+0000497b # !@
+00004dac  ,,x
+000051f1 ,\&1
+00005237 #hp 
+0000531f /j(p
+00005780  4"`
+00005839 `&Ei
+000059a8 #,\L
+00005c03 A`&1jL
+00005ca9 @0%\
+00006625 J(*T
+000067c9 %$CX
+00006853 &Rk@
+000068dd _H&3
+00006938 1kp&3
+0000798f GxdB
+00007a97 `(%$F
+00007aa3  7T$
+00007d11 (%T@
+00007ed2  @%8
+00007edc %)u 
+00007ef0 q(#(
+000310b1 Build a house to my liking
+000310cf receive the flag.
+00032138 [B] Block: %s
+0003215c ` Taste
+000322b2 rom:/grass_top.rgba32.%
+000322eb Nwoodw
+00032307 Nsand
+0003230e }:/brick
+000324dc libdragon.version(
+00032aff (format & ~SURFACE_FLAGS_TEXFORMAT
+0003407a !(th->flag
+00034087 TH_FLAG_IN
+0003465d BLOCK_NESTING_LEVE
+00035623 ilder.layout->flagm
+00035639 RDPQ_PARAGRAPH_FLAG_MALLOC
+00036979 odtoa.c@
+00036982 'UmprecA
+0003d78b Pflags8
+--- decompressed_mem.bin
+000004f1 !H$@
+0000193a 8!&s
+00001961 `(%F
+0000199d @8%F
+00001a05 B@*$B
+00001ac5 `(%F
+00001b6d `(%F
+00001c39 @ %F
+00001fa5 E(!(
+0000253f 8dB?
+00002d35 ` %T@
+00002e9c $cg0&R
+000030c5 h0*$
+00003171  0%$
+000037ba 8%&R
+000037d1  0%$
+00003895 `8%$
+000038b9  0%$
+00003901  0%$
+00003935 @0%$
+00003a17 !$BgP
+00003a67 !$BgH
+00003bb5  0%$
+00003e41  8%$
+00003ef1  0%$
+00003f92  !$c
+000040ae  %,B
+0000412e  %,B
+0000432a  %$c
+000043bd @H%%)
+000045de (%%k
+0000460d &P*Q@
+00004619 @8%T
+00004666 `%$C
+000048a5  0%$
+00004942  %$E
+00004a11  0%$
+00004a49 `0%$
+00004aa6  %$B
+00004bc9  0%$
+00004d8a  %$U
+00004f51  0%$
+00004fc9  0%$
+00005165  0%$
+0000528d  0%$
+000052e5  0%$
+00005309  0%$
+0000548d @(%$c
+00005565 `0%$
+000056d5 @0%$
+000057d9 @8%$c
+000059fe (%$B
+00005a5a (%$B
+00005a72 (%$B
+00005a8e 8%$B
+00005b96  %$B
+00005cdd @0%$
+00005ee6  !$B
+000060c9 @0%$
+000061c9 D *T
+00006276  !$B
+0000629a 8%$c
+000062b5 @8%$
+00006302  !$B
+00006317 !$Bgp
+00006356 (%$C
+00006382  %$S
+0000639e 0%$c
+00006406 8!$c
+000064e6 8%$B
+0000652e 8!$Bg`
+00006736 (%P@
+00006772 (%P`
+000067dd `0%$
+000069a9 DP!$c
+00006af2 8!$B
+00006b29 @0%]@
+00006d35  8%$c
+00006dc9 D *P
+00006de6 8!$B
+000070b6 8!$c
+00007126 8%&R
+00007b9e ,\&1
+00007d69  0%$
+0004cfa0 Build a house to my liking to receive the flag.
+0004eec8 [B] Block: %s
+0004eee4 Placed: %d  Taste: %d
+0004ef08 Begin with a tasteful foundation.
+0004ef30 Hmm, my house seems to be coming along nicely.
+0004f078 rom:/grass_top.rgba32.sprite
+0004f098 rom:/grass_side.rgba32.sprite
+0004f0f0 rom:/wood_top.rgba32.sprite
+0004f110 rom:/wood_side.rgba32.sprite
+0004f150 rom:/sand.rgba32.sprite
+0004f168 rom:/brick.rgba32.sprite
+0004f190 Grass
+0004f1a8 Wood
+0004f1b8 Sand
+0004f1c0 Brick
+0004f448 libdragon.version
+0004ff08 (format & ~SURFACE_FLAGS_TEXFORMAT) == 0
+0005014e Make sure to rebuild libdragon tools and your assets
+00050f98 LibDragon Inspector | %s%s (%s, %.7s) | Page %d/%d
+00052970 !(th->flags & TH_FLAG_INLIST)
+00052aa0 th->flags & TH_FLAG_INLIST
+00052ae0 !(th_cur->flags & TH_FLAG_INLIST)
+00052b08 th_cur->flags & TH_FLAG_DETACHED
+00052b30 !(th_cur->flags & TH_FLAG_DETACHED)
+00052b90 th_cur->flags & TH_FLAG_INLIST
+00052c50 thread %s[%p] in list? flags=%x
+00052da8 mutex->flags & KMUTEX_RECURSIVE
+000533a8 !rspq_block
+000533b8 cannot switch to highpri mode while creating a block
+00053470 a block was already being created
+00053498 cannot create a block in highpri mode
+000534c0 cannot create a block while recording a queue
+000534f0 block
+000534f8 rspq_block
+00053508 a block was not being created
+00053528 rspq_block->nesting_level < RSPQ_MAX_BLOCK_NESTING_LEVEL
+00053568 reached maximum number of nested block runs
+000535f0 block run is not supported in highpri mode
+00053620 Calling a placeholder is only supported inside a block
+00053658 block->nesting_level < block->min_ph_level
+00053688 Block nesting level overlaps with used placeholders
+000536c0 rspq_queue_recording->nesting_level < RSPQ_MAX_BLOCK_NESTING_LEVEL
+00053760 cannot create syncpoint in a block
+00053c28 cannot wait in a block
+00053fa8 libdragon/include/rdpq.h
+00054120 __rdpq_block_recycle: NULL head
+000541e8 a rdpq command was issued during block recording, but rdpq_init() hasn't been called yet
+00054790 libdragon/include/rdpq_mode.h
+00054db0 Internal Error: invalid width for LOAD_BLOCK (%d)
+00055718 builder.layout->flags & RDPQ_PARAGRAPH_FLAG_MALLOC
+000565d0 libdragon/include/joybus.h
+000565f0 (port + send_len + recv_len) < (JOYBUS_BLOCK_SIZE - 4)
+00057bf8 ../../../newlib-4.4.0.20231231/newlib/libc/stdlib/dtoa.c
+00057c38 ../../../newlib-4.4.0.20231231/newlib/libc/stdlib/mprec.c
+0005f1f8 t3d_state_set_drawflags
+0005fd80 rspq_block_run
+0005fd90 rspq_block_end
+0005fda0 rspq_block_begin_reuse
+0005ff40 __rdpq_block_update
+0005ff58 __rdpq_block_next_buffer
+0005ff78 __rdpq_block_recycle
+000600a0 texload_block_4bpp
+000600b8 rdpq_load_block
+--- game.z64
+00000020 CTF Block Game
+000000b4 $BVx<
+0000025a  @0c
+00000310  Libdragon IPL3  Coded by Rasky <
+0000055d F0%$
+000005ce 8%0B
+0000066c $B(8
+000006e2  %0B
+00000718 $c64
+000008ce  %1f
+000008f1 m *T
+00000939 @8%0C
+000009f8 $B-Q
+00000a3b T$Bkd
+0000108c $cLF$B
+000010ad d(%<
+000012c8 $dcA
+000013d1 3H!<
+00001485 t0#<
+00001543 P$cX
+00001930 TOC0G
+00001948 code
+00001988 data.dfs
+000019c8 libdragon.version
+00002162 !H$@
+0000285f D $ 
+00002af1 4#H$
+00002ed6 $$e,
+000031aa 8!&s
+000031f8 !8%\
+0000341d @ %L
+000036b1 E(!(
+00003b16 8dB?
+00003b66 8$B|
+00003ccd 1<dB@
+00004049 ` %T@
+00004332 B$cX
+00004347  0%$
+000043dd  $bP
+000043f1 U$cP
+00004577 sEPb
+000045af `dc{
+00004710 $0BL
+00004d3f p@0%
+00004d4f @H%%) 
+00004ea0 (%%k
+00004eca &P*Q@
+00005869 !@0@
+00005993 PsTb
+00005c69 +8%H
+000060bc !$Bgp
+0000623c %P@0
+0000638b PHP`
+000063e1 q*Pb
+0000677b # !@
+00006bac  ,,x
+00006ff1 ,\&1
+00007037 #hp 
+0000711f /j(p
+00007580  4"`
+00007639 `&Ei
+000077a8 #,\L
+00007a03 A`&1jL
+00007aa9 @0%\
+00032eb1 Build a house to my liking
+00032ecf receive the flag.
+00033f38 [B] Block: %s
+00033f5c ` Taste
+000340b2 rom:/grass_top.rgba32.%
+000340eb Nwoodw
+00034107 Nsand
+0003410e }:/brick
+000342dc libdragon.version(
+000348ff (format & ~SURFACE_FLAGS_TEXFORMAT
+00035e7a !(th->flag
+00035e87 TH_FLAG_IN
+0003645d BLOCK_NESTING_LEVE
+00037423 ilder.layout->flagm
+00037439 RDPQ_PARAGRAPH_FLAG_MALLOC
+00038779 odtoa.c@
+00038782 'UmprecA
+0003f58b Pflags8
+000448e5 :brick.rgba32.sprite
+00044cbc grass_side.rgba32.sprite
+00044e9c grass_top.rgba32.sprite
+00045238 sand.rgba32.sprite
+00045586 wood_side.rgba32.sprite
+00045740 wood_top.rgba32.sprite
+0004599c grass_top.rgba32.sprite
+000459de sand.rgba32.sprite
+000459f2 wood_side.rgba32.sprite
+00045a1e brick.rgba32.sprite
+00045a32 wood_top.rgba32.sprite
+00045a4a grass_side.rgba32.sprite
